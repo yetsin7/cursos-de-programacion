@@ -1,0 +1,89 @@
+{
+  "@@locale": "es",
+
+  "appTitle": "Mi Aplicación",
+  "@appTitle": {
+    "description": "Título principal que aparece en la barra superior de la app"
+  },
+
+  "bienvenido": "Bienvenido, {nombre}",
+  "@bienvenido": {
+    "description": "Saludo personalizado en la pantalla de inicio",
+    "placeholders": {
+      "nombre": {
+        "type": "String",
+        "example": "Carlos"
+      }
+    }
+  },
+
+  "iniciarSesion": "Iniciar sesión",
+  "@iniciarSesion": {
+    "description": "Texto del botón principal en la pantalla de autenticación"
+  },
+
+  "cerrarSesion": "Cerrar sesión",
+  "@cerrarSesion": {
+    "description": "Opción en el menú de perfil para terminar la sesión"
+  },
+
+  "correoElectronico": "Correo electrónico",
+  "@correoElectronico": {
+    "description": "Etiqueta del campo de texto para el email"
+  },
+
+  "contrasena": "Contraseña",
+  "@contrasena": {
+    "description": "Etiqueta del campo de texto para la contraseña"
+  },
+
+  "olvideMiContrasena": "¿Olvidaste tu contraseña?",
+  "@olvideMiContrasena": {
+    "description": "Enlace para recuperar contraseña en la pantalla de login"
+  },
+
+  "guardar": "Guardar",
+  "@guardar": {
+    "description": "Botón de confirmación para guardar cambios"
+  },
+
+  "cancelar": "Cancelar",
+  "@cancelar": {
+    "description": "Botón para descartar cambios y cerrar un diálogo o pantalla"
+  },
+
+  "errorCampoRequerido": "Este campo es obligatorio",
+  "@errorCampoRequerido": {
+    "description": "Mensaje de validación cuando un campo requerido está vacío"
+  },
+
+  "errorCorreoInvalido": "Ingresa un correo electrónico válido",
+  "@errorCorreoInvalido": {
+    "description": "Mensaje de validación cuando el formato del email es incorrecto"
+  },
+
+  "exitoGuardado": "Los cambios fueron guardados correctamente",
+  "@exitoGuardado": {
+    "description": "Mensaje de éxito en el Snackbar tras guardar datos"
+  },
+
+  "cargando": "Cargando…",
+  "@cargando": {
+    "description": "Texto del indicador de carga mientras se obtienen datos"
+  },
+
+  "sinResultados": "No se encontraron resultados",
+  "@sinResultados": {
+    "description": "Texto del estado vacío cuando una búsqueda no tiene coincidencias"
+  },
+
+  "resultados": "{cantidad, plural, =0{Sin resultados} =1{1 resultado} other{{cantidad} resultados}}",
+  "@resultados": {
+    "description": "Contador de resultados con manejo correcto del plural en español",
+    "placeholders": {
+      "cantidad": {
+        "type": "int"
+      }
+    }
+  }
+}

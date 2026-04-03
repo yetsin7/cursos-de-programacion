@@ -1,0 +1,33 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "My Application",
+
+  "bienvenido": "Welcome, {nombre}",
+
+  "iniciarSesion": "Sign in",
+
+  "cerrarSesion": "Sign out",
+
+  "correoElectronico": "Email address",
+
+  "contrasena": "Password",
+
+  "olvideMiContrasena": "Forgot your password?",
+
+  "guardar": "Save",
+
+  "cancelar": "Cancel",
+
+  "errorCampoRequerido": "This field is required",
+
+  "errorCorreoInvalido": "Please enter a valid email address",
+
+  "exitoGuardado": "Your changes were saved successfully",
+
+  "cargando": "Loading…",
+
+  "sinResultados": "No results found",
+
+  "resultados": "{cantidad, plural, =0{No results} =1{1 result} other{{cantidad} results}}"
+}
