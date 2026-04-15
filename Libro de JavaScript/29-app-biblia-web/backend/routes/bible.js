@@ -14,9 +14,9 @@ const router = Router();
 
 /**
  * Ruta relativa a la BD SQLite desde este archivo.
- * Estructura: backend/routes/bible.js → ../../../datos/biblia_rv60.sqlite3
+ * Estructura: backend/routes/bible.js → ../../../../datos/biblia_rv60.sqlite3
  */
-const DB_PATH = path.join(import.meta.dirname, '../../../datos/biblia_rv60.sqlite3');
+const DB_PATH = path.join(import.meta.dirname, '../../../../datos/biblia_rv60.sqlite3');
 
 let db;
 try {

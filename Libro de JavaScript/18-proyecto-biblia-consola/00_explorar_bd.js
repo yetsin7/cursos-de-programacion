@@ -9,7 +9,7 @@ const Database = require('better-sqlite3');
 const path = require('path');
 
 // Ruta a la base de datos relativa a este archivo
-const DB_PATH = path.join(__dirname, '..', 'datos', 'biblia_rv60.sqlite3');
+const DB_PATH = path.join(__dirname, '..', '..', 'datos', 'biblia_rv60.sqlite3');
 
 /**
  * Abre la conexión a la base de datos SQLite.

@@ -8,7 +8,7 @@ const Database = require('better-sqlite3');
 const readline = require('readline');
 const path = require('path');
 
-const DB_PATH = path.join(__dirname, '..', 'datos', 'biblia_rv60.sqlite3');
+const DB_PATH = path.join(__dirname, '..', '..', 'datos', 'biblia_rv60.sqlite3');
 
 // Abrir BD una sola vez al iniciar el script
 const db = new Database(DB_PATH, { readonly: true });

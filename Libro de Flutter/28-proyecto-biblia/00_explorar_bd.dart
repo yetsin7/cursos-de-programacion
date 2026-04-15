@@ -23,7 +23,7 @@ void main() async {
   final String scriptDir =
       path.dirname(Platform.script.toFilePath());
   final String dbPath =
-      path.join(scriptDir, '..', 'datos', 'biblia_rv60.sqlite3');
+      path.join(scriptDir, '..', '..', 'datos', 'biblia_rv60.sqlite3');
   final String rutaAbsoluta = path.normalize(dbPath);
 
   print('=' * 55);

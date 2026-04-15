@@ -30,7 +30,7 @@ void main() async {
   // Calcular ruta absoluta a la BD
   final String scriptDir = path.dirname(Platform.script.toFilePath());
   final String dbPath =
-      path.normalize(path.join(scriptDir, '..', 'datos', 'biblia_rv60.sqlite3'));
+      path.normalize(path.join(scriptDir, '..', '..', 'datos', 'biblia_rv60.sqlite3'));
 
   if (!File(dbPath).existsSync()) {
     print('ERROR: Base de datos no encontrada en:\n  $dbPath');
