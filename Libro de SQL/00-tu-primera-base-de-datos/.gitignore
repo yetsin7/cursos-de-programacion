@@ -1,0 +1,4 @@
+# Base de datos personal del usuario — no se sube al repo
+*.db
+*.sqlite
+*.sqlite3
