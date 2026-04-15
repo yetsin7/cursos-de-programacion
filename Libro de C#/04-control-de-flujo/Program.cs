@@ -1,0 +1,144 @@
+// ============================================================
+// Capítulo 04 — Control de flujo
+// Temas: if/else, switch clásico, switch expression (C# 8+),
+//        foreach, for, while, do-while, pattern matching básico
+// ============================================================
+
+Console.WriteLine("=== if / else if / else ===");
+
+int temperatura = 35;
+if (temperatura > 30)
+    Console.WriteLine("Hace mucho calor");
+else if (temperatura > 20)
+    Console.WriteLine("Temperatura agradable");
+else if (temperatura > 10)
+    Console.WriteLine("Un poco fresco");
+else
+    Console.WriteLine("Hace frío");
+
+Console.WriteLine("\n=== switch clásico ===");
+
+int diaSemana = 3;
+switch (diaSemana)
+{
+    case 1: Console.WriteLine("Lunes");     break;
+    case 2: Console.WriteLine("Martes");    break;
+    case 3: Console.WriteLine("Miércoles"); break;
+    case 4: Console.WriteLine("Jueves");    break;
+    case 5: Console.WriteLine("Viernes");   break;
+    case 6:
+    case 7: Console.WriteLine("Fin de semana"); break;
+    default: Console.WriteLine("Día inválido"); break;
+}
+
+Console.WriteLine("\n=== switch expression (C# 8+) ===");
+
+// Forma moderna y concisa: retorna un valor directamente
+string nombreDia = diaSemana switch
+{
+    1 => "Lunes",
+    2 => "Martes",
+    3 => "Miércoles",
+    4 => "Jueves",
+    5 => "Viernes",
+    6 or 7 => "Fin de semana",   // múltiples casos con 'or'
+    _ => "Inválido"               // caso por defecto
+};
+Console.WriteLine($"Día {diaSemana}: {nombreDia}");
+
+// Switch expression con rango usando when
+int puntos = 82;
+string calificacion = puntos switch
+{
+    >= 90 => "A — Excelente",
+    >= 80 => "B — Muy bueno",
+    >= 70 => "C — Bueno",
+    >= 60 => "D — Regular",
+    _     => "F — Insuficiente"
+};
+Console.WriteLine($"Puntos {puntos}: {calificacion}");
+
+Console.WriteLine("\n=== Pattern matching básico ===");
+
+// 'is' con pattern variable
+object valor = 42;
+if (valor is int numero && numero > 0)
+    Console.WriteLine($"Es un entero positivo: {numero}");
+
+// Switch con type patterns y when
+object[] valores = { 42, -5, 0, "hola", 3.14, null! };
+foreach (object v in valores)
+{
+    string descripcion = v switch
+    {
+        int n when n > 0 => $"Entero positivo: {n}",
+        int n when n < 0 => $"Entero negativo: {n}",
+        int              => "Cero",
+        string s         => $"Texto: '{s}'",
+        double d         => $"Decimal: {d}",
+        null             => "Nulo",
+        _                => "Tipo desconocido"
+    };
+    Console.WriteLine($"  {descripcion}");
+}
+
+Console.WriteLine("\n=== Bucle for ===");
+
+// Tabla de multiplicar del 3
+for (int i = 1; i <= 5; i++)
+    Console.WriteLine($"  3 × {i} = {3 * i}");
+
+Console.WriteLine("\n=== Bucle foreach ===");
+
+string[] frutas = { "mango", "papaya", "aguacate", "maracuyá", "guanábana" };
+foreach (string fruta in frutas)
+    Console.WriteLine($"  🍀 {fruta}");
+
+// foreach con índice usando LINQ (más adelante en el libro)
+Console.WriteLine();
+foreach ((int indice, string fruta) in frutas.Select((f, i) => (i, f)))
+    Console.WriteLine($"  [{indice}] {fruta}");
+
+Console.WriteLine("\n=== Bucle while ===");
+
+int contador = 1;
+while (contador <= 5)
+{
+    Console.Write($"{contador} ");
+    contador++;
+}
+Console.WriteLine();
+
+Console.WriteLine("\n=== Bucle do-while ===");
+
+// Se ejecuta al menos una vez aunque la condición sea falsa desde el inicio
+int intentos = 0;
+do
+{
+    intentos++;
+    Console.WriteLine($"  Intento #{intentos}");
+} while (intentos < 3);
+
+Console.WriteLine("\n=== break y continue ===");
+
+Console.Write("Números (saltando múltiplos de 3, parando en 10): ");
+for (int i = 1; i <= 15; i++)
+{
+    if (i % 3 == 0) continue;  // salta múltiplos de 3
+    if (i > 10)     break;     // para al superar 10
+    Console.Write($"{i} ");
+}
+Console.WriteLine();
+
+Console.WriteLine("\n=== Bucles anidados ===");
+
+// Tabla de multiplicar 3x3
+Console.WriteLine("  ×  | 1  2  3");
+Console.WriteLine("  ---|--------");
+for (int fila = 1; fila <= 3; fila++)
+{
+    Console.Write($"  {fila}  |");
+    for (int col = 1; col <= 3; col++)
+        Console.Write($" {fila * col,2}");
+    Console.WriteLine();
+}
