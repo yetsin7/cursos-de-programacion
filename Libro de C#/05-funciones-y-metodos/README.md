@@ -1,135 +1,55 @@
 # Capítulo 05 — Funciones y métodos
 
-## Métodos básicos
-
-En C# las funciones se llaman **métodos** y deben pertenecer a una clase o struct.
-
-```csharp
-// Método que no retorna valor
-static void Saludar(string nombre)
-{
-    Console.WriteLine($"Hola, {nombre}!");
-}
-
-// Método que retorna un valor
-static int Sumar(int a, int b)
-{
-    return a + b;
-}
-
-// Método con expresión (expression-bodied, C# 6+)
-static int Multiplicar(int a, int b) => a * b;
-```
+Las funciones en C# se llaman metodos. Son la base para dividir lógica,
+reutilizar comportamiento y evitar repetir código innecesariamente.
 
 ---
 
-## Parámetros especiales
+## ¿Qué aprenderás?
 
-### `out` — Devuelve un valor adicional
-
-```csharp
-static bool Dividir(int a, int b, out double resultado)
-{
-    if (b == 0) { resultado = 0; return false; }
-    resultado = (double)a / b;
-    return true;
-}
-
-// Uso
-if (Dividir(10, 2, out double res))
-    Console.WriteLine(res);  // 5.0
-```
-
-### `ref` — Pasa por referencia (puede leer y modificar)
-
-```csharp
-static void Duplicar(ref int x) => x *= 2;
-
-int n = 5;
-Duplicar(ref n);  // n ahora es 10
-```
-
-### `in` — Pasa por referencia pero solo lectura
-
-```csharp
-static void Mostrar(in int x) => Console.WriteLine(x);
-// x no puede ser modificado dentro del método
-```
-
-### `params` — Número variable de parámetros
-
-```csharp
-static int Sumar(params int[] numeros) => numeros.Sum();
-
-Console.WriteLine(Sumar(1, 2, 3, 4, 5));  // 15
-```
+- metodos basicos;
+- `out`, `ref`, `in` y `params`;
+- parametros opcionales y con nombre;
+- metodos de extension;
+- lambdas;
+- `Func`, `Action` y `Predicate`.
 
 ---
 
-## Parámetros opcionales y con nombre
+## ¿Por qué importa este capítulo?
 
-```csharp
-static void Presentar(string nombre, int edad = 0, string país = "Nicaragua")
-{
-    Console.WriteLine($"{nombre}, {edad} años, de {país}");
-}
+Porque casi todo el software profesional se organiza alrededor de metodos:
 
-Presentar("Ana");                          // usa valores por defecto
-Presentar("Luis", 30);
-Presentar("Eva", país: "México", edad: 25); // parámetros con nombre
-```
+- validaciones;
+- calculos;
+- transformaciones;
+- acciones sobre datos;
+- callbacks y eventos.
 
----
-
-## Métodos de extensión
-
-Agregan métodos a tipos existentes sin modificarlos ni heredarlos:
-
-```csharp
-// Deben estar en una clase estática
-static class ExtensionesString
-{
-    public static string EnMayusculas(this string texto) =>
-        texto.ToUpper();
-}
-
-// Uso
-string saludo = "hola";
-Console.WriteLine(saludo.EnMayusculas());  // "HOLA"
-```
+Aprender metodos bien hace mas facil entender clases, arquitectura y APIs.
 
 ---
 
-## Expresiones lambda
+## ¿Qué pasa dentro del programa?
 
-Funciones anónimas, muy usadas con LINQ y delegados:
+Cuando llamas un metodo:
 
-```csharp
-// Lambda sin parámetros
-Action saludar = () => Console.WriteLine("¡Hola!");
+- el programa entra a ese bloque;
+- recibe parametros;
+- ejecuta instrucciones;
+- puede devolver un valor o modificar algo por referencia;
+- vuelve al punto desde donde fue llamado.
 
-// Lambda con un parámetro
-Action<string> mostrar = nombre => Console.WriteLine($"Hola, {nombre}");
-
-// Lambda con múltiples parámetros y retorno
-Func<int, int, int> sumar = (a, b) => a + b;
-```
+Eso organiza el flujo y reduce duplicacion.
 
 ---
 
-## `Func` y `Action`
+## Errores comunes
 
-```csharp
-// Action: no retorna valor
-Action<string>       imprimir   = s => Console.WriteLine(s);
-
-// Func: retorna un valor (el último tipo es el retorno)
-Func<int, int, int>  sumar      = (a, b) => a + b;
-Func<string, bool>   esVacio    = s => string.IsNullOrEmpty(s);
-
-// Predicate: caso especial de Func<T, bool>
-Predicate<int>       esPar      = n => n % 2 == 0;
-```
+- confundir imprimir con retornar;
+- usar `ref` u `out` sin necesidad;
+- abusar de lambdas complejas;
+- crear metodos demasiado grandes.
 
 ---
 

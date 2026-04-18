@@ -1,123 +1,111 @@
 # Capítulo 06 — Arreglos y Strings
 
-## Arreglos (Arrays)
+En cuanto un programa necesita manejar varios valores relacionados, una sola variable ya no basta.
+Los arreglos permiten guardar muchos datos del mismo tipo, y los strings permiten representar
+texto. En C ambos temas son especialmente importantes porque el lenguaje no esconde cómo se
+almacenan realmente en memoria.
 
-Un arreglo es una colección de elementos del **mismo tipo** almacenados en posiciones
-contiguas de memoria. Se accede a cada elemento mediante su índice (comenzando en 0).
+## Qué aprenderás aquí
 
-### Declaración e inicialización
+- Qué es un arreglo y cómo se organiza en memoria
+- Cómo recorrer arreglos de una y dos dimensiones
+- Qué es realmente un string en C
+- Cómo usar funciones comunes de `string.h`
+- Qué riesgos existen al manipular texto sin cuidado
+
+## Qué está pasando dentro del software y del hardware
+
+Un arreglo ocupa una región continua de memoria. Eso significa que sus elementos están uno al lado
+del otro. La CPU puede calcular la posición de cada elemento usando la dirección base y el tamaño
+del tipo almacenado.
+
+Un string en C no es un tipo mágico. Es un arreglo de `char` terminado en `'\0'`, un byte especial
+que indica dónde termina el texto. Si ese byte falta o se sobrescribe, el programa puede leer más
+allá de lo debido y producir errores graves.
+
+## Ideas clave del capítulo
+
+### 1. Arreglos
 
 ```c
-/* Declarar con tamaño fijo */
-int numeros[5];                /* 5 enteros sin inicializar */
-int edades[4] = {25, 30, 18, 45};  /* inicializar con valores */
-int dias[] = {1, 2, 3, 4, 5}; /* el compilador deduce el tamaño: 5 */
+int numeros[5] = {10, 20, 30, 40, 50};
 ```
 
-### Acceso a elementos
+Cada posición se accede por índice, empezando en `0`.
 
 ```c
-edades[0] = 25;   /* primer elemento (índice 0) */
-edades[3] = 45;   /* cuarto elemento (índice 3) */
-printf("%d\n", edades[1]);   /* imprime 30 */
+printf("%d\n", numeros[2]);  /* 30 */
 ```
 
-> C **no verifica** que el índice esté dentro del rango. Acceder fuera de los límites
-> produce **comportamiento indefinido** (uno de los bugs más peligrosos en C).
-
----
-
-## Arreglos bidimensionales (matrices)
+### 2. Arreglos multidimensionales
 
 ```c
-int matriz[3][3] = {
+int matriz[2][3] = {
     {1, 2, 3},
-    {4, 5, 6},
-    {7, 8, 9}
+    {4, 5, 6}
 };
-
-/* Acceso: matriz[fila][columna] */
-printf("%d\n", matriz[1][2]);  /* fila 1, columna 2 → 6 */
 ```
 
----
+Son útiles para tablas, rejillas, tableros y datos con filas y columnas.
 
-## Arreglos y funciones
+### 3. Arreglos y funciones
 
-Cuando pasas un arreglo a una función, en realidad pasas un **puntero** al primer elemento.
-La función puede modificar el arreglo original.
+Cuando envías un arreglo a una función, realmente se pasa una dirección al primer elemento. Por
+eso la función puede modificar el contenido original.
 
-```c
-void llenarCeros(int arr[], int tamano) {
-    for (int i = 0; i < tamano; i++) {
-        arr[i] = 0;
-    }
-}
-```
-
----
-
-## Strings (cadenas de texto)
-
-En C, un string es simplemente un **arreglo de char** terminado en el carácter nulo `'\0'`.
+### 4. Strings
 
 ```c
 char saludo[] = "Hola";
-/* en memoria: {'H', 'o', 'l', 'a', '\0'} — 5 bytes */
-
-char nombre[20] = "Carlos";
-/* reserva 20 bytes; usa 7 ('C','a','r','l','o','s','\0') */
 ```
 
----
-
-## Funciones de string.h
+En memoria eso equivale a:
 
 ```c
-#include <string.h>
+{'H', 'o', 'l', 'a', '\0'}
 ```
 
-| Función                      | Descripción                              |
-|------------------------------|------------------------------------------|
-| `strlen(s)`                  | Longitud del string (sin el `\0`)        |
-| `strcpy(dest, src)`          | Copia `src` en `dest`                    |
-| `strncpy(dest, src, n)`      | Copia máximo `n` caracteres              |
-| `strcat(dest, src)`          | Concatena `src` al final de `dest`       |
-| `strncat(dest, src, n)`      | Concatena máximo `n` caracteres          |
-| `strcmp(s1, s2)`             | Compara: 0 si iguales, <0 o >0 si no     |
-| `strncmp(s1, s2, n)`         | Compara primeros `n` caracteres          |
-| `strchr(s, c)`               | Puntero a primera ocurrencia de char `c` |
-| `strstr(s, sub)`             | Puntero a primera ocurrencia de `sub`    |
-| `sprintf(buf, fmt, ...)`     | Printf a buffer de char                  |
+### 5. Funciones frecuentes de `string.h`
 
-> ⚠️ `strcpy` y `strcat` no comprueban el tamaño del destino — pueden causar **buffer overflow**.
-> Preferir `strncpy` y `strncat` o, mejor aún, `snprintf`.
+- `strlen` para medir longitud
+- `strcmp` para comparar
+- `strncpy` para copiar con límite
+- `strncat` para concatenar con límite
+- `strchr` y `strstr` para buscar
+- `snprintf` para construir texto con más seguridad
 
----
+## Riesgos importantes
 
-## Leer strings con scanf y fgets
+C no revisa automáticamente si un índice está dentro de rango. Si escribes `numeros[10]` en un
+arreglo de 5 elementos, puedes corromper memoria ajena.
 
-```c
-char nombre[50];
+Con strings ocurre algo similar: copiar más caracteres de los que caben en un buffer puede causar
+buffer overflow, uno de los problemas clásicos de seguridad en software hecho en C.
 
-/* scanf lee hasta el primer espacio */
-scanf("%49s", nombre);
+## Errores comunes
 
-/* fgets lee una línea completa (más seguro) */
-fgets(nombre, sizeof(nombre), stdin);
-```
+- Olvidar que los índices comienzan en `0`
+- Leer o escribir fuera del tamaño del arreglo
+- Usar `strcpy` sin comprobar si el destino tiene espacio suficiente
+- Creer que un string es un objeto especial y no un arreglo de `char`
+- Confundir longitud visible con tamaño reservado en memoria
 
----
+## Cómo estudiar este capítulo
+
+1. Recorre arreglos con `for` e imprime índice y valor.
+2. Modifica un arreglo dentro de una función y observa el cambio.
+3. Crea strings cortos y mide su longitud con `strlen`.
+4. Haz pruebas con buffers de distintos tamaños.
+5. Piensa siempre cuántos bytes necesitas, no solo cuántas letras ves.
 
 ## Archivos de este capítulo
 
-| Archivo          | Descripción                                             |
-|------------------|---------------------------------------------------------|
-| `01_arreglos.c`  | Arreglos 1D, 2D, ordenamiento burbuja                  |
-| `02_strings.c`   | Strings, funciones de string.h, manipulación de texto  |
+| Archivo | Descripción |
+|---------|-------------|
+| `01_arreglos.c` | Arreglos de una y dos dimensiones, recorridos y ejercicios prácticos |
+| `02_strings.c` | Cadenas, funciones de `string.h` y manipulación segura de texto |
 
----
+## Conexión con el siguiente capítulo
 
-## Siguiente capítulo
-
-→ **Capítulo 07:** Punteros
+Este capítulo te acerca mucho al corazón de C. El siguiente paso es entender explícitamente las
+direcciones de memoria mediante punteros.

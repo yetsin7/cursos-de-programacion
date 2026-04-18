@@ -1,145 +1,104 @@
 # Capítulo 09 — Manejo de Archivos
 
-## Archivos en C
+Un programa deja de ser temporal cuando puede guardar información y recuperarla después. El manejo
+de archivos permite persistir datos, crear reportes, leer configuraciones y compartir información
+con otros programas. En C esto se hace de forma explícita usando `FILE *` y funciones de `stdio.h`.
 
-C maneja archivos a través de un puntero especial `FILE *`. Todas las operaciones de archivo
-están definidas en `<stdio.h>`.
+## Qué aprenderás aquí
 
-El flujo básico es siempre:
-1. **Abrir** el archivo (`fopen`)
-2. **Leer o escribir** datos
-3. **Cerrar** el archivo (`fclose`)
+- Cómo abrir, leer, escribir y cerrar archivos
+- Qué significan los modos `r`, `w`, `a`, `rb` y `wb`
+- Cómo leer texto línea por línea
+- Cuándo usar funciones binarias como `fread` y `fwrite`
+- Por qué siempre debes validar errores de entrada y salida
 
----
+## Qué está pasando dentro del software y del hardware
 
-## fopen — Abrir un archivo
+Cuando tu programa abre un archivo, el sistema operativo le entrega un descriptor o manejador que
+representa ese recurso físico o lógico. El puntero `FILE *` es una estructura de la biblioteca
+estándar que ayuda a gestionar buffers, posición actual y estado de error.
 
-```c
-FILE *archivo = fopen("datos.txt", "modo");
-```
+Cuando escribes, muchas veces los datos no van directo al disco en ese instante. Primero pasan por
+buffers en memoria y luego se sincronizan. Por eso cerrar el archivo correctamente es tan
+importante.
 
-### Modos de apertura
+## Ideas clave del capítulo
 
-| Modo  | Significado                                               |
-|-------|-----------------------------------------------------------|
-| `"r"` | Lectura — el archivo debe existir                         |
-| `"w"` | Escritura — crea o sobreescribe el archivo                |
-| `"a"` | Append — agrega al final sin borrar el contenido          |
-| `"r+"`| Lectura y escritura — el archivo debe existir             |
-| `"w+"`| Lectura y escritura — crea o sobreescribe                 |
-| `"rb"`| Lectura en modo binario                                   |
-| `"wb"`| Escritura en modo binario                                 |
+### 1. Abrir archivos
 
 ```c
-FILE *f = fopen("datos.txt", "r");
-if (f == NULL) {
-    perror("Error al abrir el archivo");
-    return 1;
-}
+FILE *archivo = fopen("datos.txt", "r");
 ```
 
-> Siempre verificar que `fopen` no devuelva `NULL`.
+Si falla, `fopen` devuelve `NULL`. Siempre debes comprobarlo.
 
----
+### 2. Modos de apertura
 
-## fclose — Cerrar un archivo
+- `"r"`: leer un archivo existente
+- `"w"`: escribir desde cero, borrando contenido previo
+- `"a"`: agregar al final
+- `"rb"` y `"wb"`: leer o escribir en binario
 
-```c
-fclose(archivo);
-```
-
-> Siempre cerrar los archivos para liberar los buffers y el descriptor.
-
----
-
-## Escribir en archivos
-
-### fprintf — como printf pero hacia un archivo
-
-```c
-fprintf(archivo, "Nombre: %s, Edad: %d\n", nombre, edad);
-```
-
-### fputs — escribe una línea
-
-```c
-fputs("Hola, mundo!\n", archivo);
-```
-
-### fwrite — escribe datos binarios
-
-```c
-fwrite(&estructura, sizeof(estructura), 1, archivo);
-```
-
----
-
-## Leer de archivos
-
-### fgets — leer una línea
+### 3. Leer texto
 
 ```c
 char linea[256];
+
 while (fgets(linea, sizeof(linea), archivo) != NULL) {
     printf("%s", linea);
 }
 ```
 
-### fscanf — como scanf pero desde un archivo
+### 4. Escribir texto
 
 ```c
-int n;
-fscanf(archivo, "%d", &n);
+fprintf(archivo, "Nombre: %s\n", nombre);
 ```
 
-### fread — leer datos binarios
+### 5. Leer y escribir binario
+
+`fread` y `fwrite` son útiles cuando guardas estructuras o bloques de bytes.
+
+### 6. Cerrar archivos
 
 ```c
-fread(&estructura, sizeof(estructura), 1, archivo);
+fclose(archivo);
 ```
 
----
+Cerrar libera recursos y asegura que los datos pendientes se vacíen correctamente.
 
-## Posicionamiento dentro del archivo
+## Situaciones reales donde esto se usa
 
-```c
-fseek(archivo, 0, SEEK_SET);   /* ir al principio */
-fseek(archivo, 0, SEEK_END);   /* ir al final */
-ftell(archivo);                 /* posición actual en bytes */
-rewind(archivo);               /* volver al inicio (como fseek 0 SEEK_SET) */
-```
+- Guardar configuraciones
+- Exportar reportes
+- Leer listas de datos
+- Persistir registros sencillos
+- Procesar archivos de texto o binarios
 
----
+## Errores comunes
 
-## feof — detectar fin de archivo
+- No comprobar si `fopen` devolvió `NULL`
+- Olvidar cerrar el archivo
+- Leer datos con un formato distinto al que fueron escritos
+- Sobrescribir un archivo por abrirlo con `w` cuando querías `a`
+- Confiar en `feof` en lugar de verificar el resultado real de lectura
 
-```c
-while (!feof(archivo)) {
-    /* leer hasta el final */
-}
-```
+## Cómo estudiar este capítulo
 
-> Preferir verificar el retorno de `fgets` o `fread` en lugar de `feof`.
-
----
-
-## Eliminar y renombrar archivos
-
-```c
-remove("archivo.txt");           /* eliminar */
-rename("viejo.txt", "nuevo.txt"); /* renombrar */
-```
-
----
+1. Crea un archivo de prueba y escribe varias líneas.
+2. Ciérralo y vuelve a abrirlo para leerlo.
+3. Prueba diferentes modos de apertura.
+4. Genera errores a propósito, como abrir un archivo inexistente en modo lectura.
+5. Observa qué pasa cuando olvidas cerrar un archivo.
 
 ## Archivos de este capítulo
 
-| Archivo          | Descripción                                      |
-|------------------|--------------------------------------------------|
-| `01_archivos.c`  | Escribir y leer archivos de texto con fprintf/fgets |
+| Archivo | Descripción |
+|---------|-------------|
+| `01_archivos.c` | Ejemplos de lectura, escritura y validación de errores en archivos de texto |
 
----
+## Conexión con el siguiente capítulo
 
-## Siguiente capítulo
-
-→ **Capítulo 10:** Memoria Dinámica
+Hasta ahora la memoria de muchos ejemplos ha sido estática o automática. El siguiente capítulo te
+mostrará cómo reservar memoria en tiempo de ejecución cuando no sabes de antemano cuánto espacio
+necesitarás.

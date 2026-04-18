@@ -2,11 +2,12 @@
 
 ## ¿Qué es este libro?
 
-Una guía práctica y progresiva para aprender el lenguaje C desde cero hasta un nivel profesional.
-Cada capítulo combina teoría concisa con código real y compilable. No se asume experiencia previa
-en programación, pero sí disposición para aprender con rigor.
+Una guia practica y progresiva para aprender C desde cero hasta un nivel
+profesional. Este libro no solo ensena sintaxis: ensena como el software usa la
+memoria, como se comunica con el sistema operativo y por que C esta tan cerca
+del hardware.
 
-## ¿Para quién es?
+## ¿Para quien es?
 
 - Principiantes que quieren aprender su primer lenguaje de bajo nivel
 - Programadores de otros lenguajes (Python, JavaScript, etc.) que quieren entender cómo funciona
@@ -15,7 +16,7 @@ en programación, pero sí disposición para aprender con rigor.
 - Cualquier persona que quiera entender la base sobre la que se construyen sistemas operativos,
   compiladores, drivers y software embebido
 
-## ¿Por qué C?
+## ¿Por que C?
 
 C es el lenguaje que define cómo funciona la computación moderna. Linux, Windows, macOS, Python,
 Ruby, SQLite y miles de herramientas críticas están escritas en C. Aprenderlo te da:
@@ -25,7 +26,25 @@ Ruby, SQLite y miles de herramientas críticas están escritas en C. Aprenderlo 
 - Base sólida para aprender C++, Rust, sistemas embebidos
 - Habilidad para leer código de bajo nivel y contribuir a proyectos de sistemas
 
+## Que aprenderas sobre la computadora
+
+En C veras con mas claridad que en muchos otros lenguajes:
+
+- como viven los datos en memoria;
+- que diferencia hay entre stack y heap;
+- que significa compilar un programa;
+- como una instruccion termina ejecutandose en la maquina;
+- por que un error de memoria puede romper un programa.
+
 ---
+
+## Como estudiar este libro
+
+1. Lee el `README.md` de cada capitulo.
+2. Compila y ejecuta cada archivo por separado.
+3. Cambia valores y observa el resultado.
+4. Intenta explicar cada ejemplo sin leer el comentario.
+5. Si algo falla, lee el error del compilador con calma.
 
 ## Cómo compilar
 

@@ -1,36 +1,35 @@
 /**
- * Capítulo 01 — Introducción a C++
+ * Capitulo 01 — Introduccion a C++
  * Archivo: 01_hola_mundo.cpp
  *
- * Demuestra los elementos básicos de un programa C++:
- *   - Directiva #include para incluir cabeceras
- *   - El namespace std y cómo usarlo
- *   - cout para mostrar texto en consola
- *   - cin para leer datos del usuario
- *   - endl y "\n" para saltos de línea
- *   - Comentarios de línea (//) y de bloque (/ * * /)
+ * Este archivo introduce la forma basica de un programa C++ y relaciona el
+ * codigo con lo que ocurre en la maquina:
+ *   - el compilador traduce el codigo fuente;
+ *   - el sistema operativo carga el ejecutable;
+ *   - main() se convierte en el punto de inicio;
+ *   - cout y cin conectan el programa con la consola.
  *
- * Compilar: g++ -std=c++17 -o hola_mundo 01_hola_mundo.cpp
+ * Compilar: g++ -std=c++17 -Wall -Wextra -o hola_mundo 01_hola_mundo.cpp
  */
 
-#include <iostream>  // Necesario para cout, cin, endl
-#include <string>    // Necesario para std::string
+#include <iostream>  // Permite usar cout, cin y endl
+#include <string>    // Permite usar std::string
 
 int main() {
     // -------------------------------------------------------------------------
     // 1. Salida básica con cout
     // -------------------------------------------------------------------------
 
-    // std::cout es el flujo de salida estándar (consola)
-    // El operador << inserta datos en el flujo
+    // std::cout representa la salida estandar.
+    // El operador << envia datos a ese flujo.
     std::cout << "¡Hola, mundo!" << std::endl;
 
-    // endl inserta un salto de línea Y vacía el buffer del flujo
-    // "\n" solo inserta el salto (más rápido en bucles)
+    // endl inserta salto de linea y fuerza vaciado del buffer.
+    // "\n" solo inserta el salto y suele ser mas eficiente.
     std::cout << "Primera línea\n";
     std::cout << "Segunda línea" << std::endl;
 
-    // Se puede encadenar múltiples << en una sola instrucción
+    // Se pueden encadenar varias salidas en una sola instruccion.
     int edad = 25;
     double pi = 3.14159;
     std::cout << "Edad: " << edad << ", Pi: " << pi << "\n";
@@ -41,10 +40,10 @@ int main() {
 
     std::string nombre;
 
-    // cout sin endl para que el cursor quede en la misma línea
+    // Dejamos el cursor en la misma linea para que el usuario escriba ahi.
     std::cout << "\nIngresa tu nombre: ";
 
-    // cin lee del teclado hasta el primer espacio en blanco
+    // cin lee desde el teclado hasta encontrar un espacio o salto de linea.
     std::cin >> nombre;
 
     // Saludo personalizado usando el nombre leído
@@ -54,9 +53,9 @@ int main() {
     // 3. Leer una línea completa (con espacios) usando getline
     // -------------------------------------------------------------------------
 
-    // Es necesario limpiar el buffer de entrada antes de usar getline
-    // porque cin >> deja el '\n' pendiente en el buffer
-    std::cin.ignore();  // Descarta el '\n' que quedó en el buffer
+    // Limpiamos el buffer antes de getline porque cin >> deja pendiente
+    // el salto de linea de la entrada anterior.
+    std::cin.ignore();
 
     std::string frase;
     std::cout << "Escribe una frase completa: ";
@@ -70,8 +69,8 @@ int main() {
     // 4. Usando 'using namespace std' (alternativa común)
     // -------------------------------------------------------------------------
 
-    // Con esta declaración, se puede omitir el prefijo std::
-    // (solo se recomienda en archivos .cpp pequeños, nunca en cabeceras)
+    // Esta declaracion permite omitir std:: en un alcance pequeno.
+    // Conviene evitarla en cabeceras para no contaminar nombres globales.
     using namespace std;
 
     int numero;
@@ -83,16 +82,16 @@ int main() {
     // 5. Comentarios en C++
     // -------------------------------------------------------------------------
 
-    // Este es un comentario de línea (solo aplica a esta línea)
+    // Este es un comentario de linea.
 
     /*
      * Este es un comentario de bloque.
-     * Puede abarcar múltiples líneas.
-     * Se usa comúnmente para documentar funciones y clases.
+     * Puede abarcar varias lineas.
+     * Suele usarse para documentacion mas amplia.
      */
 
     cout << "\nPrograma finalizado correctamente.\n";
 
-    // main() devuelve 0 para indicar que el programa terminó sin errores
+    // Devolver 0 comunica al sistema operativo que todo termino bien.
     return 0;
 }

@@ -1,138 +1,111 @@
 # Capítulo 07 — Punteros
 
-## ¿Qué es un puntero?
+Los punteros son una de las ideas más poderosas de C y también una de las que más respeto merecen.
+Permiten trabajar con direcciones de memoria de forma directa. Gracias a ellos existen muchas de
+las capacidades que hacen a C tan rápido y flexible, pero también gran parte de sus errores más
+peligrosos.
 
-Un puntero es una variable que almacena una **dirección de memoria** en lugar de un valor directo.
-Es el concepto más importante (y más mal entendido) de C.
+## Qué aprenderás aquí
 
-```
-int x = 42;
-         ┌──────────────┐
-         │ dirección:   │   0x7ffd1234
-         │ valor: 42    │
-         └──────────────┘
-              ↑
-int *p = &x;  │ p almacena 0x7ffd1234
-```
+- Qué es una dirección de memoria
+- Qué almacena realmente un puntero
+- Cómo usar `&` y `*`
+- Qué relación hay entre punteros y arreglos
+- Qué errores causan fallos como `segmentation fault`
 
----
+## Qué está pasando dentro del software y del hardware
 
-## Los dos operadores fundamentales
+Cada variable vive en una dirección de memoria. Un puntero guarda esa dirección. Cuando
+desreferencias un puntero con `*`, le dices al programa: "ve a esa dirección y trabaja con el
+valor que está ahí".
 
-| Operador | Nombre          | Qué hace                                    |
-|----------|-----------------|---------------------------------------------|
-| `&`      | Address-of      | Obtiene la dirección de memoria de una variable |
-| `*`      | Dereference     | Accede al valor en la dirección apuntada    |
+Esto significa que el programa deja de operar solo con copias y comienza a manipular datos
+reales en memoria. Por eso los punteros son esenciales para estructuras dinámicas, paso eficiente
+de datos, manejo de archivos, librerías del sistema y trabajo cercano al hardware.
 
-```c
-int x = 42;
-int *p = &x;     /* p contiene la dirección de x */
+## Ideas clave del capítulo
 
-printf("%p\n", (void*)p);   /* imprime la dirección: 0x7ffd1234 */
-printf("%d\n", *p);         /* imprime el valor: 42 */
-
-*p = 100;                   /* modifica x a través del puntero */
-printf("%d\n", x);          /* imprime 100 */
-```
-
----
-
-## Tipos de punteros
+### 1. Obtener una dirección con `&`
 
 ```c
-int   *pi;    /* puntero a int */
-char  *pc;    /* puntero a char (= string) */
-float *pf;    /* puntero a float */
-void  *pv;    /* puntero genérico — no tiene tipo específico */
-int  **ppi;   /* puntero a puntero a int */
+int edad = 25;
+int *puntero = &edad;
 ```
 
----
+`puntero` no guarda `25`. Guarda la dirección donde está `edad`.
 
-## Puntero nulo
+### 2. Acceder al valor con `*`
 
 ```c
-int *p = NULL;   /* puntero que no apunta a nada válido */
-
-if (p != NULL) {
-    *p = 5;   /* seguro — solo acceder si no es NULL */
-}
+printf("%d\n", *puntero);
 ```
 
-> Nunca desreferenciar un puntero NULL — causa **segmentation fault**.
+Aquí el programa va a la dirección guardada y obtiene el valor real.
 
----
-
-## Aritmética de punteros
-
-Al sumar `n` a un puntero, avanza `n * sizeof(tipo)` bytes en memoria.
+### 3. Modificar una variable a través del puntero
 
 ```c
-int arr[] = {10, 20, 30, 40, 50};
-int *p = arr;          /* apunta al primer elemento (arr[0]) */
-
-printf("%d\n", *p);    /* 10 */
-p++;                   /* avanza sizeof(int) bytes = 4 bytes */
-printf("%d\n", *p);    /* 20 */
-printf("%d\n", *(p+2));/* 40 — dos posiciones adelante */
+*puntero = 30;
 ```
 
----
+Eso cambia el contenido de `edad` sin usar directamente su nombre.
 
-## Punteros y arreglos
+### 4. Punteros y arreglos
 
-En C, el nombre de un arreglo **es** un puntero al primer elemento:
+El nombre de un arreglo se comporta como una referencia al primer elemento:
 
 ```c
-int arr[] = {1, 2, 3};
-
-/* Estas dos expresiones son equivalentes */
-printf("%d\n", arr[1]);    /* notación de arreglo */
-printf("%d\n", *(arr+1));  /* notación de puntero */
+int numeros[] = {10, 20, 30};
+int *p = numeros;
 ```
 
----
+Por eso `numeros[1]` y `*(numeros + 1)` apuntan al mismo dato.
 
-## Punteros a funciones
-
-Un puntero puede apuntar a una función, permitiendo pasarlas como argumentos.
+### 5. Puntero nulo
 
 ```c
-/* Declarar un puntero a función que toma dos int y devuelve int */
-int (*operacion)(int, int);
-
-int sumar(int a, int b) { return a + b; }
-int restar(int a, int b) { return a - b; }
-
-operacion = sumar;
-printf("%d\n", operacion(3, 4));   /* 7 */
-
-operacion = restar;
-printf("%d\n", operacion(3, 4));   /* -1 */
+int *p = NULL;
 ```
 
----
+`NULL` indica que no hay una dirección válida. Antes de usar un puntero, conviene comprobar si no
+es nulo.
 
-## Errores comunes con punteros
+### 6. Aritmética de punteros
 
-| Error                         | Consecuencia                    |
-|-------------------------------|---------------------------------|
-| Desreferenciar NULL           | Segmentation fault              |
-| Puntero sin inicializar       | Comportamiento indefinido       |
-| Buffer overflow con punteros  | Corrupción de memoria           |
-| Double free                   | Crash o vulnerabilidad          |
-| Dangling pointer (puntero colgante) | Apunta a memoria liberada  |
+Si sumas `1` a un puntero a `int`, no avanza 1 byte sino `sizeof(int)` bytes. El compilador ajusta
+el salto según el tipo.
 
----
+## Dónde aparecen en la vida real
+
+- Parámetros que deben modificar datos originales
+- Arreglos y strings
+- Memoria dinámica con `malloc`
+- Librerías del sistema
+- Acceso a buffers, archivos y estructuras complejas
+
+## Errores comunes
+
+- Desreferenciar `NULL`
+- Usar punteros sin inicializar
+- Seguir usando un puntero después de liberar la memoria
+- Escribir fuera de los límites de un bloque apuntado
+- Confundir el valor guardado con la dirección guardada
+
+## Cómo estudiar este capítulo
+
+1. Dibuja variables y direcciones en papel.
+2. Imprime tanto la dirección como el valor.
+3. Practica con arreglos pequeños y recórrelos con punteros.
+4. No intentes memorizar: entiende qué dirección apunta a qué dato.
+5. Si algo falla, revisa primero si el puntero tiene un valor válido.
 
 ## Archivos de este capítulo
 
-| Archivo          | Descripción                                         |
-|------------------|-----------------------------------------------------|
-| `01_punteros.c`  | Ejemplos paso a paso de punteros en C               |
+| Archivo | Descripción |
+|---------|-------------|
+| `01_punteros.c` | Ejemplos guiados de direcciones, desreferenciación y relación con arreglos |
 
----
+## Conexión con el siguiente capítulo
 
-## Siguiente capítulo
-
-→ **Capítulo 08:** Structs
+Ahora que entiendes cómo referirte a datos en memoria, el siguiente paso es agrupar datos
+relacionados dentro de estructuras más expresivas usando `struct`, `union` y `enum`.

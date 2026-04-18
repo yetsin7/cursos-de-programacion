@@ -5,7 +5,7 @@
 
 ---
 
-## ¿Para quién es esto?
+## ¿Para quien es esto?
 
 Para **cualquier persona** que quiera aprender a usar Git y GitHub como un profesional.
 No necesitas experiencia previa con control de versiones. Solo necesitas:
@@ -14,13 +14,17 @@ No necesitas experiencia previa con control de versiones. Solo necesitas:
 - ✅ Tener un **navegador web** (Chrome, Firefox, Edge, etc.)
 - ✅ Ganas de aprender
 
-Al terminar este libro sabrás: fundamentos de Git, crear y gestionar repositorios,
-trabajar con ramas, hacer pull requests, colaborar en proyectos open source,
-usar GitHub Actions, GitHub Pages, GitHub CLI y mucho más.
+Al terminar este libro deberias entender:
+
+- como Git guarda historial;
+- por que Git no es lo mismo que GitHub;
+- como colaborar sin pisar trabajo ajeno;
+- como viajan los cambios entre tu computadora y la nube;
+- como funciona un flujo profesional con ramas, PRs y automatizacion.
 
 ---
 
-## ¿Cómo usar este repositorio?
+## ¿Como usar este repositorio?
 
 1. Descarga o clona este repositorio en tu computadora
 2. Ábrelo con VS Code (`Archivo → Abrir Carpeta`)
@@ -29,8 +33,19 @@ usar GitHub Actions, GitHub Pages, GitHub CLI y mucho más.
 5. **Lee cada línea** — todo está comentado para que entiendas el porqué
 6. Ejecuta los comandos en tu terminal uno por uno (no ejecutes el archivo completo)
 
-> **Tip:** Los archivos `.sh` están pensados para ser leídos y ejecutados línea por línea
-> en tu terminal. Cada comando tiene un comentario explicando qué hace y por qué.
+> **Tip:** Los archivos `.sh` estan pensados para leerse primero y ejecutarse
+> linea por linea. La idea es entender el efecto de cada comando.
+
+## Que pasa realmente cuando usas Git
+
+Git no "sube archivos magicos". Git crea una base de datos local en la carpeta
+oculta `.git` donde guarda objetos, historial, referencias y cambios. GitHub, en
+cambio, aloja repositorios remotos y herramientas de colaboracion sobre ese
+historial.
+
+Cuando haces `git add`, `git commit`, `git push` o `git pull`, estas moviendo y
+registrando informacion de formas distintas. Entender eso te hace mucho mas
+seguro usando Git.
 
 ---
 

@@ -1,16 +1,11 @@
 // =============================================================================
 // ARCHIVO: 01_funciones_basicas.dart
-// TEMA: Declaración y uso básico de funciones en Dart
+// TEMA: Funciones basicas en Dart
+// EJECUCION: dart run 01_funciones_basicas.dart
 // =============================================================================
 //
-// Una función agrupa código reutilizable bajo un nombre. En Dart toda función
-// tiene un tipo de retorno explícito (o "void" si no retorna nada), un nombre,
-// y opcionalmente parámetros. El punto de entrada main() es en sí misma
-// una función — la primera que Dart ejecuta.
-//
-// CÓMO EJECUTAR:
-//   dart run 01_funciones_basicas.dart
-//
+// Una funcion agrupa instrucciones bajo un nombre para poder reutilizarlas.
+// En Dart, main() tambien es una funcion: es el punto de entrada del programa.
 // =============================================================================
 
 void main() {
@@ -18,14 +13,12 @@ void main() {
   // LLAMAR FUNCIONES DEFINIDAS A NIVEL GLOBAL
   // ─────────────────────────────────────────────────────────────────────────
 
-  // Las funciones se pueden definir fuera de main() y llamarse desde adentro.
-  // En Dart NO existe el concepto de "definir antes de llamar" — puedes
-  // llamar una función que está definida debajo en el archivo.
+  // Las funciones pueden definirse fuera de main() y llamarse desde aqui.
   print('--- Funciones básicas ---');
   saludar();
   imprimirLinea();
 
-  // Funciones con parámetros:
+  // Funciones con parametros:
   saludarPersona('María');
   saludarPersona('Carlos');
 
@@ -37,15 +30,13 @@ void main() {
   print('Área del rectángulo: $area');
 
   // ─────────────────────────────────────────────────────────────────────────
-  // FUNCIONES LOCALES — Definidas dentro de main() u otra función
+  // FUNCIONES LOCALES
   // ─────────────────────────────────────────────────────────────────────────
 
-  // Puedes definir funciones dentro de otras funciones.
-  // Son útiles para encapsular lógica que solo se usa en ese contexto.
-  // No son visibles desde fuera de la función que las contiene.
+  // Una funcion local sirve cuando la logica solo se necesita en ese contexto.
   print('\n--- Funciones locales ---');
 
-  // Esta función solo existe dentro de main():
+  // Esta funcion solo existe dentro de main().
   String formatearPrecio(double precio) {
     return '\$${precio.toStringAsFixed(2)}';
   }
@@ -55,12 +46,10 @@ void main() {
   print(formatearPrecio(0.1));      // $0.10
 
   // ─────────────────────────────────────────────────────────────────────────
-  // VOID — Funciones sin valor de retorno
+  // VOID
   // ─────────────────────────────────────────────────────────────────────────
 
-  // "void" indica que la función no devuelve ningún valor útil.
-  // Toda función en Dart técnicamente devuelve null si no tiene return,
-  // pero void comunica claramente la intención de "no retorna nada".
+  // void comunica que la funcion no devuelve un valor util.
   print('\n--- void ---');
   imprimirSeparador('=', 30);
   imprimirSeparador('-', 20);
@@ -70,8 +59,7 @@ void main() {
   // FUNCIONES QUE LLAMAN A OTRAS FUNCIONES
   // ─────────────────────────────────────────────────────────────────────────
 
-  // Es normal y correcto que las funciones se llamen entre sí.
-  // Esto es el principio de composición de funciones.
+  // Componer funciones ayuda a dividir problemas grandes en piezas pequeñas.
   print('\n--- Composición de funciones ---');
 
   double precioFinal = calcularPrecioConImpuesto(100.0, 0.15);
@@ -82,90 +70,60 @@ void main() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// FUNCIONES GLOBALES — Definidas fuera de main()
+// FUNCIONES GLOBALES
 // ─────────────────────────────────────────────────────────────────────────────
 
-/// Imprime un mensaje de saludo genérico.
-/// No recibe parámetros ni devuelve valor.
+/// Imprime un saludo generico.
+/// No recibe parametros ni devuelve valor.
 void saludar() {
   print('¡Hola desde la función saludar()!');
 }
 
-/// Imprime una línea horizontal de guiones para separar secciones.
+/// Imprime una linea horizontal para separar secciones.
 void imprimirLinea() {
   print('─' * 40);
 }
 
-/// Saluda a una persona específica por su nombre.
-///
-/// Parámetros:
-/// - [nombre]: El nombre de la persona a saludar.
+/// Saluda a una persona por su nombre.
+/// [nombre] es el texto que se insertara en el saludo.
 void saludarPersona(String nombre) {
   print('Hola, $nombre! Bienvenido a Dart.');
 }
 
-/// Suma dos números enteros y devuelve el resultado.
-///
-/// Parámetros:
-/// - [a]: Primer sumando.
-/// - [b]: Segundo sumando.
-///
-/// Retorna la suma de [a] y [b].
+/// Suma dos enteros y devuelve el resultado.
 int sumar(int a, int b) {
   return a + b;
 }
 
-/// Calcula el área de un rectángulo.
-///
-/// Parámetros:
-/// - [base]: La base del rectángulo.
-/// - [altura]: La altura del rectángulo.
-///
-/// Retorna el área como [double].
+/// Calcula el area de un rectangulo y devuelve un double.
 double calcularAreaRectangulo(double base, double altura) {
   return base * altura;
 }
 
-/// Imprime un separador visual de longitud dada.
-///
-/// Parámetros:
-/// - [caracter]: El carácter a repetir.
-/// - [longitud]: Cuántas veces repetirlo.
+/// Imprime un separador visual repitiendo un caracter.
 void imprimirSeparador(String caracter, int longitud) {
   print(caracter * longitud);
 }
 
 /// Calcula el precio con impuesto incluido.
-///
-/// Parámetros:
-/// - [precio]: El precio base.
-/// - [tasaImpuesto]: La tasa como decimal (0.15 = 15%).
-///
-/// Retorna el precio con impuesto.
 double calcularPrecioConImpuesto(double precio, double tasaImpuesto) {
   return precio + (precio * tasaImpuesto);
 }
 
 /// Aplica un descuento porcentual a un precio.
-///
-/// Parámetros:
-/// - [precio]: El precio original.
-/// - [tasaDescuento]: El descuento como decimal (0.10 = 10%).
-///
-/// Retorna el precio con descuento aplicado.
 double aplicarDescuento(double precio, double tasaDescuento) {
   return precio - (precio * tasaDescuento);
 }
 
 // =============================================================================
-// EXPERIMENTA:
-//   1. Crea una función "potencia(base, exponente)" que multiplique base
-//      por sí misma exponente veces usando un bucle (sin dart:math).
-//   2. Crea una función "esPalindromo(texto)" que devuelva true si el texto
-//      se lee igual al revés.
-//   3. Define una función local dentro de saludarPersona() que formate el
-//      nombre (primera letra en mayúscula, resto en minúscula).
-//   4. Crea una función que reciba una lista de números y devuelva el mayor.
-//   5. ¿Puede una función devolver void? ¿Qué pasa si escribes
-//      "return;" dentro de una función void? Pruébalo.
+// QUE DEBERIAS ENTENDER AL TERMINAR
+// - Una funcion agrupa logica reutilizable.
+// - main() tambien es una funcion.
+// - Algunas funciones imprimen; otras devuelven valores.
+// - Dividir el trabajo en funciones mejora la claridad del programa.
+//
+// PRACTICA GUIADA
+// 1. Crea una funcion potencia(base, exponente).
+// 2. Crea una funcion esPalindromo(texto).
+// 3. Crea una funcion que reciba una lista y devuelva el mayor numero.
 // =============================================================================

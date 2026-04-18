@@ -1,10 +1,30 @@
 # Capítulo 08 — Structs, Union y Enum
 
-## ¿Qué es un struct?
+Hasta ahora trabajaste con datos sueltos: números, caracteres, arreglos y punteros. Pero muchos
+problemas reales necesitan representar entidades completas, como una persona, un libro, una venta
+o una fecha. Para eso C ofrece `struct`, `union` y `enum`.
 
-Un `struct` agrupa múltiples variables de **distintos tipos** bajo un mismo nombre. Es la forma
-de crear tipos de datos personalizados en C — el equivalente simplificado de las clases en
-lenguajes orientados a objetos.
+## Qué aprenderás aquí
+
+- Cómo agrupar datos relacionados con `struct`
+- Qué ventaja da `typedef`
+- Cómo acceder a campos normales y mediante punteros
+- Para qué sirve `union`
+- Cómo usar `enum` para dar nombres claros a valores enteros
+
+## Qué está pasando dentro del software y del hardware
+
+Un `struct` reserva un bloque de memoria que contiene varios campos organizados en un orden
+concreto. El compilador decide cómo acomodarlos y puede añadir relleno interno para respetar
+alineación de memoria.
+
+Una `union`, en cambio, reutiliza la misma zona de memoria para todos sus campos. Solo uno debe
+interpretarse como válido a la vez. Un `enum` normalmente se representa internamente como un
+entero, pero con nombres mucho más claros para la persona que lee el código.
+
+## Ideas clave del capítulo
+
+### 1. `struct`
 
 ```c
 struct Persona {
@@ -12,145 +32,90 @@ struct Persona {
     int edad;
     double altura;
 };
-
-struct Persona p1;
-p1.edad = 30;
 ```
 
----
+Esto permite tratar varios datos como una sola unidad lógica.
 
-## typedef — nombrar tipos
-
-`typedef` permite crear un alias para un tipo, evitando escribir `struct` repetidamente:
+### 2. `typedef`
 
 ```c
 typedef struct {
     char nombre[50];
     int edad;
-    double altura;
 } Persona;
-
-Persona p1;    /* ya no necesitas escribir "struct Persona" */
-p1.edad = 30;
 ```
 
----
+Así puedes escribir `Persona alumno;` en lugar de `struct Persona alumno;`.
 
-## Inicialización
+### 3. Acceso a campos
 
 ```c
-/* Por campo */
-Persona alumno;
-alumno.edad = 20;
-strcpy(alumno.nombre, "Ana");
-
-/* Con inicializador designado (C99) */
-Persona doctor = {
-    .nombre = "Luis García",
-    .edad   = 45,
-    .altura = 1.78
-};
-
-/* Posicional */
-Persona p2 = {"María", 28, 1.65};
+Persona p;
+p.edad = 20;
 ```
 
----
-
-## Structs anidados
+Si tienes un puntero a `struct`, usas `->`:
 
 ```c
-typedef struct {
-    int dia, mes, anio;
-} Fecha;
-
-typedef struct {
-    char nombre[60];
-    Fecha nacimiento;   /* struct dentro de struct */
-} Empleado;
-
-Empleado e = {"Pedro", {15, 3, 1990}};
-printf("Nacido el %d/%d/%d\n",
-       e.nacimiento.dia,
-       e.nacimiento.mes,
-       e.nacimiento.anio);
+Persona *ptr = &p;
+ptr->edad = 21;
 ```
 
----
+### 4. `union`
 
-## Punteros a struct (operador ->)
-
-```c
-Persona *ptr = &p1;
-
-/* Estas dos formas son equivalentes */
-printf("%s\n", (*ptr).nombre);   /* desreferenciar y acceder */
-printf("%s\n", ptr->nombre);     /* operador flecha — más legible */
-
-ptr->edad = 35;
-```
-
----
-
-## Arrays de structs
-
-```c
-Persona equipo[3] = {
-    {"Carlos", 25, 1.75},
-    {"María",  22, 1.62},
-    {"Pedro",  30, 1.80}
-};
-
-for (int i = 0; i < 3; i++) {
-    printf("%s tiene %d años\n", equipo[i].nombre, equipo[i].edad);
-}
-```
-
----
-
-## union
-
-Una `union` es como un struct, pero todos sus campos **comparten la misma memoria**.
-Solo se puede usar un campo a la vez. Útil para ahorrar memoria o para reinterpretar bytes.
+Una `union` comparte la misma memoria entre todos sus campos:
 
 ```c
 union Valor {
     int entero;
     float decimal;
-    char bytes[4];
 };
-
-union Valor v;
-v.entero = 65;
-printf("%d\n", v.entero);   /* 65 */
-printf("%c\n", v.bytes[0]); /* 'A' — mismo espacio de memoria */
 ```
 
----
+Es útil cuando quieres ahorrar memoria o reinterpretar datos, pero debe usarse con mucho cuidado.
 
-## enum
-
-Una `enum` define un conjunto de constantes enteras con nombres descriptivos:
+### 5. `enum`
 
 ```c
 typedef enum {
-    LUNES = 1, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO
-} DiaSemana;
-
-DiaSemana hoy = MIERCOLES;
-printf("Dia: %d\n", hoy);   /* 3 */
+    LUNES,
+    MARTES,
+    MIERCOLES
+} Dia;
 ```
 
----
+Sirve para reemplazar números "mágicos" por nombres más claros.
+
+## Por qué esto importa en software real
+
+- Modelar usuarios, productos, registros y configuraciones
+- Organizar datos que viajan juntos
+- Hacer el código más legible
+- Reducir errores causados por usar variables sueltas desconectadas
+
+## Errores comunes
+
+- No inicializar campos antes de usarlos
+- Copiar texto en campos `char[]` sin revisar el tamaño
+- Pensar que `union` guarda todos los valores al mismo tiempo
+- Usar enteros crudos cuando un `enum` sería más claro
+- Ignorar que el orden y tipos de los campos afectan la memoria ocupada
+
+## Cómo estudiar este capítulo
+
+1. Diseña estructuras para objetos cotidianos: libro, estudiante, factura.
+2. Imprime los campos para verificar que quedaron bien cargados.
+3. Haz arreglos de `struct` y recórrelos con bucles.
+4. Usa `enum` para menús o estados.
+5. Observa con `sizeof` cuánta memoria ocupa cada tipo definido.
 
 ## Archivos de este capítulo
 
-| Archivo         | Descripción                                        |
-|-----------------|----------------------------------------------------|
-| `01_structs.c`  | struct Persona con operaciones CRUD básicas        |
+| Archivo | Descripción |
+|---------|-------------|
+| `01_structs.c` | Ejemplos de estructuras, acceso a campos y organización de datos relacionados |
 
----
+## Conexión con el siguiente capítulo
 
-## Siguiente capítulo
-
-→ **Capítulo 09:** Manejo de Archivos
+Ya puedes representar datos más realistas. En el siguiente capítulo aprenderás a guardarlos y
+recuperarlos usando archivos.

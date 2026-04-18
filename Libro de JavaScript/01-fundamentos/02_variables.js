@@ -1,23 +1,23 @@
 // =============================================================================
 // ARCHIVO: 02_variables.js
-// TEMA: Variables en JavaScript — const, let y por qué no var
+// TEMA: Variables en JavaScript
+// EJECUCION: node 02_variables.js
 // =============================================================================
 //
-// Las variables son contenedores para almacenar datos. En JavaScript moderno
-// usamos const y let. La palabra clave var es obsoleta y causaba muchos bugs
-// por su comportamiento impredecible. Aquí aprenderás cuándo usar cada una.
+// Una variable es un nombre para acceder a un valor mientras el programa se
+// ejecuta. Ese valor vive en memoria y tu codigo lo usa para leer, calcular,
+// comparar o mostrar informacion.
 //
-// CÓMO EJECUTAR:
-//   node 02_variables.js
-//
+// En JavaScript moderno usamos const y let.
+// var existe por compatibilidad historica, pero hoy conviene evitarlo.
 // =============================================================================
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 1. const — Para valores que NO cambian (usar por defecto)
 // ─────────────────────────────────────────────────────────────────────────────
 
-// const declara una variable cuya referencia no puede ser reasignada.
-// Úsala siempre que puedas — comunica la intención de que el valor es fijo.
+// const declara una referencia que no puede apuntar a otro valor despues.
+// Es la mejor opcion por defecto porque hace el codigo mas claro y seguro.
 const PI = 3.14159;
 const NOMBRE_APP = 'Mi Aplicación';
 const MAXIMO_INTENTOS = 3;
@@ -26,8 +26,9 @@ console.log('PI:', PI);
 console.log('App:', NOMBRE_APP);
 console.log('Máx intentos:', MAXIMO_INTENTOS);
 
-// IMPORTANTE: const con objetos y arrays no significa que su CONTENIDO
-// sea inmutable — significa que la variable no puede APUNTAR a otro objeto.
+// IMPORTANTE:
+// const no congela automaticamente el contenido de objetos o arrays.
+// Lo que no puede cambiar es la referencia guardada en la variable.
 const usuario = { nombre: 'Ana', edad: 30 };
 usuario.edad = 31; // Esto SÍ funciona: modificamos el contenido del objeto
 console.log('Usuario modificado:', usuario);
@@ -38,8 +39,8 @@ console.log('Usuario modificado:', usuario);
 // 2. let — Para valores que SÍ pueden cambiar
 // ─────────────────────────────────────────────────────────────────────────────
 
-// let declara una variable que puede ser reasignada.
-// Úsala sólo cuando realmente necesitas cambiar el valor.
+// let declara una variable que si puede cambiar de valor.
+// Se usa cuando la logica necesita reasignacion.
 let puntuacion = 0;
 console.log('\nPuntuación inicial:', puntuacion);
 
@@ -57,7 +58,7 @@ console.log(mensaje);
 // 3. Por qué NO usar var
 // ─────────────────────────────────────────────────────────────────────────────
 
-// var tiene dos problemas graves:
+// var tiene problemas historicos que generaban bugs dificiles de rastrear.
 //
 // PROBLEMA 1: Scope de función (no de bloque)
 // var ignora los bloques {} de if, for, while, etc. y "escapa" de ellos.
@@ -74,13 +75,12 @@ console.log('\nvar escapa del bloque:', escapado); // Imprime (¡bug potencial!)
 // console.log(tambienEncerrado);   // Error: tampoco accesible aquí
 
 // PROBLEMA 2: Hoisting confuso
-// var "sube" su declaración al inicio de la función, pero NO su valor.
-// Esto significa que puedes "usar" una variable antes de declararla sin error,
-// pero su valor será undefined (lo que genera bugs silenciosos).
+// var participa en un hoisting confuso.
+// La declaracion se eleva, pero el valor no, y eso produce undefined.
 console.log('\nvar antes de declarar:', typeof varHoisted); // undefined, no error
 var varHoisted = 'valor';
 
-// Con let y const esto lanza un ReferenceError claro — mejor comportamiento.
+// Con let y const el error es mas claro, y eso ayuda a depurar mejor.
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 4. Reglas de nomenclatura para variables
@@ -112,10 +112,10 @@ console.log('SCREAMING_SNAKE_CASE:', BASE_URL, TIMEOUT_MS);
 // 5. Declarar vs Inicializar
 // ─────────────────────────────────────────────────────────────────────────────
 
-// DECLARAR: crear la variable (reservar espacio en memoria)
-// INICIALIZAR: darle un valor por primera vez
+// Declarar es crear el nombre de la variable.
+// Inicializar es darle un valor por primera vez.
 
-// Con let puedes declarar sin inicializar (el valor será undefined)
+// Si declaras con let sin valor, JavaScript la deja en undefined.
 let ciudad;
 console.log('\nCiudad sin inicializar:', ciudad); // undefined
 
@@ -137,11 +137,16 @@ console.log('2. Cambia a let sólo si necesitas reasignar');
 console.log('3. Nunca uses var en código moderno');
 
 // =============================================================================
-// EXPERIMENTA:
-// 1. Intenta reasignar una const y observa el error que lanza Node.js
-// 2. Declara variables con let para un contador e incrementa su valor
-// 3. Crea un objeto con const y modifica sus propiedades (funciona)
-// 4. Observa qué pasa si usas let antes de declararla (TDZ error)
-// 5. Nombra variables para: precio de un producto, cantidad en stock,
-//    nombre del vendedor, si hay descuento activo
+// QUE DEBERIAS ENTENDER AL TERMINAR
+// - const y let nombran valores que el programa usa en memoria.
+// - const es la opcion por defecto.
+// - let se usa cuando necesitas reasignar.
+// - var genera comportamientos historicos poco claros.
+// - Un nombre bien elegido mejora mucho la lectura del codigo.
+//
+// PRACTICA GUIADA
+// 1. Intenta reasignar una const.
+// 2. Crea un contador con let.
+// 3. Declara un objeto con const y cambia una propiedad.
+// 4. Escribe tres nombres de variables claros para un carrito de compras.
 // =============================================================================

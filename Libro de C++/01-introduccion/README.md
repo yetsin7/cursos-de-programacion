@@ -1,10 +1,35 @@
 # Capítulo 01 — Introducción a C++
 
+Este capitulo te presenta C++ como una evolucion poderosa de C: un lenguaje que
+permite trabajar cerca de la maquina, pero con herramientas mas expresivas para
+construir software grande y mantenible.
+
+---
+
 ## ¿Qué es C++?
 
-C++ es un lenguaje de programación de propósito general creado por **Bjarne Stroustrup**
-en 1979 como una extensión de C. Es un lenguaje **compilado**, **fuertemente tipado** y
-multiparadigma: soporta programación procedural, orientada a objetos y genérica.
+C++ es un lenguaje compilado, tipado y multiparadigma. Puede usarse de forma
+procedural, orientada a objetos y generica.
+
+Eso lo hace muy valioso para:
+
+- software de alto rendimiento;
+- motores de juego;
+- sistemas;
+- herramientas de escritorio;
+- bibliotecas complejas.
+
+---
+
+## ¿Qué aprenderás en este capítulo?
+
+Al terminar deberias poder explicar:
+
+- que diferencia hay entre C y C++;
+- que hacen `cout` y `cin`;
+- por que existe `std::`;
+- como compilar y ejecutar un ejemplo simple;
+- como se conecta el codigo con la consola y la memoria.
 
 ---
 
@@ -12,93 +37,66 @@ multiparadigma: soporta programación procedural, orientada a objetos y genéric
 
 | Característica | C | C++ |
 |----------------|---|-----|
-| Paradigma | Procedural | Multiparadigma (POO + procedural + genérico) |
+| Paradigma | Procedural | Multiparadigma |
 | I/O estándar | `printf` / `scanf` | `cout` / `cin` |
-| Strings | `char[]` + funciones de `<string.h>` | `std::string` (clase completa) |
-| Memoria dinámica | `malloc` / `free` | `new` / `delete` (y smart pointers) |
-| Clases | No (solo `struct`) | Sí, con encapsulación completa |
-| Namespaces | No | Sí (`namespace std`, etc.) |
-| Sobrecarga | No | Sí (funciones y operadores) |
-| Templates | No | Sí (programación genérica) |
-| Manejo de errores | Códigos de retorno | Excepciones (`try/catch/throw`) |
-| Extensión típica | `.c` | `.cpp` |
+| Strings | `char[]` | `std::string` |
+| Memoria dinámica | `malloc` / `free` | `new` / `delete` y mas |
+| Clases | No | Sí |
+| Namespaces | No | Sí |
+| Templates | No | Sí |
 
 ---
 
-## El archivo de cabecera `<iostream>`
+## ¿Qué pasa cuando se ejecuta un programa C++?
 
-`<iostream>` es la cabecera estándar de C++ para entrada/salida. Contiene:
+1. el compilador traduce el codigo fuente;
+2. se genera un ejecutable;
+3. el sistema operativo lo carga en memoria;
+4. el programa entra por `main()`;
+5. la consola recibe entradas y salidas segun tu codigo.
 
-- `std::cout` — flujo de salida estándar (consola)
-- `std::cin`  — flujo de entrada estándar (teclado)
-- `std::cerr` — flujo de error estándar
-- `std::endl` — manipulador que inserta `\n` y vacía el buffer
-
-```cpp
-#include <iostream>  // Cabecera necesaria para cout y cin
-```
+Eso te ayuda a entender que `cout` y `cin` no son magia: son interfaces entre tu
+programa y el entorno.
 
 ---
 
-## Namespaces
+## `<iostream>` y `std`
 
-Un **namespace** es un espacio de nombres que agrupa identificadores para evitar
-colisiones. La biblioteca estándar de C++ vive en el namespace `std`.
+`<iostream>` permite trabajar con entrada y salida estandar.
 
-```cpp
-// Sin using namespace: se debe calificar completamente
-std::cout << "Hola" << std::endl;
+- `std::cout` envia texto a la consola;
+- `std::cin` lee datos desde teclado;
+- `std::cerr` comunica errores;
+- `std::endl` agrega salto de linea y vacia el buffer.
 
-// Con using namespace std: se omite el prefijo std::
-using namespace std;
-cout << "Hola" << endl;
-
-// Recomendado en proyectos grandes: importar solo lo necesario
-using std::cout;
-using std::endl;
-```
-
-> **Buena práctica:** Evita `using namespace std;` en archivos de cabecera (`.h`),
-> ya que puede contaminar otros archivos que lo incluyan.
+La biblioteca estandar vive dentro del namespace `std`, por eso ves `std::`.
 
 ---
 
-## cin y cout vs printf/scanf
+## Errores comunes del principiante
 
-```cpp
-// C: printf / scanf
-printf("Ingresa tu nombre: ");
-char nombre[50];
-scanf("%s", nombre);
-printf("Hola, %s!\n", nombre);
-
-// C++: cout / cin (más seguro y expresivo)
-std::string nombre;
-std::cout << "Ingresa tu nombre: ";
-std::cin >> nombre;
-std::cout << "Hola, " << nombre << "!\n";
-```
-
-Ventajas de `cout`/`cin`:
-- No requieren especificadores de formato (`%d`, `%s`, etc.)
-- Son extensibles: puedes sobrecargar `<<` y `>>` para tus propias clases
-- Más seguros: evitan desbordamientos de buffer comunes con `scanf`
+- confundir C++ con C "solo con clases";
+- abusar de `using namespace std;` sin entenderlo;
+- no distinguir entre `\n` y `std::endl`;
+- creer que compilar y ejecutar es el mismo paso.
 
 ---
 
 ## Compilar y ejecutar
 
 ```bash
-# Compilar
 g++ -std=c++17 -o hola_mundo 01_hola_mundo.cpp
+./hola_mundo
+```
 
-# Ejecutar
-./hola_mundo          # Linux / macOS
-hola_mundo.exe        # Windows
+En Windows normalmente:
+
+```bash
+hola_mundo.exe
 ```
 
 ---
 
 ## Archivo de ejemplo
 
-Ver: [01_hola_mundo.cpp](01_hola_mundo.cpp)
+Ver: [01_hola_mundo.cpp](C:/Users/Yetsin/Documents/Programacion/cursos-de-programacion/Libro%20de%20C%2B%2B/01-introduccion/01_hola_mundo.cpp)

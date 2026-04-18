@@ -1,156 +1,158 @@
 # Capítulo 03 — Operadores
 
-## Tipos de operadores en C
+Los operadores son las piezas que permiten transformar datos. Gracias a ellos un programa puede
+sumar, comparar, decidir, activar banderas, validar condiciones y construir expresiones más
+complejas. En C esto es especialmente importante porque el lenguaje trabaja muy cerca del hardware
+y algunas operaciones afectan directamente la representación binaria de los datos.
 
-C tiene una gran variedad de operadores. Conocerlos todos te permite escribir código más conciso
-y entender código escrito por otros.
+## Qué aprenderás aquí
 
----
+- Cómo C calcula expresiones aritméticas y lógicas
+- Qué diferencia hay entre asignar, comparar y modificar una variable
+- Cómo se comportan los operadores a nivel de bits
+- Por qué la precedencia importa y cómo evitar errores sutiles
+- Cuándo conviene escribir expresiones simples en lugar de "ingeniosas"
 
-## 1. Operadores aritméticos
+## Qué está pasando dentro del software y del hardware
 
-| Operador | Significado       | Ejemplo       | Resultado |
-|----------|-------------------|---------------|-----------|
-| `+`      | Suma              | `5 + 3`       | `8`       |
-| `-`      | Resta             | `5 - 3`       | `2`       |
-| `*`      | Multiplicación    | `5 * 3`       | `15`      |
-| `/`      | División          | `5 / 2`       | `2` (entera) |
-| `%`      | Módulo (resto)    | `5 % 2`       | `1`       |
+Cuando escribes una expresión como `a + b`, el compilador la traduce a instrucciones de máquina
+que la CPU ejecuta usando registros y memoria. Si haces una comparación como `a > b`, la CPU no
+"entiende" mayor o menor como una idea abstracta: compara patrones de bits y luego activa una
+condición interna que el programa interpreta como verdadero o falso.
 
-> La división entre enteros siempre produce un entero (se trunca).
-> Para obtener decimales, uno de los operandos debe ser `float` o `double`.
+En C los valores booleanos suelen representarse como enteros: `0` significa falso y cualquier
+otro valor significa verdadero. Esto hace que el lenguaje sea muy flexible, pero también más fácil
+de usar mal si no se entiende qué valor real hay en memoria.
 
----
+## Ideas clave del capítulo
 
-## 2. Operadores de asignación
+### 1. Operadores aritméticos
 
-| Operador | Equivale a     | Ejemplo     |
-|----------|----------------|-------------|
-| `=`      | Asignar        | `x = 5`     |
-| `+=`     | `x = x + n`   | `x += 3`    |
-| `-=`     | `x = x - n`   | `x -= 2`    |
-| `*=`     | `x = x * n`   | `x *= 4`    |
-| `/=`     | `x = x / n`   | `x /= 2`    |
-| `%=`     | `x = x % n`   | `x %= 3`    |
+| Operador | Uso | Ejemplo | Resultado |
+|----------|-----|---------|-----------|
+| `+` | Sumar | `8 + 2` | `10` |
+| `-` | Restar | `8 - 2` | `6` |
+| `*` | Multiplicar | `8 * 2` | `16` |
+| `/` | Dividir | `8 / 2` | `4` |
+| `%` | Resto | `8 % 3` | `2` |
 
----
+La división entre enteros descarta la parte decimal. `5 / 2` da `2`, no `2.5`. Para obtener
+decimales, al menos uno de los operandos debe ser `float` o `double`.
 
-## 3. Operadores de incremento y decremento
+### 2. Operadores de asignación
+
+`=` guarda un valor en una variable. Los operadores compuestos ahorran escritura:
+
+```c
+x = 10;
+x += 5;   /* ahora x vale 15 */
+x *= 2;   /* ahora x vale 30 */
+```
+
+Aquí no solo cambia una fórmula: cambia el contenido real almacenado en memoria.
+
+### 3. Incremento y decremento
 
 ```c
 int x = 5;
-x++;    /* post-incremento: usa x (5), luego suma 1 → x = 6 */
-++x;    /* pre-incremento:  suma 1 primero → x = 7           */
-x--;    /* post-decremento: usa x (7), luego resta 1 → x = 6 */
---x;    /* pre-decremento:  resta 1 primero → x = 5          */
+int a = x++;  /* a = 5, luego x pasa a 6 */
+int b = ++x;  /* primero x pasa a 7, luego b = 7 */
 ```
 
----
+La diferencia entre pre y post incremento importa mucho dentro de expresiones, bucles y acceso a
+arreglos.
 
-## 4. Operadores de comparación
+### 4. Comparación
 
-Devuelven `1` (verdadero) o `0` (falso).
+| Operador | Significado |
+|----------|-------------|
+| `==` | Igual |
+| `!=` | Distinto |
+| `>` | Mayor |
+| `<` | Menor |
+| `>=` | Mayor o igual |
+| `<=` | Menor o igual |
 
-| Operador | Significado       | Ejemplo   |
-|----------|-------------------|-----------|
-| `==`     | Igual a           | `a == b`  |
-| `!=`     | Diferente de      | `a != b`  |
-| `>`      | Mayor que         | `a > b`   |
-| `<`      | Menor que         | `a < b`   |
-| `>=`     | Mayor o igual     | `a >= b`  |
-| `<=`     | Menor o igual     | `a <= b`  |
+El error más famoso de principiantes es confundir `=` con `==`. El primero modifica un valor. El
+segundo compara dos valores.
 
-> ⚠️ No confundir `=` (asignación) con `==` (comparación). Es uno de los errores más comunes.
+### 5. Operadores lógicos
 
----
+| Operador | Significado |
+|----------|-------------|
+| `&&` | y |
+| `||` | o |
+| `!` | no |
 
-## 5. Operadores lógicos
-
-| Operador | Significado | Ejemplo            |
-|----------|-------------|--------------------|
-| `&&`     | Y (AND)     | `a > 0 && b > 0`   |
-| `\|\|`   | O (OR)      | `a > 0 \|\| b > 0` |
-| `!`      | NO (NOT)    | `!(a == b)`        |
-
----
-
-## 6. Operadores bitwise (a nivel de bits)
-
-Operan directamente sobre los bits de los valores enteros.
-
-| Operador | Significado         | Ejemplo (binario)          |
-|----------|---------------------|----------------------------|
-| `&`      | AND bit a bit       | `0b1010 & 0b1100 = 0b1000` |
-| `\|`     | OR bit a bit        | `0b1010 \| 0b0101 = 0b1111`|
-| `^`      | XOR bit a bit       | `0b1010 ^ 0b1100 = 0b0110` |
-| `~`      | NOT bit a bit       | `~0b1010 = 0b0101...`      |
-| `<<`     | Desplazamiento izq. | `1 << 3 = 8`               |
-| `>>`     | Desplazamiento der. | `8 >> 1 = 4`               |
+Se usan para construir condiciones más expresivas:
 
 ```c
-int flags = 0b00000101;       /* bits 0 y 2 activos */
-flags |=  (1 << 3);           /* activar bit 3 */
-flags &= ~(1 << 0);           /* desactivar bit 0 */
+if (edad >= 18 && tieneIdentificacion) {
+    printf("Acceso permitido\n");
+}
 ```
 
----
+### 6. Operadores bit a bit
 
-## 7. Operador ternario
+Estos operadores trabajan directamente sobre los bits de un número entero:
 
-Forma compacta de una expresión if/else. Devuelve un valor.
+| Operador | Uso |
+|----------|-----|
+| `&` | AND bit a bit |
+| `|` | OR bit a bit |
+| `^` | XOR bit a bit |
+| `~` | invertir bits |
+| `<<` | desplazar a la izquierda |
+| `>>` | desplazar a la derecha |
 
-```
-condicion ? valor_si_verdad : valor_si_falso
-```
+Son muy usados en sistemas embebidos, drivers, protocolos, compresión y manejo de banderas.
+
+### 7. Operador ternario
+
+Es una forma compacta de decidir entre dos valores:
 
 ```c
-int max = (a > b) ? a : b;
-printf("Es %s\n", edad >= 18 ? "mayor de edad" : "menor de edad");
+int mayor = (a > b) ? a : b;
 ```
 
----
+Debe usarse cuando mejora la lectura. Si hace el código más difícil de entender, conviene usar
+`if` y `else`.
 
-## 8. Operador `sizeof`
+### 8. `sizeof`
 
-Devuelve el tamaño en bytes de un tipo o variable. No es una función — es un operador del
-compilador que se evalúa en tiempo de compilación.
+`sizeof` indica cuántos bytes ocupa un tipo o variable:
 
 ```c
-printf("%zu\n", sizeof(int));       /* 4 */
-printf("%zu\n", sizeof(double));    /* 8 */
+printf("%zu\n", sizeof(int));
+printf("%zu\n", sizeof(double));
 ```
 
----
+Esto ayuda a entender cuánta memoria consumen los datos y será fundamental cuando llegues a
+punteros, arreglos y memoria dinámica.
 
-## 9. Precedencia de operadores (simplificada)
+## Errores comunes
 
-De mayor a menor prioridad:
+- Usar `=` cuando querías usar `==`
+- Pensar que `5 / 2` devuelve `2.5`
+- Olvidar que `x++` y `++x` no siempre producen el mismo resultado
+- Escribir expresiones demasiado largas sin paréntesis
+- Usar operadores bit a bit sin entender qué bits cambian
 
-1. `()` — paréntesis
-2. `++` `--` (post), `!` `~` (unarios)
-3. `*` `/` `%`
-4. `+` `-`
-5. `<<` `>>`
-6. `<` `<=` `>` `>=`
-7. `==` `!=`
-8. `&` → `^` → `|`
-9. `&&`
-10. `||`
-11. `?:` (ternario)
-12. `=` `+=` `-=` etc.
+## Cómo estudiar este capítulo
 
-> Regla práctica: usa paréntesis cuando tengas dudas. El código claro supera al código "inteligente".
-
----
+1. Ejecuta el archivo del capítulo y cambia valores manualmente.
+2. Prueba divisiones entre enteros y entre decimales.
+3. Escribe condiciones con `&&`, `||` y `!`.
+4. Usa papel o una tabla para ver cómo cambian los bits con `&`, `|` y `<<`.
+5. Si una expresión te parece confusa, reescríbela en pasos pequeños.
 
 ## Archivos de este capítulo
 
-| Archivo            | Descripción                            |
-|--------------------|----------------------------------------|
-| `01_operadores.c`  | Ejemplos de todos los operadores en C  |
+| Archivo | Descripción |
+|---------|-------------|
+| `01_operadores.c` | Ejemplos guiados de operadores aritméticos, lógicos, de comparación y bit a bit |
 
----
+## Conexión con el siguiente capítulo
 
-## Siguiente capítulo
-
-→ **Capítulo 04:** Control de flujo
+En este capítulo aprendiste a construir condiciones y expresiones. En el siguiente usarás esas
+condiciones para decidir qué camino toma el programa y cuántas veces repite una tarea.

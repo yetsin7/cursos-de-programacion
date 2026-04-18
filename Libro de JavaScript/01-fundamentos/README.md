@@ -1,73 +1,65 @@
 # Módulo 01 — Fundamentos de JavaScript
 
-## ¿Qué es JavaScript?
-
-JavaScript (JS) es el lenguaje de programación de la web. Fue creado en 1995 por
-Brendan Eich en sólo 10 días mientras trabajaba en Netscape. Su objetivo original
-era agregar interactividad a páginas HTML estáticas.
-
-Hoy en día JavaScript es mucho más que eso:
-
-- Es el único lenguaje que los navegadores entienden de forma nativa
-- Con **Node.js** (creado en 2009) también corre en el servidor
-- Se usa para aplicaciones móviles (React Native), escritorio (Electron),
-  APIs REST, herramientas de línea de comandos, videojuegos, IA y más
+Este modulo te introduce a JavaScript desde la base correcta: entender como se
+ejecuta el codigo, que hace la consola y por que variables, tipos y scope son
+tan importantes desde el primer dia.
 
 ---
 
-## Breve historia
+## ¿Que es JavaScript?
 
-| Año | Hito |
-|-----|------|
-| 1995 | Brendan Eich crea JavaScript en Netscape (en 10 días) |
-| 1997 | Se estandariza como **ECMAScript** (ECMA-262) |
-| 2009 | Node.js permite ejecutar JS fuera del navegador |
-| 2015 | **ES6/ES2015** — la revolución moderna: clases, arrow functions, Promises |
-| 2016–hoy | Actualizaciones anuales: ES2016, ES2017 ... ES2022, ES2023... |
+JavaScript es el lenguaje principal de la web. Nacio para dar interactividad a
+las paginas, pero hoy tambien funciona en servidores, scripts, apps moviles,
+herramientas de escritorio y automatizacion.
 
 ---
 
-## JavaScript en el navegador
+## ¿Que aprenderas en este modulo?
 
-En el navegador, JavaScript puede:
+Al terminar deberias poder explicar:
 
-- Manipular el contenido de la página (DOM)
-- Responder a eventos del usuario (clics, teclas, formularios)
-- Comunicarse con servidores (fetch, AJAX)
-- Guardar datos localmente (localStorage, cookies)
-- Animar elementos, validar formularios, etc.
-
-```html
-<!-- Así se incluye JS en una página HTML -->
-<script src="mi-script.js"></script>
-```
+- que es JavaScript;
+- que diferencia hay entre navegador y Node.js;
+- como mostrar resultados en consola;
+- como guardar datos en variables;
+- por que `const` y `let` son mejores que `var`;
+- como construir texto dinamico con template literals.
 
 ---
 
-## JavaScript en Node.js
+## JavaScript en el navegador y en Node.js
 
-Con **Node.js**, JavaScript sale del navegador y puede:
+### En el navegador
 
-- Leer y escribir archivos del sistema
-- Crear servidores HTTP
-- Conectarse a bases de datos
-- Ejecutar scripts de automatización
-- Construir APIs REST
+JavaScript puede:
 
-```bash
-# Ejecutar un archivo JS con Node.js
-node mi_archivo.js
-```
+- modificar el DOM;
+- responder a eventos del usuario;
+- comunicarse con servidores;
+- guardar datos localmente;
+- actualizar la interfaz en pantalla.
+
+### En Node.js
+
+JavaScript puede:
+
+- leer y escribir archivos;
+- crear servidores;
+- conectarse a bases de datos;
+- ejecutar scripts de consola;
+- automatizar tareas.
 
 ---
 
-## ¿Por qué aprender JavaScript?
+## ¿Que pasa cuando ejecutas un archivo .js?
 
-1. **Es el lenguaje más usado del mundo** (Stack Overflow 2023)
-2. **Versatilidad total**: frontend, backend, mobile, desktop, scripts
-3. **Enorme ecosistema**: npm tiene más de 2 millones de paquetes
-4. **Alta demanda laboral**: uno de los lenguajes mejor pagados
-5. **Comunidad gigante**: tutoriales, libros, videos en todos los idiomas
+Cuando corres `node archivo.js`:
+
+1. Node abre el archivo;
+2. el motor de JavaScript analiza el codigo;
+3. crea variables y funciones en memoria;
+4. ejecuta las instrucciones;
+5. muestra resultados en consola o interactua con el sistema.
 
 ---
 
@@ -75,12 +67,32 @@ node mi_archivo.js
 
 | Archivo | Tema |
 |---------|------|
-| `01_hola_mundo.js` | Tu primer programa, console.log |
-| `02_variables.js` | const, let y por qué no var |
-| `03_tipos_de_datos.js` | Los 7 tipos primitivos de JS |
-| `04_constantes_y_scope.js` | Scope de bloque, hoisting, TDZ |
-| `05_template_literals.js` | Strings modernos con backticks |
-| `06_ejercicios.js` | Practica lo aprendido |
+| `01_hola_mundo.js` | Primera salida en consola |
+| `02_variables.js` | `const`, `let` y por que evitar `var` |
+| `03_tipos_de_datos.js` | Tipos primitivos de JS |
+| `04_constantes_y_scope.js` | Scope, hoisting y TDZ |
+| `05_template_literals.js` | Texto dinamico con backticks |
+| `06_ejercicios.js` | Practica guiada |
+
+---
+
+## Errores comunes del principiante
+
+- pensar que JavaScript solo sirve en paginas web;
+- confundir Node.js con el lenguaje;
+- usar `var` por costumbre vieja;
+- no revisar la salida de la consola;
+- memorizar sin experimentar.
+
+---
+
+## Como estudiar este modulo
+
+1. Ejecuta cada archivo.
+2. Lee los comentarios como parte de la leccion.
+3. Cambia valores y vuelve a ejecutar.
+4. Intenta romper algo y observa el error.
+5. Explica que paso antes de avanzar.
 
 ---
 
@@ -90,7 +102,7 @@ node mi_archivo.js
 node 01-fundamentos/01_hola_mundo.js
 ```
 
-O si ya estás dentro de la carpeta `01-fundamentos/`:
+O si ya estas dentro de la carpeta:
 
 ```bash
 node 01_hola_mundo.js

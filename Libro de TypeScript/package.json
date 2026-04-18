@@ -1,0 +1,17 @@
+{
+  "name": "libro-de-typescript",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Libro practico de TypeScript para principiantes.",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc",
+    "clean": "if exist dist rmdir /s /q dist",
+    "lesson:hello": "node dist/01-introduccion/01_hello_typescript.js",
+    "lesson:async": "node dist/09-async-y-fetch/01_async_and_fetch.js",
+    "lesson:project": "node dist/10-proyecto-final/src/main.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

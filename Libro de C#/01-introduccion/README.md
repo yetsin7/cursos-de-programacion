@@ -1,74 +1,82 @@
 # Capítulo 01 — Introducción a C#
 
+Este capitulo te presenta C# y .NET desde una idea importante: no solo vas a
+escribir codigo, tambien vas a entender que plataforma lo ejecuta y como se
+comporta una aplicacion de consola.
+
+---
+
 ## ¿Qué es C#?
 
-**C#** (pronunciado "C Sharp") es un lenguaje de programación moderno, orientado a objetos y con tipado estático, desarrollado por Microsoft como parte de la plataforma **.NET**. Fue creado por Anders Hejlsberg y lanzado en el año 2000.
+C# es un lenguaje moderno, tipado y orientado a objetos, creado por Microsoft
+para la plataforma .NET.
 
-C# combina la potencia de C++ con la simplicidad de Java, añadiendo características modernas como LINQ, async/await, pattern matching y records.
+Es muy usado para:
+
+- aplicaciones backend;
+- herramientas de consola;
+- software empresarial;
+- videojuegos con Unity;
+- aplicaciones multiplataforma en el ecosistema .NET.
 
 ---
 
 ## ¿Qué es .NET?
 
-**.NET** es la plataforma de desarrollo de Microsoft que incluye:
+.NET es la plataforma que compila, ejecuta y apoya tus programas en C#.
 
-- **CLR** (Common Language Runtime): el motor de ejecución que compila el código a lenguaje máquina
-- **BCL** (Base Class Library): miles de clases listas para usar (colecciones, I/O, red, criptografía, etc.)
-- **SDK**: herramientas de compilación, ejecución y publicación (`dotnet` CLI)
+Incluye:
 
-A partir de **.NET 5**, Microsoft unificó .NET Framework y .NET Core en una sola plataforma multiplataforma (Windows, Linux, macOS).
-
----
-
-## C# vs Java
-
-| Característica         | C#                             | Java                          |
-|------------------------|--------------------------------|-------------------------------|
-| Empresa                | Microsoft                      | Oracle                        |
-| Plataforma             | .NET (multiplataforma)         | JVM (multiplataforma)         |
-| Propiedades            | Nativas (`get`/`set`)          | Getters/setters manuales      |
-| Delegados y eventos    | Integrados en el lenguaje      | Interfaces funcionales        |
-| LINQ                   | Integrado                      | Streams API (más verboso)     |
-| Nullable reference     | Desde C# 8                     | Optional (externo)            |
-| Records                | Desde C# 9                     | Desde Java 16                 |
-| async/await            | Desde C# 5                     | CompletableFuture (más complejo) |
+- el runtime que ejecuta el codigo;
+- bibliotecas listas para usar;
+- herramientas de compilacion y ejecucion como `dotnet`.
 
 ---
 
-## El ecosistema .NET
+## ¿Qué pasa cuando ejecutas C#?
 
-- **ASP.NET Core**: framework web (APIs REST, MVC, Razor Pages, Blazor)
-- **Entity Framework Core**: ORM para bases de datos
-- **MAUI**: desarrollo móvil y de escritorio multiplataforma
-- **WPF / WinForms**: aplicaciones de escritorio Windows
-- **Blazor**: aplicaciones web con C# en el navegador (WebAssembly)
-- **NuGet**: gestor de paquetes (equivalente a npm o Maven)
+Cuando corres un programa:
+
+1. el SDK compila el codigo;
+2. .NET carga el runtime;
+3. se crean objetos y variables en memoria;
+4. el programa ejecuta instrucciones;
+5. la consola muestra resultados o el sistema recibe acciones.
+
+Esto hace que C# sea una buena puerta de entrada al desarrollo profesional con
+lenguajes tipados y plataformas robustas.
 
 ---
 
 ## Estructura básica de un programa C#
 
-```csharp
-// Espacio de nombres: organiza el código en grupos lógicos
-namespace MiPrograma
-{
-    // Clase: unidad básica de organización del código
-    class Program
-    {
-        // Método Main: punto de entrada del programa
-        static void Main(string[] args)
-        {
-            Console.WriteLine("¡Hola, mundo!");
-        }
-    }
-}
-```
+Un programa puede escribirse con la forma clasica usando `Main`, o de forma mas
+breve con top-level statements.
 
-Con **top-level statements** (C# 9+), puedes simplificarlo a:
+La idea esencial no cambia:
 
-```csharp
-Console.WriteLine("¡Hola, mundo!");
-```
+- hay un punto de entrada;
+- se ejecutan instrucciones;
+- el programa interactua con la consola o con otros recursos.
+
+---
+
+## ¿Qué aprenderás en este capítulo?
+
+- qué es C#;
+- qué papel tiene .NET;
+- cómo se ve un programa simple;
+- qué hace `Console.WriteLine`;
+- cómo arrancar a leer y ejecutar ejemplos.
+
+---
+
+## Errores comunes del principiante
+
+- pensar que C# y .NET son exactamente lo mismo;
+- ver la consola como algo "muy básico" y no como una herramienta de aprendizaje;
+- ignorar el flujo de compilacion y ejecucion;
+- copiar ejemplos sin leer sus partes.
 
 ---
 

@@ -1,12 +1,16 @@
 # 📘 Libro de Flutter — De cero a PRO
 
-> Repositorio gratuito, progresivo y en español para aprender **Flutter y Dart** desde cero hasta un nivel profesional.
+> Ruta progresiva para aprender Dart y Flutter entendiendo codigo, interfaz,
+> estado, renderizado y comportamiento real de una app movil.
 
 ---
 
-## ¿Qué es esto?
+## ¿Que es esto?
 
-El **Libro de Flutter** es una colección de archivos Dart y proyectos Flutter organizados como si fuera un libro técnico interactivo. Cada módulo cubre un tema específico con:
+El **Libro de Flutter** combina archivos de Dart y proyectos Flutter organizados
+como un libro tecnico interactivo. Cada modulo busca ensenar no solo la
+sintaxis, sino tambien como una app procesa datos, dibuja widgets y responde a
+lo que hace el usuario.
 
 - Explicaciones detalladas en **comentarios en español**
 - Código real que puedes ejecutar
@@ -17,7 +21,7 @@ Está inspirado en el estilo del **Libro de Python** de este mismo repositorio, 
 
 ---
 
-## ¿Para quién es?
+## ¿Para quien es?
 
 Para **cualquier persona** que quiera aprender Flutter/Dart:
 
@@ -26,9 +30,24 @@ Para **cualquier persona** que quiera aprender Flutter/Dart:
 - Desarrolladores Flutter que quieren reforzar sus bases en Dart
 - Cualquiera con ganas de aprender desarrollo móvil multiplataforma
 
-No se requiere experiencia previa con Flutter. Solo ganas.
+No se requiere experiencia previa con Flutter. Solo ganas de practicar y
+curiosidad por entender como funciona una app por dentro.
 
 ---
+
+## Que vas a entender sobre software y hardware
+
+Este libro insiste en una idea muy importante: una app no es solo pantallas.
+Una app es un sistema que:
+
+- recibe eventos del usuario desde el hardware tactil, teclado o red;
+- procesa logica en CPU;
+- guarda datos en memoria RAM o almacenamiento local;
+- vuelve a dibujar la interfaz en pantalla;
+- administra estados, tiempos y recursos.
+
+Cuando aprendes Flutter con esta mirada, dejas de memorizar widgets y empiezas a
+entender el comportamiento de la aplicacion.
 
 ## Requisitos previos
 
@@ -50,7 +69,7 @@ dart --version
 
 ---
 
-## Cómo usar este repositorio
+## Como usar este repositorio
 
 ### Módulos de Dart puro (01–11)
 
@@ -73,7 +92,8 @@ flutter run
 
 ### Orden recomendado
 
-Lee los módulos **en orden numérico**. Cada módulo asume que ya conoces los anteriores. Si saltas módulos, es posible que encuentres conceptos que no entiendes todavía.
+Lee los modulos **en orden numerico**. Primero domina Dart; luego pasa a Flutter
+UI; despues estudia arquitectura, persistencia, i18n y testing.
 
 ---
 
@@ -136,6 +156,14 @@ Lee los módulos **en orden numérico**. Cada módulo asume que ya conoces los a
 7. **No saltes al módulo de Flutter** sin dominar Dart. Las bases importan.
 
 ---
+
+## Errores comunes del principiante
+
+- Querer aprender widgets sin dominar variables, funciones y colecciones.
+- Copiar interfaces sin entender el arbol de widgets.
+- No observar cuando una app se reconstruye.
+- Confundir estado temporal con datos persistentes.
+- Aprender pantallas sin entender arquitectura.
 
 ## Dataset: La Biblia RV60
 

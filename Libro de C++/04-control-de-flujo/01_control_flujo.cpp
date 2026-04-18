@@ -1,16 +1,11 @@
 /**
- * Capítulo 04 — Control de Flujo
+ * Capitulo 04 — Control de Flujo
  * Archivo: 01_control_flujo.cpp
  *
- * Demuestra:
- *   - if / else if / else
- *   - switch con break y fall-through
- *   - Bucle for clásico
- *   - Bucle while y do-while
- *   - Range-for de C++11 sobre vector y string
- *   - break y continue dentro de bucles
+ * Este archivo muestra como C++ toma decisiones y repite acciones.
+ * Controlar el flujo bien ayuda a construir programas claros y seguros.
  *
- * Compilar: g++ -std=c++17 -o control_flujo 01_control_flujo.cpp
+ * Compilar: g++ -std=c++17 -Wall -Wextra -o control_flujo 01_control_flujo.cpp
  */
 
 #include <iostream>
@@ -59,7 +54,7 @@ int main() {
             break;
     }
 
-    // switch con char
+    // switch tambien puede trabajar con char.
     char opcion = 'B';
     switch (opcion) {
         case 'A': cout << "Elegiste la opción A\n"; break;
@@ -69,11 +64,11 @@ int main() {
     }
 
     // -------------------------------------------------------------------------
-    // 3. Bucle for clásico
+    // 3. Bucle for clasico
     // -------------------------------------------------------------------------
     cout << "\n=== FOR CLÁSICO ===\n";
 
-    // Contar del 1 al 5
+    // Un for es util cuando controlas el contador.
     for (int i = 1; i <= 5; i++) {
         cout << "Iteración " << i << "\n";
     }
@@ -97,7 +92,7 @@ int main() {
     cout << "\n";
 
     // -------------------------------------------------------------------------
-    // 5. Bucle do-while (ejecuta al menos una vez)
+    // 5. Bucle do-while
     // -------------------------------------------------------------------------
     cout << "\n=== DO-WHILE ===\n";
 
@@ -108,7 +103,7 @@ int main() {
     do {
         intentos++;
         cout << "Intento " << intentos << " — ingresa la clave (1234): ";
-        // Para no requerir input real en el demo, simulamos la entrada
+        // Para no pedir entrada real, simulamos el valor.
         entrada = (intentos < 3) ? 0000 : 1234;
         cout << entrada << "\n";  // Mostramos la "entrada simulada"
     } while (entrada != clave && intentos < 3);
@@ -120,18 +115,18 @@ int main() {
     }
 
     // -------------------------------------------------------------------------
-    // 6. Range-for (C++11) — Iterar sobre colecciones
+    // 6. Range-for (C++11)
     // -------------------------------------------------------------------------
     cout << "\n=== RANGE-FOR (C++11) ===\n";
 
-    // Sobre un initializer_list directamente
+    // Range-for mejora la lectura al recorrer colecciones.
     cout << "Planetas: ";
     for (const string& planeta : {"Mercurio", "Venus", "Tierra", "Marte"}) {
         cout << planeta << " ";
     }
     cout << "\n";
 
-    // Sobre un vector — por referencia constante (sin copiar)
+    // Por referencia constante evitamos copias innecesarias.
     vector<int> fibonacci = {1, 1, 2, 3, 5, 8, 13, 21};
     cout << "Fibonacci: ";
     for (const auto& num : fibonacci) {
@@ -139,7 +134,7 @@ int main() {
     }
     cout << "\n";
 
-    // Modificar elementos con referencia no-constante
+    // Con referencia no constante si podemos modificar.
     vector<double> precios = {9.99, 14.50, 3.75};
     for (auto& precio : precios) {
         precio *= 1.16;  // Aplicar IVA del 16%
@@ -150,7 +145,7 @@ int main() {
     }
     cout << "\n";
 
-    // Sobre un string carácter por carácter
+    // Tambien se puede recorrer un string caracter por caracter.
     string mensaje = "Hola";
     cout << "Caracteres: ";
     for (char ch : mensaje) {
@@ -163,7 +158,7 @@ int main() {
     // -------------------------------------------------------------------------
     cout << "\n=== BREAK Y CONTINUE ===\n";
 
-    // continue: salta la iteración actual
+    // continue salta la iteracion actual.
     cout << "Impares del 1 al 10: ";
     for (int i = 1; i <= 10; i++) {
         if (i % 2 == 0) continue;  // Si es par, salta
@@ -171,13 +166,18 @@ int main() {
     }
     cout << "\n";
 
-    // break: sale del bucle completamente
+    // break sale del bucle por completo.
     cout << "Hasta encontrar el 5: ";
     for (int i = 0; i < 10; i++) {
         if (i == 5) break;         // Sale cuando i llega a 5
         cout << i << " ";
     }
     cout << "\n";
+
+    cout << "\n=== IDEAS CLAVE ===\n";
+    cout << "El flujo decide caminos y repeticiones.\n";
+    cout << "Elegir bien entre if, switch o un bucle mejora claridad.\n";
+    cout << "Range-for simplifica mucho el recorrido de colecciones.\n";
 
     return 0;
 }

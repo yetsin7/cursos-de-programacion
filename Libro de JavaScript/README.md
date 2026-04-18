@@ -1,16 +1,26 @@
 # Libro de JavaScript — De cero a PRO
 
-Repositorio de aprendizaje de JavaScript diseñado para llevarte desde los fundamentos
-básicos hasta un nivel profesional, con código moderno (ES2022+), comentarios en español
-y ejemplos ejecutables con Node.js.
+Curso practico para aprender JavaScript moderno desde cero, entendiendo como se
+ejecuta el codigo tanto en Node.js como en el navegador.
 
 ---
 
-## ¿Para quién es este libro?
+## ¿Para quien es este libro?
 
 - Personas que nunca han programado en JavaScript
 - Desarrolladores de otros lenguajes que quieren aprender JS
-- Quienes quieren actualizar su conocimiento al estándar moderno (ES2022+)
+- Quienes quieren actualizar su conocimiento al estandar moderno
+- Personas que quieren entender que hace el navegador o Node cuando corre codigo
+
+## Que vas a aprender
+
+Este libro no se enfoca solo en "que escribir". Tambien explica:
+
+- como JavaScript interpreta instrucciones;
+- como se crean variables y objetos en memoria;
+- como la consola, el DOM o Node muestran resultados;
+- como funciona la asincronia a nivel de software;
+- como pensar mejor los errores y depurarlos.
 
 ---
 
@@ -29,7 +39,7 @@ node --version
 
 ---
 
-## Cómo usar este repositorio
+## Como usar este repositorio
 
 1. Clona o descarga el repositorio
 2. Abre la carpeta en VS Code
@@ -46,7 +56,25 @@ Ejemplo:
 node 01-fundamentos/01_hola_mundo.js
 ```
 
-Lee los comentarios en el código — son la lección.
+Lee los comentarios en el codigo como si fueran parte de la clase.
+
+## Que ocurre cuando JavaScript se ejecuta
+
+Si ejecutas un archivo con Node.js:
+
+- Node carga el motor de JavaScript;
+- el motor analiza el codigo;
+- reserva memoria para variables, funciones y objetos;
+- ejecuta instrucciones;
+- escribe resultados en consola o interactua con archivos y red.
+
+Si ejecutas JavaScript en el navegador:
+
+- el navegador descarga HTML, CSS y JS;
+- crea el DOM;
+- ejecuta el script;
+- responde a eventos del usuario como clics o escritura;
+- actualiza la interfaz en pantalla.
 
 ---
 
@@ -106,6 +134,14 @@ sudo apt-get install -y nodejs
 7. **Practica todos los días** — aunque sea 20 minutos
 
 ---
+
+## Errores comunes
+
+- Creer que `var`, `let` y `const` son iguales.
+- Ejecutar sin observar la salida real.
+- Confundir codigo de Node con codigo del navegador.
+- Querer memorizar todo sin practicar.
+- Ignorar errores de consola en lugar de leerlos.
 
 ## Carpeta `datos/`
 

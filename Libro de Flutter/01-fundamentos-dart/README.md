@@ -1,47 +1,60 @@
 # Módulo 01 — Fundamentos de Dart
 
-Antes de escribir una sola línea de Flutter, necesitas entender **Dart**: el lenguaje de programación en el que Flutter está construido.
+Antes de construir interfaces en Flutter, necesitas entender Dart. Si Dart te
+resulta claro, Flutter deja de sentirse como una colección extraña de widgets y
+empieza a verse como software organizado.
 
 ---
 
-## ¿Qué es Dart?
+## ¿Que es Dart?
 
-**Dart** es un lenguaje de programación creado por Google en 2011. Fue diseñado para ser:
+Dart es el lenguaje en el que se escribe Flutter. Fue creado por Google y está
+pensado para ser rapido, seguro, moderno y agradable de leer.
 
-- **Rápido:** Compila a código nativo (ARM, x86) para móviles y escritorio, y a JavaScript para la web.
-- **Seguro:** Tiene null safety incorporado desde Dart 2.12, lo que elimina errores de null en tiempo de ejecución.
-- **Familiar:** Sintaxis parecida a Java, C# y JavaScript. Si ya conoces alguno de estos, te sentirás cómodo rápidamente.
-- **Moderno:** Dart 3 introdujo Records, Patterns y mejoras significativas al lenguaje.
+Con Dart puedes:
+
+- escribir logica de negocio;
+- modelar datos;
+- usar funciones, colecciones y clases;
+- compilar para desarrollo y para produccion.
 
 ---
 
-## ¿Por qué aprender Dart antes de Flutter?
+## ¿Por que aprender Dart antes de Flutter?
 
-Flutter es un framework para construir interfaces de usuario. Pero toda la lógica, los datos, las funciones y la estructura de tu app se escriben en Dart.
+Flutter dibuja interfaces, pero la logica que decide que mostrar, como reaccionar
+al usuario y como organizar datos vive en Dart.
 
-Si intentas aprender Flutter sin entender Dart, vas a:
-- Copiar código sin entender qué hace
-- No saber cómo depurar errores
-- Quedarte bloqueado en cuanto el tutorial se termina
+Si aprendes Flutter sin bases de Dart, es facil caer en esto:
 
-**Dedica tiempo a Dart primero. Vale la pena.**
+- copiar codigo sin comprender;
+- no saber leer errores;
+- no entender estados, variables o funciones;
+- atascarte cuando cambie un ejemplo.
+
+---
+
+## ¿Que pasa dentro del sistema cuando ejecutas Dart?
+
+Cuando corres un archivo `.dart`:
+
+1. el runtime de Dart carga el programa;
+2. entra por `main()`;
+3. crea variables y objetos en memoria;
+4. ejecuta instrucciones en orden;
+5. muestra resultados en consola.
+
+Cuando uses Flutter, esta misma base se ampliara para incluir renderizado de
+widgets, eventos de usuario y reconstrucciones de interfaz.
 
 ---
 
 ## Cómo ejecutar los archivos de este módulo
 
-Los archivos `.dart` de este módulo son **Dart puro** — no necesitas un proyecto Flutter.
-
-Ejecuta cualquier archivo desde la terminal así:
-
-```bash
-dart run 01_hola_mundo.dart
-```
-
-Asegúrate de estar en la carpeta del módulo antes de ejecutar:
+Los archivos `.dart` de este modulo son Dart puro. No necesitas crear un
+proyecto Flutter para estudiarlos.
 
 ```bash
-cd "C:\Users\Yetsin\Documents\Programacion\Aprendiendo Flutter\Libro de Flutter\01-fundamentos-dart"
 dart run 01_hola_mundo.dart
 ```
 
@@ -51,12 +64,22 @@ dart run 01_hola_mundo.dart
 
 | Archivo | Tema |
 |---------|------|
-| `01_hola_mundo.dart` | Tu primer programa, print(), interpolación de strings |
-| `02_variables.dart` | var, tipos explícitos, dynamic |
-| `03_tipos_de_datos.dart` | int, double, String, bool, List, Map, null |
-| `04_comentarios.dart` | Comentarios de línea, bloque y documentación |
-| `05_constantes.dart` | const vs final, cuándo usar cada uno |
-| `06_ejercicios.dart` | Ejercicios prácticos con soluciones |
+| `01_hola_mundo.dart` | Primer programa, salida en consola e interpolacion |
+| `02_variables.dart` | `var`, tipos explicitos y `dynamic` |
+| `03_tipos_de_datos.dart` | `int`, `double`, `String`, `bool`, `List`, `Map`, `null` |
+| `04_comentarios.dart` | Comentarios de linea, bloque y documentacion |
+| `05_constantes.dart` | `const` vs `final` |
+| `06_ejercicios.dart` | Practica guiada |
+
+---
+
+## Errores comunes del principiante
+
+- querer aprender widgets sin dominar variables y funciones;
+- pensar que Dart y Flutter son exactamente lo mismo;
+- ignorar el papel de `main()`;
+- no experimentar con tipos y valores;
+- saltarse ejercicios por creer que son demasiado faciles.
 
 ---
 
@@ -65,14 +88,18 @@ dart run 01_hola_mundo.dart
 | Característica | Python | Dart |
 |----------------|--------|------|
 | Tipado | Dinámico (opcional estático) | Estático con inferencia |
-| Null safety | No nativo | Sí, nativo desde Dart 2.12 |
-| Compilación | Interpretado | JIT (desarrollo) + AOT (producción) |
-| Punto de entrada | Cualquier línea | `void main()` obligatorio |
+| Null safety | No nativo | Sí, nativo |
+| Compilación | Interpretado | JIT + AOT |
+| Punto de entrada | Flexible | `void main()` |
 | Interpolación | `f"Hola {nombre}"` | `"Hola $nombre"` |
-| Imprimir | `print("...")` | `print("...")` |
-| Lista | `[1, 2, 3]` | `[1, 2, 3]` |
-| Diccionario | `{"a": 1}` | `{"a": 1}` (Map) |
 
 ---
 
-¡Comienza por `01_hola_mundo.dart` y sigue en orden!
+## Practica guiada
+
+1. Ejecuta cada archivo.
+2. Cambia valores y vuelve a ejecutar.
+3. Intenta predecir la salida antes de correrlo.
+4. Explica con tus palabras qué hace `main()`.
+
+Comienza por `01_hola_mundo.dart` y sigue en orden.

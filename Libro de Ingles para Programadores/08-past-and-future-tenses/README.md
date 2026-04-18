@@ -1,12 +1,28 @@
 # Capítulo 08: Past & Future Tenses
 
-## Tiempos pasados y futuros para programadores
+Este capitulo te permite hablar con mas naturalidad sobre tareas hechas,
+progreso reciente y planes futuros, algo esencial en trabajo tecnico diario.
 
-Este capítulo te enseñará a hablar sobre lo que ya hiciste, lo que has completado y lo que harás, usando tiempos verbales pasados y futuros en contexto de desarrollo de software.
+---
 
-1. **Past Simple** — Verbos regulares e irregulares en pasado
-2. **Present Perfect** — Have/has + participio pasado y su diferencia con el pasado simple
-3. **Future Tenses** — Will, going to y presente continuo para el futuro
+## ¿Que aprenderas?
+
+1. **Past Simple** — verbos regulares e irregulares en pasado
+2. **Present Perfect** — `have/has` + participio pasado
+3. **Future Tenses** — `will`, `going to` y presente continuo para futuro
+
+---
+
+## ¿Por qué importa para programadores?
+
+Porque en el trabajo real necesitas decir cosas como:
+
+- `I fixed the bug yesterday.`
+- `We have deployed the update.`
+- `I will review the PR tomorrow.`
+- `We are going to refactor this module next week.`
+
+Estos tiempos verbales aparecen en standups, retrospectivas, planning y chats.
 
 ---
 
@@ -14,18 +30,23 @@ Este capítulo te enseñará a hablar sobre lo que ya hiciste, lo que has comple
 
 | # | Archivo | Tema |
 |---|---------|------|
-| 01 | `01_past_simple.md` | Pasado simple: verbos regulares e irregulares |
-| 02 | `02_present_perfect.md` | Presente perfecto: have/has + participio |
-| 03 | `03_future_tenses.md` | Futuro: will, going to, presente continuo |
-| 04 | `04_exercises.md` | Ejercicios de práctica del capítulo completo |
+| 01 | `01_past_simple.md` | Pasado simple |
+| 02 | `02_present_perfect.md` | Presente perfecto |
+| 03 | `03_future_tenses.md` | Futuro |
+| 04 | `04_exercises.md` | Práctica integral |
+
+---
+
+## Errores comunes del hispanohablante
+
+- mezclar pasado simple con presente perfecto;
+- usar `will` para todo tipo de futuro;
+- olvidar participios irregulares;
+- traducir estructuras temporales demasiado literalmente.
 
 ---
 
 ## Objetivo del capítulo
 
-Al terminar este capítulo podrás:
-
-- Describir tareas completadas usando el pasado simple
-- Usar el presente perfecto para hablar de experiencias y logros recientes
-- Expresar planes y predicciones usando diferentes formas del futuro
-- Comunicarte efectivamente en standups, retrospectivas y planificación
+Al terminar este capitulo podras hablar mejor sobre tareas completadas, avances
+recientes y planes futuros en contexto de desarrollo de software.

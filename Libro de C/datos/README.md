@@ -1,139 +1,73 @@
 # Datos — Base de datos de la Biblia
 
+Este directorio documenta la base de datos que usa el proyecto final del `Libro de C`. La idea no
+es solo saber que existe un archivo `.sqlite3`, sino entender qué representa y cómo un programa en
+C puede trabajar con él.
+
 ## Archivo principal
 
-```
-../../datos/biblia_rv60.sqlite3
-```
+La base utilizada por el proyecto es:
 
-Este directorio referencia la base de datos SQLite con la Biblia Reina-Valera 1960, ubicada en:
-
-```
+```text
 C:/Users/Yetsin/Documents/Programacion/datos/biblia_rv60.sqlite3
 ```
 
----
+Desde el capítulo `12-proyecto-biblia`, la ruta relativa es:
 
-## Estructura típica de la base de datos
+```text
+../../datos/biblia_rv60.sqlite3
+```
 
-La base de datos `biblia_rv60.sqlite3` suele tener la siguiente estructura:
+## Qué contiene esta base de datos
+
+La base almacena información estructurada de la Biblia Reina-Valera 1960. Lo normal es encontrar
+tablas para libros y versículos, donde cada registro representa una parte concreta del texto.
+
+Un esquema simplificado sería:
 
 ```sql
--- Tabla de libros
 CREATE TABLE libros (
-    id        INTEGER PRIMARY KEY,
-    nombre    TEXT NOT NULL,
-    abrev     TEXT,
-    testamento TEXT  -- 'Antiguo' o 'Nuevo'
+    id INTEGER PRIMARY KEY,
+    nombre TEXT NOT NULL,
+    abrev TEXT,
+    testamento TEXT
 );
 
--- Tabla de versículos
 CREATE TABLE versiculos (
-    id        INTEGER PRIMARY KEY,
-    libro_id  INTEGER REFERENCES libros(id),
-    capitulo  INTEGER NOT NULL,
+    id INTEGER PRIMARY KEY,
+    libro_id INTEGER NOT NULL,
+    capitulo INTEGER NOT NULL,
     versiculo INTEGER NOT NULL,
-    texto     TEXT NOT NULL
+    texto TEXT NOT NULL
 );
 ```
 
----
+## Qué pasa cuando C consulta esta base
 
-## Cómo acceder a SQLite desde C
+Tu programa no lee el archivo como texto normal. En su lugar, usa la biblioteca SQLite para abrir
+el archivo, interpretar su formato interno y ejecutar consultas SQL. SQLite devuelve resultados que
+tu programa convierte en texto, números o estructuras propias.
 
-### Requisitos
+En otras palabras:
 
-- Tener instalada la librería `libsqlite3`
-- Header: `#include <sqlite3.h>`
-- Compilar con: `gcc -o programa archivo.c -lsqlite3`
+- El disco guarda el archivo
+- SQLite entiende la base
+- Tu programa en C pide datos y procesa respuestas
 
-**Linux/Ubuntu:**
-```bash
-sudo apt install libsqlite3-dev
-```
+## Recomendaciones para practicar
 
-**macOS:**
-```bash
-brew install sqlite3
-```
+- Primero abre la base y verifica que la conexión funcione
+- Consulta pocos registros antes de hacer búsquedas más complejas
+- Comprueba siempre los códigos de retorno y mensajes de error
+- No asumas que todas las consultas devolverán datos
 
-**Windows (MinGW):**
-Descargar los amalgamation files de https://sqlite.org/download.html y compilar juntos:
-```bash
-gcc -o programa programa.c sqlite3.c -lpthread -ldl
-```
+## Relación con el libro
 
----
+Este recurso conecta especialmente con:
 
-## Ejemplo básico de conexión en C
+- `09-manejo-de-archivos`
+- `10-memoria-dinamica`
+- `12-proyecto-biblia`
 
-```c
-#include <stdio.h>
-#include <sqlite3.h>
-
-int main(void) {
-    sqlite3 *db;
-    int rc;
-
-    /* Abrir (o crear) la base de datos */
-    rc = sqlite3_open("../../datos/biblia_rv60.sqlite3", &db);
-
-    if (rc != SQLITE_OK) {
-        fprintf(stderr, "Error al abrir BD: %s\n", sqlite3_errmsg(db));
-        sqlite3_close(db);
-        return 1;
-    }
-
-    printf("Base de datos abierta correctamente.\n");
-
-    /* Siempre cerrar la conexión al terminar */
-    sqlite3_close(db);
-    return 0;
-}
-```
-
-Compilar:
-```bash
-gcc -o ejemplo ejemplo.c -lsqlite3
-./ejemplo
-```
-
----
-
-## Consulta básica con callback
-
-```c
-#include <stdio.h>
-#include <sqlite3.h>
-
-/* Función callback: se llama por cada fila del resultado */
-static int callback(void *datos, int cols, char **valores, char **nombres) {
-    for (int i = 0; i < cols; i++) {
-        printf("%s = %s\n", nombres[i], valores[i] ? valores[i] : "NULL");
-    }
-    printf("---\n");
-    return 0;
-}
-
-int main(void) {
-    sqlite3 *db;
-    char *error = NULL;
-
-    sqlite3_open("../../datos/biblia_rv60.sqlite3", &db);
-
-    /* Ejecutar una consulta y usar el callback para imprimir resultados */
-    sqlite3_exec(db, "SELECT * FROM libros LIMIT 3;", callback, NULL, &error);
-
-    if (error) {
-        fprintf(stderr, "Error SQL: %s\n", error);
-        sqlite3_free(error);
-    }
-
-    sqlite3_close(db);
-    return 0;
-}
-```
-
----
-
-Ver el **capítulo 12** para un proyecto completo con esta base de datos.
+Si todavía no te sientes cómodo con punteros, strings o validación de errores, conviene reforzar
+esos capítulos antes de profundizar en SQLite.

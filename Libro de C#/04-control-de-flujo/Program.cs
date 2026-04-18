@@ -1,7 +1,11 @@
 // ============================================================
-// Capítulo 04 — Control de flujo
-// Temas: if/else, switch clásico, switch expression (C# 8+),
-//        foreach, for, while, do-while, pattern matching básico
+// Capitulo 04 — Control de flujo
+// Temas: if/else, switch, switch expression,
+//        foreach, for, while, do-while, pattern matching
+// ============================================================
+//
+// Este archivo muestra como C# elige caminos y repite acciones.
+// Controlar el flujo es esencial para reglas, validaciones y recorridos.
 // ============================================================
 
 Console.WriteLine("=== if / else if / else ===");
@@ -33,7 +37,7 @@ switch (diaSemana)
 
 Console.WriteLine("\n=== switch expression (C# 8+) ===");
 
-// Forma moderna y concisa: retorna un valor directamente
+// Forma moderna: devuelve un valor directamente.
 string nombreDia = diaSemana switch
 {
     1 => "Lunes",
@@ -41,12 +45,12 @@ string nombreDia = diaSemana switch
     3 => "Miércoles",
     4 => "Jueves",
     5 => "Viernes",
-    6 or 7 => "Fin de semana",   // múltiples casos con 'or'
-    _ => "Inválido"               // caso por defecto
+    6 or 7 => "Fin de semana",
+    _ => "Invalido"
 };
 Console.WriteLine($"Día {diaSemana}: {nombreDia}");
 
-// Switch expression con rango usando when
+// Tambien puede expresar rangos de forma compacta.
 int puntos = 82;
 string calificacion = puntos switch
 {
@@ -60,12 +64,12 @@ Console.WriteLine($"Puntos {puntos}: {calificacion}");
 
 Console.WriteLine("\n=== Pattern matching básico ===");
 
-// 'is' con pattern variable
+// 'is' puede verificar tipo y crear una variable utilizable.
 object valor = 42;
 if (valor is int numero && numero > 0)
     Console.WriteLine($"Es un entero positivo: {numero}");
 
-// Switch con type patterns y when
+// switch tambien puede trabajar por tipo y condicion.
 object[] valores = { 42, -5, 0, "hola", 3.14, null! };
 foreach (object v in valores)
 {
@@ -84,7 +88,7 @@ foreach (object v in valores)
 
 Console.WriteLine("\n=== Bucle for ===");
 
-// Tabla de multiplicar del 3
+// Un for es util cuando controlas un contador.
 for (int i = 1; i <= 5; i++)
     Console.WriteLine($"  3 × {i} = {3 * i}");
 
@@ -94,7 +98,7 @@ string[] frutas = { "mango", "papaya", "aguacate", "maracuyá", "guanábana" };
 foreach (string fruta in frutas)
     Console.WriteLine($"  🍀 {fruta}");
 
-// foreach con índice usando LINQ (más adelante en el libro)
+// foreach recorre elementos de una coleccion con claridad.
 Console.WriteLine();
 foreach ((int indice, string fruta) in frutas.Select((f, i) => (i, f)))
     Console.WriteLine($"  [{indice}] {fruta}");
@@ -111,7 +115,7 @@ Console.WriteLine();
 
 Console.WriteLine("\n=== Bucle do-while ===");
 
-// Se ejecuta al menos una vez aunque la condición sea falsa desde el inicio
+// do-while ejecuta el bloque al menos una vez.
 int intentos = 0;
 do
 {
@@ -132,7 +136,7 @@ Console.WriteLine();
 
 Console.WriteLine("\n=== Bucles anidados ===");
 
-// Tabla de multiplicar 3x3
+// Los bucles anidados aparecen mucho en tablas y matrices.
 Console.WriteLine("  ×  | 1  2  3");
 Console.WriteLine("  ---|--------");
 for (int fila = 1; fila <= 3; fila++)
@@ -142,3 +146,8 @@ for (int fila = 1; fila <= 3; fila++)
         Console.Write($" {fila * col,2}");
     Console.WriteLine();
 }
+
+Console.WriteLine("\n=== Ideas clave ===");
+Console.WriteLine("El flujo decide caminos y repeticiones.");
+Console.WriteLine("switch expression resume casos discretos.");
+Console.WriteLine("Elegir el bucle correcto mejora claridad.");

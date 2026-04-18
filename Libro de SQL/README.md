@@ -5,7 +5,7 @@
 
 ---
 
-## ¿Para quién es esto?
+## ¿Para quien es esto?
 
 Para **cualquier persona** que quiera entender y manejar bases de datos relacionales.
 No necesitas experiencia previa en programación. Solo necesitas:
@@ -14,13 +14,17 @@ No necesitas experiencia previa en programación. Solo necesitas:
 - Un editor de texto o **DB Browser for SQLite** para visualizar los datos
 - Ganas de aprender
 
-Al terminar este libro sabrás escribir consultas SQL desde las más simples hasta las más
-avanzadas, diseñar esquemas de bases de datos, optimizar rendimiento con índices,
-y trabajar con datos reales.
+Al terminar este libro deberias entender:
+
+- como se guarda la informacion en tablas;
+- como el motor de base de datos busca, filtra y ordena registros;
+- como se relacionan los datos;
+- como una consulta impacta rendimiento y uso de disco;
+- como disenar estructuras claras para software real.
 
 ---
 
-## ¿Cómo usar este repositorio?
+## ¿Como usar este repositorio?
 
 1. Instala **DB Browser for SQLite** (ver instrucciones abajo) — es visual y gratuito
 2. Clona o descarga este repositorio
@@ -29,8 +33,20 @@ y trabajar con datos reales.
 5. Ejecuta cada consulta en DB Browser o en la terminal de SQLite
 6. Los capítulos 04 en adelante usan la base de datos de la Biblia como dataset real
 
-> **Tip:** En VS Code puedes instalar la extensión **SQLite Viewer** para ver y
-> ejecutar archivos `.sql` directamente sin salir del editor.
+> **Tip:** En VS Code puedes instalar la extension **SQLite Viewer** para ver y
+> ejecutar archivos `.sql` sin salir del editor.
+
+## Que ocurre dentro del motor SQL
+
+Cuando ejecutas una consulta:
+
+- el motor analiza la instruccion;
+- revisa tablas, columnas e indices;
+- busca datos en disco y memoria;
+- filtra, agrupa, ordena o transforma resultados;
+- devuelve una tabla temporal o modifica datos persistentes.
+
+Aprender SQL bien es aprender a pensar informacion, no solo comandos.
 
 ---
 

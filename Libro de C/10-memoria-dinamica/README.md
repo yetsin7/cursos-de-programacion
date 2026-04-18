@@ -1,139 +1,108 @@
 # Capítulo 10 — Memoria Dinámica
 
-## Tipos de memoria en C
+La memoria dinámica permite pedir espacio durante la ejecución del programa, justo cuando se
+necesita. Esto hace posible trabajar con tamaños variables, colecciones que crecen y estructuras
+más realistas. También exige mucha disciplina, porque el lenguaje no libera esa memoria por ti.
 
-| Área           | Cuándo se asigna    | Quién la libera         | Tamaño           |
-|----------------|---------------------|-------------------------|------------------|
-| **Stack**      | Al entrar a función | Automático al salir     | Fijo, limitado   |
-| **Heap**       | Con malloc/calloc   | Tú (con free)           | Flexible, grande |
-| **Datos (BSS)**| Al iniciar programa | El SO al terminar       | Fijo             |
+## Qué aprenderás aquí
 
----
+- Qué diferencia hay entre stack, heap y datos estáticos
+- Cómo usar `malloc`, `calloc`, `realloc` y `free`
+- Cómo comprobar si una reserva de memoria falló
+- Qué son los memory leaks y los dangling pointers
+- Cómo pensar la memoria como un recurso que debe administrarse
 
-## malloc — Asignar memoria
+## Qué está pasando dentro del software y del hardware
 
-```c
-#include <stdlib.h>
+La memoria automática de una función vive normalmente en la pila (`stack`) y desaparece sola al
+salir de la función. La memoria dinámica vive en el montón (`heap`), una zona gestionada durante
+la ejecución para bloques cuyo tamaño o duración no se conoce desde el principio.
 
-/* Asignar espacio para 10 enteros */
-int *arr = malloc(10 * sizeof(int));
+Cuando llamas a `malloc`, la biblioteca solicita un bloque al gestor de memoria del sistema. Si ya
+no existe memoria disponible suficiente, la función puede devolver `NULL`.
 
-if (arr == NULL) {
-    /* malloc devuelve NULL si no hay memoria disponible */
-    fprintf(stderr, "Error: sin memoria\n");
-    exit(1);
-}
+## Ideas clave del capítulo
 
-arr[0] = 42;   /* usar como arreglo normal */
-```
-
-> `malloc` **no inicializa** la memoria — puede contener basura.
-
----
-
-## calloc — Asignar e inicializar a cero
+### 1. `malloc`
 
 ```c
-/* Asignar espacio para 10 enteros, inicializados en 0 */
-int *arr = calloc(10, sizeof(int));
+int *numeros = malloc(10 * sizeof(int));
 ```
 
-`calloc(n, size)` asigna `n` elementos de `size` bytes cada uno, inicializados a 0.
+Reserva memoria, pero no la inicializa.
 
----
-
-## realloc — Redimensionar memoria
+### 2. `calloc`
 
 ```c
-/* Cambiar el tamaño del bloque a 20 enteros */
-int *temp = realloc(arr, 20 * sizeof(int));
-
-if (temp == NULL) {
-    /* realloc falló — el puntero original sigue siendo válido */
-    free(arr);
-    exit(1);
-}
-
-arr = temp;   /* actualizar el puntero solo si tuvo éxito */
+int *numeros = calloc(10, sizeof(int));
 ```
 
-> Nunca hacer `arr = realloc(arr, ...)` directamente — si falla, pierdes el puntero original.
+Reserva memoria e inicializa los bytes en cero.
 
----
-
-## free — Liberar memoria
+### 3. `realloc`
 
 ```c
-free(arr);
-arr = NULL;   /* buena práctica: evitar dangling pointer */
+int *temporal = realloc(numeros, 20 * sizeof(int));
 ```
 
-> Regla: **cada `malloc`/`calloc`/`realloc` debe tener exactamente un `free`**.
+Sirve para cambiar el tamaño del bloque. Conviene guardar el resultado en una variable temporal
+para no perder la referencia original si falla.
 
----
-
-## Memory Leaks (fugas de memoria)
-
-Un memory leak ocurre cuando se asigna memoria que nunca se libera.
+### 4. `free`
 
 ```c
-/* BUG: memory leak — arr nunca se libera */
-void funcion_con_leak(void) {
-    int *arr = malloc(100 * sizeof(int));
-    /* ... usar arr ... */
-    /* ¡FALTA free(arr)! */
-}
+free(numeros);
+numeros = NULL;
 ```
 
----
+Cada bloque reservado debe liberarse exactamente una vez.
 
-## Detectar fugas con Valgrind
+## Problemas clásicos
 
-```bash
-# Compilar con información de debug
-gcc -g -o programa programa.c
+### Memory leak
 
-# Ejecutar con Valgrind
-valgrind --leak-check=full ./programa
-```
+Pides memoria y nunca la liberas. El programa pierde acceso a ese bloque, pero el sistema sigue
+considerándolo ocupado hasta que el proceso termina.
 
-Salida de Valgrind sin leaks:
-```
-All heap blocks were freed -- no leaks are possible
-```
+### Dangling pointer
 
----
+Un puntero sigue apuntando a memoria ya liberada. Si vuelves a usarlo, el comportamiento es
+indefinido.
 
-## AddressSanitizer (más moderno, sin Valgrind)
+### Double free
 
-```bash
-gcc -fsanitize=address -g -o programa programa.c
-./programa
-```
+Liberas dos veces el mismo bloque. Esto puede causar fallos graves o vulnerabilidades.
 
----
+## Cómo se conecta con software real
+
+- Listas o buffers cuyo tamaño cambia
+- Lectura de archivos grandes
+- Estructuras dinámicas como pilas, colas o listas enlazadas
+- Procesamiento de texto o datos de tamaño desconocido
 
 ## Errores comunes
 
-| Error                | Descripción                                        |
-|----------------------|----------------------------------------------------|
-| **Memory leak**      | malloc sin free correspondiente                    |
-| **Double free**      | Llamar free dos veces al mismo puntero             |
-| **Use after free**   | Usar un puntero después de liberarlo               |
-| **Dangling pointer** | Puntero que apunta a memoria ya liberada           |
-| **Buffer overflow**  | Escribir fuera de los límites asignados            |
-| **Null dereference** | Desreferenciar NULL (malloc falló y no se verificó)|
+- No comprobar si `malloc` o `realloc` devolvieron `NULL`
+- Olvidar llamar a `free`
+- Usar memoria después de liberarla
+- Escribir fuera del tamaño reservado
+- Reservar menos bytes de los necesarios por calcular mal `sizeof`
 
----
+## Cómo estudiar este capítulo
+
+1. Reserva arreglos dinámicos pequeños y llénalos con datos.
+2. Redimensiónalos y revisa si el contenido sigue correcto.
+3. Libera siempre la memoria al terminar.
+4. Imagina que cada `malloc` contrae una deuda que debes pagar con `free`.
+5. Si puedes, usa herramientas como Valgrind o AddressSanitizer cuando trabajes fuera de este entorno.
 
 ## Archivos de este capítulo
 
-| Archivo              | Descripción                                        |
-|----------------------|----------------------------------------------------|
-| `01_malloc_free.c`   | malloc, calloc, realloc, free, arreglos dinámicos  |
+| Archivo | Descripción |
+|---------|-------------|
+| `01_malloc_free.c` | Ejemplos de reserva, redimensión, liberación y errores frecuentes de memoria |
 
----
+## Conexión con el siguiente capítulo
 
-## Siguiente capítulo
-
-→ **Capítulo 11:** Preprocesador
+Ya entiendes mejor cómo se organiza el programa antes, durante y después de ejecutarse. El
+siguiente paso es ver qué ocurre incluso antes de compilar: el trabajo del preprocesador.

@@ -1,17 +1,12 @@
 /**
- * Capítulo 05 — Funciones
+ * Capitulo 05 — Funciones
  * Archivo: 01_funciones.cpp
  *
- * Demuestra:
- *   - Definición y llamada de funciones
- *   - Paso por valor, por referencia y por referencia constante
- *   - Parámetros con valores por defecto
- *   - Sobrecarga de funciones (mismo nombre, diferentes parámetros)
- *   - Funciones inline
- *   - Lambdas básicas (C++11)
- *   - Recursión con factorial y Fibonacci
+ * Este archivo muestra como C++ organiza logica reutilizable con funciones.
+ * Tambien enseña como cambia el comportamiento segun pases datos por valor,
+ * referencia o referencia constante.
  *
- * Compilar: g++ -std=c++17 -o funciones 01_funciones.cpp
+ * Compilar: g++ -std=c++17 -Wall -Wextra -o funciones 01_funciones.cpp
  */
 
 #include <iostream>
@@ -20,8 +15,8 @@
 #include <algorithm>  // Para std::sort con lambda
 
 // -------------------------------------------------------------------------
-// Prototipos (declaraciones adelantadas)
-// Permiten usar las funciones antes de su definición completa
+// Prototipos
+// Permiten usar funciones antes de su definicion completa.
 // -------------------------------------------------------------------------
 int    sumar(int a, int b);
 void   incrementar(int& valor);
@@ -30,35 +25,34 @@ double potencia(double base, int exponente = 2);
 long long factorial(int n);
 
 // -------------------------------------------------------------------------
-// Sobrecarga: mismas nombre 'area', distintos parámetros
+// Sobrecarga: mismo nombre, distintos parametros
 // -------------------------------------------------------------------------
 
-// Calcula el área de un cuadrado
+// Calcula el area de un cuadrado
 int area(int lado) {
     return lado * lado;
 }
 
-// Calcula el área de un rectángulo
+// Calcula el area de un rectangulo
 double area(double base, double altura) {
     return base * altura;
 }
 
-// Calcula el área de un círculo
+// Calcula el area de un circulo
 double area(double radio, bool esCirculo) {
     const double PI = 3.14159265358979;
     return PI * radio * radio;
 }
 
 // -------------------------------------------------------------------------
-// Función inline: expansión en el punto de llamada (sin overhead de llamada)
+// Funcion inline
 // -------------------------------------------------------------------------
 inline int cuadrado(int x) {
     return x * x;
 }
 
 // -------------------------------------------------------------------------
-// Función recursiva: calcula el factorial de n
-// Caso base: factorial(0) = factorial(1) = 1
+// Funcion recursiva: factorial
 // -------------------------------------------------------------------------
 long long factorial(int n) {
     if (n <= 1) return 1;
@@ -66,8 +60,7 @@ long long factorial(int n) {
 }
 
 // -------------------------------------------------------------------------
-// Función recursiva: Fibonacci
-// fib(0)=0, fib(1)=1, fib(n)=fib(n-1)+fib(n-2)
+// Funcion recursiva: Fibonacci
 // -------------------------------------------------------------------------
 int fibonacci(int n) {
     if (n <= 0) return 0;
@@ -76,7 +69,7 @@ int fibonacci(int n) {
 }
 
 // -------------------------------------------------------------------------
-// Funciones con paso de parámetros
+// Funciones con paso de parametros
 // -------------------------------------------------------------------------
 
 // Recibe por valor: no modifica el original
@@ -89,12 +82,12 @@ void incrementar(int& valor) {
     valor++;
 }
 
-// Recibe por referencia constante: eficiente, no modifica
+// Recibe por referencia constante: evita copia y no modifica
 void mostrarNombre(const std::string& nombre) {
     std::cout << "Nombre: " << nombre << "\n";
 }
 
-// Parámetro con valor por defecto (exponente = 2)
+// Parametro con valor por defecto
 double potencia(double base, int exponente) {
     double resultado = 1.0;
     for (int i = 0; i < exponente; i++) {
@@ -107,14 +100,14 @@ int main() {
     using namespace std;
 
     // -------------------------------------------------------------------------
-    // 1. Funciones básicas
+    // 1. Funciones basicas
     // -------------------------------------------------------------------------
     cout << "=== FUNCIONES BÁSICAS ===\n";
 
     int resultado = sumar(8, 5);
     cout << "8 + 5 = " << resultado << "\n";
 
-    // Paso por referencia: la variable original cambia
+    // Por referencia, la variable original cambia.
     int numero = 10;
     cout << "Antes: " << numero << "\n";
     incrementar(numero);
@@ -123,7 +116,7 @@ int main() {
     mostrarNombre("María García");
 
     // -------------------------------------------------------------------------
-    // 2. Parámetros por defecto
+    // 2. Parametros por defecto
     // -------------------------------------------------------------------------
     cout << "\n=== PARÁMETROS POR DEFECTO ===\n";
 
@@ -141,7 +134,7 @@ int main() {
     cout << "Área círculo radio=5:         " << area(5.0, true)    << "\n";
 
     // -------------------------------------------------------------------------
-    // 4. Función inline
+    // 4. Funcion inline
     // -------------------------------------------------------------------------
     cout << "\n=== INLINE ===\n";
 
@@ -154,11 +147,11 @@ int main() {
     // -------------------------------------------------------------------------
     cout << "\n=== LAMBDAS ===\n";
 
-    // Lambda simple asignada a variable auto
+    // Una lambda es una funcion anonima.
     auto multiplicar = [](int a, int b) -> int { return a * b; };
     cout << "3 * 7 = " << multiplicar(3, 7) << "\n";
 
-    // Lambda que captura variable del scope exterior por valor
+    // Captura por valor: usa una copia del dato externo.
     int descuento = 10;
     auto aplicarDescuento = [descuento](double precio) -> double {
         return precio * (1.0 - descuento / 100.0);
@@ -166,13 +159,13 @@ int main() {
     cout << "Precio $100 con " << descuento << "% descuento: $"
          << aplicarDescuento(100.0) << "\n";
 
-    // Lambda con captura por referencia (puede modificar la variable)
+    // Captura por referencia: puede modificar la variable externa.
     int acumulador = 0;
     auto acumular = [&acumulador](int valor) { acumulador += valor; };
     for (int i = 1; i <= 5; i++) acumular(i);
     cout << "Suma 1..5 con lambda: " << acumulador << "\n";
 
-    // Lambda usada con algoritmo STL (sort)
+    // Las lambdas se usan mucho con algoritmos STL.
     vector<int> nums = {5, 2, 8, 1, 9, 3};
     sort(nums.begin(), nums.end(), [](int a, int b) { return a > b; }); // Desc
     cout << "Ordenado descendente: ";
@@ -180,7 +173,7 @@ int main() {
     cout << "\n";
 
     // -------------------------------------------------------------------------
-    // 6. Recursión
+    // 6. Recursion
     // -------------------------------------------------------------------------
     cout << "\n=== RECURSIÓN ===\n";
 
@@ -194,6 +187,11 @@ int main() {
         cout << fibonacci(i) << " ";
     }
     cout << "\n";
+
+    cout << "\n=== IDEAS CLAVE ===\n";
+    cout << "Las funciones dividen logica en piezas reutilizables.\n";
+    cout << "Pasar por valor no es igual que pasar por referencia.\n";
+    cout << "Las lambdas ayudan a expresar logica pequeña en el lugar.\n";
 
     return 0;
 }

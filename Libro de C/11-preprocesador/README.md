@@ -1,150 +1,104 @@
 # Capítulo 11 — El Preprocesador de C
 
-## ¿Qué es el preprocesador?
+Antes de que el compilador traduzca tu código a lenguaje máquina, el preprocesador realiza una
+primera pasada sobre el texto fuente. Sustituye macros, incluye archivos y activa o desactiva
+bloques de código según ciertas condiciones. Aunque trabaja "antes" del lenguaje C propiamente
+dicho, influye muchísimo en cómo queda el programa final.
 
-El preprocesador es una herramienta que procesa el código fuente **antes** de que el compilador
-lo vea. Realiza sustituciones de texto puro — no conoce tipos, funciones ni variables de C.
+## Qué aprenderás aquí
 
-Las directivas del preprocesador comienzan con `#`.
+- Qué hace el preprocesador y qué no hace
+- Cómo usar `#include`, `#define` y `#undef`
+- Qué es la compilación condicional
+- Cómo funcionan los include guards
+- Por qué una macro puede ser útil o peligrosa
 
----
+## Qué está pasando dentro del software y del hardware
 
-## #include — Incluir archivos
+El preprocesador no entiende tipos, memoria ni lógica del programa. Solo transforma texto según
+reglas. Después de esa etapa, el compilador recibe un archivo expandido y recién entonces analiza
+sintaxis, tipos y generación de código.
+
+Eso significa que una macro mal escrita puede introducir errores difíciles de ver, porque el
+problema nace antes de compilar de verdad.
+
+## Ideas clave del capítulo
+
+### 1. `#include`
 
 ```c
-#include <stdio.h>       /* archivo del sistema — busca en directorios del sistema */
-#include "mi_modulo.h"   /* archivo local — busca primero en el directorio actual */
+#include <stdio.h>
+#include "mi_modulo.h"
 ```
 
----
+Sirve para insertar el contenido de otro archivo fuente o cabecera.
 
-## #define — Constantes y macros
-
-### Constante simple
+### 2. `#define`
 
 ```c
-#define PI 3.14159265358979
-#define MAX_NOMBRE 50
-#define VERSION "1.0.0"
+#define PI 3.1415926535
+#define CUADRADO(x) ((x) * (x))
 ```
 
-### Macro con parámetros
+Una macro simple reemplaza texto. Una macro con parámetros puede parecer una función, pero no lo
+es. Por eso los paréntesis son tan importantes.
+
+### 3. Compilación condicional
 
 ```c
-/* Macro que calcula el cuadrado de x */
-#define CUADRADO(x)   ((x) * (x))
-
-/* Macro para el valor absoluto */
-#define ABS(x)        ((x) >= 0 ? (x) : -(x))
-
-/* Macro para el máximo */
-#define MAX(a, b)     ((a) > (b) ? (a) : (b))
-```
-
-> ⚠️ Siempre rodear los parámetros de macros con paréntesis para evitar problemas de precedencia:
-> `CUADRADO(2+3)` → sin paréntesis: `2+3 * 2+3 = 11` (incorrecto)
-> con paréntesis: `(2+3) * (2+3) = 25` (correcto)
-
-### Macro multilínea
-
-```c
-#define IMPRIMIR_INFO(nombre, valor) \
-    do { \
-        printf("[INFO] %s = %d\n", (nombre), (valor)); \
-    } while(0)
-```
-
-> El `do { ... } while(0)` es una técnica estándar para crear macros que se comporten
-> correctamente como sentencias.
-
----
-
-## #undef — Eliminar una definición
-
-```c
-#define MODO_DEBUG 1
-/* ... usar MODO_DEBUG ... */
-#undef MODO_DEBUG    /* a partir de aquí, MODO_DEBUG ya no existe */
-```
-
----
-
-## Compilación condicional
-
-### #ifdef / #ifndef
-
-```c
-#ifdef MODO_DEBUG
-    printf("DEBUG: valor = %d\n", x);
-#endif
-
-/* ifndef = "si NO está definido" */
-#ifndef MAX_SIZE
-    #define MAX_SIZE 100
+#ifdef DEBUG
+printf("Valor interno: %d\n", x);
 #endif
 ```
 
-### #if / #elif / #else
+Permite activar o desactivar partes del código según símbolos definidos.
+
+### 4. Include guards
 
 ```c
-#if VERSION_MAYOR >= 2
-    printf("Versión 2 o superior\n");
-#elif VERSION_MAYOR == 1
-    printf("Versión 1\n");
-#else
-    printf("Versión desconocida\n");
+#ifndef MI_ARCHIVO_H
+#define MI_ARCHIVO_H
+
+/* contenido */
+
 #endif
 ```
 
----
+Evitan que un archivo `.h` se procese varias veces en la misma compilación.
 
-## Include Guards — evitar inclusión doble
+### 5. Macros predefinidas
 
-En archivos `.h` siempre se usan guardas de inclusión:
+Macros como `__FILE__`, `__LINE__`, `__DATE__` y `__TIME__` ayudan en depuración y trazas.
 
-```c
-/* archivo: mi_libreria.h */
-#ifndef MI_LIBRERIA_H
-#define MI_LIBRERIA_H
+## Cuándo esto resulta útil de verdad
 
-/* contenido del header */
-void miFuncion(void);
+- Reutilizar constantes globales
+- Compartir declaraciones en headers
+- Activar logs de depuración
+- Adaptar código a distintas plataformas o configuraciones
 
-#endif /* MI_LIBRERIA_H */
-```
+## Errores comunes
 
-Alternativa moderna (no estándar pero ampliamente soportada):
+- Escribir macros sin paréntesis y obtener resultados inesperados
+- Pensar que una macro se comporta exactamente como una función
+- Duplicar definiciones por no usar include guards
+- Abusar de macros cuando una constante o función sería más clara
 
-```c
-#pragma once
-```
+## Cómo estudiar este capítulo
 
----
-
-## Macros predefinidas por el compilador
-
-| Macro          | Descripción                             |
-|----------------|-----------------------------------------|
-| `__FILE__`     | Nombre del archivo fuente               |
-| `__LINE__`     | Número de línea actual                  |
-| `__DATE__`     | Fecha de compilación                    |
-| `__TIME__`     | Hora de compilación                     |
-| `__func__`     | Nombre de la función actual (C99)       |
-
-```c
-printf("Error en %s, linea %d\n", __FILE__, __LINE__);
-```
-
----
+1. Escribe macros pequeñas y prueba expresiones complejas.
+2. Compara una macro con una función equivalente.
+3. Revisa headers reales y observa sus include guards.
+4. Usa compilación condicional para mensajes de depuración.
+5. Si algo parece inexplicable, recuerda que quizá el problema ocurrió antes de compilar.
 
 ## Archivos de este capítulo
 
-| Archivo              | Descripción                                      |
-|----------------------|--------------------------------------------------|
-| `01_preprocesador.c` | Ejemplos prácticos de todas las directivas       |
+| Archivo | Descripción |
+|---------|-------------|
+| `01_preprocesador.c` | Ejemplos prácticos de inclusión, macros y compilación condicional |
 
----
+## Conexión con el siguiente capítulo
 
-## Siguiente capítulo
-
-→ **Capítulo 12:** Proyecto Biblia — SQLite3 en C
+El siguiente capítulo une varias piezas del libro en un proyecto más real: consultar una base de
+datos SQLite desde C.

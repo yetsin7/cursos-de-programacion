@@ -1,16 +1,12 @@
 /**
- * Capítulo 03 — Operadores y Expresiones
+ * Capitulo 03 — Operadores y Expresiones
  * Archivo: 01_operadores.cpp
  *
- * Demuestra:
- *   - Operadores aritméticos (+, -, *, /, %, ++, --)
- *   - Operadores de comparación (==, !=, <, >, <=, >=)
- *   - Operadores lógicos (&&, ||, !)
- *   - Operador ternario (?:)
- *   - Operadores de C++: new, delete, ::, ->
- *   - Operadores de asignación compuesta (+=, -=, etc.)
+ * Este archivo muestra como C++ transforma valores y evalua expresiones.
+ * Tambien conecta algunos operadores con memoria y punteros, algo muy propio
+ * del lenguaje.
  *
- * Compilar: g++ -std=c++17 -o operadores 01_operadores.cpp
+ * Compilar: g++ -std=c++17 -Wall -Wextra -o operadores 01_operadores.cpp
  */
 
 #include <iostream>
@@ -35,7 +31,7 @@ int main() {
     using namespace std;
 
     // -------------------------------------------------------------------------
-    // 1. Operadores aritméticos
+    // 1. Operadores aritmeticos
     // -------------------------------------------------------------------------
     cout << "=== ARITMÉTICOS ===\n";
 
@@ -46,18 +42,18 @@ int main() {
     cout << a << " / " << b << " = " << (a / b) << " (división entera)\n";
     cout << a << " % " << b << " = " << (a % b) << " (módulo/resto)\n";
 
-    // División flotante: basta con que uno de los operandos sea double
+    // Para obtener division flotante, uno de los operandos debe ser double.
     cout << a << " / " << b << " = " << (static_cast<double>(a) / b)
          << " (división flotante)\n";
 
-    // Incremento y decremento
+    // Prefijo y postfijo no hacen exactamente lo mismo.
     int c = 10;
     cout << "\nInicio c = " << c << "\n";
     cout << "c++ (postfijo): " << c++ << " (c ahora es " << c << ")\n";  // Usa 10, luego suma
     cout << "++c (prefijo):  " << ++c << " (c ahora es " << c << ")\n";  // Suma y usa 12
 
     // -------------------------------------------------------------------------
-    // 2. Operadores de asignación compuesta
+    // 2. Operadores de asignacion compuesta
     // -------------------------------------------------------------------------
     cout << "\n=== ASIGNACIÓN COMPUESTA ===\n";
 
@@ -70,12 +66,12 @@ int main() {
     n %= 3;  cout << "n %= 3  → " << n << "\n";
 
     // -------------------------------------------------------------------------
-    // 3. Operadores de comparación
+    // 3. Operadores de comparacion
     // -------------------------------------------------------------------------
     cout << "\n=== COMPARACIÓN ===\n";
 
     int x = 10, y = 20;
-    // boolalpha hace que cout muestre "true"/"false" en lugar de 1/0
+    // boolalpha hace que cout muestre true/false en lugar de 1/0.
     cout << boolalpha;
     cout << x << " == " << y << " → " << (x == y) << "\n";
     cout << x << " != " << y << " → " << (x != y) << "\n";
@@ -85,7 +81,7 @@ int main() {
     cout << x << " >= " << y << " → " << (x >= y) << "\n";
 
     // -------------------------------------------------------------------------
-    // 4. Operadores lógicos
+    // 4. Operadores logicos
     // -------------------------------------------------------------------------
     cout << "\n=== LÓGICOS ===\n";
 
@@ -95,9 +91,9 @@ int main() {
     cout << "p || q → " << (p || q) << "\n";  // OR: basta uno
     cout << "!p     → " << (!p)     << "\n";  // NOT: invierte
 
-    // Evaluación en cortocircuito
+    // El cortocircuito evita evaluar la segunda parte si no hace falta.
     int divisor = 0;
-    // Si divisor == 0, la segunda condición NO se evalúa (evita división por cero)
+    // Si divisor == 0, la segunda condicion no se evalua.
     bool seguro = (divisor != 0) && (100 / divisor > 5);
     cout << "Cortocircuito &&: " << seguro << " (sin crash)\n";
 
@@ -107,12 +103,12 @@ int main() {
     cout << "\n=== TERNARIO ===\n";
 
     int edad = 20;
-    // condicion ? valor_si_verdadero : valor_si_falso
+    // El ternario devuelve un valor segun la condicion.
     string estado = (edad >= 18) ? "mayor de edad" : "menor de edad";
     cout << "Edad " << edad << ": " << estado << "\n";
 
     int m = 7, k = 3;
-    int maximo = (m > k) ? m : k;  // Máximo entre m y k
+    int maximo = (m > k) ? m : k;
     cout << "Máximo de " << m << " y " << k << ": " << maximo << "\n";
 
     // -------------------------------------------------------------------------
@@ -120,13 +116,13 @@ int main() {
     // -------------------------------------------------------------------------
     cout << "\n=== NEW, DELETE, -> ===\n";
 
-    // new: reserva memoria en el heap y devuelve un puntero
+    // new reserva memoria en el heap y devuelve un puntero.
     int* numPtr = new int(42);
     cout << "Valor en heap (new): " << *numPtr << "\n";
 
-    // delete: libera la memoria reservada con new
+    // delete libera la memoria reservada con new.
     delete numPtr;
-    numPtr = nullptr;  // Anulamos el puntero para evitar puntero colgante
+    numPtr = nullptr;  // Evita dejar un puntero colgante
 
     // new con clase y operador ->
     Punto* pt = new Punto(3.5, 7.2);
@@ -138,13 +134,17 @@ int main() {
     pt = nullptr;
 
     // -------------------------------------------------------------------------
-    // 7. Operador de resolución de alcance ::
+    // 7. Operador de resolucion de alcance ::
     // -------------------------------------------------------------------------
     cout << "\n=== RESOLUCIÓN DE ALCANCE (::) ===\n";
 
-    // std:: es un namespace; :: accede al identificador dentro de él
-    // Ya lo usamos en cada std::cout, std::string, etc.
+    // std:: es un namespace; :: accede al identificador dentro de el.
     cout << "El operador :: ya se usa en cada std::cout y std::string\n";
+
+    cout << "\n=== IDEAS CLAVE ===\n";
+    cout << "Una expresion puede calcular, comparar o acceder a memoria.\n";
+    cout << "La division entera y la flotante no son lo mismo.\n";
+    cout << "new y delete implican responsabilidad sobre memoria.\n";
 
     return 0;
 }

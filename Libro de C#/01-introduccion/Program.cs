@@ -1,25 +1,34 @@
 // ============================================================
-// Capítulo 01 — Introducción a C#
-// Temas: hola mundo, Console.WriteLine, variables básicas,
-//        comentarios, namespaces, clases y el método Main
+// Capitulo 01 — Introduccion a C#
+// Temas: salida por consola, variables, comentarios,
+//        top-level statements y estructura basica
+// ============================================================
+//
+// Este archivo ensena el primer contacto con C# mostrando dos ideas:
+// 1. como escribir instrucciones que .NET pueda ejecutar;
+// 2. como una aplicacion de consola produce salida visible.
+//
+// Cuando ejecutas este programa, .NET compila el codigo, carga el runtime y
+// empieza a ejecutar las instrucciones de arriba hacia abajo.
 // ============================================================
 
 // --- Top-level statements (C# 9+) ---
-// A partir de C# 9 no es necesario declarar namespace ni clase.
-// El compilador lo hace automáticamente. Ideal para scripts y aprendizaje.
+// En C# moderno no hace falta declarar Main de forma explicita para ejemplos
+// sencillos. El compilador genera la estructura necesaria automaticamente.
 
-// Imprimir texto en la consola
+// Console.WriteLine envia texto a la consola y agrega salto de linea.
 Console.WriteLine("¡Hola, mundo!");
 
-// Console.Write no agrega salto de línea al final
+// Console.Write no agrega salto de linea al final.
 Console.Write("Nombre: ");
 Console.WriteLine("C Sharp");
 
 // Separador visual
 Console.WriteLine("-----------------------------------");
 
-// --- Variables básicas ---
-// En C# las variables tienen tipo explícito o se infiere con 'var'
+// --- Variables basicas ---
+// Una variable nombra un dato que el programa necesita conservar en memoria.
+// C# puede declarar el tipo explicitamente o inferirlo con var.
 string nombre = "Yetsin";       // cadena de texto
 int edad = 30;                  // número entero
 double altura = 1.75;           // número decimal (doble precisión)
@@ -44,9 +53,9 @@ Console.WriteLine("-----------------------------------");
 /// Esto es un comentario de documentación XML (usado por IntelliSense)
 /// </summary>
 
-// --- Estructura clásica con namespace y clase ---
-// Aunque los top-level statements son más simples,
-// en proyectos reales se organiza el código en namespaces y clases.
+// --- Estructura clasica con clase ---
+// Aunque los top-level statements son comodos para aprender, en software real
+// solemos organizar el codigo en clases, archivos y namespaces.
 Console.WriteLine("\n--- Usando clase explícita ---");
 Saludo.Mostrar("Mundo");
 Saludo.Mostrar("Programador");
@@ -57,17 +66,18 @@ Console.WriteLine($"Sistema Operativo: {Environment.OSVersion}");
 Console.WriteLine($"Directorio actual: {Environment.CurrentDirectory}");
 
 // ============================================================
-// Clase auxiliar definida en el mismo archivo
-// (en proyectos reales iría en su propio archivo .cs)
+// Clase auxiliar definida en el mismo archivo.
+// En proyectos reales normalmente iria en su propio archivo .cs.
 // ============================================================
 
 /// <summary>
-/// Clase de ejemplo para demostrar la estructura namespace/clase/método.
+/// Clase de ejemplo para demostrar la estructura clase/metodo.
 /// </summary>
 static class Saludo
 {
     /// <summary>
     /// Muestra un saludo personalizado en la consola.
+    /// Recibe un nombre y construye un mensaje visible para el usuario.
     /// </summary>
     /// <param name="nombre">El nombre al que se saluda.</param>
     public static void Mostrar(string nombre)

@@ -1,56 +1,53 @@
 # =============================================================================
 # ARCHIVO: 03_como_funciona_git.sh
-# TEMA: Las 3 áreas de Git — Cómo funciona internamente
+# TEMA: Las 3 areas de Git
 # =============================================================================
 #
-# Para entender Git de verdad, necesitas conocer sus 3 áreas principales.
-# Todo archivo en un repositorio de Git se encuentra en una de estas 3 áreas.
-# Si entiendes esto, entenderás por qué los comandos hacen lo que hacen.
+# Este archivo explica el corazon real de Git.
+# Si entiendes estas 3 areas, casi todos los comandos dejan de parecer magia.
 #
-# Las 3 áreas son:
-#   1. Working Directory (directorio de trabajo)
-#   2. Staging Area (área de preparación)
-#   3. Repository (repositorio / historial de commits)
+# Las areas son:
+#   1. Working Directory
+#   2. Staging Area
+#   3. Repository
 # =============================================================================
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # ÁREA 1: WORKING DIRECTORY (Directorio de trabajo)
 # ─────────────────────────────────────────────────────────────────────────────
-# Es la carpeta real en tu computadora donde están tus archivos.
-# Cuando abres tu proyecto en VS Code, estás viendo el Working Directory.
+# Es la carpeta real de tu proyecto.
+# Cuando abres archivos en VS Code, normalmente estas trabajando aqui.
 #
 # Aquí es donde:
 #   - Creas archivos nuevos
 #   - Editas archivos existentes
 #   - Borras archivos
 #
-# Los cambios en el Working Directory NO están guardados en Git todavía.
-# Git los ve como "cambios sin rastrear" o "cambios no preparados".
+# Lo que cambias aqui aun no forma parte del historial permanente.
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # ÁREA 2: STAGING AREA (Área de preparación)
 # ─────────────────────────────────────────────────────────────────────────────
-# También conocida como "index". Es un área intermedia donde colocas
-# los cambios que QUIERES incluir en tu próximo commit.
+# Tambien se llama index.
+# Es una zona intermedia para decidir que cambios iran al proximo commit.
 #
 # ¿Por qué existe? Porque a veces cambias 10 archivos pero solo quieres
 # guardar 3 en tu próximo commit. El Staging Area te permite elegir
 # exactamente qué cambios incluir.
 #
-# Piensa en ello como una mesa donde pones las cosas que vas a empacar.
-# Solo lo que está en la mesa se empacará (commit).
+# Piensalo como una mesa de preparacion.
+# Solo lo que esta sobre esa mesa entra al commit.
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # ÁREA 3: REPOSITORY (Repositorio / Historial)
 # ─────────────────────────────────────────────────────────────────────────────
-# Es donde Git guarda permanentemente las "fotos" (commits) de tu proyecto.
-# Vive dentro de la carpeta oculta ".git" en tu proyecto.
+# Aqui Git guarda los commits de forma persistente.
+# Vive dentro de la carpeta oculta ".git".
 #
-# Cada commit en el Repository es permanente y tiene un identificador único.
-# Puedes volver a cualquier commit anterior en cualquier momento.
+# Cada commit tiene un identificador unico y representa un punto del historial.
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -63,7 +60,7 @@
 #        (editas)           (preparas)          (guardas)
 #        tu código          con "git add"       con "git commit"
 #
-# Vamos a verlo en acción:
+# Vamos a verlo en accion:
 
 # Paso 0: Crear un repositorio de prueba
 mkdir prueba-areas
@@ -71,32 +68,32 @@ cd prueba-areas
 git init
 
 # Paso 1: Crear un archivo (Working Directory)
-# Este archivo existe en tu carpeta pero Git aún no lo rastrea
+# El archivo existe en disco, pero todavia no forma parte del control de Git.
 echo "Hola mundo" > archivo.txt
 
 # Verificar: Git muestra el archivo como "untracked" (sin rastrear)
-# Esto significa que está en el Working Directory pero Git no lo conoce
+# Git lo detecta, pero aun no esta preparado para commit.
 git status
 
 # Paso 2: Mover el archivo al Staging Area con "git add"
-# Ahora Git sabe que quieres incluir este archivo en tu próximo commit
+# Con git add, Git marca este cambio como preparado.
 git add archivo.txt
 
 # Verificar: Git muestra el archivo como "Changes to be committed"
-# Esto significa que está en el Staging Area, listo para ser guardado
+# Ahora el cambio ya esta seleccionado para el proximo commit.
 git status
 
 # Paso 3: Guardar el "snapshot" con "git commit"
-# El archivo pasa del Staging Area al Repository (historial permanente)
-# El flag -m permite escribir un mensaje que describe el cambio
+# git commit guarda un nuevo punto del historial.
+# El mensaje debe explicar con claridad que cambio se hizo.
 git commit -m "Agregar archivo.txt con saludo inicial"
 
 # Verificar: Git muestra "nothing to commit, working tree clean"
-# Esto significa que los 3 áreas están sincronizadas — todo está guardado
+# Si todo esta limpio, working tree y historial estan alineados.
 git status
 
 # Paso 4: Ver el historial de commits
-# Aquí puedes ver tu commit guardado con su hash, autor, fecha y mensaje
+# git log muestra el historial completo.
 git log
 
 
@@ -113,63 +110,66 @@ git log
 #   │                  │              │ incluir       │               │             │
 #   └─────────────────┘              └──────────────┘               └────────────┘
 #
-#   También puedes ir hacia atrás:
-#   - "git restore --staged archivo" → saca un archivo del Staging Area
-#   - "git checkout <hash>" → vuelve a un commit anterior
+#   Tambien puedes retroceder o mover cambios entre areas:
+#   - "git restore --staged archivo" saca un archivo del staging
+#   - "git checkout <hash>" o "git switch" sirve para moverte en el historial
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # EJEMPLO PRÁCTICO: Staging selectivo
 # ─────────────────────────────────────────────────────────────────────────────
-# Vamos a demostrar por qué el Staging Area es útil
+# Ahora vamos a demostrar por que el staging area existe.
 
 # Crear dos archivos nuevos
 echo "Contenido de index" > index.html
 echo "Contenido de estilos" > styles.css
 
-# Git muestra ambos archivos como "untracked"
+# Git muestra ambos como nuevos archivos sin seguimiento.
 git status
 
-# Pero solo queremos guardar index.html en este commit
-# Así que solo agregamos ese archivo al Staging Area
+# Solo queremos guardar uno de ellos ahora.
 git add index.html
 
-# Verificar: index.html está en Staging, styles.css sigue sin rastrear
+# Un archivo puede estar listo para commit y otro no.
 git status
 
 # Hacer commit solo con index.html
 git commit -m "Agregar página principal index.html"
 
-# styles.css sigue en el Working Directory, esperando ser agregado después
+# styles.css sigue fuera del commit anterior.
 git status
 
 # Ahora agregamos y guardamos styles.css en un commit separado
 git add styles.css
 git commit -m "Agregar hoja de estilos styles.css"
 
-# Ver el historial: ahora hay 3 commits, cada uno con cambios específicos
+# El historial muestra commits pequenos y mas faciles de entender.
 git log --oneline
 
 
 # Limpieza
 cd ..
-rm -rf prueba-areas
+
+# En Linux o macOS:
+# rm -rf prueba-areas
+
+# En PowerShell:
+# Remove-Item -Recurse -Force prueba-areas
 
 
 # =============================================================================
 # RESUMEN:
 #
-# Las 3 áreas de Git:
-#   1. Working Directory → donde editas tus archivos (tu carpeta real)
-#   2. Staging Area → donde preparas los cambios para el próximo commit
-#   3. Repository → donde Git guarda los commits permanentemente
+# Las 3 areas de Git:
+#   1. Working Directory → donde editas
+#   2. Staging Area → donde eliges que guardar
+#   3. Repository → donde el historial queda registrado
 #
 # Los comandos clave del flujo:
-#   - "git add" → mueve cambios del Working Directory al Staging Area
-#   - "git commit" → mueve cambios del Staging Area al Repository
-#   - "git status" → te dice en qué área está cada archivo
-#   - "git log" → muestra el historial de commits del Repository
+#   - "git add" → mueve cambios al staging
+#   - "git commit" → guarda el staging en el historial
+#   - "git status" → te dice donde esta cada archivo
+#   - "git log" → muestra los commits
 #
-# Este flujo de 3 áreas es el CORAZÓN de Git. Todo lo demás
-# que aprenderás se construye sobre este concepto.
+# Si entiendes este flujo, Git deja de sentirse confuso.
 # =============================================================================

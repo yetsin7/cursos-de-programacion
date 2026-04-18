@@ -1,86 +1,85 @@
 # Capítulo 01 — Introducción a SQL
 
-## ¿Qué es SQL?
-
-**SQL** (Structured Query Language) es el lenguaje estándar para interactuar con
-bases de datos relacionales. Se pronuncia "S-Q-L" o "sequel".
-
-Con SQL puedes:
-- **Consultar** datos: `SELECT`
-- **Insertar** datos: `INSERT`
-- **Modificar** datos: `UPDATE`
-- **Eliminar** datos: `DELETE`
-- **Crear** tablas y estructuras: `CREATE`, `ALTER`, `DROP`
-
-SQL no es un lenguaje de programación general — es un lenguaje de consulta
-declarativo. Le dices **qué quieres**, no cómo obtenerlo.
+Este capitulo te enseña a mirar una base de datos como un sistema organizado, no
+como una caja negra. La meta no es memorizar `SELECT`, sino entender que estas
+pidiendole informacion a un motor especializado.
 
 ---
 
-## ¿Qué es una base de datos relacional?
+## ¿Que es SQL?
 
-Una base de datos relacional organiza los datos en **tablas**. Cada tabla tiene:
-- **Columnas** (campos): definen el tipo de dato (nombre, edad, email...)
-- **Filas** (registros): cada fila es un registro único
+SQL es el lenguaje estandar para trabajar con bases de datos relacionales.
+Sirve para consultar, insertar, modificar, eliminar y estructurar informacion.
 
-Las tablas se pueden **relacionar** entre sí a través de claves.
+La idea importante es esta:
 
-```
-Tabla: books                    Tabla: verses
-┌─────────────┬───────────┐     ┌─────────────┬─────────┬───────┬────────┐
-│ book_number │ long_name │     │ book_number │ chapter │ verse │ text   │
-├─────────────┼───────────┤     ├─────────────┼─────────┼───────┼────────┤
-│ 10          │ Génesis   │◄────│ 10          │ 1       │ 1     │ En el  │
-│ 20          │ Éxodo     │     │ 10          │ 1       │ 2     │ Y la   │
-│ 430         │ Juan      │◄────│ 430         │ 3       │ 16    │ Porque │
-└─────────────┴───────────┘     └─────────────┴─────────┴───────┴────────┘
-```
+- en muchos lenguajes dices **como** hacer algo paso a paso;
+- en SQL dices **que** datos quieres obtener o cambiar.
 
 ---
 
-## ¿Qué es SQLite?
+## ¿Que es una base de datos relacional?
 
-SQLite es una base de datos relacional que **se almacena en un solo archivo**.
-No requiere instalar un servidor. Es perfecta para aprender SQL.
+Una base relacional organiza informacion en tablas:
 
-Lo que aprendas en SQLite aplica directamente a:
-- **PostgreSQL** — la más usada en producción
-- **MySQL / MariaDB** — muy usada en hosting compartido
-- **SQL Server** — entornos corporativos Microsoft
+- las **columnas** describen tipos de dato;
+- las **filas** representan registros concretos;
+- las relaciones conectan datos de distintas tablas.
 
-La sintaxis SQL es casi idéntica en todos ellos.
+Eso permite modelar informacion real de forma consistente y consultable.
+
+---
+
+## ¿Que ocurre dentro del motor de base de datos?
+
+Cuando ejecutas una consulta:
+
+1. el motor analiza la instruccion;
+2. revisa tablas, columnas e indices;
+3. busca datos en disco o memoria;
+4. construye un resultado;
+5. te devuelve una tabla temporal o modifica datos persistentes.
+
+Por eso SQL esta conectado directamente con almacenamiento, memoria y
+rendimiento.
+
+---
+
+## ¿Por que usamos SQLite para aprender?
+
+SQLite guarda toda la base de datos en un solo archivo.
+Eso la hace ideal para estudiar porque:
+
+- no necesitas un servidor aparte;
+- puedes abrir el archivo facilmente;
+- ves resultados rapido;
+- practicas SQL real que luego se parece mucho a PostgreSQL o MySQL.
 
 ---
 
 ## Tu primera consulta SQL
 
 ```sql
--- Esto es un comentario en SQL (empieza con --)
-
--- Seleccionar todos los libros de la Biblia
 SELECT * FROM books;
-
--- Seleccionar solo el nombre largo de los libros
 SELECT long_name FROM books;
-
--- Seleccionar los primeros 5 libros
 SELECT long_name FROM books LIMIT 5;
 ```
+
+Estas tres consultas ya muestran ideas clave:
+
+- pedir todo;
+- pedir solo una columna;
+- limitar resultados para explorar sin saturarte.
 
 ---
 
 ## Reglas básicas de sintaxis
 
-1. **Las palabras clave no distinguen mayúsculas**: `SELECT` = `select` = `Select`
-   Por convención se escriben en MAYÚSCULAS para distinguirlas de los nombres de tablas/columnas.
-
-2. **Las consultas terminan con punto y coma** `;` (obligatorio cuando hay varias juntas)
-
-3. **Los comentarios** van con `--` en una línea o entre `/* */` para multilínea
-
-4. **Los textos** van entre comillas simples: `'Génesis'` (no dobles como en otros lenguajes)
-
-5. **Los nombres** de tablas y columnas no van entre comillas (a menos que tengan espacios)
+1. `SELECT` y `select` funcionan igual, pero se suele escribir en mayusculas.
+2. El `;` marca el final de la instruccion.
+3. `--` crea comentarios de una linea.
+4. Los textos se escriben entre comillas simples.
+5. Las tablas y columnas normalmente no se escriben entre comillas.
 
 ---
 
@@ -88,7 +87,27 @@ SELECT long_name FROM books LIMIT 5;
 
 | Archivo | Contenido |
 |---------|-----------|
-| `01_primeras_consultas.sql` | Tu primera consulta SQL, explorar la estructura de la BD |
+| `01_primeras_consultas.sql` | Primeras consultas y exploracion de la base |
+
+---
+
+## Errores comunes
+
+- creer que `SELECT *` siempre es la mejor opcion;
+- no distinguir entre columna y fila;
+- olvidar el `;` cuando hay varias consultas;
+- pensar que SQL es solo para "ver datos";
+- ejecutar consultas sin entender de donde sale el resultado.
+
+---
+
+## Practica guiada
+
+1. Ejecuta el archivo completo.
+2. Luego ejecuta cada consulta por separado.
+3. Cambia `LIMIT 5` por `LIMIT 10`.
+4. Pide dos columnas distintas de `books`.
+5. Explica que hace `sqlite_master`.
 
 ---
 
@@ -97,6 +116,6 @@ SELECT long_name FROM books LIMIT 5;
 | Herramienta | Uso | Enlace |
 |-------------|-----|--------|
 | DB Browser for SQLite | GUI visual, ideal para aprender | https://sqlitebrowser.org/ |
-| SQLite CLI | Terminal, rápida para pruebas | `sqlite3 archivo.db` |
-| VS Code + SQLite Viewer | Extensión para VS Code | Buscar en Extensions |
-| TablePlus | GUI profesional (freemium) | https://tableplus.com/ |
+| SQLite CLI | Terminal, rapida para pruebas | `sqlite3 archivo.db` |
+| VS Code + SQLite Viewer | Extension para VS Code | Buscar en Extensions |
+| TablePlus | GUI profesional | https://tableplus.com/ |

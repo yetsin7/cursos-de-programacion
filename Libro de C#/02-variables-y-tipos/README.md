@@ -1,128 +1,88 @@
 # Capítulo 02 — Variables y tipos de datos
 
+Este capitulo te ayuda a entender una de las fortalezas principales de C#:
+trabajar con tipos claros, seguros y expresivos.
+
+---
+
 ## Sistema de tipos en C#
 
-C# es un lenguaje de **tipado estático**: el tipo de cada variable se define en tiempo de compilación. Esto permite detectar errores antes de ejecutar el programa.
+C# es de tipado estatico. Eso significa que el compilador conoce el tipo de cada
+variable antes de correr el programa.
+
+Esto sirve para:
+
+- detectar errores temprano;
+- usar mejor APIs y conversiones;
+- escribir codigo mas claro y seguro.
 
 ---
 
-## Tipos numéricos enteros
+## ¿Qué aprenderás?
 
-| Tipo     | Tamaño  | Rango                                         |
-|----------|---------|-----------------------------------------------|
-| `byte`   | 8 bits  | 0 a 255                                       |
-| `short`  | 16 bits | -32,768 a 32,767                              |
-| `int`    | 32 bits | -2,147,483,648 a 2,147,483,647                |
-| `long`   | 64 bits | -9.2 × 10¹⁸ a 9.2 × 10¹⁸                     |
-| `uint`   | 32 bits | 0 a 4,294,967,295 (sin signo)                 |
-
-## Tipos numéricos decimales
-
-| Tipo      | Precisión         | Uso recomendado              |
-|-----------|-------------------|------------------------------|
-| `float`   | ~7 dígitos        | Gráficos, juegos             |
-| `double`  | ~15-16 dígitos    | Cálculos científicos         |
-| `decimal` | 28-29 dígitos     | Dinero, contabilidad         |
-
-## Otros tipos primitivos
-
-| Tipo     | Descripción                          | Ejemplo              |
-|----------|--------------------------------------|----------------------|
-| `bool`   | Verdadero o falso                    | `true`, `false`      |
-| `char`   | Un solo carácter Unicode             | `'A'`, `'ñ'`         |
-| `string` | Cadena de texto (inmutable)          | `"Hola mundo"`       |
-| `object` | Base de todos los tipos en .NET      | Puede almacenar todo |
+- tipos numericos y de texto;
+- diferencia entre `var`, `object` y `dynamic`;
+- valores anulables;
+- `const` y `readonly`;
+- conversiones e interpolacion.
 
 ---
 
-## `var` — Inferencia de tipos
+## ¿Qué pasa dentro del programa?
 
-```csharp
-var nombre = "Carlos";  // el compilador infiere que es string
-var edad   = 25;        // el compilador infiere que es int
-```
+Cuando declaras variables en C#:
 
-`var` no hace el tipo dinámico — sigue siendo estático, solo ahorra escribirlo.
+- el compilador valida tipos;
+- .NET reserva y administra memoria;
+- algunas conversiones ocurren automaticamente;
+- otras requieren cast o metodos especiales.
 
----
-
-## `dynamic` — Tipo dinámico
-
-```csharp
-dynamic x = 10;
-x = "ahora soy string"; // válido en tiempo de ejecución
-```
-
-Con `dynamic`, el tipo se resuelve en tiempo de ejecución. Usar con precaución.
+Los tipos no son solo etiquetas: cambian el comportamiento real del programa.
 
 ---
 
-## Nullable types — Tipos anulables
+## Tipos comunes
 
-Por defecto, los tipos de valor (`int`, `bool`, etc.) **no pueden ser `null`**. Para permitirlo:
+### Enteros
 
-```csharp
-int? edad = null;     // entero anulable
-bool? activo = null;  // bool anulable
+`byte`, `short`, `int`, `long` y variantes sin signo.
 
-// Comprobar si tiene valor
-if (edad.HasValue)
-    Console.WriteLine(edad.Value);
+### Decimales
 
-// Valor por defecto si es null
-int edadFinal = edad ?? 0;
-```
+`float`, `double` y `decimal`.
+
+### Otros
+
+`bool`, `char`, `string`, `object`.
 
 ---
 
-## `const` y `readonly`
+## `var`, `object` y `dynamic`
 
-```csharp
-const double PI = 3.14159;          // constante en tiempo de compilación
-readonly int maxIntentos = 3;       // solo se asigna una vez (en constructor)
-```
+- `var` mantiene tipado estatico con inferencia.
+- `object` puede referenciar cualquier valor dentro del sistema de tipos.
+- `dynamic` mueve parte de la comprobacion a tiempo de ejecucion.
 
-| Característica | `const`                   | `readonly`                          |
-|----------------|---------------------------|-------------------------------------|
-| Cuándo se fija | Compilación               | Ejecución (constructor o declaración) |
-| Puede ser campo de instancia | No          | Sí                                  |
-| Tipo permitido | Solo primitivos y string  | Cualquier tipo                      |
+Usa `dynamic` con cuidado.
 
 ---
 
-## Interpolación de strings
+## Nulos y valores opcionales
 
-```csharp
-string nombre = "Ana";
-int edad = 28;
+No todos los tipos aceptan `null` por defecto. Por eso existen tipos anulables
+como `int?`.
 
-// Interpolación con $""
-Console.WriteLine($"Hola, {nombre}. Tienes {edad} años.");
-
-// Formato dentro de la interpolación
-double precio = 19.9;
-Console.WriteLine($"Precio: {precio:C2}");  // moneda con 2 decimales
-Console.WriteLine($"PI: {Math.PI:F4}");     // 4 decimales fijos
-```
+Esto es importante cuando un dato puede faltar en formularios, APIs o bases de
+datos.
 
 ---
 
-## Conversiones de tipos
+## Errores comunes
 
-```csharp
-// Conversión implícita (sin pérdida de datos)
-int n = 42;
-long grande = n;       // int → long es seguro
-
-// Conversión explícita (cast)
-double d = 9.99;
-int entero = (int)d;   // trunca: resultado es 9
-
-// Conversión con métodos
-string texto = "123";
-int parseado = int.Parse(texto);
-bool ok = int.TryParse("abc", out int resultado); // no lanza excepción
-```
+- creer que `var` significa dinamico;
+- usar `dynamic` donde no hace falta;
+- olvidar que un cast puede truncar datos;
+- usar `decimal` y `double` como si fueran iguales.
 
 ---
 

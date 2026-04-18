@@ -1,16 +1,12 @@
 // =============================================================================
 // ARCHIVO: 03_conjuntos.dart
-// TEMA: Set<T> en Dart — colecciones sin duplicados
+// TEMA: Set<T> en Dart
+// EJECUCION: dart run 03_conjuntos.dart
 // =============================================================================
 //
-// Set es una colección que NO permite elementos duplicados y NO garantiza
-// un orden específico de los elementos. Es el equivalente al "set" de Python.
-// En Flutter se usa cuando necesitas asegurarte de no tener duplicados:
-// etiquetas seleccionadas, permisos únicos, IDs visitados, etc.
-//
-// CÓMO EJECUTAR:
-//   dart run 03_conjuntos.dart
-//
+// Set guarda elementos sin duplicados.
+// Es muy util cuando lo importante es saber si algo ya existe o asegurar
+// unicidad de valores como permisos, IDs o etiquetas.
 // =============================================================================
 
 void main() {
@@ -20,22 +16,21 @@ void main() {
 
   print('--- Crear Sets ---');
 
-  // Set con elementos iniciales — los duplicados se ignoran automáticamente:
-  var numeros = {1, 2, 3, 2, 1, 4};
+  // Los duplicados se eliminan automaticamente.
+  var numeros = [1, 2, 3, 2, 1, 4].toSet();
   print('Set con duplicados: $numeros'); // {1, 2, 3, 4} — sin duplicados
 
-  // Set con tipo explícito:
+  // Tambien puedes indicar el tipo de forma explicita.
   Set<String> idiomas = {'es', 'en', 'fr'};
   print('idiomas: $idiomas');
 
-  // Set vacío — IMPORTANTE: {} solo crea un Map vacío, no un Set vacío.
-  // Para un Set vacío se necesita el tipo explícito:
+  // IMPORTANTE: {} sin tipo suele crear un Map vacio, no un Set.
   Set<int> vacio = {};   // Correcto: Set vacío
   var mapaVacio = {};    // Esto crea Map<dynamic, dynamic>, NO un Set
   print('Set vacío: $vacio (${vacio.runtimeType})');
   print('Mapa vacío: $mapaVacio (${mapaVacio.runtimeType})');
 
-  // Crear Set desde una lista (elimina duplicados):
+  // toSet() elimina duplicados al convertir desde una lista.
   List<String> listaConDuplicados = ['a', 'b', 'a', 'c', 'b', 'd'];
   Set<String> sinDuplicados = listaConDuplicados.toSet();
   print('\nLista con duplicados: $listaConDuplicados');
@@ -50,7 +45,7 @@ void main() {
   Set<String> etiquetas = {'flutter', 'dart', 'mobile'};
 
   etiquetas.add('ui');       // Agregar un elemento
-  etiquetas.add('flutter');  // Intentar agregar duplicado — se ignora
+  etiquetas.add('flutter');  // Duplicado: se ignora
   etiquetas.addAll(['web', 'cross-platform']); // Agregar varios
 
   print('etiquetas: $etiquetas');
@@ -65,8 +60,8 @@ void main() {
 
   print('\n--- Verificar pertenencia ---');
 
-  // contains() en Set es O(1) — mucho más eficiente que List.contains() O(n)
-  // Para grandes conjuntos de datos donde solo necesitas "¿existe?" usa Set.
+  // contains() suele ser muy rapido en Set.
+  // Si solo quieres saber si algo existe, Set suele ser mejor que List.
   Set<String> permisosActivos = {'leer', 'escribir', 'ejecutar'};
 
   print('¿Puede leer? ${permisosActivos.contains("leer")}');
@@ -74,7 +69,7 @@ void main() {
   print('¿Tiene todos los de admin? ${permisosActivos.containsAll({"leer", "escribir"})}');
 
   // ─────────────────────────────────────────────────────────────────────────
-  // OPERACIONES DE TEORÍA DE CONJUNTOS
+  // OPERACIONES DE CONJUNTOS
   // ─────────────────────────────────────────────────────────────────────────
 
   print('\n--- Operaciones de conjuntos ---');
@@ -82,44 +77,35 @@ void main() {
   Set<int> A = {1, 2, 3, 4, 5};
   Set<int> B = {3, 4, 5, 6, 7};
 
-  // UNIÓN: todos los elementos de ambos conjuntos (sin duplicados)
+  // union combina ambos conjuntos sin repetir.
   Set<int> union = A.union(B);
   print('A ∪ B = $union');   // {1, 2, 3, 4, 5, 6, 7}
 
-  // INTERSECCIÓN: solo los elementos comunes a ambos
+  // intersection deja solo los elementos comunes.
   Set<int> interseccion = A.intersection(B);
   print('A ∩ B = $interseccion');  // {3, 4, 5}
 
-  // DIFERENCIA: elementos de A que NO están en B
+  // difference deja los elementos de un conjunto que no estan en el otro.
   Set<int> diferencia = A.difference(B);
   print('A - B = $diferencia');    // {1, 2}
 
   Set<int> diferenciaInversa = B.difference(A);
   print('B - A = $diferenciaInversa');  // {6, 7}
 
-  // Ejemplo práctico: usuarios que tienen permiso A pero no permiso B
+  // Esto sirve en escenarios reales como permisos y selecciones.
   Set<String> conLectura = {'ana', 'luis', 'carlos', 'maría'};
   Set<String> conEscritura = {'luis', 'carlos'};
   Set<String> soloLectura = conLectura.difference(conEscritura);
   print('\nUsuarios solo con lectura: $soloLectura');
 
   // ─────────────────────────────────────────────────────────────────────────
-  // SET vs LIST — Cuándo usar cada uno
+  // SET vs LIST
   // ─────────────────────────────────────────────────────────────────────────
 
   print('\n--- Set vs List ---');
 
-  // Usa LIST cuando:
-  //   - El orden importa
-  //   - Pueden haber duplicados
-  //   - Necesitas acceso por índice
-  //   - Construyes listas de widgets en Flutter
-
-  // Usa SET cuando:
-  //   - No pueden haber duplicados (IDs, etiquetas, permisos)
-  //   - El orden no importa
-  //   - Necesitas búsqueda rápida (contains es O(1) en Set, O(n) en List)
-  //   - Necesitas operaciones de conjuntos (unión, intersección)
+  // List sirve mejor si importa el orden o el indice.
+  // Set sirve mejor si importa la unicidad o busquedas rapidas.
 
   // ─────────────────────────────────────────────────────────────────────────
   // CONVERTIR ENTRE LIST Y SET
@@ -130,31 +116,28 @@ void main() {
   List<int> lista = [5, 3, 1, 3, 5, 2, 1];
   print('Lista original: $lista');
 
-  // Lista → Set (elimina duplicados, pierde orden garantizado):
+  // Lista a Set: elimina duplicados.
   Set<int> conjunto = lista.toSet();
   print('Como Set: $conjunto');
 
-  // Set → Lista (recupera el acceso por índice):
+  // Set a Lista: recupera acceso por indice.
   List<int> deVuelta = conjunto.toList();
   print('De vuelta a Lista: $deVuelta');
 
-  // Truco para eliminar duplicados y volver a lista:
+  // Este patron es comun para limpiar listas repetidas.
   List<int> sinDups = lista.toSet().toList();
   print('Lista sin duplicados: $sinDups');
 }
 
 // =============================================================================
-// EXPERIMENTA:
-//   1. Simula "etiquetas seleccionadas" en una app: agrega y quita etiquetas
-//      de un Set y verifica que no haya duplicados.
-//   2. Dado dos sets de amigos de dos personas, encuentra:
-//      - Los amigos en común (intersección)
-//      - Todos los amigos juntos (unión)
-//      - Los amigos que solo tiene la primera persona (diferencia)
-//   3. ¿Qué pasa si intentas acceder por índice a un Set: conjunto[0]?
-//   4. Compara el rendimiento conceptual: si tienes 1 millón de IDs y
-//      necesitas verificar si un ID existe, ¿usarías List o Set? ¿Por qué?
-//   5. Crea un Set de permisosRequeridos y un Set de permisosDelUsuario.
-//      Verifica si el usuario tiene TODOS los permisos requeridos usando
-//      containsAll().
+// QUE DEBERIAS ENTENDER AL TERMINAR
+// - Set evita duplicados automaticamente.
+// - Es ideal para verificar existencia y trabajar unicidad.
+// - union, intersection y difference resuelven problemas reales.
+// - List y Set no se usan para lo mismo.
+//
+// PRACTICA GUIADA
+// 1. Simula etiquetas seleccionadas sin duplicados.
+// 2. Calcula union e interseccion entre dos sets.
+// 3. Explica cuando conviene Set en vez de List.
 // =============================================================================

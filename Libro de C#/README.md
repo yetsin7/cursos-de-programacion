@@ -1,15 +1,26 @@
 # Libro de C# — De cero a PRO
 
-Guía práctica y progresiva para aprender C# moderno (.NET 8+), desde los conceptos más básicos hasta proyectos reales con bases de datos.
+Guia practica y progresiva para aprender C# moderno (.NET 8+) entendiendo como
+se comporta una aplicacion de consola o de backend dentro del ecosistema .NET.
 
 ---
 
-## ¿Para quién es este libro?
+## ¿Para quien es este libro?
 
 - Personas que quieren aprender a programar desde cero usando C#
 - Desarrolladores de otros lenguajes (Java, Python, JS) que quieren migrar a .NET
 - Estudiantes que buscan entender C# moderno con ejemplos ejecutables
 - Cualquier persona que quiera entender el ecosistema .NET de forma ordenada
+
+## Que aprenderas
+
+Este libro explica C# como lenguaje y como plataforma:
+
+- sintaxis clara y tipada;
+- como .NET compila y ejecuta el codigo;
+- como se organizan clases, objetos y colecciones;
+- como se maneja memoria de forma administrada;
+- como construir programas confiables y mantenibles.
 
 ---
 
@@ -28,6 +39,19 @@ Solo necesitas tener instalado el SDK de .NET 8 o superior.
 dotnet --version
 # Debe mostrar algo como: 8.0.xxx
 ```
+
+---
+
+## Que ocurre cuando ejecutas C#
+
+Cuando corres un programa en C#:
+
+- el codigo se compila a un lenguaje intermedio;
+- el runtime de .NET lo carga;
+- el recolector de basura administra gran parte de la memoria;
+- el programa usa CPU, RAM, disco o red segun la logica que escribiste.
+
+Esto hace que C# sea amigable para aprender y muy potente para software real.
 
 ---
 

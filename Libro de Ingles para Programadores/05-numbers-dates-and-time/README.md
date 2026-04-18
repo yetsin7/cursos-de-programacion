@@ -1,17 +1,53 @@
 # Capítulo 05: Números, Fechas y Tiempo
 
-## Descripción
+Este capitulo te ayuda a manejar con soltura algo que aparece todo el tiempo en
+programacion: versiones, timestamps, fechas, duraciones, horarios y operaciones
+basicas.
 
-Este capítulo cubre cómo expresar números, operaciones matemáticas, fechas, horas y duraciones en inglés. Estos son conceptos esenciales para hablar de versiones, timestamps, operaciones aritméticas y planificación de proyectos.
+---
+
+## ¿Que aprenderas?
+
+- numeros cardinales y ordinales;
+- operaciones matematicas comunes;
+- fechas, horas y zonas horarias;
+- duraciones y formas naturales de decir tiempo.
+
+---
+
+## ¿Por qué importa para programadores?
+
+Porque necesitas leer y decir cosas como:
+
+- `version 2.1.4`
+- `the build finished in 3 minutes`
+- `the meeting starts at 10 AM`
+- `the log was created on April 17`
+
+Dominar esto mejora documentacion, planning, debugging y comunicacion tecnica.
+
+---
 
 ## Contenido
 
 | Lección | Tema | Descripción |
 |---------|------|-------------|
-| 01 | Números y matemáticas | Cardinales, ordinales, operaciones, sistemas numéricos |
+| 01 | Números y matemáticas | Cardinales, ordinales y operaciones |
 | 02 | Fechas y tiempo | Días, meses, formatos, zonas horarias, duraciones |
-| 03 | Ejercicios | Práctica integral del capítulo |
+| 03 | Ejercicios | Práctica integral |
+
+---
+
+## Errores comunes del hispanohablante
+
+- leer versiones como si fueran numeros decimales normales;
+- confundir formatos de fecha;
+- traducir horas de forma literal;
+- no distinguir entre `for`, `since` y duraciones temporales.
+
+---
 
 ## Objetivo
 
-Al finalizar podrás leer y expresar números, versiones, fechas, horas y duraciones en inglés con naturalidad en contextos de programación.
+Al finalizar podras leer y expresar numeros, versiones, fechas, horas y
+duraciones en ingles con mucha mas naturalidad.

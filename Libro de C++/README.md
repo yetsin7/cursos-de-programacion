@@ -1,20 +1,40 @@
 # Libro de C++ — De cero a PRO
 
-Guía completa de C++ desde los fundamentos hasta programación moderna (C++11/14/17),
-con un proyecto final real que consulta una base de datos SQLite de la Biblia.
+Guia completa de C++ desde los fundamentos hasta programacion moderna, con
+enfoque en rendimiento, control de recursos y pensamiento tecnico profundo.
 
 ---
 
-## ¿Para quién es este libro?
+## ¿Para quien es este libro?
 
 - Programadores con conocimientos básicos de cualquier lenguaje (Python, Java, etc.)
 - Desarrolladores que ya saben C y quieren dar el salto a C++
 - Estudiantes que quieren aprender C++ con ejemplos prácticos y compilables
 
-No se requiere experiencia previa en C++, pero sí familiaridad con conceptos básicos
-de programación (variables, condicionales, bucles).
+No se requiere experiencia previa en C++, pero si ayuda conocer variables,
+condicionales y bucles en cualquier lenguaje.
+
+## Que aprenderas
+
+Este libro te ayudara a entender:
+
+- como C++ extiende a C con abstracciones mas potentes;
+- como trabajar con objetos, memoria y recursos;
+- como escribir software rapido sin perder claridad;
+- como pensar el costo real de cada decision tecnica.
 
 ---
+
+## Relacion con software y hardware
+
+C++ se usa mucho cuando importa el rendimiento porque te permite trabajar muy
+cerca de la maquina, pero con herramientas mas ricas que C. Eso significa que
+muchos ejemplos te ayudaran a conectar:
+
+- instrucciones del codigo;
+- uso de CPU y memoria;
+- costo de copias y referencias;
+- vida util de objetos y recursos.
 
 ## Cómo compilar los ejemplos
 

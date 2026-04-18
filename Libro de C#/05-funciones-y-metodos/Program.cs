@@ -1,7 +1,11 @@
 // ============================================================
-// Capítulo 05 — Funciones y métodos
-// Temas: métodos, out/ref/in, params, parámetros opcionales,
-//        métodos de extensión, lambdas, Func y Action
+// Capitulo 05 — Funciones y metodos
+// Temas: metodos, out/ref/in, params, parametros opcionales,
+//        metodos de extension, lambdas, Func y Action
+// ============================================================
+//
+// Este archivo muestra como C# encapsula logica en metodos reutilizables.
+// Tambien enseña variantes utiles para pasar datos y trabajar con funciones.
 // ============================================================
 
 Console.WriteLine("=== Métodos básicos ===");
@@ -12,14 +16,14 @@ Saludar("Yetsin");
 
 Console.WriteLine("\n=== Parámetros out ===");
 
-// out: el método asigna el valor antes de retornar
+// out permite devolver informacion adicional.
 if (Dividir(10, 2, out double resultado))
     Console.WriteLine($"10 / 2 = {resultado}");
 
 if (!Dividir(5, 0, out double _))         // '_' descarta el out
     Console.WriteLine("No se puede dividir entre cero");
 
-// TryParse usa el mismo patrón
+// TryParse usa exactamente este patron.
 bool exito = int.TryParse("123", out int numero);
 Console.WriteLine($"TryParse '123': exito={exito}, valor={numero}");
 
@@ -92,8 +96,13 @@ Console.WriteLine($"esPar(7)       : {esPar(7)}");
 Aplicar("hola mundo", s => Console.WriteLine(s.ToUpper()));
 Aplicar("CSHARP", s => Console.WriteLine(s.ToLower()));
 
+Console.WriteLine("\n=== Ideas clave ===");
+Console.WriteLine("Los metodos organizan la logica y reducen duplicacion.");
+Console.WriteLine("out y ref son utiles, pero no deben usarse sin motivo.");
+Console.WriteLine("Las lambdas son funciones pequeñas muy practicas.");
+
 // ============================================================
-// Definición de métodos locales al archivo
+// Definicion de metodos locales al archivo
 // ============================================================
 
 /// <summary>Saluda a una persona por su nombre.</summary>
@@ -121,25 +130,25 @@ static bool Dividir(int a, int b, out double resultado)
 /// <summary>Duplica el valor pasado por referencia.</summary>
 static void Duplicar(ref int x) => x *= 2;
 
-/// <summary>Suma un número variable de enteros con params.</summary>
+/// <summary>Suma un numero variable de enteros con params.</summary>
 static int SumarTodos(params int[] numeros) =>
     numeros.Length == 0 ? 0 : numeros.Sum();
 
-/// <summary>Presenta a una persona con parámetros opcionales.</summary>
+/// <summary>Presenta a una persona con parametros opcionales.</summary>
 static void Presentar(string nombre, int edad = 0, string pais = "Nicaragua") =>
     Console.WriteLine($"{nombre}, {edad} años, de {pais}");
 
-/// <summary>Aplica una acción a un string.</summary>
+/// <summary>Aplica una accion a un string.</summary>
 static void Aplicar(string valor, Action<string> accion) => accion(valor);
 
 // ============================================================
-// Clase de métodos de extensión (debe ser estática)
+// Clase de metodos de extension
 // ============================================================
 
-/// <summary>Extensiones útiles para strings e int[].</summary>
+/// <summary>Extensiones utiles para strings e int[].</summary>
 static class Extensiones
 {
-    /// <summary>Pone en mayúscula la primera letra de cada palabra.</summary>
+    /// <summary>Pone en mayuscula la primera letra de cada palabra.</summary>
     public static string Capitalizar(this string texto) =>
         string.Join(" ", texto.Split(' ')
             .Select(p => p.Length > 0

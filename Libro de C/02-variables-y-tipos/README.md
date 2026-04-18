@@ -1,15 +1,36 @@
 # Capítulo 02 — Variables y Tipos de Datos
 
-## ¿Qué es una variable?
+Este capitulo es clave porque en C los tipos no son un detalle menor. Aqui
+aprenderas a relacionar datos, memoria y representacion binaria de una forma mas
+directa que en muchos otros lenguajes.
 
-Una variable es un espacio con nombre en la memoria del computador que almacena un valor.
-En C debes declarar el **tipo** de dato antes de usarla — el compilador reserva exactamente
-la cantidad de bytes necesaria.
+---
+
+## ¿Que es una variable en C?
+
+Una variable es un nombre asociado a un espacio de memoria.
+En C debes declarar el tipo antes de usarla, y eso le dice al compilador cuanta
+memoria reservar y como interpretar los bits guardados ahi.
 
 ```c
-int edad = 25;       /* reserva 4 bytes para un entero */
-double precio = 9.99; /* reserva 8 bytes para un decimal */
+int edad = 25;
+double precio = 9.99;
 ```
+
+No es lo mismo guardar un entero que un decimal: cambian el tamaño, el rango y
+la forma en que la maquina los interpreta.
+
+---
+
+## ¿Que aprenderas?
+
+Al terminar este capitulo deberias entender:
+
+- que es una variable en memoria;
+- que diferencia hay entre tipos enteros, flotantes y booleanos;
+- por que `sizeof` importa;
+- como imprimir cada tipo correctamente;
+- cuando una conversion de tipos cambia el resultado.
 
 ---
 
@@ -17,111 +38,115 @@ double precio = 9.99; /* reserva 8 bytes para un decimal */
 
 ### Enteros
 
-| Tipo             | Tamaño típico | Rango aproximado                         |
-|------------------|---------------|------------------------------------------|
-| `char`           | 1 byte        | -128 a 127 (o 0 a 255 si unsigned)       |
-| `short`          | 2 bytes       | -32,768 a 32,767                         |
-| `int`            | 4 bytes       | -2,147,483,648 a 2,147,483,647           |
-| `long`           | 4 u 8 bytes   | Depende de la plataforma                 |
-| `long long`      | 8 bytes       | ±9.2 × 10¹⁸                             |
+| Tipo | Tamaño tipico | Uso general |
+|---|---|---|
+| `char` | 1 byte | Caracter o entero pequeño |
+| `short` | 2 bytes | Entero pequeño |
+| `int` | 4 bytes | Entero mas comun |
+| `long` | 4 u 8 bytes | Depende de plataforma |
+| `long long` | 8 bytes | Enteros grandes |
 
-Todos pueden ser `unsigned` para eliminar el signo y duplicar el rango positivo:
-
-```c
-unsigned int positivo = 4000000000u;
-```
+Tambien pueden ser `unsigned` para usar solo valores positivos.
 
 ### Punto flotante
 
-| Tipo        | Tamaño  | Precisión          |
-|-------------|---------|--------------------|
-| `float`     | 4 bytes | ~6-7 dígitos       |
-| `double`    | 8 bytes | ~15-16 dígitos     |
-| `long double`| 12-16 bytes | aún más precisión |
+| Tipo | Tamaño | Precision aproximada |
+|---|---|---|
+| `float` | 4 bytes | 6 a 7 digitos |
+| `double` | 8 bytes | 15 a 16 digitos |
+| `long double` | 12 a 16 bytes | Mas precision |
 
-### Carácter
+### Booleano
 
-```c
-char letra = 'A';   /* almacena el código ASCII de 'A' = 65 */
-```
-
-### Booleano (C99 en adelante)
+Desde C99 puedes usar:
 
 ```c
 #include <stdbool.h>
-
 bool activo = true;
-bool inactivo = false;
 ```
-
-> En C clásico (C89), no existe `bool`. Se usa `int` donde 0 = falso, distinto de 0 = verdadero.
 
 ---
 
-## El operador `sizeof`
+## ¿Que pasa en la maquina?
 
-`sizeof` devuelve el tamaño en bytes de un tipo o variable. Es muy útil para entender cuánta
-memoria usa cada tipo en tu plataforma.
+Cuando declaras variables:
+
+- el compilador organiza tipos y offsets;
+- el programa reserva memoria al ejecutarse;
+- cada tipo ocupa bytes concretos;
+- `printf` necesita saber como interpretar esos bytes.
+
+Por eso los especificadores de formato no son decoracion: si eliges el incorrecto,
+puedes obtener resultados falsos o comportamiento inesperado.
+
+---
+
+## `sizeof` y memoria real
+
+`sizeof` te permite medir cuantos bytes ocupa un tipo o una variable en tu
+plataforma actual.
 
 ```c
-printf("int ocupa %zu bytes\n", sizeof(int));
-printf("double ocupa %zu bytes\n", sizeof(double));
+printf("%zu\n", sizeof(int));
 ```
 
-> Usa `%zu` para imprimir valores de tipo `size_t` (lo que devuelve `sizeof`).
+Esto te ayuda a dejar de pensar en tipos de forma abstracta.
 
 ---
 
-## Especificadores de formato para printf/scanf
+## Especificadores de formato
 
-| Tipo         | printf/scanf |
-|--------------|--------------|
-| `int`        | `%d` o `%i`  |
-| `unsigned`   | `%u`         |
-| `long`       | `%ld`        |
-| `long long`  | `%lld`       |
-| `float`      | `%f`         |
-| `double`     | `%lf` (scanf), `%f` (printf) |
-| `char`       | `%c`         |
-| `string`     | `%s`         |
-| `size_t`     | `%zu`        |
-| `puntero`    | `%p`         |
-| hexadecimal  | `%x` o `%X` |
+| Tipo | Formato comun |
+|---|---|
+| `int` | `%d` o `%i` |
+| `unsigned` | `%u` |
+| `long` | `%ld` |
+| `long long` | `%lld` |
+| `float` | `%f` |
+| `double` | `%f` en `printf`, `%lf` en `scanf` |
+| `char` | `%c` |
+| `size_t` | `%zu` |
+| `puntero` | `%p` |
 
 ---
 
-## Constantes
+## Cast y conversiones
 
-```c
-/* Con const — el compilador puede detectar modificaciones accidentales */
-const double PI = 3.14159265358979;
-
-/* Con #define — sustitución textual en tiempo de compilación */
-#define MAX_NOMBRE 50
-#define GRAVEDAD 9.81
-```
-
----
-
-## Conversión de tipos (casting)
+Las conversiones cambian como se interpreta o calcula un valor.
 
 ```c
 int a = 7, b = 2;
-
-/* División entera — resultado: 3 (se pierde el .5) */
-double resultado = a / b;
-
-/* Cast explícito — resultado: 3.5 */
-double correcto = (double)a / b;
+double resultado = (double)a / b;
 ```
+
+Sin ese cast, la division ocurre como entera y perderias la parte decimal.
 
 ---
 
 ## Archivos de este capítulo
 
-| Archivo               | Descripción                                        |
-|-----------------------|----------------------------------------------------|
-| `01_tipos_de_datos.c` | Ejemplos de todos los tipos, sizeof, formato printf|
+| Archivo | Descripción |
+|---|---|
+| `01_tipos_de_datos.c` | Tipos primitivos, `sizeof`, rangos y conversiones |
+
+---
+
+## Errores comunes
+
+- creer que todos los enteros ocupan siempre lo mismo;
+- usar el especificador incorrecto en `printf`;
+- pensar que `char` solo sirve para texto;
+- olvidar que la division entre enteros recorta el decimal;
+- no revisar `sizeof` en la plataforma real.
+
+---
+
+## Practica guiada
+
+1. Ejecuta el archivo y observa tamaños reales.
+2. Cambia valores por otros mas grandes.
+3. Prueba un cast y luego quitale el cast.
+4. Explica por que `char` puede imprimirse como letra y como numero.
 
 ---
 

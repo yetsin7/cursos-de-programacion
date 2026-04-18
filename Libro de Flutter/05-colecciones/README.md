@@ -1,6 +1,8 @@
 # Módulo 05 — Colecciones en Dart
 
-Las colecciones son estructuras de datos que agrupan múltiples valores. Dart tiene tres colecciones principales: List, Map y Set, más la clase base Iterable que comparten en común. Conocerlas bien es fundamental porque en Flutter las usarás constantemente para manejar datos, construir listas de widgets y transformar información.
+Las colecciones permiten agrupar datos y trabajar con ellos de forma ordenada.
+En Flutter son esenciales porque listas, mapas e iterables aparecen en modelos,
+formularios, menús, APIs y construcción de widgets.
 
 ---
 
@@ -8,11 +10,25 @@ Las colecciones son estructuras de datos que agrupan múltiples valores. Dart ti
 
 | Archivo | Tema |
 |---------|------|
-| `01_listas.dart` | List — colección ordenada con acceso por índice |
-| `02_mapas.dart` | Map — pares clave-valor (como dict de Python) |
-| `03_conjuntos.dart` | Set — colección sin duplicados |
-| `04_iterables.dart` | Iterable — la clase base, lazy evaluation, generators |
-| `05_ejercicios.dart` | Ejercicios prácticos con soluciones |
+| `01_listas.dart` | `List` — colección ordenada con índice |
+| `02_mapas.dart` | `Map` — clave y valor |
+| `03_conjuntos.dart` | `Set` — sin duplicados |
+| `04_iterables.dart` | `Iterable` — operaciones perezosas |
+| `05_ejercicios.dart` | Practica guiada |
+
+---
+
+## ¿Por qué importa este módulo?
+
+Porque en Flutter casi siempre manejas colecciones:
+
+- listas de productos;
+- mapas JSON;
+- filtros de búsqueda;
+- listas de widgets;
+- transformaciones de datos.
+
+Elegir bien entre `List`, `Map` y `Set` mejora claridad y rendimiento.
 
 ---
 
@@ -20,14 +36,19 @@ Las colecciones son estructuras de datos que agrupan múltiples valores. Dart ti
 
 | Dart | Python | Descripción |
 |------|--------|-------------|
-| `List<int>` | `list` | Colección ordenada, duplicados permitidos |
+| `List<int>` | `list` | Ordenada, permite duplicados |
 | `Map<String, int>` | `dict` | Pares clave-valor |
-| `Set<String>` | `set` | Colección sin duplicados |
+| `Set<String>` | `set` | Sin duplicados |
 | `Iterable<T>` | `Iterable` / generadores | Secuencia perezosa |
-| `[...lista1, ...lista2]` | `[*lista1, *lista2]` | Spread operator |
-| `lista.where(f)` | `filter(f, lista)` | Filtrar elementos |
-| `lista.map(f)` | `map(f, lista)` | Transformar elementos |
-| `lista.reduce(f)` | `reduce(f, lista)` | Reducir a un valor |
+
+---
+
+## Errores comunes
+
+- usar `List` cuando realmente necesitas claves;
+- olvidar que los índices empiezan en 0;
+- transformar iterables sin convertirlos a lista cuando hace falta;
+- no pensar si pueden existir duplicados.
 
 ---
 

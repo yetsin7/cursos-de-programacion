@@ -4,9 +4,11 @@
 
 ---
 
-## ¿Qué es esto?
+## ¿Que es esto?
 
-El **Libro de Inglés para Programadores** es una colección de lecciones organizadas como un libro técnico interactivo. Cada módulo cubre un tema específico con:
+El **Libro de Ingles para Programadores** es una coleccion de lecciones
+organizadas como un libro tecnico interactivo. Su meta es que puedas leer,
+escuchar, pronunciar y escribir ingles tecnico con confianza real.
 
 - Explicaciones detalladas en **español**
 - Vocabulario técnico real del mundo de la programación
@@ -18,7 +20,7 @@ Está diseñado para el mismo repositorio del **Libro de Flutter**, **Libro de J
 
 ---
 
-## ¿Para quién es?
+## ¿Para quien es?
 
 Para **cualquier programador hispanohablante** que quiera:
 
@@ -29,7 +31,18 @@ Para **cualquier programador hispanohablante** que quiera:
 - Prepararse para entrevistas técnicas en inglés
 - Alcanzar un nivel nativo en comunicación técnica
 
-No se requiere experiencia previa con inglés. Solo ganas de aprender.
+No se requiere experiencia previa con ingles. Solo ganas de aprender y practica
+constante.
+
+## Que vas a lograr
+
+Este libro no se limita a memorizar vocabulario. Busca que puedas:
+
+- leer documentacion tecnica sin traducir cada palabra;
+- entender mensajes de error;
+- escribir comentarios y documentacion en ingles claro;
+- comunicar ideas tecnicas en equipos internacionales;
+- pronunciar mejor nombres de herramientas, conceptos y comandos.
 
 ---
 

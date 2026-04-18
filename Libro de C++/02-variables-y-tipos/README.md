@@ -1,115 +1,74 @@
 # Capítulo 02 — Variables y Tipos de Datos
 
+Este capitulo profundiza en una idea central de C++: los tipos afectan memoria,
+seguridad, claridad y rendimiento.
+
+---
+
+## ¿Qué aprenderás?
+
+- tipos primitivos;
+- `std::string`;
+- deduccion con `auto`;
+- diferencia entre `const` y `constexpr`;
+- por que `nullptr` es mejor que `NULL`;
+- inicializacion uniforme.
+
+---
+
 ## Tipos primitivos en C++
 
-C++ hereda los tipos primitivos de C y agrega algunos propios:
-
-| Tipo | Tamaño típico | Rango / Descripción |
-|------|--------------|---------------------|
-| `bool` | 1 byte | `true` o `false` |
-| `char` | 1 byte | Carácter ASCII (-128 a 127) |
-| `int` | 4 bytes | Entero con signo (-2³¹ a 2³¹-1) |
-| `unsigned int` | 4 bytes | Entero sin signo (0 a 2³²-1) |
-| `long` | 4 u 8 bytes | Entero largo |
-| `long long` | 8 bytes | Entero muy largo |
-| `float` | 4 bytes | Punto flotante simple precisión |
-| `double` | 8 bytes | Punto flotante doble precisión |
-| `long double` | 12-16 bytes | Máxima precisión flotante |
+C++ hereda muchos tipos de C y mantiene la idea de que cada tipo representa una
+forma concreta de almacenar datos en memoria.
 
 > Usa `sizeof(tipo)` para verificar el tamaño real en tu plataforma.
 
 ---
 
-## `std::string` — Cadenas de texto
+## ¿Qué pasa en la maquina?
 
-A diferencia de C (que usa `char[]`), C++ tiene la clase `std::string`:
+Cuando declaras variables:
 
-```cpp
-#include <string>
+- el compilador decide como representar el tipo;
+- el programa reserva memoria al ejecutarse;
+- ciertas conversiones pueden ser seguras o peligrosas;
+- algunos errores se detectan ya en compilacion.
 
-std::string nombre = "C++";
-std::string saludo = "Hola, " + nombre;  // Concatenación con +
-
-// Longitud
-int len = saludo.length();  // o saludo.size()
-
-// Acceso a caracteres
-char c = saludo[0];         // 'H'
-
-// Subcadena
-std::string sub = saludo.substr(0, 4);  // "Hola"
-
-// Buscar
-size_t pos = saludo.find("C++");        // posición o string::npos si no se encuentra
-```
+Por eso C++ valora tanto los tipos claros y las inicializaciones seguras.
 
 ---
 
-## `auto` — Deducción automática de tipo (C++11)
+## `std::string`
 
-`auto` le indica al compilador que deduzca el tipo de la variable a partir del valor
-de inicialización. El tipo se determina en **tiempo de compilación**, no en ejecución.
-
-```cpp
-auto x = 42;          // int
-auto y = 3.14;        // double
-auto z = true;        // bool
-auto s = std::string("hola");  // std::string
-
-// Muy útil con tipos complejos
-auto it = miVector.begin();   // en lugar de std::vector<int>::iterator
-```
+A diferencia de C, C++ ofrece `std::string` para manejar texto de forma mucho
+mas comoda y segura que `char[]` en muchos casos.
 
 ---
 
-## `const` y `constexpr`
+## `auto`
 
-```cpp
-// const: valor que no cambia en tiempo de ejecución
-const int MAX_EDAD = 120;
-
-// constexpr: valor calculado y fijo en TIEMPO DE COMPILACIÓN
-constexpr double PI = 3.14159265358979;
-constexpr int CUADRADO_5 = 5 * 5;  // El compilador calcula 25
-```
-
-Diferencia clave: `const` puede inicializarse con un valor calculado en tiempo de
-ejecución, mientras que `constexpr` **siempre** debe ser calculable en compilación.
+`auto` deja que el compilador deduzca el tipo en tiempo de compilacion.
+Eso no vuelve dinamico al lenguaje.
 
 ---
 
-## `nullptr` — Puntero nulo (C++11)
+## `const`, `constexpr` y `nullptr`
 
-En C se usaba `NULL` (que es `0` o `(void*)0`). En C++11 se introdujo `nullptr`,
-que tiene su propio tipo (`std::nullptr_t`) y evita ambigüedades:
-
-```cpp
-int* p = nullptr;   // Puntero nulo tipo-seguro
-
-// NULL podría causar ambigüedad en sobrecarga de funciones
-void funcion(int n);
-void funcion(int* p);
-
-funcion(NULL);     // ¿Llama la versión int o int*? Ambiguo
-funcion(nullptr);  // Llama claramente la versión int*
-```
+- `const` protege valores que no deben cambiar;
+- `constexpr` fija valores calculables en compilacion;
+- `nullptr` evita ambiguedades con punteros nulos.
 
 ---
 
-## Inicialización uniforme (C++11)
+## Errores comunes
 
-C++11 introdujo la inicialización con llaves `{}` que es más segura porque
-previene conversiones de tipo que pierden información:
-
-```cpp
-int a{42};            // OK
-int b{3.14};          // ERROR de compilación (se perdería la parte decimal)
-double c{3.14};       // OK
-std::string s{"hola"};
-```
+- creer que `auto` vuelve dinamico al lenguaje;
+- usar `NULL` por costumbre;
+- ignorar conversiones con perdida de informacion;
+- no aprovechar inicializacion con llaves.
 
 ---
 
 ## Archivo de ejemplo
 
-Ver: [01_tipos.cpp](01_tipos.cpp)
+Ver: [01_tipos.cpp](C:/Users/Yetsin/Documents/Programacion/cursos-de-programacion/Libro%20de%20C%2B%2B/02-variables-y-tipos/01_tipos.cpp)

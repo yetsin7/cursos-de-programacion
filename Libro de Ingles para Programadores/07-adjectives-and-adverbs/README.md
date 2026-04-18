@@ -1,12 +1,28 @@
 # Capítulo 07: Adjectives & Adverbs
 
-## Adjetivos y adverbios para describir código y sistemas
+Este capitulo te ayuda a describir codigo, sistemas y comportamiento tecnico con
+mas precision. Es muy util para escribir feedback, documentacion y reportes.
 
-Este capítulo te enseñará a usar adjetivos y adverbios en inglés para describir código, sistemas, rendimiento y calidad de software con precisión.
+---
 
-1. **Common Adjectives** — Adjetivos frecuentes para código y sistemas con comparativos y superlativos
-2. **Adverbs** — Adverbios en contexto técnico y su posición en la oración
-3. **Describing Code and Systems** — Cómo describir calidad, rendimiento y comportamiento
+## ¿Que aprenderas?
+
+1. **Common Adjectives** — adjetivos frecuentes para codigo y sistemas
+2. **Adverbs** — adverbios en contexto tecnico
+3. **Describing Code and Systems** — descripciones de calidad, rendimiento y comportamiento
+
+---
+
+## ¿Por qué importa para programadores?
+
+Porque en trabajo real necesitas decir cosas como:
+
+- `The code is clean and maintainable.`
+- `The API responds quickly.`
+- `This query is extremely slow.`
+- `The feature is partially implemented.`
+
+Sin estos recursos, tu ingles tecnico se vuelve plano o demasiado limitado.
 
 ---
 
@@ -17,16 +33,20 @@ Este capítulo te enseñará a usar adjetivos y adverbios en inglés para descri
 | 01 | `01_common_adjectives.md` | Adjetivos comunes en programación |
 | 02 | `02_adverbs.md` | Adverbios en contexto técnico |
 | 03 | `03_describing_code_and_systems.md` | Describir código, sistemas y rendimiento |
-| 04 | `04_exercises.md` | Ejercicios de práctica del capítulo completo |
+| 04 | `04_exercises.md` | Práctica integral |
+
+---
+
+## Errores comunes del hispanohablante
+
+- usar adverbios donde hace falta un adjetivo;
+- repetir siempre `good`, `bad`, `fast`, `slow`;
+- no saber dónde colocar el adverbio en la oración;
+- traducir literalmente expresiones como `well-structured`.
 
 ---
 
 ## Objetivo del capítulo
 
-Al terminar este capítulo podrás:
-
-- Describir código y sistemas con adjetivos precisos en inglés
-- Usar comparativos y superlativos correctamente
-- Emplear adverbios para dar más detalle sobre acciones técnicas
-- Escribir descripciones claras en code reviews, documentación y reportes
-- Usar adjetivos compuestos como "well-documented" y "high-performance"
+Al terminar este capitulo podras describir codigo y sistemas con mas precision
+en ingles, especialmente en reviews, reportes y documentacion.

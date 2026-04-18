@@ -1,25 +1,20 @@
 // =============================================================================
 // ARCHIVO: 01_aritmeticos.dart
-// TEMA: Operadores aritméticos en Dart y la librería dart:math
+// TEMA: Operadores aritmeticos en Dart
+// EJECUCION: dart run 01_aritmeticos.dart
 // =============================================================================
 //
-// Los operadores aritméticos son los más básicos, pero Dart tiene uno
-// especial que no existe en Python de la misma forma: ~/ (división entera).
-// También aprenderemos a usar la librería dart:math para operaciones
-// matemáticas más avanzadas.
-//
-// CÓMO EJECUTAR:
-//   dart run 01_aritmeticos.dart
-//
+// Este archivo explica como Dart calcula resultados numericos.
+// Cada operacion toma valores, genera un resultado y ese resultado puede
+// imprimirse, guardarse o usarse dentro de otra expresion.
 // =============================================================================
 
-// Importar la librería matemática de Dart para funciones avanzadas.
-// dart:math es una librería estándar incluida con Dart — no necesitas instalar nada.
+// Importar dart:math permite usar funciones matematicas mas avanzadas.
 import 'dart:math';
 
 void main() {
   // ─────────────────────────────────────────────────────────────────────────
-  // OPERADORES BÁSICOS: +, -, *, /
+  // OPERADORES BASICOS: +, -, *, /
   // ─────────────────────────────────────────────────────────────────────────
 
   int a = 10;
@@ -31,48 +26,47 @@ void main() {
   print('a - b = ${a - b}');    // 7
   print('a * b = ${a * b}');    // 30
 
-  // IMPORTANTE: En Dart, / SIEMPRE devuelve double, incluso si el resultado
-  // es un número entero exacto. Esto difiere de Python 2 (donde / era entero).
+  // IMPORTANTE:
+  // En Dart, / siempre devuelve double, incluso si el resultado es exacto.
   print('a / b = ${a / b}');    // 3.3333... (tipo double)
   print('10 / 2 = ${10 / 2}');  // 5.0 — no 5, sino 5.0 (sigue siendo double)
 
   // ─────────────────────────────────────────────────────────────────────────
-  // DIVISIÓN ENTERA: ~/ (el más especial de Dart)
+  // DIVISION ENTERA: ~/
   // ─────────────────────────────────────────────────────────────────────────
 
-  // ~/ divide y descarta la parte decimal (trunca, no redondea).
-  // En Python usarías // para esto.
-  // En Dart se usa ~/ y SIEMPRE devuelve int.
+  // ~/ divide y descarta la parte decimal.
+  // En Dart, este operador devuelve int.
   print('\n--- División entera ~/ ---');
   print('10 ~/ 3 = ${10 ~/ 3}');   // 3 (no 3.33, sino 3 exacto)
   print('10 ~/ 2 = ${10 ~/ 2}');   // 5 (tipo int, no double)
   print('7 ~/ 4 = ${7 ~/ 4}');     // 1
 
-  // Comparación directa entre / y ~/:
+  // Comparacion directa entre / y ~/
   print('\n/ vs ~/:');
   print('10 / 3  = ${10 / 3}');    // 3.3333 (double)
   print('10 ~/ 3 = ${10 ~/ 3}');   // 3 (int)
 
   // ─────────────────────────────────────────────────────────────────────────
-  // MÓDULO (RESTO): %
+  // MODULO (RESTO): %
   // ─────────────────────────────────────────────────────────────────────────
 
-  // El operador % devuelve el resto de la división entera.
-  // Muy útil para verificar si un número es par/impar, o para ciclos.
+  // % devuelve el sobrante de la division entera.
+  // Es muy util para paridad, divisibilidad y ciclos.
   print('\n--- Módulo % ---');
   print('10 % 3 = ${10 % 3}');     // 1 (10 = 3×3 + 1)
   print('15 % 5 = ${15 % 5}');     // 0 (divisible exactamente)
   print('7 % 2 = ${7 % 2}');       // 1 (7 es impar)
   print('8 % 2 = ${8 % 2}');       // 0 (8 es par)
 
-  // Truco para verificar paridad:
+  // Un uso clasico es detectar si un numero es par o impar.
   for (int i = 1; i <= 6; i++) {
     String tipo = (i % 2 == 0) ? 'par' : 'impar';
     print('$i es $tipo');
   }
 
   // ─────────────────────────────────────────────────────────────────────────
-  // NEGACIÓN: -x
+  // NEGACION: -x
   // ─────────────────────────────────────────────────────────────────────────
 
   print('\n--- Negación ---');
@@ -81,28 +75,28 @@ void main() {
   print('positivo: $positivo, negado: $negativo');
 
   // ─────────────────────────────────────────────────────────────────────────
-  // LIBRERÍA dart:math — Operaciones matemáticas avanzadas
+  // LIBRERIA dart:math
   // ─────────────────────────────────────────────────────────────────────────
 
   print('\n--- dart:math ---');
 
-  // Raíz cuadrada
+  // Raiz cuadrada
   print('sqrt(16) = ${sqrt(16)}');        // 4.0
   print('sqrt(2) = ${sqrt(2)}');          // 1.4142...
 
-  // Potencia: pow(base, exponente) — devuelve num
+  // Potencia: pow(base, exponente)
   print('pow(2, 10) = ${pow(2, 10)}');    // 1024
   print('pow(3, 3) = ${pow(3, 3)}');      // 27
 
-  // Valor absoluto (también disponible como método)
+  // Valor absoluto
   print('abs(-15) = ${-15.abs()}');        // 15
   print('(-3.7).abs() = ${(-3.7).abs()}'); // 3.7
 
-  // Máximo y mínimo entre dos valores
+  // Maximo y minimo entre dos valores
   print('max(5, 9) = ${max(5, 9)}');      // 9
   print('min(5, 9) = ${min(5, 9)}');      // 5
 
-  // Redondeo: round (al más cercano), floor (hacia abajo), ceil (hacia arriba)
+  // Redondeo: round, floor y ceil
   double numero = 3.7;
   print('\nRedondeo de $numero:');
   print('round: ${numero.round()}');      // 4
@@ -115,19 +109,22 @@ void main() {
   print('floor: ${numero2.floor()}');     // 3
   print('ceil: ${numero2.ceil()}');       // 4
 
-  // Constantes matemáticas incluidas en dart:math:
+  // Constantes matematicas incluidas en dart:math
   print('\nConstantes matemáticas:');
   print('pi = $pi');       // 3.14159...
   print('e  = $e');        // 2.71828...
 }
 
 // =============================================================================
-// EXPERIMENTA:
-//   1. ¿Qué pasa con 5 ~/ 0? ¿Y con 5 / 0? Prueba ambos (uno lanza excepción,
-//      el otro devuelve Infinity).
-//   2. Usa pow() para calcular el cuadrado de los números del 1 al 10.
-//   3. Calcula el área de un círculo con radio 7 usando pi de dart:math.
-//   4. ¿Cuántos minutos completos hay en 1000 segundos? Usa ~/ y %.
-//   5. Genera un número aleatorio con Random() de dart:math:
-//      var rng = Random(); print(rng.nextInt(100)); — ¿qué hace nextInt()?
+// QUE DEBERIAS ENTENDER AL TERMINAR
+// - / y ~/ no hacen lo mismo.
+// - % ayuda mucho con divisibilidad y paridad.
+// - dart:math agrega funciones listas para usar.
+// - El resultado de una operacion puede cambiar de tipo.
+//
+// PRACTICA GUIADA
+// 1. Prueba 5 ~/ 0 y 5 / 0.
+// 2. Usa pow() para elevar numeros del 1 al 5 al cuadrado.
+// 3. Calcula el area de un circulo de radio 7.
+// 4. Calcula cuantos minutos completos hay en 1000 segundos con ~/ y %.
 // =============================================================================

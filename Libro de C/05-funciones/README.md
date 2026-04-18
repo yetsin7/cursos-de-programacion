@@ -1,159 +1,133 @@
 # Capítulo 05 — Funciones
 
-## ¿Qué es una función?
+Las funciones permiten dividir un programa grande en piezas pequeñas con una responsabilidad
+clara. Son una de las bases de la programación profesional porque ayudan a reutilizar lógica,
+reducir errores y hacer que el código sea más fácil de leer, probar y mantener.
 
-Una función es un bloque de código reutilizable con un nombre. Recibe datos (parámetros),
-realiza una tarea y opcionalmente devuelve un resultado.
+## Qué aprenderás aquí
 
-Las funciones son el mecanismo principal para:
-- **Evitar repetición** de código
-- **Dividir** programas complejos en partes manejables
-- **Reutilizar** lógica en distintos contextos
+- Qué es una función y cómo se define
+- Qué diferencia hay entre declarar, definir y llamar una función
+- Cómo funcionan los parámetros y el valor de retorno
+- Qué significa paso por valor y cómo modificar datos mediante punteros
+- Qué es la recursividad y cuándo usarla con cuidado
 
----
+## Qué está pasando dentro del software y del hardware
 
-## Anatomía de una función
+Cuando llamas una función, el programa salta temporalmente a otra zona del código. En la pila de
+ejecución se guarda información como la dirección de retorno y las variables locales de esa
+función. Cuando la función termina, la CPU vuelve al punto donde estaba antes.
+
+Por eso las funciones no son solo una herramienta para "ordenar" el código: también cambian el
+estado de la ejecución, usan stack y administran datos temporales.
+
+## Ideas clave del capítulo
+
+### 1. Estructura básica
 
 ```c
-/* Prototipo — declara la función antes de usarla */
-int sumar(int a, int b);
-
-/* Definición — implementa la función */
 int sumar(int a, int b) {
     return a + b;
 }
-
-/* Llamada */
-int resultado = sumar(3, 4);   /* resultado = 7 */
 ```
 
-### Partes
+Aquí `int` es el tipo de retorno, `sumar` es el nombre y `(int a, int b)` son los parámetros.
 
-| Parte        | Ejemplo         | Descripción                              |
-|--------------|-----------------|------------------------------------------|
-| Tipo retorno | `int`           | Tipo del valor que devuelve la función   |
-| Nombre       | `sumar`         | Identificador de la función              |
-| Parámetros   | `(int a, int b)`| Variables que recibe la función          |
-| Cuerpo       | `{ return a+b; }`| Código que se ejecuta                   |
+### 2. Prototipos
 
-### Función sin retorno
+Si defines una función después de `main`, debes declararla antes:
 
 ```c
-void saludar(const char *nombre) {
-    printf("Hola, %s!\n", nombre);
-    /* no necesita return */
+int sumar(int a, int b);
+```
+
+Esto le dice al compilador qué firma tendrá la función.
+
+### 3. Parámetros y retorno
+
+Una función puede recibir datos, procesarlos y devolver un resultado:
+
+```c
+double calcular_promedio(double a, double b) {
+    return (a + b) / 2.0;
 }
 ```
 
----
+Si no necesita devolver nada, usa `void`.
 
-## Prototipos
+### 4. Paso por valor
 
-En C, las funciones deben declararse antes de ser usadas. Si defines la función después de
-`main()`, necesitas un **prototipo** antes de `main()`:
+En C los parámetros se copian por defecto. La función trabaja con una copia, no con la variable
+original.
 
 ```c
-#include <stdio.h>
-
-/* Prototipo — solo la firma, sin cuerpo */
-double calcularArea(double base, double altura);
-
-int main(void) {
-    printf("Area: %.2f\n", calcularArea(5.0, 3.0));
-    return 0;
-}
-
-/* Definición completa — puede ir después de main */
-double calcularArea(double base, double altura) {
-    return (base * altura) / 2.0;
+void cambiar(int numero) {
+    numero = 99;
 }
 ```
 
----
+Si llamas esa función, la variable original no cambia.
 
-## Paso por valor vs paso por referencia
+### 5. Modificar el valor original con punteros
 
-### Por valor (copia)
-
-En C, los argumentos se pasan **por valor** por defecto. La función recibe una copia.
+Para cambiar una variable real debes pasar su dirección:
 
 ```c
-void duplicar(int n) {
-    n = n * 2;   /* solo modifica la copia local */
+void cambiar(int *numero) {
+    *numero = 99;
 }
-
-int x = 5;
-duplicar(x);
-printf("%d\n", x);   /* sigue siendo 5 */
 ```
 
-### Por referencia (puntero)
+Aquí la función ya no trabaja con una copia del dato, sino con la ubicación real en memoria.
 
-Para modificar el original, se pasa la **dirección de memoria** (puntero):
+### 6. Recursividad
 
-```c
-void duplicarRef(int *n) {
-    *n = *n * 2;   /* modifica el valor en la dirección apuntada */
-}
-
-int x = 5;
-duplicarRef(&x);   /* & obtiene la dirección de x */
-printf("%d\n", x); /* ahora es 10 */
-```
-
----
-
-## Recursividad
-
-Una función puede llamarse a sí misma. Debe tener un **caso base** que detenga la recursión.
+Una función puede llamarse a sí misma:
 
 ```c
-/* Factorial: n! = n * (n-1)! — caso base: 0! = 1 */
 int factorial(int n) {
-    if (n <= 0) return 1;          /* caso base */
-    return n * factorial(n - 1);   /* llamada recursiva */
+    if (n <= 1) {
+        return 1;
+    }
+
+    return n * factorial(n - 1);
 }
 ```
 
-> La recursividad usa la pila (stack). Demasiadas llamadas recursivas producen **stack overflow**.
+Esto puede ser elegante, pero consume stack. Si no existe un caso base correcto, el programa
+puede terminar en un desbordamiento de pila.
 
----
+## Por qué esto importa en programas reales
 
-## Variables locales vs globales
+- Separar validaciones, cálculos y salida por pantalla
+- Reutilizar lógica en diferentes partes del programa
+- Reducir duplicación
+- Facilitar pruebas y correcciones
+- Preparar el código para crecer sin volverse caótico
 
-```c
-int globalX = 100;   /* variable global — accesible desde cualquier función */
+## Errores comunes
 
-void miFuncion(void) {
-    int localY = 50;    /* variable local — solo existe dentro de esta función */
-    printf("%d %d\n", globalX, localY);
-}
-/* localY deja de existir al salir de miFuncion */
-```
+- Crear funciones demasiado largas y con varias responsabilidades
+- Olvidar declarar un prototipo cuando hace falta
+- Pensar que una función modificará un argumento pasado por valor
+- Abusar de variables globales para "compartir" datos
+- Usar recursión donde un bucle simple sería más claro
 
-> Preferir variables locales. Las globales dificultan el mantenimiento.
+## Cómo estudiar este capítulo
 
----
-
-## Funciones inline (C99)
-
-```c
-/* inline sugiere al compilador que "pegue" el código en el lugar de la llamada */
-static inline int cuadrado(int x) {
-    return x * x;
-}
-```
-
----
+1. Toma un bloque repetido de código y conviértelo en función.
+2. Haz pruebas con parámetros diferentes y predice el resultado.
+3. Imprime valores antes y después de una llamada para ver si cambian.
+4. Dibuja el flujo: llamada, ejecución, retorno.
+5. Si una función hace demasiadas cosas, divídela.
 
 ## Archivos de este capítulo
 
-| Archivo          | Descripción                                              |
-|------------------|----------------------------------------------------------|
-| `01_funciones.c` | Funciones básicas, recursividad, paso por valor/referencia|
+| Archivo | Descripción |
+|---------|-------------|
+| `01_funciones.c` | Ejemplos de funciones simples, retorno, recursividad y modificación mediante punteros |
 
----
+## Conexión con el siguiente capítulo
 
-## Siguiente capítulo
-
-→ **Capítulo 06:** Arreglos y Strings
+Una vez que sabes organizar lógica en funciones, el siguiente paso es trabajar con colecciones de
+datos: arreglos y cadenas de texto.

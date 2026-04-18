@@ -1,37 +1,37 @@
 /*
- * Capítulo 02 — Variables y Tipos de Datos
+ * Capitulo 02 — Variables y Tipos de Datos
  * Archivo: 01_tipos_de_datos.c
  *
- * Demuestra todos los tipos primitivos de C:
- *   - Enteros: char, short, int, long, long long (con y sin signo)
- *   - Flotantes: float, double
- *   - Carácter: char
- *   - Booleano: bool (stdbool.h, C99)
- *   - Uso de sizeof para ver tamaño en bytes
- *   - Especificadores de formato en printf
+ * Este archivo conecta teoria y realidad:
+ *   - muestra como C representa distintos tipos;
+ *   - enseña que cada tipo ocupa memoria diferente;
+ *   - relaciona datos, bytes y formato de impresion;
+ *   - explica por que los cast cambian resultados.
  *
- * Compilar: gcc -Wall -std=c11 -o tipos 01_tipos_de_datos.c
+ * Compilar: gcc -Wall -Wextra -std=c11 -o tipos 01_tipos_de_datos.c
  */
 
 #include <stdio.h>
-#include <stdbool.h>   /* necesario para usar bool, true, false en C99/C11 */
-#include <limits.h>    /* contiene INT_MAX, CHAR_MAX, etc. */
-#include <float.h>     /* contiene FLT_MAX, DBL_MAX, etc. */
+#include <stdbool.h>   /* Permite usar bool, true y false */
+#include <limits.h>    /* Define rangos maximos y minimos enteros */
+#include <float.h>     /* Define rangos maximos para float y double */
 
 int main(void) {
 
     /* -------------------------------------------------------
      * 1. Tipos enteros
-     * ------------------------------------------------------- */
+     * -------------------------------------------------------
+     * Estos tipos guardan numeros sin parte decimal.
+     */
     printf("=== TIPOS ENTEROS ===\n");
 
-    char letra = 'A';              /* 1 byte — también usado como entero pequeño */
-    short contador = 1000;         /* 2 bytes — entero pequeño */
-    int edad = 30;                 /* 4 bytes — entero más común */
-    long poblacion = 8000000000L;  /* 4 u 8 bytes según plataforma */
-    long long estrellasViaLactea = 300000000000LL; /* 8 bytes — entero muy grande */
+    char letra = 'A';              /* 1 byte; tambien puede representar un numero */
+    short contador = 1000;         /* entero pequeño */
+    int edad = 30;                 /* entero mas comun */
+    long poblacion = 8000000000L;  /* depende de la plataforma */
+    long long estrellasViaLactea = 300000000000LL; /* entero grande */
 
-    /* %c para char como carácter, %d para char como número */
+    /* El mismo dato puede verse como letra o como codigo numerico. */
     printf("char   'A' = %c  (valor numerico ASCII: %d)\n", letra, letra);
     printf("short  = %d\n", contador);
     printf("int    = %d\n", edad);
@@ -39,8 +39,10 @@ int main(void) {
     printf("long long = %lld\n", estrellasViaLactea);
 
     /* -------------------------------------------------------
-     * 2. Enteros sin signo (unsigned) — solo valores positivos
-     * ------------------------------------------------------- */
+     * 2. Enteros sin signo
+     * -------------------------------------------------------
+     * unsigned usa el espacio disponible para valores positivos.
+     */
     printf("\n=== ENTEROS SIN SIGNO ===\n");
 
     unsigned char byte = 255;           /* 0 a 255 */
@@ -53,38 +55,42 @@ int main(void) {
 
     /* -------------------------------------------------------
      * 3. Tipos de punto flotante
-     * ------------------------------------------------------- */
+     * -------------------------------------------------------
+     * Se usan para decimales. Son utiles, pero no exactos en todos los casos.
+     */
     printf("\n=== TIPOS FLOTANTES ===\n");
 
-    float temperatura = 36.6f;          /* la 'f' es obligatoria para float */
+    float temperatura = 36.6f;          /* la 'f' indica literal float */
     double pi = 3.14159265358979323846;
     double precio = 1299.99;
 
-    /* %f para float/double — por defecto muestra 6 decimales */
+    /* printf interpreta estos valores como decimales. */
     printf("float  temperatura = %f\n", temperatura);
-    /* %.10f muestra 10 decimales */
     printf("double pi          = %.10f\n", pi);
-    /* %.2f muestra exactamente 2 decimales (ideal para precios) */
     printf("double precio      = $%.2f\n", precio);
 
     /* -------------------------------------------------------
-     * 4. Booleano (C99 con stdbool.h)
-     * ------------------------------------------------------- */
+     * 4. Booleano
+     * -------------------------------------------------------
+     * bool mejora la claridad cuando solo existen dos estados.
+     */
     printf("\n=== BOOLEANO ===\n");
 
     bool esMayor = true;
     bool tieneDeuda = false;
 
-    /* No hay especificador %b nativo — se imprime como entero: 1 o 0 */
+    /* No existe %b nativo en printf. bool se imprime como 1 o 0. */
     printf("esMayor   = %d  (%s)\n", esMayor,   esMayor   ? "verdadero" : "falso");
     printf("tieneDeuda = %d  (%s)\n", tieneDeuda, tieneDeuda ? "verdadero" : "falso");
 
     /* -------------------------------------------------------
-     * 5. sizeof — tamaño en bytes de cada tipo
-     * ------------------------------------------------------- */
+     * 5. sizeof
+     * -------------------------------------------------------
+     * sizeof permite medir cuanta memoria ocupa cada tipo realmente.
+     */
     printf("\n=== SIZEOF (tamano en bytes) ===\n");
 
-    /* sizeof retorna un valor de tipo size_t — usar %zu para imprimirlo */
+    /* sizeof devuelve size_t, por eso usamos %zu. */
     printf("sizeof(char)      = %zu byte(s)\n", sizeof(char));
     printf("sizeof(short)     = %zu byte(s)\n", sizeof(short));
     printf("sizeof(int)       = %zu byte(s)\n", sizeof(int));
@@ -95,39 +101,48 @@ int main(void) {
     printf("sizeof(bool)      = %zu byte(s)\n", sizeof(bool));
 
     /* -------------------------------------------------------
-     * 6. Rangos de los tipos (desde limits.h y float.h)
-     * ------------------------------------------------------- */
+     * 6. Rangos de los tipos
+     * -------------------------------------------------------
+     * Estos valores muestran los limites reales del tipo en la plataforma.
+     */
     printf("\n=== RANGOS MAXIMOS ===\n");
 
     printf("INT_MAX  (maximo de int)    = %d\n",  INT_MAX);
     printf("INT_MIN  (minimo de int)    = %d\n",  INT_MIN);
     printf("UINT_MAX (maximo unsigned)  = %u\n",  UINT_MAX);
-    printf("FLT_MAX  (maximo float)     = %e\n",  FLT_MAX);  /* %e = notación científica */
+    printf("FLT_MAX  (maximo float)     = %e\n",  FLT_MAX);
     printf("DBL_MAX  (maximo double)    = %e\n",  DBL_MAX);
 
     /* -------------------------------------------------------
-     * 7. Conversión de tipos (casting)
-     * ------------------------------------------------------- */
+     * 7. Conversion de tipos
+     * -------------------------------------------------------
+     * Un cast cambia la forma en que se interpreta o calcula un valor.
+     */
     printf("\n=== CONVERSION DE TIPOS ===\n");
 
     int numerador = 7;
     int denominador = 2;
 
-    /* División entera — descarta el decimal */
+    /* Sin cast, la division ocurre como entera y corta el decimal. */
     int divEntera = numerador / denominador;
     printf("7 / 2 (entera)  = %d\n", divEntera);
 
-    /* Cast explícito a double antes de dividir */
+    /* Con cast a double, la operacion conserva la parte decimal. */
     double divDecimal = (double)numerador / denominador;
     printf("7 / 2 (decimal) = %.1f\n", divDecimal);
 
-    /* Conversión de char a int y viceversa */
+    /* Un char tambien puede verse como su codigo numerico. */
     char c = 'Z';
     int codigoAscii = (int)c;
     printf("'Z' como entero = %d\n", codigoAscii);
 
     char desdeCodigo = (char)65;
     printf("65 como char    = %c\n", desdeCodigo);
+
+    printf("\n=== IDEAS CLAVE ===\n");
+    printf("Cada tipo ocupa memoria distinta.\n");
+    printf("El formato correcto en printf importa.\n");
+    printf("Un cast puede cambiar el resultado final.\n");
 
     return 0;
 }

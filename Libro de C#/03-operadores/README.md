@@ -1,114 +1,72 @@
 # Capítulo 03 — Operadores
 
+Los operadores son las herramientas que usa el programa para calcular, comparar,
+actualizar variables y tomar decisiones. Sin ellos, los datos no se transforman.
+
+---
+
+## ¿Qué aprenderás?
+
+- operadores aritmeticos;
+- comparacion y logica booleana;
+- asignacion compuesta;
+- ternario;
+- operadores modernos de null en C#;
+- una introduccion a operaciones bit a bit.
+
+---
+
+## ¿Qué pasa dentro del programa?
+
+Cuando C# evalua una expresion:
+
+- toma uno o mas valores;
+- aplica una regla del lenguaje;
+- genera un nuevo resultado;
+- lo guarda, lo imprime o lo usa en una condicion.
+
+Esto conecta directamente con validaciones, formularios, calculos y flujo del
+software real.
+
+---
+
 ## Operadores aritméticos
 
-| Operador | Descripción         | Ejemplo          | Resultado |
-|----------|---------------------|------------------|-----------|
-| `+`      | Suma                | `5 + 3`          | `8`       |
-| `-`      | Resta               | `5 - 3`          | `2`       |
-| `*`      | Multiplicación      | `5 * 3`          | `15`      |
-| `/`      | División            | `7 / 2`          | `3` (enteros) |
-| `%`      | Módulo (residuo)    | `7 % 2`          | `1`       |
-| `++`     | Incremento          | `x++` o `++x`    | +1        |
-| `--`     | Decremento          | `x--` o `--x`    | -1        |
+`+`, `-`, `*`, `/`, `%`, `++`, `--`
 
-> **Nota:** La división entre enteros siempre da un entero. Usa `7.0 / 2` para obtener `3.5`.
+> La division entre enteros da otro entero. Si necesitas decimales, al menos uno
+> de los operandos debe ser `double`, `float` o `decimal`.
 
 ---
 
-## Operadores de comparación
+## Comparación y lógica
 
-| Operador | Descripción        | Ejemplo    | Resultado |
-|----------|--------------------|------------|-----------|
-| `==`     | Igual              | `5 == 5`   | `true`    |
-| `!=`     | Distinto           | `5 != 3`   | `true`    |
-| `>`      | Mayor que          | `5 > 3`    | `true`    |
-| `<`      | Menor que          | `3 < 5`    | `true`    |
-| `>=`     | Mayor o igual      | `5 >= 5`   | `true`    |
-| `<=`     | Menor o igual      | `3 <= 5`   | `true`    |
+Con `==`, `!=`, `<`, `>`, `<=`, `>=`, `&&`, `||` y `!` puedes construir
+condiciones reales.
+
+Los operadores `&&` y `||` usan cortocircuito, lo cual puede evitar errores y
+trabajo innecesario.
 
 ---
 
-## Operadores lógicos
+## Null operators
 
-| Operador | Descripción    | Ejemplo              | Resultado         |
-|----------|----------------|----------------------|-------------------|
-| `&&`     | AND (y)        | `true && false`      | `false`           |
-| `\|\|`   | OR (o)         | `true \|\| false`    | `true`            |
-| `!`      | NOT (negación) | `!true`              | `false`           |
+C# moderno tiene operadores muy utiles para trabajar con datos opcionales:
 
-Los operadores `&&` y `||` tienen **evaluación de cortocircuito**: si el resultado ya está determinado por el primer operando, el segundo no se evalúa.
+- `??`
+- `??=`
+- `?.`
 
----
-
-## Operadores de asignación
-
-```csharp
-int x = 10;
-x += 5;    // x = x + 5  → 15
-x -= 3;    // x = x - 3  → 12
-x *= 2;    // x = x * 2  → 24
-x /= 4;    // x = x / 4  → 6
-x %= 4;    // x = x % 4  → 2
-```
+Son fundamentales cuando una API, formulario o consulta puede devolver `null`.
 
 ---
 
-## Operador ternario
+## Errores comunes
 
-```csharp
-condicion ? valorSiTrue : valorSiFalse
-```
-
-```csharp
-int edad = 20;
-string mensaje = edad >= 18 ? "Mayor de edad" : "Menor de edad";
-```
-
----
-
-## Operadores de null (modernos de C#)
-
-### `??` — Null-coalescing (valor por defecto)
-
-```csharp
-string? nombre = null;
-string resultado = nombre ?? "Sin nombre";  // "Sin nombre"
-```
-
-### `??=` — Null-coalescing assignment (C# 8+)
-
-```csharp
-string? valor = null;
-valor ??= "predeterminado";  // asigna solo si es null
-```
-
-### `?.` — Null-conditional (acceso seguro)
-
-```csharp
-string? texto = null;
-int? longitud = texto?.Length;  // no lanza NullReferenceException → null
-```
-
-### Encadenamiento de `?.` con `??`
-
-```csharp
-string? texto = null;
-int longitud = texto?.Length ?? 0;  // 0 si texto es null
-```
-
----
-
-## Operadores bit a bit
-
-| Operador | Descripción            |
-|----------|------------------------|
-| `&`      | AND bit a bit          |
-| `\|`     | OR bit a bit           |
-| `^`      | XOR bit a bit          |
-| `~`      | Complemento (NOT)      |
-| `<<`     | Desplazamiento izquierda |
-| `>>`     | Desplazamiento derecha |
+- olvidar que `7 / 2` entre enteros da `3`;
+- abusar del ternario cuando un `if` seria mas claro;
+- usar `!` o `?.` sin pensar el flujo;
+- no entender por que el cortocircuito evita evaluar la segunda parte.
 
 ---
 
