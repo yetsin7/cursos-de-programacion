@@ -16,7 +16,7 @@ No necesitas experiencia previa en programación. Solo necesitas:
 
 Al terminar este libro deberias entender:
 
-- como se guarda la informacion en tablas;
+- como se guarda la información en tablas;
 - como el motor de base de datos busca, filtra y ordena registros;
 - como se relacionan los datos;
 - como una consulta impacta rendimiento y uso de disco;
@@ -40,13 +40,13 @@ Al terminar este libro deberias entender:
 
 Cuando ejecutas una consulta:
 
-- el motor analiza la instruccion;
-- revisa tablas, columnas e indices;
+- el motor analiza la instrucción;
+- revisa tablas, columnas e índices;
 - busca datos en disco y memoria;
 - filtra, agrupa, ordena o transforma resultados;
 - devuelve una tabla temporal o modifica datos persistentes.
 
-Aprender SQL bien es aprender a pensar informacion, no solo comandos.
+Aprender SQL bien es aprender a pensar información, no solo comandos.
 
 ---
 
@@ -111,9 +111,9 @@ Consulta `../../datos/README.md` para la documentación completa de las tablas.
 
 | Carpeta | Tema |
 |---------|------|
-| `01-introduccion-sql/` | Qué es SQL, SQLite, primera consulta |
+| `01-introducción-sql/` | Qué es SQL, SQLite, primera consulta |
 | `02-select-y-filtros/` | SELECT, WHERE, operadores de comparación |
-| `03-ordenamiento-y-limites/` | ORDER BY, LIMIT, OFFSET |
+| `03-ordenamiento-y-límites/` | ORDER BY, LIMIT, OFFSET |
 | `04-funciones-agregadas/` | COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING |
 | `05-joins/` | INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN |
 
@@ -124,7 +124,7 @@ Consulta `../../datos/README.md` para la documentación completa de las tablas.
 | `06-subconsultas/` | Subqueries, EXISTS, IN, ANY/ALL |
 | `07-modificar-datos/` | INSERT, UPDATE, DELETE, UPSERT |
 | `08-diseno-de-tablas/` | CREATE TABLE, tipos de datos, constraints |
-| `09-indices-y-performance/` | Índices, EXPLAIN QUERY PLAN, optimización |
+| `09-índices-y-performance/` | Índices, EXPLAIN QUERY PLAN, optimización |
 | `10-transacciones/` | BEGIN, COMMIT, ROLLBACK, ACID |
 
 ### Nivel Avanzado — SQL profesional

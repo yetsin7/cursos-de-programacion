@@ -10,7 +10,7 @@ A diferencia de otros frameworks híbridos, Flutter **no usa WebViews ni compone
 
 ## Dart como lenguaje base
 
-Flutter usa **Dart**, también desarrollado por Google. Características clave:
+Flutter usa **Dart**, también desarrollado por Google. Carácterísticas clave:
 
 - Sintaxis similar a Java/JavaScript: fácil de aprender
 - Tipado estático con inferencia de tipos

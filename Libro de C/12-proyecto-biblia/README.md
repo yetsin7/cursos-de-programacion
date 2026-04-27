@@ -87,7 +87,7 @@ No basta con abrir la base y consultar. También debes cerrar la conexión y fin
 - Te obliga a manejar errores de forma más profesional
 - Refuerza la idea de que programar no es solo "hacer prints", sino conversar con otros sistemas
 
-## Errores comunes
+## Errores comúnes
 
 - Usar una ruta incorrecta para la base de datos
 - No comprobar los códigos de retorno de SQLite

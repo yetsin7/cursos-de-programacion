@@ -133,7 +133,7 @@ Cuando la pregunta no tiene suficiente información para responder:
 | Frase | Traducción |
 |-------|------------|
 | Can you provide more context? | ¿Puedes dar más contexto? |
-| What version are you using? | ¿Qué versión estás usando? |
+| What versión are you using? | ¿Qué versión estás usando? |
 | Can you share the full error message? | ¿Puedes compartir el error completo? |
 | Can you include the relevant code? | ¿Puedes incluir el código relevante? |
 | Have you checked the docs? | ¿Has revisado la documentación? |

@@ -1,14 +1,14 @@
 # Chapter 12: Exercises
 
-## Ejercicios de Lectura de Codigo en Ingles
+## Ejercicios de Lectura de Código en Ingles
 
 ---
 
-## Ejercicio 1: Identifica la Convencion
+## Ejercicio 1: Identifica la Convención
 
-Indica que convencion de nomenclatura usa cada nombre.
+Indica que convención de nomenclatura usa cada nombre.
 
-| Nombre | Convencion |
+| Nombre | Convención |
 |--------|------------|
 | 1. `getUserProfile` | ___ |
 | 2. `MAX_CONNECTIONS` | ___ |
@@ -56,9 +56,9 @@ Escribe como leerias cada nombre en ingles.
 
 ---
 
-## Ejercicio 3: Lee el Codigo en Voz Alta
+## Ejercicio 3: Lee el Código en Voz Alta
 
-Escribe como leerias cada linea de codigo en ingles.
+Escribe como leerias cada linea de código en ingles.
 
 **1.**
 ```javascript
@@ -165,14 +165,14 @@ SyntaxError: Unexpected token ';' at line 15
 
 1. Intentaste acceder a `.length` en algo que es `null`. Probablemente una variable no tiene valor.
 2. La ruta `/api/users/999` no existe. El usuario con ID 999 no se encontro.
-3. La pila de llamadas se agoto. Hay una recursion infinita en el codigo.
+3. La pila de llamadas se agoto. Hay una recursión infinita en el código.
 4. El servidor no permite peticiones desde tu dominio. Falta configurar CORS en el backend.
 5. Hay un punto y coma inesperado en la linea 15. Error de sintaxis.
 </details>
 
 ---
 
-## Ejercicio 6: Traduce la Descripcion del Error
+## Ejercicio 6: Traduce la Descripción del Error
 
 Traduce estas descripciones de errores al ingles.
 
@@ -180,7 +180,7 @@ Traduce estas descripciones de errores al ingles.
 2. "La app se cae cuando la lista esta vacia."
 3. "El error aparece solo en produccion, no localmente."
 4. "Hay un NullPointerException en la linea 42."
-5. "El stack trace muestra que el error viene del servicio de autenticacion."
+5. "El stack trace muestra que el error viene del servicio de autenticación."
 
 <details>
 <summary>Respuestas Sugeridas</summary>
@@ -196,7 +196,7 @@ Traduce estas descripciones de errores al ingles.
 
 ## Ejercicio 7: Lectura Completa
 
-Lee el siguiente bloque de codigo en voz alta, linea por linea.
+Lee el siguiente bloque de código en voz alta, linea por linea.
 
 ```javascript
 async function fetchUserData(userId) {
@@ -233,9 +233,9 @@ async function fetchUserData(userId) {
 
 ## Ejercicio 8: Practica Diaria
 
-Durante la proxima semana, practica lo siguiente:
+Durante la proxima semana, práctica lo siguiente:
 
 1. **Dia 1-2**: Lee 5 nombres de variables de tu proyecto en voz alta
 2. **Dia 3-4**: Lee 3 funciones completas en voz alta
 3. **Dia 5-6**: Lee los mensajes de error que encuentres y explicalos en ingles
-4. **Dia 7**: Haz pair programming (real o simulado) leyendo codigo en ingles
+4. **Dia 7**: Haz pair programming (real o simulado) leyendo código en ingles

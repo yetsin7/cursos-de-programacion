@@ -77,7 +77,7 @@ Macros como `__FILE__`, `__LINE__`, `__DATE__` y `__TIME__` ayudan en depuració
 - Activar logs de depuración
 - Adaptar código a distintas plataformas o configuraciones
 
-## Errores comunes
+## Errores comúnes
 
 - Escribir macros sin paréntesis y obtener resultados inesperados
 - Pensar que una macro se comporta exactamente como una función

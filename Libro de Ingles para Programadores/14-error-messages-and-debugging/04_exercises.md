@@ -8,12 +8,12 @@
 
 Indica que tipo de error es cada uno.
 
-1. El codigo tiene un parentesis faltante.
+1. El código tiene un parentesis faltante.
 2. Intentaste acceder a `.name` en un objeto que es `null`.
 3. Usaste una variable que nunca fue declarada.
 4. El programa uso toda la memoria disponible.
-5. La conexion al servidor tardo mas de 30 segundos.
-6. Intentaste acceder al indice 10 de un array de 5 elementos.
+5. La conexión al servidor tardo mas de 30 segundos.
+6. Intentaste acceder al índice 10 de un array de 5 elementos.
 
 <details>
 <summary>Respuestas</summary>
@@ -59,7 +59,7 @@ PermissionDenied: /var/log/app.log
 
 ## Ejercicio 3: Vocabulario de Debugging
 
-Completa las oraciones con el termino correcto.
+Completa las oraciones con el término correcto.
 
 1. "Set a _______ on line 25 to pause execution there."
 2. "Click _______ to execute the current line without entering the function."
@@ -116,7 +116,7 @@ all items in the shopping cart are removed.
 
 **Environment**:
 - OS: Android 14
-- App version: 3.2.1
+- App versión: 3.2.1
 - Device: Pixel 8
 </details>
 
@@ -138,7 +138,7 @@ Asigna el nivel de severidad correcto: **Critical**, **Major**, **Minor**, o **C
 1. Critical — impide la funcionalidad principal
 2. Cosmetic — solo visual, no afecta funcionalidad
 3. Major — funcionalidad importante no funciona correctamente
-4. Critical — crash que afecta una funcion importante
+4. Critical — crash que afecta una función importante
 5. Cosmetic — diferencia visual menor
 </details>
 
@@ -148,12 +148,12 @@ Asigna el nivel de severidad correcto: **Critical**, **Major**, **Minor**, o **C
 
 Traduce al ingles:
 
-1. "Encontre un bug en el flujo de autenticacion."
+1. "Encontre un bug en el flujo de autenticación."
 2. "El error solo ocurre a veces, no siempre."
 3. "Necesitamos desplegar un parche urgente."
 4. "Voy a poner un breakpoint para investigar."
 5. "La causa raiz fue una race condition en el servicio de pagos."
-6. "Tengo una solucion temporal por ahora."
+6. "Tengo una solución temporal por ahora."
 
 <details>
 <summary>Respuestas</summary>
@@ -189,9 +189,9 @@ Can you check if the profile object is being initialized during user creation?"
 
 ## Ejercicio 8: Matching
 
-Conecta cada termino con su definicion.
+Conecta cada término con su definición.
 
-| Termino | Definicion |
+| Término | Definición |
 |---------|-----------|
 | 1. Race condition | a. Bug that reappears after being fixed |
 | 2. Edge case | b. Result depends on execution order |

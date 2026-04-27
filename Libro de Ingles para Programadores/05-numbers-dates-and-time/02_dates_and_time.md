@@ -165,7 +165,7 @@ En programación y entornos técnicos, el formato 24 horas es común:
 | UTC-5 | Cinco horas detrás de UTC (ej: EST) |
 | UTC+1 | Una hora adelante de UTC (ej: CET) |
 
-### Zonas horarias comunes en tech
+### Zonas horarias comúnes en tech
 
 | Abreviatura | Nombre | UTC Offset |
 |-------------|--------|------------|
@@ -225,7 +225,7 @@ En programación y entornos técnicos, el formato 24 horas es común:
 
 ---
 
-## Expresiones de tiempo comunes en desarrollo
+## expresiones de tiempo comúnes en desarrollo
 
 | Inglés | Español |
 |--------|---------|

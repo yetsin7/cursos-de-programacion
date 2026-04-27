@@ -24,7 +24,7 @@ We have updated the dependencies. (Hemos actualizado las dependencias)
 The build has failed.             (El build ha fallado)
 ```
 
-### Contracciones (muy comunes al hablar)
+### Contracciones (muy comúnes al hablar)
 
 ```text
 I've deployed the fix.
@@ -206,7 +206,7 @@ The migration has been running smoothly so far.
 
 ---
 
-## 7. Errores comunes de hispanohablantes
+## 7. Errores comúnes de hispanohablantes
 
 | Incorrecto | Correcto | Explicación |
 |------------|----------|-------------|

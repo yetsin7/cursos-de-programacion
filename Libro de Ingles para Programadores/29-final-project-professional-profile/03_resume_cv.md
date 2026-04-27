@@ -1,19 +1,19 @@
 # Lesson 03: Writing a Developer Resume / CV
 
-## Introduccion
+## Introducción
 
-El resume (curriculum vitae) en ingles para desarrolladores tiene un formato especifico que difiere mucho del CV tradicional en espanol. Debe ser conciso (1-2 paginas), enfocado en logros medibles y optimizado para sistemas ATS (Applicant Tracking Systems) que filtran candidatos automaticamente.
+El resume (curriculum vitae) en ingles para desarrolladores tiene un formato especifico que difiere mucho del CV tradicional en espanol. Debe ser conciso (1-2 páginas), enfocado en logros medibles y optimizado para sistemas ATS (Applicant Tracking Systems) que filtran candidatos automáticamente.
 
 ---
 
 ## Estructura del Resume
 
-| Seccion | Obligatoria | Contenido |
+| Sección | Obligatoria | Contenido |
 |---------|-------------|-----------|
 | **Contact Information** | Si | Nombre, email, telefono, LinkedIn, GitHub |
 | **Summary / Profile** | Recomendada | 2-3 oraciones sobre ti |
 | **Experience** | Si | Historial laboral con logros |
-| **Skills** | Si | Tecnologias y herramientas |
+| **Skills** | Si | Tecnologías y herramientas |
 | **Education** | Si | Estudios formales |
 | **Projects** | Recomendada | Proyectos personales relevantes |
 | **Certifications** | Opcional | Certificaciones relevantes |
@@ -26,7 +26,7 @@ El resume (curriculum vitae) en ingles para desarrolladores tiene un formato esp
 | Edad / Fecha de nacimiento | Discriminacion |
 | Estado civil | Irrelevante |
 | Nacionalidad | Innecesario |
-| Direccion completa | Solo ciudad y pais |
+| Dirección completa | Solo ciudad y pais |
 | "References available upon request" | Se asume, no lo escribas |
 | Objetivo generico | Usa un Summary especifico |
 
@@ -43,7 +43,7 @@ linkedin.com/in/johndoe | github.com/johndoe
 San Francisco, CA (Open to Remote)
 ```
 
-**Nota:** Incluir "Open to Remote" es muy util para posiciones internacionales.
+**Nota:** Incluir "Open to Remote" es muy útil para posiciones internacionales.
 
 ---
 
@@ -86,11 +86,11 @@ and Node.js. Led a team that reduced page load times by
 | Verbo | Pasado | Uso |
 |-------|--------|-----|
 | **Design** | Designed | Diseno de arquitectura o sistemas |
-| **Implement** | Implemented | Codificar una solucion |
+| **Implement** | Implemented | Codificar una solución |
 | **Optimize** | Optimized | Mejorar rendimiento |
-| **Refactor** | Refactored | Reestructurar codigo existente |
-| **Migrate** | Migrated | Mover de una tecnologia a otra |
-| **Automate** | Automated | Crear procesos automaticos |
+| **Refactor** | Refactored | Reestructurar código existente |
+| **Migrate** | Migrated | Mover de una tecnología a otra |
+| **Automate** | Automated | Crear procesos automáticos |
 | **Mentor** | Mentored | Guiar a otros desarrolladores |
 | **Deliver** | Delivered | Entregar un producto o feature |
 | **Ship** | Shipped | Publicar, lanzar |
@@ -149,12 +149,12 @@ Cloud:         AWS (S3, Lambda, EC2), Google Cloud, Vercel
 Practices:     Clean Architecture, TDD, Agile/Scrum, CI/CD
 ```
 
-### ATS Tips para la seccion de Skills
+### ATS Tips para la sección de Skills
 
-- Usa los **nombres exactos** de las tecnologias (no abreviaturas inventadas)
+- Usa los **nombres exactos** de las tecnologías (no abreviaturas inventadas)
 - Incluye las palabras clave de la oferta de trabajo
 - No uses graficos, barras de progreso ni porcentajes para skills
-- Lista las tecnologias mas relevantes primero
+- Lista las tecnologías mas relevantes primero
 
 ---
 
@@ -175,7 +175,7 @@ University of Central America | 2016 - 2020
 | Licenciatura / Ingenieria | Bachelor's Degree |
 | Maestria | Master's Degree |
 | Doctorado | Ph.D. / Doctorate |
-| Tecnico | Associate Degree / Technical Diploma |
+| Técnico | Associate Degree / Technical Diploma |
 | Diplomado | Certificate / Diploma |
 | Bachillerato (secundaria) | High School Diploma |
 
@@ -203,7 +203,7 @@ github.com/username/task-cli
 
 ## ATS Optimization (Applicant Tracking Systems)
 
-Los ATS son sistemas que filtran resumes automaticamente. Si tu resume no pasa el ATS, ningun humano lo vera.
+Los ATS son sistemas que filtran resumes automáticamente. Si tu resume no pasa el ATS, ningun humano lo vera.
 
 ### Reglas para pasar el ATS
 
@@ -232,7 +232,7 @@ Tu resume debe incluir exactamente: **React, TypeScript, Node.js, PostgreSQL, AW
 
 ## Cuantificar logros
 
-| Sin metricas (debil) | Con metricas (fuerte) |
+| Sin metricas (débil) | Con metricas (fuerte) |
 |---------------------|----------------------|
 | "Improved performance" | "Reduced API response time by 65%" |
 | "Led a team" | "Led a team of 5 engineers" |
@@ -245,8 +245,8 @@ Tu resume debe incluir exactamente: **React, TypeScript, Node.js, PostgreSQL, AW
 
 ## Resumen
 
-- El resume tech en ingles es de 1-2 paginas, sin foto ni datos personales
+- El resume tech en ingles es de 1-2 páginas, sin foto ni datos personales
 - Usa action verbs + metricas en cada bullet point de experiencia
 - Optimiza para ATS: formato simple, keywords de la oferta, texto plano
 - Cuantifica todo: usuarios, porcentajes, tiempos, tamano de equipo
-- Adapta el resume para cada aplicacion usando las keywords de la oferta
+- Adapta el resume para cada aplicación usando las keywords de la oferta

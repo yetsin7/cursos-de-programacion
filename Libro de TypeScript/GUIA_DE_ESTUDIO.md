@@ -1,12 +1,12 @@
-# Guia de Estudio — Libro de TypeScript
+# Guía de Estudio — Libro de TypeScript
 
-Esta guia existe para que el libro no se estudie como una simple coleccion de
+Esta guía existe para que el libro no se estudie como una simple coleccion de
 archivos. TypeScript se entiende mejor cuando relacionas cada concepto con el
 problema que resuelve dentro del software.
 
-## Metodo recomendado
+## Método recomendado
 
-1. Lee el `README.md` del capitulo antes del codigo.
+1. Lee el `README.md` del capítulo antes del código.
 2. Ejecuta `npx tsc --noEmit` y confirma que todo este limpio.
 3. Abre un archivo `.ts` y explica en voz alta que modela.
 4. Cambia algo a proposito para provocar un error del compilador.
@@ -19,7 +19,7 @@ problema que resuelve dentro del software.
 - ¿Este valor puede faltar o cambiar de forma?
 - ¿Necesito `type`, `interface`, `union` o `generic`?
 - ¿Estoy usando `any` por necesidad o por prisa?
-- ¿Que bug estoy evitando gracias a esta definicion?
+- ¿Que bug estoy evitando gracias a esta definición?
 
 ## Lo que debes observar en cada etapa
 
@@ -29,14 +29,14 @@ problema que resuelve dentro del software.
 - ayuda contextual del editor;
 - errores de firmas o propiedades.
 
-### Durante compilacion
+### Durante compilación
 
-- errores de asignacion;
+- errores de asignación;
 - incompatibilidades entre objetos;
 - retornos faltantes;
 - accesos inseguros a valores opcionales.
 
-### Durante ejecucion
+### Durante ejecución
 
 - comportamiento real del JavaScript generado;
 - necesidad de validar datos externos;

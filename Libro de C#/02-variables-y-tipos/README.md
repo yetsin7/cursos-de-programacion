@@ -1,6 +1,6 @@
 # Capítulo 02 — Variables y tipos de datos
 
-Este capitulo te ayuda a entender una de las fortalezas principales de C#:
+Este capítulo te ayuda a entender una de las fortalezas principales de C#:
 trabajar con tipos claros, seguros y expresivos.
 
 ---
@@ -14,7 +14,7 @@ Esto sirve para:
 
 - detectar errores temprano;
 - usar mejor APIs y conversiones;
-- escribir codigo mas claro y seguro.
+- escribir código mas claro y seguro.
 
 ---
 
@@ -34,14 +34,14 @@ Cuando declaras variables en C#:
 
 - el compilador valida tipos;
 - .NET reserva y administra memoria;
-- algunas conversiones ocurren automaticamente;
-- otras requieren cast o metodos especiales.
+- algunas conversiones ocurren automáticamente;
+- otras requieren cast o métodos especiales.
 
 Los tipos no son solo etiquetas: cambian el comportamiento real del programa.
 
 ---
 
-## Tipos comunes
+## Tipos comúnes
 
 ### Enteros
 
@@ -61,7 +61,7 @@ Los tipos no son solo etiquetas: cambian el comportamiento real del programa.
 
 - `var` mantiene tipado estatico con inferencia.
 - `object` puede referenciar cualquier valor dentro del sistema de tipos.
-- `dynamic` mueve parte de la comprobacion a tiempo de ejecucion.
+- `dynamic` mueve parte de la comprobacion a tiempo de ejecución.
 
 Usa `dynamic` con cuidado.
 
@@ -77,9 +77,9 @@ datos.
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
-- creer que `var` significa dinamico;
+- creer que `var` significa dinámico;
 - usar `dynamic` donde no hace falta;
 - olvidar que un cast puede truncar datos;
 - usar `decimal` y `double` como si fueran iguales.

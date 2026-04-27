@@ -1,6 +1,6 @@
 # Capítulo 12 — Consultas Avanzadas
 
-## CASE — Expresiones condicionales
+## CASE — expresiones condicionales
 
 `CASE` permite lógica condicional dentro de una consulta SQL:
 
@@ -18,7 +18,7 @@ FROM books;
 
 ---
 
-## Window Functions — Funciones de ventana
+## Window Functions — funciones de ventana
 
 Las window functions calculan valores sobre un conjunto de filas relacionadas
 sin colapsar el resultado como `GROUP BY`.
@@ -36,7 +36,7 @@ GROUP BY b.book_number;
 
 ---
 
-## Funciones de texto en SQLite
+## funciones de texto en SQLite
 
 | Función | Descripción | Ejemplo |
 |---------|-------------|---------|

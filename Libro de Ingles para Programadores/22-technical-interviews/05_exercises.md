@@ -1,4 +1,4 @@
-# Exercises - Ejercicios del Capitulo 22
+# Exercises - Ejercicios del Capítulo 22
 
 ## Ejercicio 1: Construye tu elevator pitch
 
@@ -26,7 +26,7 @@ Previously, I _____________. I'm looking to _____________."
 
 ---
 
-## Ejercicio 2: Metodo STAR
+## Ejercicio 2: Método STAR
 
 Escribe una respuesta STAR completa en ingles para cada pregunta. Puedes inventar la situacion o basarte en tu experiencia real.
 
@@ -48,7 +48,7 @@ Escribe una respuesta STAR completa en ingles para cada pregunta. Puedes inventa
 
 ## Ejercicio 3: Piensa en voz alta
 
-Para el siguiente problema, escribe en ingles como explicarias tu razonamiento paso a paso. No necesitas escribir codigo — solo tu proceso de pensamiento.
+Para el siguiente problema, escribe en ingles como explicarias tu razonamiento paso a paso. No necesitas escribir código — solo tu proceso de pensamiento.
 
 **Problema:** *"Given a string, find the length of the longest substring without repeating characters."*
 
@@ -57,13 +57,13 @@ Escribe lo que dirias al entrevistador:
 1. Confirmar que entiendes el problema: _______________________________________________
 2. Pedir aclaraciones: _______________________________________________
 3. Proponer un enfoque brute force: _______________________________________________
-4. Optimizar con una mejor solucion: _______________________________________________
+4. Optimizar con una mejor solución: _______________________________________________
 5. Discutir complejidad: _______________________________________________
 6. Mencionar edge cases: _______________________________________________
 
 ---
 
-## Ejercicio 4: Completa las frases tecnicas
+## Ejercicio 4: Completa las frases técnicas
 
 Elige la palabra o frase correcta para completar cada oracion.
 
@@ -106,23 +106,23 @@ Elige la palabra o frase correcta para completar cada oracion.
 
 ## Ejercicio 5: System design - Vocabulario
 
-Relaciona cada termino con su definicion.
+Relaciona cada término con su definición.
 
-| Termino | Definicion |
+| Término | Definición |
 |---------|-----------|
-| 1. Load balancer | a. Almacena datos frecuentes para acceso rapido |
+| 1. Load balancer | a. Almacena datos frecuentes para acceso rápido |
 | 2. CDN | b. Divide datos entre multiples servidores |
 | 3. Cache | c. Distribuye trafico entre servidores |
 | 4. Sharding | d. Sirve contenido estatico cerca del usuario |
 | 5. Rate limiting | e. Controla cuantas peticiones puede hacer un usuario |
 | 6. Replication | f. Copia datos en multiples nodos para disponibilidad |
-| 7. Message queue | g. Permite procesamiento asincrono entre servicios |
+| 7. Message queue | g. Permite procesamiento asíncrono entre servicios |
 
 ---
 
 ## Ejercicio 6: Traduce al ingles profesional
 
-Traduce estas frases al ingles usando vocabulario de entrevistas tecnicas.
+Traduce estas frases al ingles usando vocabulario de entrevistas técnicas.
 
 **1.** "Empecemos por los requisitos del sistema."
 
@@ -150,7 +150,7 @@ _______________________________________________
 
 ---
 
-## Ejercicio 7: Responde a preguntas dificiles
+## Ejercicio 7: Responde a preguntas difíciles
 
 Escribe en ingles una respuesta profesional para cada situacion.
 
@@ -158,7 +158,7 @@ Escribe en ingles una respuesta profesional para cada situacion.
 
 Tu respuesta: _______________________________________________
 
-**2.** Te bloqueas durante un problema de codigo. Que dices?
+**2.** Te bloqueas durante un problema de código. Que dices?
 
 Tu respuesta: _______________________________________________
 
@@ -166,7 +166,7 @@ Tu respuesta: _______________________________________________
 
 Tu respuesta: _______________________________________________
 
-**4.** Te das cuenta de que tu solucion tiene un bug. Que dices?
+**4.** Te das cuenta de que tu solución tiene un bug. Que dices?
 
 Tu respuesta: _______________________________________________
 

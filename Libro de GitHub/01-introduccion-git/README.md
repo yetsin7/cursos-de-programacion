@@ -1,6 +1,6 @@
 # Capítulo 01 — Introducción a Git
 
-Este capitulo construye la base mental correcta para no usar Git como una lista
+Este capítulo construye la base mental correcta para no usar Git como una lista
 de comandos memorizados. Aqui vas a entender que problema resuelve y como piensa
 Git internamente.
 
@@ -65,7 +65,7 @@ datos local:
 
 - registra cambios;
 - crea objetos internos;
-- mueve archivos entre areas logicas;
+- mueve archivos entre areas lógicas;
 - actualiza referencias del historial.
 
 Por eso Git no es solo "subir archivos": es administrar historia y estados.
@@ -82,7 +82,7 @@ Por eso Git no es solo "subir archivos": es administrar historia y estados.
 
 ---
 
-## Errores comunes del principiante
+## Errores comúnes del principiante
 
 - creer que Git y GitHub son lo mismo;
 - usar comandos sin leer `git status`;
@@ -95,8 +95,8 @@ Por eso Git no es solo "subir archivos": es administrar historia y estados.
 ## Practica guiada
 
 1. Ejecuta cada comando uno por uno.
-2. Lee la salida de la terminal despues de cada paso.
+2. Lee la salida de la terminal después de cada paso.
 3. Intenta explicar en que area esta cada archivo.
 4. Repite el flujo hasta poder decirlo sin mirar.
 
-> ✅ Cuando termines esta carpeta, pasa a `02-instalacion-y-configuracion/`.
+> ✅ Cuando termines esta carpeta, pasa a `02-instalacion-y-configuración/`.

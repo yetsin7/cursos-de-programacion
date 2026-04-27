@@ -3,7 +3,7 @@
 ## ¿Por qué "C++ moderno"?
 
 C++11 fue una revolución en el lenguaje. Desde entonces, cada estándar ha añadido
-características que hacen el código más seguro, expresivo y eficiente:
+carácterísticas que hacen el código más seguro, expresivo y eficiente:
 
 - **C++11** (2011): la mayor actualización desde C++98. Base del C++ moderno.
 - **C++14** (2014): mejoras menores y correcciones.

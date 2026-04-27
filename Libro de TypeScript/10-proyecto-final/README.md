@@ -1,7 +1,7 @@
 # Capítulo 10 — Proyecto Final
 
 Este proyecto final une varias piezas del libro: tipos, interfaces, generics,
-clases, modulos y asincronia simple. La idea no es crear una aplicacion enorme,
+clases, módulos y asincronia simple. La idea no es crear una aplicación enorme,
 sino mostrar como TypeScript ayuda a organizar mejor un programa pequeno pero
 realista.
 
@@ -10,7 +10,7 @@ realista.
 Construir un gestor de lecciones de estudio que:
 
 - modele datos de lecciones;
-- separe logica en modulos;
+- separe lógica en módulos;
 - use una clase para administrar estado;
 - imprima un resumen final legible.
 
@@ -19,7 +19,7 @@ Construir un gestor de lecciones de estudio que:
 - organizacion por archivos;
 - import y export;
 - modelado claro de datos;
-- separacion entre datos, logica y ejecucion.
+- separacion entre datos, lógica y ejecución.
 
 ## Estructura del capítulo
 

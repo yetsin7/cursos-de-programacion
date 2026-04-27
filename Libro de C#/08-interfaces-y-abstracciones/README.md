@@ -91,11 +91,11 @@ var c = new Clase();
 
 ## Interfaces vs Clases abstractas
 
-| Característica                | Interfaz                        | Clase abstracta                |
+| Carácterística                | Interfaz                        | Clase abstracta                |
 |-------------------------------|---------------------------------|--------------------------------|
 | Puede tener campos            | No                              | Sí                             |
 | Puede tener constructor       | No                              | Sí                             |
-| Herencia múltiple             | Sí                              | No                             |
+| herencia múltiple             | Sí                              | No                             |
 | Método sin implementar        | Sí (todos, salvo default)       | Solo los marcados `abstract`   |
 | Modificadores de acceso       | `public` por defecto            | Todos los modificadores        |
 | Cuando usarla                 | Definir un contrato compartido  | Compartir código base común    |

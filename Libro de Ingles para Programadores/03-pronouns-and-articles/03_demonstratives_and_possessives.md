@@ -47,7 +47,7 @@ class User {
 
 ### "That" y "Those" (lejos / anterior / otro contexto)
 
-Se usan para lo que está lejos, se mencionó antes o está en otro contexto.
+Se usan para lo que está lejos, se menciónó antes o está en otro contexto.
 
 | Inglés | Español | Contexto |
 |--------|---------|----------|
@@ -103,7 +103,7 @@ Se usan para lo que está lejos, se mencionó antes o está en otro contexto.
 
 ### "Its" en programación: la propiedad de algo
 
-"Its" es muy común para hablar de las propiedades o características de objetos, funciones, etc.
+"Its" es muy común para hablar de las propiedades o carácterísticas de objetos, funciones, etc.
 
 | Inglés | Español |
 |--------|---------|
@@ -138,7 +138,7 @@ Your branch has conflicts. → This branch is yours.
 
 ---
 
-## Errores comunes de hispanohablantes
+## Errores comúnes de hispanohablantes
 
 | Error | Correcto | Explicación |
 |-------|----------|-------------|

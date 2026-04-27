@@ -1,8 +1,8 @@
 # Lesson 01: Contributing to Open Source Projects
 
-## Introduccion
+## Introducción
 
-Contribuir a proyectos open source es una de las mejores formas de mejorar como programador y construir tu reputacion profesional. Toda la comunicacion ocurre en ingles, asi que dominar las frases y convenciones correctas es fundamental.
+Contribuir a proyectos open source es una de las mejores formas de mejorar como programador y construir tu reputacion profesional. Toda la comunicación ocurre en ingles, asi que dominar las frases y convenciones correctas es fundamental.
 
 ---
 
@@ -10,18 +10,18 @@ Contribuir a proyectos open source es una de las mejores formas de mejorar como 
 
 Antes de contribuir a cualquier proyecto, **siempre** lee el archivo CONTRIBUTING.md. Este documento te dice exactamente como el proyecto espera recibir contribuciones.
 
-### Secciones tipicas de CONTRIBUTING.md
+### secciones tipicas de CONTRIBUTING.md
 
-| Seccion | Que te dice |
+| Sección | Que te dice |
 |---------|-------------|
 | **Code of Conduct** | Reglas de comportamiento en la comunidad |
 | **How to Contribute** | Pasos para contribuir |
 | **Development Setup** | Como configurar el entorno de desarrollo |
-| **Coding Standards** | Estilo de codigo que debes seguir |
+| **Coding Standards** | Estilo de código que debes seguir |
 | **Commit Message Format** | Formato para mensajes de commit |
 | **Pull Request Process** | Como enviar un pull request |
 | **Issue Templates** | Plantillas para reportar bugs o pedir features |
-| **Branch Naming** | Convencion para nombrar ramas |
+| **Branch Naming** | Convención para nombrar ramas |
 | **Testing Requirements** | Que tests debes incluir |
 | **License** | Bajo que licencia contribuyes |
 
@@ -64,7 +64,7 @@ We follow Conventional Commits:
 
 ---
 
-## El flujo de contribucion (Contribution Workflow)
+## El flujo de contribución (Contribution Workflow)
 
 ### Paso 1: Fork y Clone
 
@@ -120,9 +120,9 @@ git push origin feat/add-dark-mode
 | "I'm a first-time contributor." | Indicar que eres nuevo en el proyecto |
 | "I've read the contributing guide." | Mostrar que hiciste tu tarea |
 | "Here's my proposed approach." | Presentar tu plan antes de codear |
-| "Would this approach be acceptable?" | Pedir feedback sobre tu solucion |
+| "Would this approach be acceptable?" | Pedir feedback sobre tu solución |
 
-### Describir tu contribucion
+### Describir tu contribución
 
 | Frase en ingles | Cuando usarla |
 |-----------------|---------------|
@@ -130,7 +130,7 @@ git push origin feat/add-dark-mode
 | "This fixes the issue where..." | Explicar que bug corrige |
 | "I've added tests to cover..." | Mencionar los tests que incluiste |
 | "This is a draft PR for early feedback." | PR incompleto para recibir feedback |
-| "Ready for review." | Tu PR esta listo para revision |
+| "Ready for review." | Tu PR esta listo para revisión |
 | "I've addressed all the review comments." | Respondiste a todos los comentarios |
 | "Let me know if you'd like any changes." | Ofrecer disposicion a hacer cambios |
 | "Happy to make adjustments." | Lo mismo, tono mas amigable |
@@ -148,11 +148,11 @@ git push origin feat/add-dark-mode
 
 ---
 
-## Code of Conduct (Codigo de Conducta)
+## Code of Conduct (Código de Conducta)
 
-La mayoria de proyectos open source tienen un Codigo de Conducta. Estas son las reglas basicas de comportamiento.
+La mayoria de proyectos open source tienen un Código de Conducta. Estas son las reglas básicas de comportamiento.
 
-### Frases comunes en Codes of Conduct
+### Frases comúnes en Codes of Conduct
 
 | Frase | Significado |
 |-------|-------------|
@@ -161,7 +161,7 @@ La mayoria de proyectos open source tienen un Codigo de Conducta. Estas son las 
 | "Constructive feedback is welcome" | Feedback constructivo es bienvenido |
 | "Assume good intentions" | Asume buenas intenciones |
 | "Be patient with newcomers" | Ten paciencia con los nuevos |
-| "Focus on the code, not the person" | Enfocate en el codigo, no en la persona |
+| "Focus on the code, not the person" | Enfocate en el código, no en la persona |
 | "Report violations to..." | Reporta violaciones a... |
 
 ### Comportamiento profesional en ingles
@@ -192,7 +192,7 @@ performance. Let me refactor this."
 
 ## Plantillas de Pull Request
 
-### PR Template basico
+### PR Template básico
 
 ```markdown
 ## Description
@@ -250,7 +250,7 @@ Closes #456
 
 ## Vocabulario esencial de open source
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
 | **Maintainer** | Persona que mantiene el proyecto |
 | **Contributor** | Persona que contribuye al proyecto |
@@ -261,8 +261,8 @@ Closes #456
 | **Squash** | Combinar multiples commits en uno |
 | **Rebase** | Reorganizar commits sobre otra rama |
 | **CI/CD** | Integracion y despliegue continuo |
-| **Linter** | Herramienta que verifica estilo de codigo |
-| **Good first issue** | Issue facil para nuevos contribuidores |
+| **Linter** | Herramienta que verifica estilo de código |
+| **Good first issue** | Issue fácil para nuevos contribuidores |
 | **Help wanted** | El proyecto necesita ayuda con esto |
 | **WIP** | Work in Progress (trabajo en progreso) |
 
@@ -271,7 +271,7 @@ Closes #456
 ## Resumen
 
 - Siempre lee CONTRIBUTING.md antes de contribuir a un proyecto
-- Usa frases profesionales y respetuosas en toda comunicacion
+- Usa frases profesionales y respetuosas en toda comunicación
 - Sigue el flujo: fork, clone, branch, commit, push, PR
 - Describe tus contribuciones claramente en el PR
 - Respeta el Code of Conduct del proyecto

@@ -5,7 +5,7 @@
 La POO organiza el código alrededor de **objetos** que combinan datos (propiedades) y comportamiento (métodos). Los cuatro pilares son:
 
 1. **Encapsulamiento**: ocultar los detalles internos
-2. **Herencia**: reutilizar código de clases existentes
+2. **herencia**: reutilizar código de clases existentes
 3. **Polimorfismo**: un mismo método con comportamientos distintos
 4. **Abstracción**: simplificar la complejidad
 

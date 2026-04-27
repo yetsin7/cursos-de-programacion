@@ -2,7 +2,7 @@
 
 ## Vocabulario de Depuracion
 
-El debugging (depuracion) es una de las actividades mas comunes en programacion.
+El debugging (depuracion) es una de las actividades mas comúnes en programación.
 Conocer el vocabulario en ingles te permitira usar herramientas de depuracion,
 buscar soluciones en linea y comunicarte con tu equipo sobre problemas.
 
@@ -10,35 +10,35 @@ buscar soluciones en linea y comunicarte con tu equipo sobre problemas.
 
 ## Herramientas y Acciones de Debugging
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
-| **Debug** | /diːˈbʌɡ/ "di-BAG" | Buscar y corregir errores en el codigo |
-| **Breakpoint** | /ˈbreɪkpɔɪnt/ "BREIK-point" | Punto donde la ejecucion se detiene |
+| **Debug** | /diːˈbʌɡ/ "di-BAG" | Buscar y corregir errores en el código |
+| **Breakpoint** | /ˈbreɪkpɔɪnt/ "BREIK-point" | Punto donde la ejecución se detiene |
 | **Step over** | /stɛp ˈoʊvər/ "step OU-ver" | Ejecutar la linea actual sin entrar en funciones |
-| **Step into** | /stɛp ˈɪntuː/ "step IN-tu" | Entrar dentro de la funcion llamada |
-| **Step out** | /stɛp aʊt/ "step AUT" | Salir de la funcion actual |
+| **Step into** | /stɛp ˈɪntuː/ "step IN-tu" | Entrar dentro de la función llamada |
+| **Step out** | /stɛp aʊt/ "step AUT" | Salir de la función actual |
 | **Watch** | /wɒtʃ/ "uotch" | Observar el valor de una variable |
 | **Inspect** | /ɪnˈspɛkt/ "in-SPEKT" | Examinar un valor o estado |
 
 ### Ejemplos en Oraciones
 
 - "Set a **breakpoint** on line 42." (Pon un breakpoint en la linea 42.)
-- "**Step over** the logging function." (Pasa por encima de la funcion de logging.)
+- "**Step over** the logging function." (Pasa por encima de la función de logging.)
 - "**Step into** the `calculateTotal` method." (Entra en el metodo `calculateTotal`.)
 - "Add `userCount` to the **watch** list." (Agrega `userCount` a la lista de watch.)
 - "**Inspect** the response object." (Inspecciona el objeto de respuesta.)
 
 ---
 
-## Estructura de Ejecucion
+## Estructura de Ejecución
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
 | **Stack trace** | /stæk treɪs/ "stak treis" | Lista de funciones que se llamaron hasta el error |
-| **Call stack** | /kɔːl stæk/ "col stak" | Pila de funciones actualmente en ejecucion |
-| **Heap** | /hiːp/ "jiip" | Zona de memoria para objetos dinamicos |
-| **Runtime** | /ˈrʌntaɪm/ "RAN-taim" | Momento de ejecucion del programa |
-| **Compile time** | /kəmˈpaɪl taɪm/ "com-PAIL taim" | Momento de compilacion del codigo |
+| **Call stack** | /kɔːl stæk/ "col stak" | Pila de funciones actualmente en ejecución |
+| **Heap** | /hiːp/ "jiip" | Zona de memoria para objetos dinámicos |
+| **Runtime** | /ˈrʌntaɪm/ "RAN-taim" | Momento de ejecución del programa |
+| **Compile time** | /kəmˈpaɪl taɪm/ "com-PAIL taim" | Momento de compilación del código |
 
 ### Ejemplos en Oraciones
 
@@ -51,10 +51,10 @@ buscar soluciones en linea y comunicarte con tu equipo sobre problemas.
 
 ## Problemas de Memoria y Concurrencia
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
 | **Memory leak** | /ˈmɛməri liːk/ "ME-mo-ri liik" | Memoria que se usa pero nunca se libera |
-| **Race condition** | /reɪs kənˈdɪʃən/ "reis con-DI-shon" | Resultado depende del orden de ejecucion |
+| **Race condition** | /reɪs kənˈdɪʃən/ "reis con-DI-shon" | Resultado depende del orden de ejecución |
 | **Deadlock** | /ˈdɛdlɒk/ "DED-lok" | Dos procesos bloqueados esperandose mutuamente |
 | **Infinite loop** | /ˈɪnfɪnɪt luːp/ "IN-fi-nit luup" | Bucle que nunca termina |
 
@@ -67,18 +67,18 @@ buscar soluciones en linea y comunicarte con tu equipo sobre problemas.
 - "The threads are in a **deadlock** — neither can proceed."
   (Los hilos estan en un deadlock, ninguno puede continuar.)
 - "The `while` loop is an **infinite loop** because the condition never changes."
-  (El bucle while es un loop infinito porque la condicion nunca cambia.)
+  (El bucle while es un loop infinito porque la condición nunca cambia.)
 
 ---
 
 ## Tipos de Bugs
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
-| **Off-by-one error** | "of-bai-UAN E-ror" | Error de uno mas o uno menos (indices) |
-| **Edge case** | /ɛdʒ keɪs/ "ech keis" | Caso limite o extremo |
+| **Off-by-one error** | "of-bai-UAN E-ror" | Error de uno mas o uno menos (índices) |
+| **Edge case** | /ɛdʒ keɪs/ "ech keis" | Caso límite o extremo |
 | **Corner case** | /ˈkɔːrnər keɪs/ "COR-ner keis" | Caso muy raro donde multiples condiciones se combinan |
-| **Regression** | /rɪˈɡrɛʃən/ "ri-GRE-shon" | Bug que reaparece despues de haber sido corregido |
+| **Regression** | /rɪˈɡrɛʃən/ "ri-GRE-shon" | Bug que reaparece después de haber sido corregido |
 | **Flaky test** | /ˈfleɪki tɛst/ "FLEI-ki test" | Test que a veces pasa y a veces falla |
 
 ### Ejemplos en Oraciones
@@ -91,13 +91,13 @@ buscar soluciones en linea y comunicarte con tu equipo sobre problemas.
 
 ---
 
-## Soluciones y Parches
+## soluciones y Parches
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
 | **Hotfix** | /ˈhɒtfɪks/ "JOT-fiks" | Correccion urgente en produccion |
 | **Patch** | /pætʃ/ "patch" | Pequenia correccion o actualizacion |
-| **Workaround** | /ˈwɜːrkəraʊnd/ "WERK-a-raund" | Solucion temporal que evita el problema |
+| **Workaround** | /ˈwɜːrkəraʊnd/ "WERK-a-raund" | Solución temporal que evita el problema |
 | **Root cause** | /ruːt kɔːz/ "ruut cos" | La causa raiz del problema |
 | **Fix** | /fɪks/ "fiks" | Correccion del bug |
 
@@ -114,18 +114,18 @@ buscar soluciones en linea y comunicarte con tu equipo sobre problemas.
 
 ---
 
-## Frases Comunes de Debugging
+## Frases Comúnes de Debugging
 
 | Ingles | Espaniol |
 |--------|----------|
 | "Let me set a breakpoint here." | "Dejame poner un breakpoint aqui." |
-| "I'll step through the code." | "Voy a recorrer el codigo paso a paso." |
+| "I'll step through the code." | "Voy a recorrer el código paso a paso." |
 | "Can you check the stack trace?" | "Puedes revisar el stack trace?" |
 | "I think there's a memory leak." | "Creo que hay un memory leak." |
 | "It's a race condition." | "Es una race condition." |
 | "I found the root cause." | "Encontre la causa raiz." |
 | "I have a workaround for now." | "Tengo un workaround por ahora." |
-| "This is an edge case we missed." | "Este es un caso limite que se nos paso." |
+| "This is an edge case we missed." | "Este es un caso límite que se nos paso." |
 | "We need to deploy a hotfix." | "Necesitamos desplegar un hotfix." |
 | "The regression was caused by the last merge." | "La regresion fue causada por el ultimo merge." |
 
@@ -139,4 +139,4 @@ El vocabulario de debugging se organiza en:
 - **Estructura**: stack trace, call stack, heap, runtime, compile time
 - **Problemas**: memory leak, race condition, deadlock, infinite loop
 - **Tipos de bugs**: off-by-one, edge case, corner case, regression, flaky test
-- **Soluciones**: hotfix, patch, workaround, root cause, fix
+- **soluciones**: hotfix, patch, workaround, root cause, fix

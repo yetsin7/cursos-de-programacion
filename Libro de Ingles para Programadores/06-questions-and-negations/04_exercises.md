@@ -46,7 +46,7 @@ Completa con: **What / Where / When / Why / How / Who / Which**
 5. _______ branch should I merge into?
 6. _______ wrote this code?
 7. _______ is the deadline for this feature?
-8. _______ version of Python are you using?
+8. _______ versión of Python are you using?
 9. _______ many endpoints does the API have?
 10. _______ is responsible for the database?
 

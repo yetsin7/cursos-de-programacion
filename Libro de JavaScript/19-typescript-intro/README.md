@@ -46,6 +46,6 @@ ts-node 01_tipos_basicos.ts
 |---------|-----------|
 | `01_tipos_basicos.ts` | string, number, boolean, any, unknown, never, arrays, tuplas, unions |
 | `02_interfaces_y_types.ts` | interface, type alias, opcionales, readonly, extends, intersections |
-| `03_funciones_genericos.ts` | Funciones tipadas, generics, utility types |
+| `03_funciones_genericos.ts` | funciones tipadas, generics, utility types |
 | `04_clases_enums.ts` | Clases, modificadores de acceso, enums |
 | `05_ejercicios.ts` | Ejercicios prácticos combinando todo |

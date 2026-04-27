@@ -1,20 +1,20 @@
 # Writing Documentation
 
-## Como Escribir Documentacion Tecnica en Ingles
+## Como Escribir Documentación Técnica en Ingles
 
-La documentacion tecnica bien escrita es lo que diferencia un proyecto profesional
-de uno amateur. Existen cuatro tipos principales de documentacion, cada uno con
+La documentación técnica bien escrita es lo que diferencia un proyecto profesional
+de uno amateur. Existen cuatro tipos principales de documentación, cada uno con
 un proposito y estilo diferente.
 
 ---
 
-## Los 4 Tipos de Documentacion
+## Los 4 Tipos de Documentación
 
 | Tipo | Proposito | Orientacion |
 |------|----------|-------------|
 | **Tutorial** | Ensenar paso a paso | Aprendizaje guiado |
 | **How-to Guide** | Resolver un problema especifico | Orientado a tareas |
-| **Reference** | Describir la API o sistema | Informacion tecnica |
+| **Reference** | Describir la API o sistema | Información técnica |
 | **Explanation** | Explicar conceptos y decisiones | Comprension profunda |
 
 ---
@@ -45,13 +45,13 @@ First, create a new directory and initialize the project:
 
 | Ingles | Uso |
 |--------|-----|
-| "In this tutorial, you will learn how to..." | Introduccion |
+| "In this tutorial, you will learn how to..." | Introducción |
 | "By the end of this tutorial, you will be able to..." | Objetivos |
 | "First, let's..." | Iniciar un paso |
 | "Next, we need to..." | Siguiente paso |
 | "You should see..." | Verificacion |
 | "If everything went well, you should now have..." | Confirmacion |
-| "Let's move on to..." | Transicion |
+| "Let's move on to..." | Transición |
 | "Congratulations! You've successfully..." | Cierre |
 
 ### Tono y estilo
@@ -63,9 +63,9 @@ First, create a new directory and initialize the project:
 
 ---
 
-## 2. How-to Guides (Guias Practicas)
+## 2. How-to Guides (Guías Practicas)
 
-Las guias practicas resuelven un problema especifico. Son mas directas que los tutoriales.
+Las guías prácticas resuelven un problema especifico. Son mas directas que los tutoriales.
 
 ### Estructura
 
@@ -86,23 +86,23 @@ npm install jsonwebtoken bcrypt
 Create a new file `middleware/auth.js`:
 ```
 
-### Frases clave para guias
+### Frases clave para guías
 
 | Ingles | Uso |
 |--------|-----|
-| "This guide shows you how to..." | Introduccion |
+| "This guide shows you how to..." | Introducción |
 | "To accomplish this, you need to..." | Requisitos |
-| "Run the following command:" | Instruccion de terminal |
+| "Run the following command:" | Instrucción de terminal |
 | "Create a new file called..." | Crear archivo |
-| "Add the following code to..." | Agregar codigo |
+| "Add the following code to..." | Agregar código |
 | "Make sure to replace `X` with your own value." | Personalizacion |
 | "If you encounter [error], try..." | Troubleshooting |
 
 ---
 
-## 3. Reference Documentation (Documentacion de Referencia)
+## 3. Reference Documentation (Documentación de Referencia)
 
-La referencia describe la API o sistema de forma tecnica y precisa.
+La referencia describe la API o sistema de forma técnica y precisa.
 No ensenia, solo informa.
 
 ### Estructura para una API
@@ -153,15 +153,15 @@ Retrieve a list of all users.
 | "Required." / "Optional." | Si es obligatorio |
 | "Defaults to..." | Valor por defecto |
 | "Throws [Error] if..." | Errores posibles |
-| "Available since version..." | Version |
+| "Available since versión..." | Versión |
 | "See also: [related]" | Referencias cruzadas |
 | "Type: `string`" | Tipo del parametro |
 
 ---
 
-## 4. Explanations (Explicaciones)
+## 4. Explanations (explicaciones)
 
-Las explicaciones profundizan en el por que de las decisiones tecnicas.
+Las explicaciones profundizan en el por que de las decisiones técnicas.
 
 ### Estructura
 
@@ -204,7 +204,7 @@ invalidated before they expire...
 1. **Voz activa**: "The function returns a list" (no "A list is returned")
 2. **Segunda persona**: "You can configure..." (no "One can configure...")
 3. **Presente simple**: "This method creates..." (no "This method will create...")
-4. **Oraciones cortas**: Maximo 20-25 palabras por oracion
+4. **Oraciones cortas**: Máximo 20-25 palabras por oracion
 5. **Un parrafo = una idea**: No mezcles temas
 
 ### Palabras a evitar
@@ -212,7 +212,7 @@ invalidated before they expire...
 | Evitar | Usar en su lugar |
 |--------|-----------------|
 | "simply" / "just" | (omitir - minimiza la dificultad) |
-| "obviously" | (omitir - si fuera obvio, no necesitaria documentacion) |
+| "obviously" | (omitir - si fuera obvio, no necesitaria documentación) |
 | "easy" / "straightforward" | (omitir - es subjetivo) |
 | "etc." | Lista los elementos especificos |
 | "stuff" / "things" | Nombra los elementos concretos |
@@ -223,6 +223,6 @@ invalidated before they expire...
 
 1. **Tutoriales**: guian paso a paso, tono amigable, segunda persona
 2. **How-to guides**: resuelven problemas especificos, directos al punto
-3. **Reference**: describe la API, tecnico y preciso, sin narrativa
+3. **Reference**: describe la API, técnico y preciso, sin narrativa
 4. **Explanations**: explican el por que, profundidad conceptual
 5. Siempre usa **voz activa**, **presente simple** y **segunda persona**

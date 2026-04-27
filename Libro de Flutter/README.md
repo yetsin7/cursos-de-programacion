@@ -1,6 +1,6 @@
 # 📘 Libro de Flutter — De cero a PRO
 
-> Ruta progresiva para aprender Dart y Flutter entendiendo codigo, interfaz,
+> Ruta progresiva para aprender Dart y Flutter entendiendo código, interfaz,
 > estado, renderizado y comportamiento real de una app movil.
 
 ---
@@ -8,11 +8,11 @@
 ## ¿Que es esto?
 
 El **Libro de Flutter** combina archivos de Dart y proyectos Flutter organizados
-como un libro tecnico interactivo. Cada modulo busca ensenar no solo la
-sintaxis, sino tambien como una app procesa datos, dibuja widgets y responde a
+como un libro técnico interactivo. Cada módulo busca ensenar no solo la
+sintaxis, sino también como una app procesa datos, dibuja widgets y responde a
 lo que hace el usuario.
 
-- Explicaciones detalladas en **comentarios en español**
+- explicaciones detalladas en **comentarios en español**
 - Código real que puedes ejecutar
 - Múltiples formas de resolver el mismo problema
 - Ejercicios prácticos con soluciones
@@ -41,13 +41,13 @@ Este libro insiste en una idea muy importante: una app no es solo pantallas.
 Una app es un sistema que:
 
 - recibe eventos del usuario desde el hardware tactil, teclado o red;
-- procesa logica en CPU;
+- procesa lógica en CPU;
 - guarda datos en memoria RAM o almacenamiento local;
 - vuelve a dibujar la interfaz en pantalla;
 - administra estados, tiempos y recursos.
 
 Cuando aprendes Flutter con esta mirada, dejas de memorizar widgets y empiezas a
-entender el comportamiento de la aplicacion.
+entender el comportamiento de la aplicación.
 
 ## Requisitos previos
 
@@ -92,8 +92,8 @@ flutter run
 
 ### Orden recomendado
 
-Lee los modulos **en orden numerico**. Primero domina Dart; luego pasa a Flutter
-UI; despues estudia arquitectura, persistencia, i18n y testing.
+Lee los módulos **en orden numerico**. Primero domina Dart; luego pasa a Flutter
+UI; después estudia arquitectura, persistencia, i18n y testing.
 
 ---
 
@@ -106,7 +106,7 @@ UI; despues estudia arquitectura, persistencia, i18n y testing.
 | 01 | Fundamentos de Dart | Variables, tipos, hola mundo, comentarios, constantes |
 | 02 | Operadores | Aritméticos, comparación, lógicos, asignación |
 | 03 | Control de flujo | if/else, switch, for, while, break/continue |
-| 04 | Funciones | Declaración, parámetros, retorno, arrow, closures |
+| 04 | funciones | Declaración, parámetros, retorno, arrow, closures |
 | 05 | Colecciones | List, Map, Set, Iterable, generators |
 | 06 | Null Safety | Null safety en Dart 3, ?, !, ??, late |
 | 07 | Clases y OOP | Clases, constructores, herencia, mixins, interfaces |
@@ -157,7 +157,7 @@ UI; despues estudia arquitectura, persistencia, i18n y testing.
 
 ---
 
-## Errores comunes del principiante
+## Errores comúnes del principiante
 
 - Querer aprender widgets sin dominar variables, funciones y colecciones.
 - Copiar interfaces sin entender el arbol de widgets.

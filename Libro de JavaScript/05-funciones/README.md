@@ -1,4 +1,4 @@
-# 05 - Funciones
+# 05 - funciones
 
 Las funciones son **ciudadanos de primera clase** en JavaScript. Esto significa que las funciones son tratadas como cualquier otro valor: pueden asignarse a variables, pasarse como argumentos a otras funciones, retornarse como resultado de otras funciones, y almacenarse en arrays u objetos.
 

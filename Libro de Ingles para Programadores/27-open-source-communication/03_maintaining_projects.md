@@ -1,8 +1,8 @@
 # Lesson 03: Maintaining Open Source Projects
 
-## Introduccion
+## Introducción
 
-Cuando mantienes un proyecto open source, tu comunicacion en ingles debe ser clara, profesional y empatica. Responderas a issues, revisaras PRs y tomaras decisiones que afectan a toda la comunidad. Esta leccion te ensenara las frases y patrones para hacerlo correctamente.
+Cuando mantienes un proyecto open source, tu comunicación en ingles debe ser clara, profesional y empatica. Responderas a issues, revisaras PRs y tomaras decisiones que afectan a toda la comunidad. Esta leccion te ensenara las frases y patrones para hacerlo correctamente.
 
 ---
 
@@ -21,18 +21,18 @@ Siempre empieza agradeciendo. Los usuarios invierten tiempo en reportar problema
 | "Thanks for the feature suggestion!" | Feature request |
 | "Great catch! Thanks for spotting this." | Bug obvio que nadie vio |
 
-### Pidiendo mas informacion
+### Pidiendo mas información
 
 | Frase | Que necesitas |
 |-------|---------------|
-| "Could you provide more details about your environment?" | Informacion del sistema |
+| "Could you provide more details about your environment?" | Información del sistema |
 | "Can you share the full error message/stack trace?" | Logs completos |
 | "Is this reproducible? If so, what are the steps?" | Pasos para reproducir |
-| "Could you provide a minimal reproduction?" | Ejemplo minimo |
-| "What version of the library are you using?" | Version especifica |
+| "Could you provide a minimal reproduction?" | Ejemplo mínimo |
+| "What versión of the library are you using?" | Versión especifica |
 | "Does this happen consistently or intermittently?" | Frecuencia del bug |
-| "Have you tried with the latest version?" | Verificar version actual |
-| "Could you share your configuration file?" | Configuracion |
+| "Have you tried with the latest versión?" | Verificar versión actual |
+| "Could you share your configuration file?" | Configuración |
 
 ### Reconociendo problemas conocidos
 
@@ -64,10 +64,10 @@ Siempre empieza agradeciendo. Los usuarios invierten tiempo en reportar problema
 | Frase | Situacion |
 |-------|-----------|
 | "This has been fixed in v2.1." | Bug corregido |
-| "A fix has been merged and will be in the next release." | Fix en la proxima version |
+| "A fix has been merged and will be in the next release." | Fix en la proxima versión |
 | "This is now available in v3.0.0-beta.1." | Disponible en beta |
-| "The fix has been backported to v2.x." | Fix portado a version anterior |
-| "Please update to the latest version to get this fix." | Pedir actualizacion |
+| "The fix has been backported to v2.x." | Fix portado a versión anterior |
+| "Please update to the latest versión to get this fix." | Pedir actualizacion |
 | "Closing as resolved. Please reopen if the issue persists." | Cerrar issue |
 
 ---
@@ -78,7 +78,7 @@ El triaje es el proceso de revisar, clasificar y priorizar issues nuevos.
 
 ### Proceso de triaje
 
-| Paso | Accion en ingles | Descripcion |
+| Paso | Accion en ingles | Descripción |
 |------|-----------------|-------------|
 | 1 | **Read and understand** | Lee el issue completo |
 | 2 | **Check for duplicates** | Busca si ya existe |
@@ -123,13 +123,13 @@ haven't considered.
 
 ## Milestones y Roadmap
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
-| **Milestone** | Conjunto de issues agrupados para una version |
+| **Milestone** | Conjunto de issues agrupados para una versión |
 | **Roadmap** | Plan a largo plazo del proyecto |
 | **Backlog** | Lista de tareas pendientes |
 | **Sprint** | Periodo de trabajo enfocado |
-| **Release** | Publicacion de una version |
+| **Release** | Publicación de una versión |
 | **Hotfix** | Correccion urgente fuera del ciclo normal |
 
 ### Frases sobre planificacion
@@ -139,7 +139,7 @@ haven't considered.
 | "This is planned for the v3.0 milestone." | Planificado para v3.0 |
 | "Moving this to the backlog." | Agregado a la lista de pendientes |
 | "This is on our roadmap for Q2." | En el plan para el segundo trimestre |
-| "We'll revisit this after the v2.0 release." | Lo revisaremos despues de v2.0 |
+| "We'll revisit this after the v2.0 release." | Lo revisaremos después de v2.0 |
 | "This is a stretch goal for this sprint." | Objetivo ambicioso del sprint |
 
 ---
@@ -150,7 +150,7 @@ haven't considered.
 
 | Frase | Situacion |
 |-------|-----------|
-| "LGTM! (Looks Good To Me)" | Aprobacion rapida |
+| "LGTM! (Looks Good To Me)" | Aprobacion rápida |
 | "Great work! This is ready to merge." | Aprobacion entusiasta |
 | "Thanks for the contribution! Merging now." | Agradecimiento al merge |
 | "Clean implementation. Well done!" | Elogiar la calidad |
@@ -178,11 +178,11 @@ haven't considered.
 
 ---
 
-## Comunicacion en Discussions y Community
+## Comunicación en Discussions y Community
 
 ### GitHub Discussions
 
-| Categoria | Uso |
+| Categoría | Uso |
 |-----------|-----|
 | **Announcements** | Anuncios del equipo del proyecto |
 | **General** | Conversacion general |
@@ -237,16 +237,16 @@ A huge thanks to everyone who contributed to this release:
 
 ## Vocabulario esencial para maintainers
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
 | **Triage** | Clasificar y priorizar issues |
-| **Ship** | Publicar, lanzar una version |
+| **Ship** | Publicar, lanzar una versión |
 | **Land** | Fusionar un PR ("land a PR") |
 | **Cherry-pick** | Seleccionar un commit especifico |
-| **Backport** | Portar un fix a una version anterior |
+| **Backport** | Portar un fix a una versión anterior |
 | **Release train** | Ciclo regular de releases |
 | **Feature freeze** | Periodo donde no se agregan features |
-| **Code freeze** | Periodo donde no se modifica el codigo |
+| **Code freeze** | Periodo donde no se modifica el código |
 | **Rollback** | Revertir un cambio en produccion |
 | **Dogfooding** | Usar tu propio producto internamente |
 
@@ -255,7 +255,7 @@ A huge thanks to everyone who contributed to this release:
 ## Resumen
 
 - Siempre agradece los reportes y las contribuciones
-- Pide informacion adicional de forma especifica y amable
+- Pide información adicional de forma especifica y amable
 - Se transparente sobre las decisiones del proyecto
 - Usa labels y milestones para organizar el trabajo
 - Revisa PRs con feedback constructivo y especifico

@@ -2,7 +2,7 @@
 
 ## Ejercicio 1: Escribir un Bug Report
 
-Imagina que encontraste un bug: cuando intentas subir una imagen mayor a 5MB en una libreria de procesamiento de imagenes, la aplicacion se congela sin mostrar un mensaje de error.
+Imagina que encontraste un bug: cuando intentas subir una imagen mayor a 5MB en una libreria de procesamiento de imagenes, la aplicación se congela sin mostrar un mensaje de error.
 
 Escribe un bug report completo en ingles usando esta estructura:
 
@@ -60,7 +60,7 @@ ___
 
 Escribe respuestas profesionales en ingles para cada situacion:
 
-1. **Un usuario reporta un bug con muy poca informacion:**
+1. **Un usuario reporta un bug con muy poca información:**
    "My app crashes when I click a button."
 
    Tu respuesta: ___
@@ -70,7 +70,7 @@ Escribe respuestas profesionales en ingles para cada situacion:
 
    Tu respuesta: ___
 
-3. **Un usuario reporta un bug que ya fue arreglado en la ultima version:**
+3. **Un usuario reporta un bug que ya fue arreglado en la ultima versión:**
 
    Tu respuesta: ___
 
@@ -103,7 +103,7 @@ Asigna el label correcto a cada issue:
 
 ## Ejercicio 5: PR Description
 
-Acabas de implementar un sistema de cache para una API. Escribe la descripcion del Pull Request en ingles:
+Acabas de implementar un sistema de cache para una API. Escribe la descripción del Pull Request en ingles:
 
 ```markdown
 ## Description
@@ -130,7 +130,7 @@ ___
 
 ---
 
-## Ejercicio 6: Comunicacion profesional
+## Ejercicio 6: Comunicación profesional
 
 Reescribe estos mensajes para que sean profesionales y constructivos:
 
@@ -205,7 +205,7 @@ Eres el maintainer de un proyecto. Tienes estos 6 issues nuevos. Ordenalos por p
 7. `help wanted`
 8. `security`, `priority: high`
 
-**Ejercicio 6 - Comunicacion profesional:**
+**Ejercicio 6 - Comunicación profesional:**
 1. "I've encountered this bug and it's significantly impacting my workflow. Is there an ETA for a fix, or can I help work on it?"
 2. "I appreciate the review feedback. I have a different perspective on points 2 and 3 — could we discuss the trade-offs?"
 3. "I've noticed the build times are quite long in my setup. Are there any recommended optimizations or configuration changes?"
@@ -213,11 +213,11 @@ Eres el maintainer de un proyecto. Tienes estos 6 issues nuevos. Ordenalos por p
 5. "Thanks for the PR! There are several areas that need attention. I've left detailed comments inline — please take a look and let me know if you have questions."
 
 **Ejercicio 8 - Triaje:**
-1. Issue 1 (SQL injection) - Vulnerabilidad de seguridad critica
-2. Issue 6 (Login non-ASCII) - Bug que impide uso basico para algunos usuarios
-3. Issue 4 (Crash large files) - Bug con crash de la aplicacion
-4. Issue 5 (Export CSV) - Feature request util
-5. Issue 2 (Dark mode) - Enhancement estetico, no critico
-6. Issue 3 (Typo README) - Cambio minimo, baja prioridad
+1. Issue 1 (SQL injection) - Vulnerabilidad de seguridad crítica
+2. Issue 6 (Login non-ASCII) - Bug que impide uso básico para algunos usuarios
+3. Issue 4 (Crash large files) - Bug con crash de la aplicación
+4. Issue 5 (Export CSV) - Feature request útil
+5. Issue 2 (Dark mode) - Enhancement estetico, no crítico
+6. Issue 3 (Typo README) - Cambio mínimo, baja prioridad
 
 </details>

@@ -10,7 +10,7 @@ almacenan realmente en memoria.
 - Qué es un arreglo y cómo se organiza en memoria
 - Cómo recorrer arreglos de una y dos dimensiones
 - Qué es realmente un string en C
-- Cómo usar funciones comunes de `string.h`
+- Cómo usar funciones comúnes de `string.h`
 - Qué riesgos existen al manipular texto sin cuidado
 
 ## Qué está pasando dentro del software y del hardware
@@ -65,7 +65,7 @@ En memoria eso equivale a:
 {'H', 'o', 'l', 'a', '\0'}
 ```
 
-### 5. Funciones frecuentes de `string.h`
+### 5. funciones frecuentes de `string.h`
 
 - `strlen` para medir longitud
 - `strcmp` para comparar
@@ -76,13 +76,13 @@ En memoria eso equivale a:
 
 ## Riesgos importantes
 
-C no revisa automáticamente si un índice está dentro de rango. Si escribes `numeros[10]` en un
+C no revisa automáticamente si un índice está dentro de rango. Si escribes `números[10]` en un
 arreglo de 5 elementos, puedes corromper memoria ajena.
 
-Con strings ocurre algo similar: copiar más caracteres de los que caben en un buffer puede causar
+Con strings ocurre algo similar: copiar más carácteres de los que caben en un buffer puede causar
 buffer overflow, uno de los problemas clásicos de seguridad en software hecho en C.
 
-## Errores comunes
+## Errores comúnes
 
 - Olvidar que los índices comienzan en `0`
 - Leer o escribir fuera del tamaño del arreglo

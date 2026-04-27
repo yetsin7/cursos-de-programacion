@@ -1,6 +1,6 @@
 # Capítulo 01 — Introducción a C++
 
-Este capitulo te presenta C++ como una evolucion poderosa de C: un lenguaje que
+Este capítulo te presenta C++ como una evolucion poderosa de C: un lenguaje que
 permite trabajar cerca de la maquina, pero con herramientas mas expresivas para
 construir software grande y mantenible.
 
@@ -29,13 +29,13 @@ Al terminar deberias poder explicar:
 - que hacen `cout` y `cin`;
 - por que existe `std::`;
 - como compilar y ejecutar un ejemplo simple;
-- como se conecta el codigo con la consola y la memoria.
+- como se conecta el código con la consola y la memoria.
 
 ---
 
 ## Diferencias clave entre C y C++
 
-| Característica | C | C++ |
+| Carácterística | C | C++ |
 |----------------|---|-----|
 | Paradigma | Procedural | Multiparadigma |
 | I/O estándar | `printf` / `scanf` | `cout` / `cin` |
@@ -49,11 +49,11 @@ Al terminar deberias poder explicar:
 
 ## ¿Qué pasa cuando se ejecuta un programa C++?
 
-1. el compilador traduce el codigo fuente;
+1. el compilador traduce el código fuente;
 2. se genera un ejecutable;
 3. el sistema operativo lo carga en memoria;
 4. el programa entra por `main()`;
-5. la consola recibe entradas y salidas segun tu codigo.
+5. la consola recibe entradas y salidas según tu código.
 
 Eso te ayuda a entender que `cout` y `cin` no son magia: son interfaces entre tu
 programa y el entorno.
@@ -73,7 +73,7 @@ La biblioteca estandar vive dentro del namespace `std`, por eso ves `std::`.
 
 ---
 
-## Errores comunes del principiante
+## Errores comúnes del principiante
 
 - confundir C++ con C "solo con clases";
 - abusar de `using namespace std;` sin entenderlo;
@@ -99,4 +99,4 @@ hola_mundo.exe
 
 ## Archivo de ejemplo
 
-Ver: [01_hola_mundo.cpp](C:/Users/Yetsin/Documents/Programacion/cursos-de-programacion/Libro%20de%20C%2B%2B/01-introduccion/01_hola_mundo.cpp)
+Ver: [01_hola_mundo.cpp](C:/Users/Yetsin/Documents/Programación/cursos-de-programación/Libro%20de%20C%2B%2B/01-introducción/01_hola_mundo.cpp)

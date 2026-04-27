@@ -1,4 +1,4 @@
-# Capítulo 05 — Funciones
+# Capítulo 05 — funciones
 
 Las funciones permiten dividir el trabajo del programa en partes reutilizables.
 En C++ son fundamentales para organizar lógica, reducir duplicación y controlar
@@ -8,24 +8,24 @@ cómo viajan los datos entre distintas partes del código.
 
 ## ¿Qué aprenderás?
 
-- anatomia de una funcion;
+- anatomia de una función;
 - paso por valor, referencia y referencia constante;
 - parametros por defecto;
 - sobrecarga;
 - `inline`;
 - lambdas;
-- recursion.
+- recursión.
 
 ---
 
 ## ¿Qué pasa dentro del programa?
 
-Cuando llamas una funcion:
+Cuando llamas una función:
 
 - el programa transfiere control a ese bloque;
 - entrega argumentos;
 - ejecuta instrucciones;
-- devuelve un valor o modifica datos segun el tipo de paso de parametros.
+- devuelve un valor o modifica datos según el tipo de paso de parametros.
 
 Esto influye directamente en rendimiento, seguridad y claridad.
 
@@ -51,7 +51,7 @@ versión más pequeña del mismo problema.
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - copiar objetos grandes sin necesidad;
 - usar referencia cuando no deberías modificar;
@@ -62,4 +62,4 @@ versión más pequeña del mismo problema.
 
 ## Archivo de ejemplo
 
-Ver: [01_funciones.cpp](C:/Users/Yetsin/Documents/Programacion/cursos-de-programacion/Libro%20de%20C%2B%2B/05-funciones/01_funciones.cpp)
+Ver: [01_funciones.cpp](C:/Users/Yetsin/Documents/Programación/cursos-de-programación/Libro%20de%20C%2B%2B/05-funciones/01_funciones.cpp)

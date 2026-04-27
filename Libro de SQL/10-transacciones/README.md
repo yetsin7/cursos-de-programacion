@@ -1,4 +1,4 @@
-# Capítulo 10 — Transacciones
+# Capítulo 10 — transacciones
 
 ## ¿Qué es una transacción?
 

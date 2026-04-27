@@ -34,17 +34,17 @@ Reescribe cada oración eliminando palabras innecesarias:
 
 1. "Basically, you just need to actually run the command to install it."
 2. "In order to utilize the API, you really need to sort of configure authentication."
-3. "It should be noted that this function is actually quite slow due to the fact that it uses recursion."
+3. "It should be noted that this function is actually quite slow due to the fact that it uses recursión."
 4. "At this point in time, the feature is kind of not really ready for production."
-5. "You're going to want to basically make sure that you have the right version."
+5. "You're going to want to basically make sure that you have the right versión."
 
 ### Respuestas
 
 1. "Run the command to install it." (o "Run `npm install`.")
 2. "To use the API, configure authentication."
-3. "This function is slow because it uses recursion."
+3. "This function is slow because it uses recursión."
 4. "This feature is not ready for production."
-5. "Make sure you have the correct version."
+5. "Make sure you have the correct versión."
 
 ---
 
@@ -81,7 +81,7 @@ Completa cada oración con la frase técnica apropiada:
 7. "_______ this endpoint requires authentication."
 8. "_______ 2.0, this feature supports TypeScript."
 
-**Opciones:** By default / Make sure / is deprecated in favor of / Under the hood / For more information / Note that / As of version / Out of the box
+**Opciones:** By default / Make sure / is deprecated in favor of / Under the hood / For more information / Note that / As of versión / Out of the box
 
 ### Respuestas
 
@@ -92,7 +92,7 @@ Completa cada oración con la frase técnica apropiada:
 5. "**Under the hood**, the framework generates routes from the file system."
 6. "**For more information**, see the [Configuration Guide](/docs/config)."
 7. "**Note that** this endpoint requires authentication."
-8. "**As of version** 2.0, this feature supports TypeScript."
+8. "**As of versión** 2.0, this feature supports TypeScript."
 
 ---
 
@@ -141,7 +141,7 @@ For troubleshooting, see the [Documentation](/docs).
 ## Ejercicio 6: Escribe documentación desde cero
 
 Escribe una breve sección de README en inglés para una función con estas
-características:
+carácterísticas:
 
 - Nombre: `calculateShipping`
 - Recibe: peso del paquete (kg), código de país

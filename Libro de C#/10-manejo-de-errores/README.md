@@ -33,7 +33,7 @@ finally
 
 ---
 
-## Jerarquía de excepciones comunes
+## Jerarquía de excepciones comúnes
 
 ```
 System.Exception
@@ -56,7 +56,7 @@ System.Exception
 
 ---
 
-## Excepciones personalizadas
+## excepciones personalizadas
 
 ```csharp
 // Convención: el nombre termina en "Exception"

@@ -1,10 +1,10 @@
-# Exercises - Ejercicios del Capitulo 23
+# Exercises - Ejercicios del Capítulo 23
 
 ## Ejercicio 1: Escribe subject lines efectivos
 
-Reescribe cada subject line vago para que sea especifico y util.
+Reescribe cada subject line vago para que sea especifico y útil.
 
-| Subject line vago | Tu version mejorada |
+| Subject line vago | Tu versión mejorada |
 |-------------------|-------------------|
 | "Question" | _______________________________________________ |
 | "Update" | _______________________________________________ |
@@ -75,7 +75,7 @@ _______________________________________________
 
 ## Ejercicio 4: Corrige los errores
 
-Cada email tiene errores comunes de hispanohablantes. Identifica y corrige cada error.
+Cada email tiene errores comúnes de hispanohablantes. Identifica y corrige cada error.
 
 **Email 1:**
 ```
@@ -152,10 +152,10 @@ Indica si cada situacion requiere un DM o un mensaje en el canal publico, y expl
 | Situacion | DM o Canal? | Por que? |
 |-----------|------------|----------|
 | Preguntar como implementar caching en Redis | | |
-| Dar feedback a un companero sobre su codigo | | |
+| Dar feedback a un companero sobre su código | | |
 | Anunciar que el servicio de pagos esta caido | | |
 | Preguntar a tu manager sobre vacaciones | | |
-| Compartir un articulo tecnico interesante | | |
+| Compartir un articulo técnico interesante | | |
 | Reportar un problema de rendimiento en tu laptop | | |
 
 ---
@@ -216,14 +216,14 @@ Traducciones:
 4. Semi-formal / "Hi team," / "Best," o "Thanks,"
 
 ### Ejercicio 4 - Email 1
-1. "Doubt" deberia ser "question" (falso amigo del espanol)
-2. "Dear Sirs" deberia ser "Hi [Name]," o "Hello,"
-3. "I write to you for ask" deberia ser "I'm writing to ask"
-4. "I wait your answer" deberia ser "I look forward to hearing from you"
-5. "Greetings" como despedida deberia ser "Best regards,"
+1. "Doubt" debería ser "question" (falso amigo del espanol)
+2. "Dear Sirs" debería ser "Hi [Name]," o "Hello,"
+3. "I write to you for ask" debería ser "I'm writing to ask"
+4. "I wait your answer" debería ser "I look forward to hearing from you"
+5. "Greetings" como despedida debería ser "Best regards,"
 
 ### Ejercicio 4 - Email 2
-1. Subject "Help" deberia ser especifico: "Help needed: [specific issue]"
+1. Subject "Help" debería ser especifico: "Help needed: [specific issue]"
 2. "It doesn't work" no da contexto — describir que no funciona
 3. Falta detalles: que problema, que intentaste, que esperas
 

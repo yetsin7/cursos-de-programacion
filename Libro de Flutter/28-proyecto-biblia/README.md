@@ -28,7 +28,7 @@ La Biblia RV60 contiene **31,103 versículos** en 66 libros. Es un dataset real,
 | `async / await` | Consultas y menús |
 | `try / catch / finally` | Conexión a la BD |
 | `List`, `Map`, `Set` | Resultados de consultas |
-| Funciones con parámetros opcionales | Consultas reutilizables |
+| funciones con parámetros opcionales | Consultas reutilizables |
 | String interpolation y format | Mostrar tablas en consola |
 | `stdin.readLineSync()` | Menús interactivos |
 | `Platform.script` | Ruta relativa a la BD |

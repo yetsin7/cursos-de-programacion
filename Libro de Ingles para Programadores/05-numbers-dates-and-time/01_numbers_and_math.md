@@ -62,7 +62,7 @@ Se forman con decena + guion + unidad: **twenty-one** (21), **thirty-five** (35)
 |----------|---------|---------|
 | Matemáticas/general | **zero** | The value is zero |
 | Código HTTP | **oh** | A 404 is "four-oh-four" |
-| Versión de software | **oh** o **zero** | Version 2.0 = "two point oh/zero" |
+| Versión de software | **oh** o **zero** | Versión 2.0 = "two point oh/zero" |
 | Número de teléfono | **oh** | 555-0123 = "five-five-five-oh-one-two-three" |
 
 ---
@@ -96,7 +96,7 @@ Indican posición u orden. Se usan con fechas y para describir índices.
 
 ---
 
-## Operaciones matemáticas
+## operaciones matemáticas
 
 | Operación | Símbolo | Verbo | Cómo se lee |
 |-----------|---------|-------|-------------|
@@ -104,11 +104,11 @@ Indican posición u orden. Se usan con fechas y para describir índices.
 | Resta | - | **subtract** | "ten minus four equals six" (10 - 4 = 6) |
 | Multiplicación | * / x | **multiply** | "three times seven equals twenty-one" (3 × 7 = 21) |
 | División | / | **divide** | "twenty divided by four equals five" (20 / 4 = 5) |
-| Módulo | % | **modulo** | "ten modulo three equals one" (10 % 3 = 1) |
+| Módulo | % | **módulo** | "ten módulo three equals one" (10 % 3 = 1) |
 | Potencia | ** / ^ | **raise to the power** | "two to the power of eight" (2^8) |
 | Raíz cuadrada | √ | **square root** | "the square root of sixteen is four" |
 
-### Expresiones comunes en código
+### expresiones comúnes en código
 
 | Código | Cómo se lee en inglés |
 |--------|-----------------------|
@@ -117,11 +117,11 @@ Indican posición u orden. Se usan con fechas y para describir índices.
 | `total -= tax` | "total minus equals tax" |
 | `result = a * b` | "result equals a times b" |
 | `avg = sum / count` | "average equals sum divided by count" |
-| `remainder = n % 2` | "remainder equals n modulo two" |
+| `remainder = n % 2` | "remainder equals n módulo two" |
 | `x++` | "x plus plus" o "increment x" |
 | `y--` | "y minus minus" o "decrement y" |
 
-### Comparaciones
+### comparaciones
 
 | Símbolo | Inglés | Ejemplo leído |
 |---------|--------|---------------|
@@ -167,7 +167,7 @@ Indican posición u orden. Se usan con fechas y para describir índices.
 
 ---
 
-## Números de versión (Version Numbers)
+## Números de versión (Versión Numbers)
 
 | Versión | Cómo se lee |
 |---------|-------------|
@@ -176,7 +176,7 @@ Indican posición u orden. Se usan con fechas y para describir índices.
 | 3.14 | "three point fourteen" o "three point one four" |
 | 3.14.1 | "three point fourteen point one" |
 | 16.04 | "sixteen point oh four" (Ubuntu) |
-| v2.0.0 | "version two point oh point oh" |
+| v2.0.0 | "versión two point oh point oh" |
 
 ### Versionado semántico (Semantic Versioning)
 
@@ -189,8 +189,8 @@ v3.2.1 → "version three point two point one"
 
 | Término | Inglés | Ejemplo |
 |---------|--------|---------|
-| Versión mayor | major version | "We released major version five" |
-| Versión menor | minor version | "This is a minor version bump" |
+| Versión mayor | major versión | "We released major versión five" |
+| Versión menor | minor versión | "This is a minor versión bump" |
 | Parche | patch | "The patch fixes the security issue" |
 
 ---
@@ -252,16 +252,16 @@ v3.2.1 → "version three point two point one"
 2. One hundred minus thirty-six equals sixty-four.
 3. Eight times twelve equals ninety-six.
 4. Forty-five divided by nine equals five.
-5. Seventeen modulo five equals two.
+5. Seventeen módulo five equals two.
 6. Two to the power of ten equals one thousand twenty-four.
 
 **Ejercicio 3:**
-1. Version one point oh point oh.
-2. Version three point fourteen point two.
-3. Version sixteen point oh four.
+1. Versión one point oh point oh.
+2. Versión three point fourteen point two.
+3. Versión sixteen point oh four.
 
 **Ejercicio 4:**
 1. The first element of the array is zero.
 2. The file is 2 megabytes. / The file weighs 2 megabytes.
 3. X is greater than Y.
-4. Version three point two fixes the bug.
+4. Versión three point two fixes the bug.

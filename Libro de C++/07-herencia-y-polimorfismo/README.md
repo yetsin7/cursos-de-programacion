@@ -1,6 +1,6 @@
-# Capítulo 07 — Herencia y Polimorfismo
+# Capítulo 07 — herencia y Polimorfismo
 
-## Herencia
+## herencia
 
 La herencia permite crear una clase nueva (**derivada**) basada en una existente (**base**),
 reutilizando y extendiendo su funcionalidad:

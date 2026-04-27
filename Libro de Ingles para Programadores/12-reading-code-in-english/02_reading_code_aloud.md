@@ -1,9 +1,9 @@
 # Reading Code Aloud
 
-## Como Leer Codigo en Voz Alta en Ingles
+## Como Leer Código en Voz Alta en Ingles
 
 Cuando participas en pair programming, code reviews o entrevistas, necesitas poder
-leer codigo en voz alta de manera clara y comprensible. Esta leccion te ensenara
+leer código en voz alta de manera clara y comprensible. Esta leccion te ensenara
 como pronunciar cada estructura, operador y simbolo.
 
 ---
@@ -85,7 +85,7 @@ switch (status) {
 
 ---
 
-## Funciones y Metodos
+## funciones y Métodos
 
 ```javascript
 function calculateTotal(items, tax) {
@@ -109,7 +109,7 @@ Future<List<User>> fetchUsers() async {
 
 ## Operadores: Como Leerlos
 
-### Operadores de Comparacion
+### Operadores de Comparación
 
 | Operador | Como se lee en ingles |
 |----------|----------------------|
@@ -122,7 +122,7 @@ Future<List<User>> fetchUsers() async {
 | `===` | "is strictly equal to" (triple equals) |
 | `!==` | "is strictly not equal to" |
 
-### Operadores Logicos
+### Operadores Lógicos
 
 | Operador | Como se lee |
 |----------|-------------|
@@ -132,7 +132,7 @@ Future<List<User>> fetchUsers() async {
 | `??` | "null coalescing" o "if null" |
 | `?.` | "null-safe" o "optional chaining" |
 
-### Operadores Aritmeticos y de Asignacion
+### Operadores Aritmeticos y de Asignación
 
 | Operador | Como se lee |
 |----------|-------------|
@@ -142,7 +142,7 @@ Future<List<User>> fetchUsers() async {
 | `-=` | "minus equals" |
 | `*=` | "times equals" |
 | `/=` | "divided-by equals" |
-| `%` | "modulo" o "mod" |
+| `%` | "módulo" o "mod" |
 
 ### Operadores Especiales
 
@@ -228,10 +228,10 @@ Future<Either<Failure, List<User>>> getUsers();
 
 ---
 
-## Consejos para Leer Codigo en Voz Alta
+## Consejos para Leer Código en Voz Alta
 
 1. **Lee la intencion, no la sintaxis literal** cuando sea posible
 2. **Simplifica**: `x => x.isActive` puede ser "where x is active"
-3. **Usa "dot" para el punto** de acceso a propiedades/metodos
+3. **Usa "dot" para el punto** de acceso a propiedades/métodos
 4. **Di "of"** para generics: `List<String>` = "list of string"
-5. **Practica** con codigo real todos los dias
+5. **Practica** con código real todos los dias

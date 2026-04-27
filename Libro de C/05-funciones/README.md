@@ -1,4 +1,4 @@
-# Capítulo 05 — Funciones
+# Capítulo 05 — funciones
 
 Las funciones permiten dividir un programa grande en piezas pequeñas con una responsabilidad
 clara. Son una de las bases de la programación profesional porque ayudan a reutilizar lógica,
@@ -105,7 +105,7 @@ puede terminar en un desbordamiento de pila.
 - Facilitar pruebas y correcciones
 - Preparar el código para crecer sin volverse caótico
 
-## Errores comunes
+## Errores comúnes
 
 - Crear funciones demasiado largas y con varias responsabilidades
 - Olvidar declarar un prototipo cuando hace falta

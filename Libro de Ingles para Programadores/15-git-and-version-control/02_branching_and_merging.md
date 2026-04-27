@@ -10,7 +10,7 @@ o trunk-based development.
 
 ## Vocabulario de Ramas
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
 | **branch** | Rama - una linea independiente de desarrollo |
 | **main / master** | La rama principal del proyecto |
@@ -34,7 +34,7 @@ o trunk-based development.
 | "Checkout the new branch." | "Cambiate a la nueva rama." |
 | "Switch to the feature branch." | "Cambiate a la rama de feature." |
 
-### Convenciones de nombres de ramas
+### convenciones de nombres de ramas
 
 | Patron | Ejemplo | Uso |
 |--------|---------|-----|
@@ -60,7 +60,7 @@ o trunk-based development.
 
 ### Tipos de merge
 
-| Tipo | Descripcion | Comando |
+| Tipo | Descripción | Comando |
 |------|-------------|---------|
 | **Fast-forward merge** | La rama se adelanta sin commit extra | `git merge feature` |
 | **Three-way merge** | Se crea un commit de merge | `git merge --no-ff feature` |
@@ -73,14 +73,14 @@ o trunk-based development.
 | "Merge the feature branch into main." | "Fusiona la rama de feature en main." |
 | "The PR was merged into develop." | "El PR fue fusionado en develop." |
 | "Do a squash merge to keep the history clean." | "Haz un squash merge para mantener el historial limpio." |
-| "I'll merge your branch after the review." | "Fusionare tu rama despues de la revision." |
+| "I'll merge your branch after the review." | "Fusionare tu rama después de la revisión." |
 | "This branch is ready to be merged." | "Esta rama esta lista para fusionarse." |
 
 ---
 
 ## Merge Conflicts (Conflictos de Fusion)
 
-Cuando dos ramas modifican el mismo archivo, Git no puede fusionar automaticamente.
+Cuando dos ramas modifican el mismo archivo, Git no puede fusionar automáticamente.
 
 ### Como se ven los conflictos
 
@@ -120,7 +120,7 @@ Rebase reaplica tus commits sobre otra rama, creando un historial lineal.
 | "I'll rebase before creating the PR." | "Voy a rebasar antes de crear el PR." |
 | "Rebase keeps the history linear." | "Rebase mantiene el historial lineal." |
 | "There was a conflict during the rebase." | "Hubo un conflicto durante el rebase." |
-| "Continue the rebase after resolving conflicts." | "Continua el rebase despues de resolver conflictos." |
+| "Continue the rebase after resolving conflicts." | "Continua el rebase después de resolver conflictos." |
 | "Abort the rebase if something goes wrong." | "Aborta el rebase si algo sale mal." |
 
 ### Merge vs Rebase
@@ -176,14 +176,14 @@ main ─────────────────────────
 
 ---
 
-## Frases de Situaciones Comunes
+## Frases de Situaciones Comúnes
 
 | Situacion | Frase en ingles |
 |-----------|----------------|
 | Tu rama esta desactualizada | "My branch is behind main — I need to pull the latest changes." |
 | Pedir que actualicen su rama | "Can you rebase your branch onto main?" |
 | Rama lista para merge | "The branch is ready for review and merge." |
-| Eliminar rama despues de merge | "Delete the branch after merging." |
+| Eliminar rama después de merge | "Delete the branch after merging." |
 | Comparar dos ramas | "What's the diff between develop and main?" |
 | Rama con conflictos | "This branch has conflicts with main that need to be resolved." |
 

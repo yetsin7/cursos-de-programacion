@@ -1,8 +1,8 @@
 # Final Exercises: Create Your Complete Professional Profile
 
-## Introduccion
+## Introducción
 
-Este es el proyecto final del libro. Vas a crear tu perfil profesional completo en ingles. Al terminar, tendras materiales listos para aplicar a trabajos tech internacionales. Toma tu tiempo y aplica todo lo que has aprendido en los 29 capitulos.
+Este es el proyecto final del libro. Vas a crear tu perfil profesional completo en ingles. Al terminar, tendras materiales listos para aplicar a trabajos tech internacionales. Toma tu tiempo y aplica todo lo que has aprendido en los 29 capítulos.
 
 ---
 
@@ -10,9 +10,9 @@ Este es el proyecto final del libro. Vas a crear tu perfil profesional completo 
 
 ### Parte 1: LinkedIn Profile
 
-Escribe cada seccion de tu perfil de LinkedIn:
+Escribe cada sección de tu perfil de LinkedIn:
 
-**1. Headline (maximo 220 caracteres):**
+**1. Headline (máximo 220 carácteres):**
 
 ```
 ___
@@ -71,9 +71,9 @@ ___
 - LinkedIn: ___
 ```
 
-Ademas, escribe descripciones para 3 repositorios que fijarias:
+Además, escribe descripciones para 3 repositorios que fijarias:
 
-| Repositorio | Descripcion |
+| Repositorio | Descripción |
 |-------------|-------------|
 | 1. ___ | ___ |
 | 2. ___ | ___ |
@@ -159,12 +159,12 @@ Best regards,
 
 ---
 
-## Checklist de revision
+## Checklist de revisión
 
 Antes de considerar tu proyecto completo, verifica:
 
 ### LinkedIn
-- [ ] El headline tiene menos de 220 caracteres e incluye tu rol y tecnologias
+- [ ] El headline tiene menos de 220 carácteres e incluye tu rol y tecnologías
 - [ ] El summary tiene 3-4 parrafos bien estructurados
 - [ ] La experiencia usa action verbs y metricas
 - [ ] No hay errores gramaticales ni de ortografia
@@ -175,7 +175,7 @@ Antes de considerar tu proyecto completo, verifica:
 - [ ] Al menos un repo tiene un README profesional completo
 
 ### Resume
-- [ ] Es de 1-2 paginas
+- [ ] Es de 1-2 páginas
 - [ ] No incluye foto, edad ni estado civil
 - [ ] Cada bullet point tiene: action verb + what + result
 - [ ] Incluye metricas cuantificables
@@ -199,7 +199,7 @@ Antes de considerar tu proyecto completo, verifica:
 
 ## Ejercicio Extra: Practica de entrevista
 
-Prepara respuestas en ingles para estas preguntas comunes:
+Prepara respuestas en ingles para estas preguntas comúnes:
 
 1. **"Tell me about yourself."**
    (2-3 oraciones: quien eres, que haces, que buscas)
@@ -210,7 +210,7 @@ Prepara respuestas en ingles para estas preguntas comunes:
    ___
 
 3. **"What's a challenging project you've worked on?"**
-   (Describe el problema, tu solucion, el resultado)
+   (Describe el problema, tu solución, el resultado)
    ___
 
 4. **"How do you handle disagreements in code reviews?"**
@@ -225,10 +225,10 @@ Prepara respuestas en ingles para estas preguntas comunes:
 
 ## Felicitaciones
 
-Si completaste este proyecto final y los 29 capitulos del libro, has desarrollado una base solida de ingles tecnico para tu carrera como programador. Recuerda:
+Si completaste este proyecto final y los 29 capítulos del libro, has desarrollado una base solida de ingles técnico para tu carrera como programador. Recuerda:
 
 - El ingles es una herramienta, no un destino. Sigue practicando todos los dias.
-- Consume contenido tech en ingles: documentacion, podcasts, videos, blogs.
+- Consume contenido tech en ingles: documentación, podcasts, videos, blogs.
 - Participa en comunidades open source en ingles.
 - Piensa en ingles cuando programas.
 - Tu perfil profesional es un documento vivo: actualizalo regularmente.

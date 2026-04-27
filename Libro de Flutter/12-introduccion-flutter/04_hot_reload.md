@@ -2,7 +2,7 @@
 
 ## ¿Qué es el Hot Reload?
 
-El **Hot Reload** es una de las características más poderosas de Flutter para el desarrollo. Permite inyectar los cambios de código directamente en la Dart VM en ejecución **sin reiniciar la app ni perder el estado actual**.
+El **Hot Reload** es una de las carácterísticas más poderosas de Flutter para el desarrollo. Permite inyectar los cambios de código directamente en la Dart VM en ejecución **sin reiniciar la app ni perder el estado actual**.
 
 Cuando presionas `r` en la terminal (o guardas el archivo si usas VS Code/Android Studio con el plugin Flutter), Flutter:
 

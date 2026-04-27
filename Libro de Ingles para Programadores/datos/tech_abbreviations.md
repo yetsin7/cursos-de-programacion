@@ -1,6 +1,6 @@
 # Tech Abbreviations Dictionary
 
-## Diccionario completo de abreviaciones y acronimos en tecnologia
+## Diccionario completo de abreviaciones y acronimos en tecnología
 
 ---
 
@@ -8,30 +8,30 @@
 
 | Abreviacion | Significado completo | Espanol |
 |-------------|---------------------|---------|
-| **API** | Application Programming Interface | Interfaz de programacion de aplicaciones |
+| **API** | Application Programming Interface | Interfaz de programación de aplicaciones |
 | **SDK** | Software Development Kit | Kit de desarrollo de software |
 | **IDE** | Integrated Development Environment | Entorno de desarrollo integrado |
 | **CLI** | Command Line Interface | Interfaz de linea de comandos |
 | **GUI** | Graphical User Interface | Interfaz grafica de usuario |
-| **OOP** | Object-Oriented Programming | Programacion orientada a objetos |
-| **FP** | Functional Programming | Programacion funcional |
+| **OOP** | Object-Oriented Programming | Programación orientada a objetos |
+| **FP** | Functional Programming | Programación funcional |
 | **TDD** | Test-Driven Development | Desarrollo guiado por tests |
 | **BDD** | Behavior-Driven Development | Desarrollo guiado por comportamiento |
-| **MVP** | Minimum Viable Product | Producto minimo viable |
+| **MVP** | Minimum Viable Product | Producto mínimo viable |
 | **POC** | Proof of Concept | Prueba de concepto |
 | **REPL** | Read-Eval-Print Loop | Bucle lectura-evaluacion-impresion |
 | **DSL** | Domain-Specific Language | Lenguaje de dominio especifico |
-| **ABI** | Application Binary Interface | Interfaz binaria de aplicacion |
-| **JIT** | Just-In-Time (compilation) | Compilacion justo a tiempo |
-| **AOT** | Ahead-Of-Time (compilation) | Compilacion anticipada |
+| **ABI** | Application Binary Interface | Interfaz binaria de aplicación |
+| **JIT** | Just-In-Time (compilation) | compilación justo a tiempo |
+| **AOT** | Ahead-Of-Time (compilation) | compilación anticipada |
 | **GC** | Garbage Collection | Recoleccion de basura |
 | **VM** | Virtual Machine | Maquina virtual |
 | **WASM** | WebAssembly | WebAssembly |
-| **SSG** | Static Site Generation | Generacion de sitio estatico |
+| **SSG** | Static Site Generation | Generación de sitio estatico |
 | **SSR** | Server-Side Rendering | Renderizado del lado del servidor |
 | **CSR** | Client-Side Rendering | Renderizado del lado del cliente |
-| **SPA** | Single Page Application | Aplicacion de pagina unica |
-| **PWA** | Progressive Web App | Aplicacion web progresiva |
+| **SPA** | Single Page Application | Aplicación de página unica |
+| **PWA** | Progressive Web App | Aplicación web progresiva |
 
 ## Principios de Diseno
 
@@ -41,7 +41,7 @@
 | **KISS** | Keep It Simple, Stupid | Mantenlo simple |
 | **SOLID** | Single responsibility, Open-closed, Liskov substitution, Interface segregation, Dependency inversion | Cinco principios de diseno OOP |
 | **YAGNI** | You Aren't Gonna Need It | No lo vas a necesitar |
-| **GRASP** | General Responsibility Assignment Software Patterns | Patrones de asignacion de responsabilidad |
+| **GRASP** | General Responsibility Assignment Software Patterns | Patrones de asignación de responsabilidad |
 | **SoC** | Separation of Concerns | Separacion de responsabilidades |
 | **SRP** | Single Responsibility Principle | Principio de responsabilidad unica |
 | **OCP** | Open/Closed Principle | Principio abierto/cerrado |
@@ -64,7 +64,7 @@
 | **URI** | Uniform Resource Identifier | Identificador uniforme de recursos |
 | **REST** | Representational State Transfer | Transferencia de estado representacional |
 | **CRUD** | Create, Read, Update, Delete | Crear, leer, actualizar, eliminar |
-| **JSON** | JavaScript Object Notation | Notacion de objetos JavaScript |
+| **JSON** | JavaScript Object Notation | Notación de objetos JavaScript |
 | **XML** | eXtensible Markup Language | Lenguaje de marcado extensible |
 | **YAML** | YAML Ain't Markup Language | YAML no es un lenguaje de marcado |
 | **CORS** | Cross-Origin Resource Sharing | Compartir recursos entre origenes |
@@ -72,7 +72,7 @@
 | **XSS** | Cross-Site Scripting | Scripting entre sitios |
 | **JWT** | JSON Web Token | Token web JSON |
 | **OAuth** | Open Authorization | Autorizacion abierta |
-| **SSO** | Single Sign-On | Inicio de sesion unico |
+| **SSO** | Single Sign-On | Inicio de sesión unico |
 | **SAML** | Security Assertion Markup Language | Lenguaje de marcado de afirmaciones de seguridad |
 | **SMTP** | Simple Mail Transfer Protocol | Protocolo simple de transferencia de correo |
 | **FTP** | File Transfer Protocol | Protocolo de transferencia de archivos |
@@ -96,7 +96,7 @@
 |-------------|---------------------|---------|
 | **SQL** | Structured Query Language | Lenguaje de consulta estructurado |
 | **NoSQL** | Not Only SQL | No solo SQL |
-| **DBMS** | Database Management System | Sistema de gestion de bases de datos |
+| **DBMS** | Database Management System | Sistema de gestión de bases de datos |
 | **ORM** | Object-Relational Mapping | Mapeo objeto-relacional |
 | **ACID** | Atomicity, Consistency, Isolation, Durability | Atomicidad, consistencia, aislamiento, durabilidad |
 | **OLTP** | Online Transaction Processing | Procesamiento de transacciones en linea |
@@ -108,9 +108,9 @@
 | Abreviacion | Significado completo | Espanol |
 |-------------|---------------------|---------|
 | **CI/CD** | Continuous Integration / Continuous Deployment | Integracion / despliegue continuo |
-| **DevOps** | Development + Operations | Desarrollo + Operaciones |
+| **DevOps** | Development + Operations | Desarrollo + operaciones |
 | **SRE** | Site Reliability Engineering | Ingenieria de confiabilidad del sitio |
-| **IaC** | Infrastructure as Code | Infraestructura como codigo |
+| **IaC** | Infrastructure as Code | Infraestructura como código |
 | **K8s** | Kubernetes | Kubernetes |
 | **VPS** | Virtual Private Server | Servidor virtual privado |
 | **AWS** | Amazon Web Services | Servicios web de Amazon |
@@ -121,11 +121,11 @@
 | **CIDR** | Classless Inter-Domain Routing | Enrutamiento sin clases entre dominios |
 | **LB** | Load Balancer | Balanceador de carga |
 | **HA** | High Availability | Alta disponibilidad |
-| **DR** | Disaster Recovery | Recuperacion ante desastres |
-| **RPO** | Recovery Point Objective | Objetivo de punto de recuperacion |
-| **RTO** | Recovery Time Objective | Objetivo de tiempo de recuperacion |
+| **DR** | Disaster Recovery | Recuperación ante desastres |
+| **RPO** | Recovery Point Objective | Objetivo de punto de recuperación |
+| **RTO** | Recovery Time Objective | Objetivo de tiempo de recuperación |
 
-## Control de Versiones y Trabajo en Equipo
+## Control de versiones y Trabajo en Equipo
 
 | Abreviacion | Significado completo | Espanol |
 |-------------|---------------------|---------|
@@ -140,7 +140,7 @@
 | **OKR** | Objectives and Key Results | Objetivos y resultados clave |
 | **SDLC** | Software Development Life Cycle | Ciclo de vida del desarrollo de software |
 
-## Comunicacion informal
+## Comunicación informal
 
 | Abreviacion | Significado completo | Espanol |
 |-------------|---------------------|---------|
@@ -157,7 +157,7 @@
 | **EOW** | End of Week | Final de la semana |
 | **OOO** | Out of Office | Fuera de la oficina |
 | **PTO** | Paid Time Off | Tiempo libre pagado |
-| **FYI** | For Your Information | Para tu informacion |
+| **FYI** | For Your Information | Para tu información |
 | **PSA** | Public Service Announcement | Anuncio de servicio publico |
 | **RTFM** | Read The F***ing Manual | Lee el maldito manual |
 | **YMMV** | Your Mileage May Vary | Tus resultados pueden variar |

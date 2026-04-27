@@ -35,7 +35,7 @@ Describen la manera en que se realiza una acción. Muchos se forman agregando **
 | easy | easily | y -> ily |
 | simple | simply | le -> ly |
 
-> **Excepciones importantes:**
+> **excepciones importantes:**
 > - **fast** -> **fast** (no *fastly*)
 > - **hard** -> **hard** (no *hardly*, que significa "apenas")
 > - **good** -> **well** (no *goodly*)
@@ -167,7 +167,7 @@ Algunos adverbios importantes tienen la misma forma que el adjetivo:
 
 ---
 
-## 8. Frases comunes con adverbios en tech
+## 8. Frases comúnes con adverbios en tech
 
 ```text
 The code compiles successfully.       - El código compila exitosamente.

@@ -58,4 +58,4 @@ Por eso es importante tener un perfil bien configurado y activo.
 
 ---
 
-> ✅ Cuando termines todos los archivos de esta carpeta, pasa a `04-repositorios-basicos/`
+> ✅ Cuando termines todos los archivos de esta carpeta, pasa a `04-repositorios-básicos/`

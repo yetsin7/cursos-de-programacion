@@ -1,6 +1,6 @@
 # Tech Idioms - Modismos Tecnologicos
 
-## Introduccion
+## Introducción
 
 En el mundo del desarrollo de software existe un vocabulario idiomatico unico. Estas expresiones no se aprenden en cursos de ingles tradicionales, pero son esenciales para comunicarte con equipos internacionales, entender discusiones en GitHub, y participar en la cultura tech.
 
@@ -33,14 +33,14 @@ which required upgrading Node, which broke three other packages..."
 
 ---
 
-## Modismos de calidad de codigo
+## Modismos de calidad de código
 
 | Modismo | Significado en espanol | Ejemplo |
 |---------|----------------------|---------|
-| **Spaghetti code** | Codigo desordenado y dificil de seguir | *"This legacy module is pure spaghetti code."* |
-| **Tech debt** | Deuda tecnica acumulada | *"We need a sprint to pay down our tech debt."* |
-| **Code smell** | Indicador de un problema en el codigo | *"That 500-line function is a major code smell."* |
-| **Boilerplate** | Codigo repetitivo necesario pero no interesante | *"This framework has too much boilerplate."* |
+| **Spaghetti code** | Código desordenado y difícil de seguir | *"This legacy module is pure spaghetti code."* |
+| **Tech debt** | Deuda técnica acumulada | *"We need a sprint to pay down our tech debt."* |
+| **Code smell** | Indicador de un problema en el código | *"That 500-line function is a major code smell."* |
+| **Boilerplate** | Código repetitivo necesario pero no interesante | *"This framework has too much boilerplate."* |
 | **Syntactic sugar** | Sintaxis que simplifica sin cambiar funcionalidad | *"Async/await is syntactic sugar over Promises."* |
 
 ### Ejemplos en contexto
@@ -69,15 +69,15 @@ Let's split it following the Single Responsibility Principle."
 
 ---
 
-## Modismos de debugging y solucion de problemas
+## Modismos de debugging y solución de problemas
 
 | Modismo | Significado en espanol | Ejemplo |
 |---------|----------------------|---------|
 | **Rubber duck debugging** | Explicar el problema en voz alta para resolverlo | *"I was stuck for hours, then rubber duck debugging solved it in 5 min."* |
 | **Footgun** | Herramienta o feature que facilita cometer errores | *"That API is a total footgun — it silently deletes data."* |
 | **Nuke it** | Borrar todo y empezar de cero | *"The config is so broken, let's just nuke it and start over."* |
-| **Nuke it from orbit** | Version extrema de nuke it (borrar absolutamente todo) | *"The dev environment is cursed. Nuke it from orbit."* |
-| **It works on my machine** | Excusa clasica cuando algo falla en otro entorno | *"It works on my machine!" — "Then we'll ship your machine."* |
+| **Nuke it from orbit** | Versión extrema de nuke it (borrar absolutamente todo) | *"The dev environment is cursed. Nuke it from orbit."* |
+| **It works on my machine** | Excusa clásica cuando algo falla en otro entorno | *"It works on my machine!" — "Then we'll ship your machine."* |
 
 ### Ejemplos en contexto
 
@@ -107,7 +107,7 @@ Lead: "That's why we use Docker."
 | **Premature optimization is the root of all evil** | No optimizar antes de tiempo | *"You're caching before having users. Premature optimization..."* |
 | **There are only two hard things in CS** | Cache invalidation y naming things | *"Spent 30 min naming this variable. Two hard things in CS..."* |
 
-### La cita completa de las "dos cosas dificiles"
+### La cita completa de las "dos cosas difíciles"
 
 ```
 "There are only two hard things in Computer Science: 
@@ -152,30 +152,30 @@ in computer science."
 
 ---
 
-## Tabla resumen rapida
+## Tabla resumen rápida
 
-| Modismo | Categoria | Uso |
+| Modismo | Categoría | Uso |
 |---------|-----------|-----|
-| Ship it | Despliegue | Lanzar codigo |
+| Ship it | Despliegue | Lanzar código |
 | Dogfooding | Producto | Usar tu propio producto |
 | Bikeshedding | Reuniones | Discutir trivialidades |
 | Yak shaving | Productividad | Prerequisitos infinitos |
 | Rubber duck debugging | Debugging | Explicar para resolver |
-| Spaghetti code | Calidad | Codigo desordenado |
-| Tech debt | Calidad | Deuda tecnica |
+| Spaghetti code | Calidad | Código desordenado |
+| Tech debt | Calidad | Deuda técnica |
 | Code smell | Calidad | Indicador de problema |
-| Boilerplate | Codigo | Codigo repetitivo |
-| Syntactic sugar | Codigo | Sintaxis simplificada |
+| Boilerplate | Código | Código repetitivo |
+| Syntactic sugar | Código | Sintaxis simplificada |
 | Footgun | Diseno | Feature peligrosa |
-| Nuke it | Solucion | Borrar todo |
-| It works on my machine | Debugging | Excusa clasica |
-| Move fast and break things | Filosofia | Velocidad sobre estabilidad |
-| Don't reinvent the wheel | Filosofia | Reusar lo existente |
-| Premature optimization... | Filosofia | No optimizar antes de tiempo |
+| Nuke it | Solución | Borrar todo |
+| It works on my machine | Debugging | Excusa clásica |
+| Move fast and break things | Filosofía | Velocidad sobre estabilidad |
+| Don't reinvent the wheel | Filosofía | Reusar lo existente |
+| Premature optimization... | Filosofía | No optimizar antes de tiempo |
 | Two hard things in CS | Humor | Cache y naming |
 
 ---
 
-## Consejo practico
+## Consejo práctico
 
-> Estos modismos se usan constantemente en code reviews, Slack, reuniones y documentacion tecnica. No los traduzcas literalmente al espanol — aprende a reconocerlos y usarlos en ingles directamente. Son parte de la identidad cultural del desarrollo de software.
+> Estos modismos se usan constantemente en code reviews, Slack, reuniones y documentación técnica. No los traduzcas literalmente al espanol — aprende a reconocerlos y usarlos en ingles directamente. Son parte de la identidad cultural del desarrollo de software.

@@ -1,16 +1,16 @@
-# Capítulo 05 — Funciones y métodos
+# Capítulo 05 — funciones y métodos
 
-Las funciones en C# se llaman metodos. Son la base para dividir lógica,
+Las funciones en C# se llaman métodos. Son la base para dividir lógica,
 reutilizar comportamiento y evitar repetir código innecesariamente.
 
 ---
 
 ## ¿Qué aprenderás?
 
-- metodos basicos;
+- métodos básicos;
 - `out`, `ref`, `in` y `params`;
 - parametros opcionales y con nombre;
-- metodos de extension;
+- métodos de extension;
 - lambdas;
 - `Func`, `Action` y `Predicate`.
 
@@ -18,21 +18,21 @@ reutilizar comportamiento y evitar repetir código innecesariamente.
 
 ## ¿Por qué importa este capítulo?
 
-Porque casi todo el software profesional se organiza alrededor de metodos:
+Porque casi todo el software profesional se organiza alrededor de métodos:
 
 - validaciones;
-- calculos;
+- cálculos;
 - transformaciones;
 - acciones sobre datos;
 - callbacks y eventos.
 
-Aprender metodos bien hace mas facil entender clases, arquitectura y APIs.
+Aprender métodos bien hace mas fácil entender clases, arquitectura y APIs.
 
 ---
 
 ## ¿Qué pasa dentro del programa?
 
-Cuando llamas un metodo:
+Cuando llamas un método:
 
 - el programa entra a ese bloque;
 - recibe parametros;
@@ -44,12 +44,12 @@ Eso organiza el flujo y reduce duplicacion.
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - confundir imprimir con retornar;
 - usar `ref` u `out` sin necesidad;
 - abusar de lambdas complejas;
-- crear metodos demasiado grandes.
+- crear métodos demasiado grandes.
 
 ---
 

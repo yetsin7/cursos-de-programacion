@@ -1,6 +1,6 @@
 # Capítulo 06: Questions & Negations
 
-Este capitulo te ayuda a hacer algo muy real en el trabajo tecnico: preguntar,
+Este capítulo te ayuda a hacer algo muy real en el trabajo técnico: preguntar,
 pedir aclaraciones y reportar problemas en ingles de forma clara.
 
 ---
@@ -15,7 +15,7 @@ pedir aclaraciones y reportar problemas en ingles de forma clara.
 
 ## ¿Por qué importa para programadores?
 
-Porque gran parte de la comunicacion tecnica consiste en preguntar o negar:
+Porque gran parte de la comunicación técnica consiste en preguntar o negar:
 
 - `Does the API return JSON?`
 - `Why is the test failing?`
@@ -23,7 +23,7 @@ Porque gran parte de la comunicacion tecnica consiste en preguntar o negar:
 - `We can't reproduce the bug.`
 
 Sin esta base, leer foros, escribir issues o participar en code reviews se hace
-mucho mas dificil.
+mucho mas difícil.
 
 ---
 
@@ -38,7 +38,7 @@ mucho mas dificil.
 
 ---
 
-## Errores comunes del hispanohablante
+## Errores comúnes del hispanohablante
 
 - olvidar el auxiliar al hacer preguntas;
 - mezclar orden de pregunta con orden afirmativo;
@@ -49,6 +49,6 @@ mucho mas dificil.
 
 ## Objetivo del capítulo
 
-Al terminar este capitulo podras hacer preguntas tecnicas, responderlas y
+Al terminar este capítulo podras hacer preguntas técnicas, responderlas y
 construir oraciones negativas para reportar errores y problemas con mucha mas
 claridad.

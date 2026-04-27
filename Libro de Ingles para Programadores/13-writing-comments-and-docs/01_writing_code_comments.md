@@ -1,8 +1,8 @@
 # Writing Code Comments
 
-## Como Escribir Comentarios de Codigo en Ingles
+## Como Escribir Comentarios de Código en Ingles
 
-Los comentarios de codigo son la forma mas directa de comunicarte con otros
+Los comentarios de código son la forma mas directa de comunicarte con otros
 desarrolladores (incluido tu yo del futuro). Escribirlos bien en ingles es
 fundamental para proyectos profesionales e internacionales.
 
@@ -42,7 +42,7 @@ def process_payment(amount, method):
 
 ---
 
-## Convenciones de Anotaciones
+## convenciones de Anotaciones
 
 Estas etiquetas son universalmente reconocidas en la industria:
 
@@ -50,12 +50,12 @@ Estas etiquetas son universalmente reconocidas en la industria:
 |----------|-------------|---------------|
 | `TODO` | "To do" - Pendiente | Algo que falta implementar |
 | `FIXME` | "Fix me" - Arreglar | Un bug conocido que necesita correccion |
-| `HACK` | "Hack" - Solucion temporal | Codigo que funciona pero no es ideal |
-| `NOTE` | "Note" - Nota | Informacion importante para el lector |
+| `HACK` | "Hack" - Solución temporal | Código que funciona pero no es ideal |
+| `NOTE` | "Note" - Nota | Información importante para el lector |
 | `WARNING` | "Warning" - Advertencia | Algo peligroso o delicado |
-| `DEPRECATED` | "Deprecated" - Obsoleto | Codigo que ya no se deberia usar |
-| `OPTIMIZE` | "Optimize" - Optimizar | Codigo que se puede mejorar en rendimiento |
-| `REVIEW` | "Review" - Revisar | Codigo que necesita revision |
+| `DEPRECATED` | "Deprecated" - Obsoleto | Código que ya no se debería usar |
+| `OPTIMIZE` | "Optimize" - Optimizar | Código que se puede mejorar en rendimiento |
+| `REVIEW` | "Review" - Revisar | Código que necesita revisión |
 
 ### Ejemplos
 
@@ -113,7 +113,7 @@ if (user.age < 18) { requireConsent(); }
 
 ## JSDoc (JavaScript / TypeScript)
 
-JSDoc es el estandar para documentar codigo JavaScript y TypeScript.
+JSDoc es el estandar para documentar código JavaScript y TypeScript.
 
 ```javascript
 /**
@@ -136,7 +136,7 @@ function calculateTotal(subtotal, taxRate, discount = 0) {
 }
 ```
 
-### Etiquetas JSDoc Comunes
+### Etiquetas JSDoc Comúnes
 
 | Etiqueta | Significado | Ejemplo |
 |----------|-------------|---------|
@@ -173,7 +173,7 @@ Future<UserProfile?> fetchProfile(String userId) async {
 - Usa `///` para documentacion (no `//` ni `/* */`)
 - La primera oracion es el resumen — debe ser clara y concisa
 - Usa `[ClassName]` para crear enlaces a otras clases
-- Incluye ejemplos con bloques de codigo
+- Incluye ejemplos con bloques de código
 
 ---
 
@@ -204,7 +204,7 @@ def fetch_user(user_id: str) -> dict:
 
 ---
 
-## Frases Utiles para Comentarios
+## Frases Útiles para Comentarios
 
 | Ingles | Uso |
 |--------|-----|
@@ -215,7 +215,7 @@ def fetch_user(user_id: str) -> dict:
 | "Defaults to..." | Para valores por defecto |
 | "Must not be null." | Para restricciones |
 | "See also: [OtherClass]" | Para referencias |
-| "For internal use only." | Para metodos privados |
+| "For internal use only." | Para métodos privados |
 
 ---
 
@@ -223,6 +223,6 @@ def fetch_user(user_id: str) -> dict:
 
 1. Comenta el **por que**, no el **que**
 2. Usa **TODO/FIXME/HACK/NOTE** consistentemente
-3. Sigue el formato de documentacion de tu lenguaje (JSDoc, Dartdoc, docstrings)
-4. Manten los comentarios **actualizados** con el codigo
+3. Sigue el formato de documentación de tu lenguaje (JSDoc, Dartdoc, docstrings)
+4. Manten los comentarios **actualizados** con el código
 5. Elimina comentarios **obsoletos o redundantes**

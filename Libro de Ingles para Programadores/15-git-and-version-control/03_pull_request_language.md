@@ -2,7 +2,7 @@
 
 ## Vocabulario para Pull Requests y Code Reviews
 
-Los Pull Requests (PRs) son el mecanismo principal para revisar y aprobar codigo
+Los Pull Requests (PRs) son el mecanismo principal para revisar y aprobar código
 en equipos profesionales. Saber escribir y revisar PRs en ingles es una habilidad
 esencial para cualquier desarrollador.
 
@@ -10,15 +10,15 @@ esencial para cualquier desarrollador.
 
 ## Anatomia de un Pull Request
 
-| Seccion | Significado |
+| Sección | Significado |
 |---------|-------------|
 | **Title** | Titulo breve del cambio |
-| **Description / Body** | Explicacion detallada |
-| **Reviewers** | Personas que revisaran el codigo |
+| **Description / Body** | Explicación detallada |
+| **Reviewers** | Personas que revisaran el código |
 | **Assignees** | Personas responsables del PR |
 | **Labels** | Etiquetas (bug, feature, etc.) |
 | **Linked issues** | Issues relacionados |
-| **Checks / CI** | Tests automaticos y validaciones |
+| **Checks / CI** | Tests automáticos y validaciones |
 
 ---
 
@@ -33,7 +33,7 @@ Los titulos deben ser breves y descriptivos, similares a los commit messages.
 | "Changes" | "Refactor payment service for better error handling" |
 | "WIP stuff" | "feat: implement product search with filters" |
 
-### Patrones comunes
+### Patrones comúnes
 
 ```
 feat: add user profile page
@@ -45,7 +45,7 @@ chore: upgrade Flutter to 3.22
 
 ---
 
-## Escribir Descripciones de PR
+## Escribir descripciones de PR
 
 ### Estructura recomendada
 
@@ -71,7 +71,7 @@ Brief description of what this PR does and why.
 Closes #234
 ```
 
-### Frases utiles para descripciones
+### Frases útiles para descripciones
 
 | Ingles | Uso |
 |--------|-----|
@@ -80,7 +80,7 @@ Closes #234
 | "This is a follow-up to #789." | Referencia a PR anterior |
 | "No breaking changes." | Indicar que no rompe nada |
 | "This requires a database migration." | Nota importante |
-| "Ready for review." | Listo para revision |
+| "Ready for review." | Listo para revisión |
 | "Draft — still a work in progress." | PR en progreso |
 
 ---
@@ -91,22 +91,22 @@ Closes #234
 
 | Acronimo / Frase | Significado | Cuando usarlo |
 |-------------------|-------------|---------------|
-| **LGTM** | "Looks Good To Me" | Apruebas el codigo |
+| **LGTM** | "Looks Good To Me" | Apruebas el código |
 | **SGTM** | "Sounds Good To Me" | Estas de acuerdo con la propuesta |
 | **Approved** | "Aprobado" | Aprobacion formal del PR |
-| **Needs changes** | "Necesita cambios" | El codigo necesita modificaciones |
+| **Needs changes** | "Necesita cambios" | El código necesita modificaciones |
 | **Nit** / **Nitpick** | Detalle menor, no bloquea | Sugerencia de estilo o formato |
 | **Blocker** | Problema que impide aprobacion | Algo que debe corregirse |
 
 ---
 
-### Frases Comunes en Reviews
+### Frases Comúnes en Reviews
 
 #### Sugerencias (Suggestions)
 
 | Frase | Significado |
 |-------|-------------|
-| "Could you refactor this into a separate function?" | "Podrias refactorizar esto en una funcion separada?" |
+| "Could you refactor this into a separate function?" | "Podrias refactorizar esto en una función separada?" |
 | "Consider using a `Map` instead of a `List` here." | "Considera usar un Map en vez de un List aqui." |
 | "What do you think about extracting this into a utility?" | "Que opinas de extraer esto a un utilitario?" |
 | "I'd suggest using a constant for this value." | "Sugiero usar una constante para este valor." |
@@ -126,10 +126,10 @@ Closes #234
 
 | Frase | Significado |
 |-------|-------------|
-| "Let's add a test for this edge case." | "Agreguemos un test para este caso limite." |
+| "Let's add a test for this edge case." | "Agreguemos un test para este caso límite." |
 | "Can you add unit tests for the new service?" | "Puedes agregar tests unitarios para el nuevo servicio?" |
 | "This change needs test coverage." | "Este cambio necesita cobertura de tests." |
-| "The existing tests should be updated." | "Los tests existentes deberian actualizarse." |
+| "The existing tests should be updated." | "Los tests existentes deberían actualizarse." |
 
 #### Preguntas
 
@@ -145,7 +145,7 @@ Closes #234
 | Frase | Significado |
 |-------|-------------|
 | "Nice refactor!" | "Buen refactor!" |
-| "Clean implementation." | "Implementacion limpia." |
+| "Clean implementation." | "Implementación limpia." |
 | "Great test coverage." | "Excelente cobertura de tests." |
 | "This is a nice improvement." | "Esta es una buena mejora." |
 
@@ -168,8 +168,8 @@ Closes #234
 
 | Estado | Significado |
 |--------|-------------|
-| **Open** | PR abierto, esperando revision |
-| **Draft** | PR en progreso, no listo para revision |
+| **Open** | PR abierto, esperando revisión |
+| **Draft** | PR en progreso, no listo para revisión |
 | **Approved** | Aprobado por los revisores |
 | **Changes requested** | Se pidieron cambios |
 | **Merged** | Fusionado en la rama destino |
@@ -177,7 +177,7 @@ Closes #234
 
 ### Frases sobre estados
 
-- "The PR is **open** and **ready for review**." (El PR esta abierto y listo para revision.)
+- "The PR is **open** and **ready for review**." (El PR esta abierto y listo para revisión.)
 - "I marked it as a **draft** — it's not ready yet." (Lo marque como draft, aun no esta listo.)
 - "The PR has been **approved** by two reviewers." (El PR fue aprobado por dos revisores.)
 - "**Changes requested** — please address the comments." (Se pidieron cambios, por favor atiende los comentarios.)
@@ -202,7 +202,7 @@ Closes #234
 ## Resumen
 
 - **Titulos de PR**: breves, descriptivos, en formato conventional commits
-- **Descripciones**: summary, changes, how to test, related issues
+- **descripciones**: summary, changes, how to test, related issues
 - **Reviews**: LGTM, nit, blocker, needs changes, approved
 - **Frases de review**: sugerencias, problemas, preguntas, elogios
 - **Respuestas**: profesionales, concisas, agradecidas

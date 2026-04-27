@@ -37,7 +37,7 @@ Control total sobre la animación con `AnimationController`. Necesitas estas cua
 - Ciclo de vida: `forward()`, `reverse()`, `repeat()`, `dispose()`
 
 ### `03_hero_transition.dart`
-Transiciones "mágicas" entre pantallas. El widget vuela de una ruta a otra.
+transiciones "mágicas" entre pantallas. El widget vuela de una ruta a otra.
 
 - Widget `Hero` con `tag` único
 - Funciona automáticamente con `Navigator.push`

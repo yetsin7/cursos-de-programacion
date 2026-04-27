@@ -6,7 +6,7 @@ Estos son los verbos que más usarás como programador en inglés. Cada uno incl
 
 ---
 
-## Operaciones CRUD y de datos
+## operaciones CRUD y de datos
 
 | Verbo | Pronunciación | Español | Ejemplo |
 |-------|--------------|---------|---------|

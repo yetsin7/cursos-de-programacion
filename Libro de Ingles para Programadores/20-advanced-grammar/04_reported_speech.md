@@ -32,7 +32,7 @@ un tiempo verbal.
 | **told** (+ persona) | Dirigido a alguien | He **told** me to rebase. |
 | **mentioned** | Casual, de paso | They **mentioned** the deadline had changed. |
 | **asked** | Preguntas | The PM **asked** if we could finish by Friday. |
-| **explained** | Explicaciones | She **explained** how the auth flow worked. |
+| **explained** | explicaciones | She **explained** how the auth flow worked. |
 | **suggested** | Sugerencias | He **suggested** using a different approach. |
 | **confirmed** | Confirmaciones | She **confirmed** the deployment was successful. |
 | **reported** | Información formal | The QA team **reported** three critical bugs. |

@@ -44,7 +44,7 @@ Usamos **What** para preguntar por información, definiciones o detalles.
 |----------|------------|
 | What does this function do? | ¿Qué hace esta función? |
 | What is the return type? | ¿Cuál es el tipo de retorno? |
-| What version are you using? | ¿Qué versión estás usando? |
+| What versión are you using? | ¿Qué versión estás usando? |
 | What error are you getting? | ¿Qué error te aparece? |
 | What language is this written in? | ¿En qué lenguaje está escrito esto? |
 | What happens if the request times out? | ¿Qué pasa si la solicitud expira? |
@@ -148,7 +148,7 @@ Usamos **Which** cuando hay opciones limitadas para elegir.
 | Pregunta | Traducción |
 |----------|------------|
 | Which branch should I merge into? | ¿A cuál rama debería hacer merge? |
-| Which version of Node are you running? | ¿Qué versión de Node estás corriendo? |
+| Which versión of Node are you running? | ¿Qué versión de Node estás corriendo? |
 | Which database do you recommend? | ¿Cuál base de datos recomiendas? |
 | Which framework is better for this project? | ¿Cuál framework es mejor para este proyecto? |
 | Which endpoint should I use? | ¿Cuál endpoint debería usar? |
@@ -172,7 +172,7 @@ Which PR fixes this issue?           - ¿Cuál PR arregla este issue?
 
 ---
 
-## 11. Errores comunes
+## 11. Errores comúnes
 
 | Incorrecto | Correcto | Explicación |
 |------------|----------|-------------|

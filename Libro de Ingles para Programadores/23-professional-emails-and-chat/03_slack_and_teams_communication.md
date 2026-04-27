@@ -1,17 +1,17 @@
-# Slack and Teams Communication - Comunicacion en Slack y Teams
+# Slack and Teams Communication - Comunicación en Slack y Teams
 
-## Introduccion
+## Introducción
 
-Slack, Microsoft Teams y herramientas similares son el centro de comunicacion de los equipos de desarrollo modernos. A diferencia del email, la comunicacion aqui es mas rapida, informal y asincrona. Dominar la etiqueta y el vocabulario de estas plataformas es crucial para trabajar en equipos remotos internacionales.
+Slack, Microsoft Teams y herramientas similares son el centro de comunicación de los equipos de desarrollo modernos. A diferencia del email, la comunicación aqui es mas rápida, informal y asincrona. Dominar la etiqueta y el vocabulario de estas plataformas es crucial para trabajar en equipos remotos internacionales.
 
 ---
 
-## Prefijos comunes para mensajes
+## Prefijos comúnes para mensajes
 
 | Prefijo | Significado | Cuando usarlo |
 |---------|-------------|---------------|
 | **Heads up:** | Aviso/alerta | Informar algo que afecta al equipo |
-| **Quick question:** | Pregunta breve | Cuando necesitas algo rapido |
+| **Quick question:** | Pregunta breve | Cuando necesitas algo rápido |
 | **FYI:** | For Your Information | Informativo, no requiere accion |
 | **PSA:** | Public Service Announcement | Anuncio importante para todos |
 | **Reminder:** | Recordatorio | Recordar algo pendiente |
@@ -67,9 +67,9 @@ Alice: "Has anyone seen this error in the logs?"
   Alice: "Found it — it was a stale connection. Fixed in PR #567."
 ```
 
-### Menciones (@mentions)
+### menciones (@mentions)
 
-| Mencion | Cuando usarla |
+| Mención | Cuando usarla |
 |---------|---------------|
 | **@person** | Necesitas la atencion de alguien especifico |
 | **@here** | Necesitas atencion de quienes estan activos ahora |
@@ -94,7 +94,7 @@ Alice: "Has anyone seen this error in the logs?"
 
 ## Reacciones con emoji y sus significados
 
-| Emoji | Significado comun | Equivalente verbal |
+| Emoji | Significado común | Equivalente verbal |
 |-------|------------------|-------------------|
 | :thumbsup: | Entendido / De acuerdo / Hare eso | *"Got it"* / *"Will do"* |
 | :eyes: | Lo estoy revisando | *"Looking at it"* |
@@ -118,9 +118,9 @@ Team: [reacciona con :rocket: y :tada:]  // Celebracion
 
 ---
 
-## Comunicacion asincrona (Async communication)
+## Comunicación asincrona (Async communication)
 
-En equipos distribuidos con diferentes zonas horarias, la comunicacion asincrona es fundamental.
+En equipos distribuidos con diferentes zonas horarias, la comunicación asincrona es fundamental.
 
 ### Principios
 
@@ -129,7 +129,7 @@ En equipos distribuidos con diferentes zonas horarias, la comunicacion asincrona
 | **Da contexto completo** | No digas solo "ayuda", explica que, por que y que intentaste |
 | **No esperes respuesta inmediata** | Respeta las zonas horarias |
 | **Indica urgencia claramente** | Diferencia entre "when you get a chance" y "urgent" |
-| **Resume decisiones en texto** | Despues de una call, escribe las conclusiones |
+| **Resume decisiones en texto** | Después de una call, escribe las conclusiones |
 
 ### Malas vs buenas preguntas
 
@@ -162,9 +162,9 @@ Is there a rate limit on the search API? I'm seeing
 
 | Usar DM (mensaje directo) | Usar canal publico |
 |---------------------------|-------------------|
-| Temas personales o sensibles | Preguntas tecnicas que otros podrian responder |
+| Temas personales o sensibles | Preguntas técnicas que otros podrian responder |
 | Feedback privado | Anuncios que afectan al equipo |
-| Coordinacion 1-a-1 rapida | Decisiones que el equipo debe conocer |
+| Coordinacion 1-a-1 rápida | Decisiones que el equipo debe conocer |
 | Temas de HR o salario | Discusiones de diseno o arquitectura |
 
 ```
@@ -180,7 +180,7 @@ Looking for recommendations on approach."
 
 ---
 
-## Frases utiles para chat diario
+## Frases útiles para chat diario
 
 ### Compartir progreso
 
@@ -211,7 +211,7 @@ Looking for recommendations on approach."
 
 ---
 
-## Abreviaciones comunes en chat
+## Abreviaciones comúnes en chat
 
 | Abreviacion | Significado |
 |-------------|-------------|

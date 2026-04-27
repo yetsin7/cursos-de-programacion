@@ -8,7 +8,7 @@ como usarlo en una oracion.
 
 ---
 
-## Comandos Basicos
+## Comandos Básicos
 
 | Comando | Pronunciacion | Significado | Ejemplo de uso |
 |---------|--------------|-------------|----------------|
@@ -130,12 +130,12 @@ git cherry-pick def456      # Copia el commit def456 a la rama actual
 
 | Comando | Pronunciacion | Significado |
 |---------|--------------|-------------|
-| **git tag** | "git tag" | Marcar un punto especifico (version) |
+| **git tag** | "git tag" | Marcar un punto especifico (versión) |
 | **git remote** | "git ri-MOUT" | Gestionar repositorios remotos |
 
 ### Conceptos Clave
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
 | **origin** | /ˈɒrɪdʒɪn/ "O-ri-yin" | El repositorio remoto por defecto |
 | **upstream** | /ˈʌpstriːm/ "AP-striim" | El repositorio original (en forks) |
@@ -145,7 +145,7 @@ git cherry-pick def456      # Copia el commit def456 a la rama actual
 
 ---
 
-## Frases Comunes con Git
+## Frases Comúnes con Git
 
 | Ingles | Espaniol |
 |--------|----------|
@@ -164,7 +164,7 @@ git cherry-pick def456      # Copia el commit def456 a la rama actual
 
 Los comandos de Git se agrupan en:
 
-- **Basicos**: init, clone, add, commit, status, log, diff
+- **Básicos**: init, clone, add, commit, status, log, diff
 - **Sincronizacion**: push, pull, fetch
 - **Ramas**: branch, checkout, switch, merge, rebase
 - **Temporal**: stash, stash pop

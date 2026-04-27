@@ -1,15 +1,15 @@
 # Capítulo 05: Números, Fechas y Tiempo
 
-Este capitulo te ayuda a manejar con soltura algo que aparece todo el tiempo en
-programacion: versiones, timestamps, fechas, duraciones, horarios y operaciones
-basicas.
+Este capítulo te ayuda a manejar con soltura algo que aparece todo el tiempo en
+programación: versiones, timestamps, fechas, duraciones, horarios y operaciones
+básicas.
 
 ---
 
 ## ¿Que aprenderas?
 
-- numeros cardinales y ordinales;
-- operaciones matematicas comunes;
+- números cardinales y ordinales;
+- operaciones matematicas comúnes;
 - fechas, horas y zonas horarias;
 - duraciones y formas naturales de decir tiempo.
 
@@ -19,12 +19,12 @@ basicas.
 
 Porque necesitas leer y decir cosas como:
 
-- `version 2.1.4`
+- `versión 2.1.4`
 - `the build finished in 3 minutes`
 - `the meeting starts at 10 AM`
 - `the log was created on April 17`
 
-Dominar esto mejora documentacion, planning, debugging y comunicacion tecnica.
+Dominar esto mejora documentación, planning, debugging y comunicación técnica.
 
 ---
 
@@ -38,9 +38,9 @@ Dominar esto mejora documentacion, planning, debugging y comunicacion tecnica.
 
 ---
 
-## Errores comunes del hispanohablante
+## Errores comúnes del hispanohablante
 
-- leer versiones como si fueran numeros decimales normales;
+- leer versiones como si fueran números decimales normales;
 - confundir formatos de fecha;
 - traducir horas de forma literal;
 - no distinguir entre `for`, `since` y duraciones temporales.
@@ -49,5 +49,5 @@ Dominar esto mejora documentacion, planning, debugging y comunicacion tecnica.
 
 ## Objetivo
 
-Al finalizar podras leer y expresar numeros, versiones, fechas, horas y
+Al finalizar podras leer y expresar números, versiones, fechas, horas y
 duraciones en ingles con mucha mas naturalidad.

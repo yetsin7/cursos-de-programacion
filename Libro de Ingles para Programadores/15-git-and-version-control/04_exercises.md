@@ -1,12 +1,12 @@
 # Chapter 15: Exercises
 
-## Ejercicios de Git y Control de Versiones
+## Ejercicios de Git y Control de versiones
 
 ---
 
 ## Ejercicio 1: Vocabulario de Comandos
 
-Escribe el comando de Git que corresponde a cada descripcion.
+Escribe el comando de Git que corresponde a cada descripción.
 
 1. Copiar un repositorio remoto a tu maquina local: `git ___`
 2. Ver que archivos han cambiado: `git ___`
@@ -15,7 +15,7 @@ Escribe el comando de Git que corresponde a cada descripcion.
 5. Crear un commit que deshace otro commit: `git ___`
 6. Copiar un commit especifico a otra rama: `git ___`
 7. Traer cambios del remoto sin fusionar: `git ___`
-8. Marcar un commit como una version: `git ___`
+8. Marcar un commit como una versión: `git ___`
 
 <details>
 <summary>Respuestas</summary>
@@ -34,7 +34,7 @@ Escribe el comando de Git que corresponde a cada descripcion.
 
 ## Ejercicio 2: Pronunciacion
 
-Escribe como pronunciarias estos terminos de Git.
+Escribe como pronunciarias estos términos de Git.
 
 1. repository → ___
 2. merge → ___
@@ -62,7 +62,7 @@ Escribe como pronunciarias estos terminos de Git.
 
 ## Ejercicio 3: Completa la Oracion
 
-Elige el termino correcto: **merge**, **rebase**, **cherry-pick**, **stash**, **fetch**.
+Elige el término correcto: **merge**, **rebase**, **cherry-pick**, **stash**, **fetch**.
 
 1. "I'll _______ my branch onto main before creating the PR."
 2. "Let me _______ my changes before switching branches."
@@ -86,11 +86,11 @@ Elige el termino correcto: **merge**, **rebase**, **cherry-pick**, **stash**, **
 
 Escribe un nombre de rama apropiado para cada situacion, usando las convenciones.
 
-1. Agregar autenticacion con Google.
+1. Agregar autenticación con Google.
 2. Corregir un bug donde el carrito muestra precios negativos.
 3. Correccion urgente porque los pagos no funcionan en produccion.
 4. Actualizar las dependencias del proyecto.
-5. Preparar la version 3.0.0.
+5. Preparar la versión 3.0.0.
 
 <details>
 <summary>Respuestas Sugeridas</summary>
@@ -108,11 +108,11 @@ Escribe un nombre de rama apropiado para cada situacion, usando las convenciones
 
 Escribe un titulo de PR profesional para cada situacion.
 
-1. Creaste una pagina de perfil de usuario con subida de avatar.
-2. Corregiste un bug donde la sesion expiraba inmediatamente.
-3. Reorganizaste el codigo del servicio de pagos.
+1. Creaste una página de perfil de usuario con subida de avatar.
+2. Corregiste un bug donde la sesión expiraba inmediatamente.
+3. Reorganizaste el código del servicio de pagos.
 4. Agregaste tests para el flujo de registro.
-5. Actualizaste la documentacion de la API.
+5. Actualizaste la documentación de la API.
 
 <details>
 <summary>Respuestas Sugeridas</summary>
@@ -130,10 +130,10 @@ Escribe un titulo de PR profesional para cada situacion.
 
 Que dirias en ingles en cada situacion de code review?
 
-1. El codigo se ve bien y quieres aprobarlo.
+1. El código se ve bien y quieres aprobarlo.
 2. Hay un problema menor de estilo que no bloquea la aprobacion.
 3. Encontraste un posible memory leak.
-4. Quieres sugerir usar una constante en vez de un numero magico.
+4. Quieres sugerir usar una constante en vez de un número magico.
 5. Quieres elogiar un refactor bien hecho.
 
 <details>
@@ -168,14 +168,14 @@ to API v3. The final code should be:
 
 `const API_URL = 'https://api.example.com/v3';`
 
-The v2 URL in HEAD is the old version we're replacing."
+The v2 URL in HEAD is the old versión we're replacing."
 </details>
 
 ---
 
-## Ejercicio 8: Escribe una Descripcion de PR
+## Ejercicio 8: Escribe una Descripción de PR
 
-Escribe la descripcion completa de un PR para este escenario:
+Escribe la descripción completa de un PR para este escenario:
 
 > Implementaste un sistema de notificaciones push para la app movil.
 > Creaste un `NotificationService`, un `NotificationProvider`, y modificaste
@@ -219,7 +219,7 @@ Closes #89
 ## Ejercicio 9: Traduce al Ingles
 
 1. "Crea una rama de feature desde develop."
-2. "Hay un conflicto de merge en el archivo de configuracion."
+2. "Hay un conflicto de merge en el archivo de configuración."
 3. "Rebasa tu rama sobre main antes de crear el PR."
 4. "El PR fue aprobado con sugerencias menores."
 5. "Necesitamos hacer cherry-pick de ese fix en la rama de release."

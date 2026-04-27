@@ -44,7 +44,7 @@ cambio, aloja repositorios remotos y herramientas de colaboracion sobre ese
 historial.
 
 Cuando haces `git add`, `git commit`, `git push` o `git pull`, estas moviendo y
-registrando informacion de formas distintas. Entender eso te hace mucho mas
+registrando información de formas distintas. Entender eso te hace mucho mas
 seguro usando Git.
 
 ---
@@ -55,7 +55,7 @@ seguro usando Git.
 1. Ve a [https://git-scm.com/downloads](https://git-scm.com/downloads)
 2. Descarga el instalador para Windows
 3. Ejecuta el instalador (las opciones por defecto están bien)
-4. Al terminar, abre una terminal y escribe `git --version`
+4. Al terminar, abre una terminal y escribe `git --versión`
 
 ### macOS
 ```
@@ -72,7 +72,7 @@ Verifica la instalación:
 ```
 git --version
 ```
-Si ves algo como `git version 2.x.x`, estás listo.
+Si ves algo como `git versión 2.x.x`, estás listo.
 
 ---
 
@@ -82,11 +82,11 @@ Si ves algo como `git version 2.x.x`, estás listo.
 
 | Carpeta | Tema |
 |---|---|
-| `01-introduccion-git/` | ¿Qué es Git? ¿Qué es GitHub? Conceptos fundamentales |
-| `02-instalacion-y-configuracion/` | Instalar Git y configurarlo correctamente |
+| `01-introducción-git/` | ¿Qué es Git? ¿Qué es GitHub? Conceptos fundamentales |
+| `02-instalacion-y-configuración/` | Instalar Git y configurarlo correctamente |
 | `03-crear-cuenta-github/` | Crear tu cuenta en GitHub y configurar tu perfil |
-| `04-repositorios-basicos/` | Crear, clonar y entender repositorios |
-| `05-flujo-basico-git/` | add, commit, push, pull — el flujo diario de trabajo |
+| `04-repositorios-básicos/` | Crear, clonar y entender repositorios |
+| `05-flujo-básico-git/` | add, commit, push, pull — el flujo diario de trabajo |
 | `06-ramas/` | Crear, cambiar y fusionar ramas |
 | `07-repositorios-remotos/` | Conectar repositorios locales con GitHub |
 | `08-github-interfaz/` | Navegar y usar la interfaz web de GitHub |

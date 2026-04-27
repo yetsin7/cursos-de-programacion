@@ -231,7 +231,7 @@ Thank you for the quick response.
 
 ---
 
-## 7. Errores comunes de hispanohablantes
+## 7. Errores comúnes de hispanohablantes
 
 | Incorrecto | Correcto | Explicación |
 |------------|----------|-------------|

@@ -3,8 +3,8 @@
 ## Como Leer y Entender Mensajes de Error en Ingles
 
 Los mensajes de error estan siempre en ingles. Saber leerlos y entenderlos
-rapidamente te hara un programador mucho mas eficiente. En esta leccion
-aprenderemos a desglosar los errores mas comunes.
+rápidamente te hara un programador mucho mas eficiente. En esta leccion
+aprenderemos a desglosar los errores mas comúnes.
 
 ---
 
@@ -19,7 +19,7 @@ ErrorType: Description of the problem
 ```
 
 - **ErrorType**: Tipo de error (que salio mal)
-- **Description**: Descripcion detallada del problema
+- **Description**: Descripción detallada del problema
 - **Stack trace**: Donde ocurrio (archivo, linea, columna)
 
 ---
@@ -62,7 +62,7 @@ SyntaxError: Unexpected token '}'
 ```
 > "Syntax Error: Unexpected token, closing curly brace."
 
-**Significado**: El codigo tiene un error de sintaxis; hay un `}` donde no deberia.
+**Significado**: El código tiene un error de sintaxis; hay un `}` donde no debería.
 
 ---
 
@@ -75,7 +75,7 @@ java.lang.NullPointerException: Cannot invoke method on null object
 ```
 > "Null Pointer Exception: Cannot invoke method on null object."
 
-**Significado**: Intentaste llamar un metodo en un objeto que es `null`.
+**Significado**: Intentaste llamar un método en un objeto que es `null`.
 
 **Como describirlo**: "I'm getting a NullPointerException because the object
 is null when I try to call a method on it."
@@ -95,15 +95,15 @@ java.lang.ClassNotFoundException: com.example.MyClass
 
 ## Errores HTTP
 
-| Codigo | Nombre | Significado |
+| Código | Nombre | Significado |
 |--------|--------|-------------|
 | **400** | Bad Request | "Bad request" - La peticion tiene errores |
 | **401** | Unauthorized | "Unauthorized" - No estas autenticado |
 | **403** | Forbidden | "Forbidden" - No tienes permiso |
 | **404** | Not Found | "Not found" - El recurso no existe |
-| **405** | Method Not Allowed | "Method not allowed" - Metodo HTTP incorrecto |
+| **405** | Method Not Allowed | "Method not allowed" - Método HTTP incorrecto |
 | **408** | Request Timeout | "Request timeout" - La peticion tardo demasiado |
-| **429** | Too Many Requests | "Too many requests" - Excediste el limite |
+| **429** | Too Many Requests | "Too many requests" - Excediste el límite |
 | **500** | Internal Server Error | "Internal server error" - Error del servidor |
 | **502** | Bad Gateway | "Bad gateway" - El servidor intermedio fallo |
 | **503** | Service Unavailable | "Service unavailable" - Servicio no disponible |
@@ -156,10 +156,10 @@ RangeError: Maximum call stack size exceeded
 ```
 > "Range Error: Maximum call stack size exceeded."
 
-**Significado**: Hay una recursion infinita que agoto la pila de llamadas.
+**Significado**: Hay una recursión infinita que agoto la pila de llamadas.
 
 **Como describirlo**: "I have a stack overflow — there's probably infinite
-recursion somewhere."
+recursión somewhere."
 
 ---
 
@@ -182,11 +182,11 @@ Segmentation fault (core dumped)
 > "Segmentation fault, core dumped."
 
 **Significado**: El programa intento acceder a memoria que no le pertenece.
-Comun en C/C++.
+Común en C/C++.
 
 ---
 
-## Errores de Indices y Colecciones
+## Errores de Índices y Colecciones
 
 ### Index Out of Bounds
 
@@ -195,7 +195,7 @@ RangeError: index out of range: index 5, length 3
 ```
 > "Range Error: index out of range, index five, length three."
 
-**Significado**: Intentaste acceder al indice 5 de una coleccion que solo tiene 3 elementos.
+**Significado**: Intentaste acceder al índice 5 de una coleccion que solo tiene 3 elementos.
 
 **Como describirlo**: "I'm getting an index out of bounds error — I'm accessing
 index 5 but the array only has 3 elements."
@@ -204,7 +204,7 @@ index 5 but the array only has 3 elements."
 
 ## Vocabulario Clave para Errores
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
 | **thrown** | Lanzado (un error fue lanzado) |
 | **caught** | Atrapado (un error fue atrapado por try-catch) |
@@ -223,7 +223,7 @@ index 5 but the array only has 3 elements."
 |--------|----------|
 | "I'm getting an error on line 42." | "Estoy obteniendo un error en la linea 42." |
 | "The app crashes when I click submit." | "La app se cae cuando hago clic en enviar." |
-| "It throws a TypeError at runtime." | "Lanza un TypeError en tiempo de ejecucion." |
+| "It throws a TypeError at runtime." | "Lanza un TypeError en tiempo de ejecución." |
 | "The error is reproducible." | "El error es reproducible." |
 | "It works locally but fails in production." | "Funciona localmente pero falla en produccion." |
 | "I can't reproduce the bug." | "No puedo reproducir el bug." |
@@ -233,8 +233,8 @@ index 5 but the array only has 3 elements."
 
 ## Consejos para Leer Errores
 
-1. **Lee el tipo de error primero** — te dice la categoria del problema
-2. **Lee la descripcion** — te dice exactamente que salio mal
+1. **Lee el tipo de error primero** — te dice la categoría del problema
+2. **Lee la descripción** — te dice exactamente que salio mal
 3. **Mira el stack trace** — te dice donde ocurrio
 4. **Busca el archivo y linea** — ahorra tiempo
 5. **Copia el mensaje exacto** al buscar en Google o Stack Overflow

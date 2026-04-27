@@ -1,8 +1,8 @@
 # Lesson 03: Reading Changelogs and Semantic Versioning
 
-## Introduccion
+## Introducción
 
-Cada vez que actualizas una dependencia en tu proyecto, necesitas saber que cambio. Los changelogs y el versionado semantico te dan esa informacion. Leerlos correctamente en ingles es una habilidad esencial para evitar sorpresas desagradables en produccion.
+Cada vez que actualizas una dependencia en tu proyecto, necesitas saber que cambio. Los changelogs y el versionado semantico te dan esa información. Leerlos correctamente en ingles es una habilidad esencial para evitar sorpresas desagradables en produccion.
 
 ---
 
@@ -20,31 +20,31 @@ v2.4.1
 └────── MAJOR: cambios que rompen compatibilidad (breaking changes)
 ```
 
-### Ejemplos practicos
+### Ejemplos prácticos
 
-| Version | Tipo de cambio | Significado |
+| Versión | Tipo de cambio | Significado |
 |---------|---------------|-------------|
 | 1.0.0 → 1.0.1 | **PATCH** | Se corrigio un bug, actualiza sin miedo |
-| 1.0.0 → 1.1.0 | **MINOR** | Se agrego funcionalidad nueva, tu codigo sigue funcionando |
+| 1.0.0 → 1.1.0 | **MINOR** | Se agrego funcionalidad nueva, tu código sigue funcionando |
 | 1.0.0 → 2.0.0 | **MAJOR** | Hay breaking changes, revisa antes de actualizar |
 | 0.x.x | **Pre-release** | Cualquier cambio puede romper cosas |
 
 ### Vocabulario de SemVer
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
 | **Backward compatible** | Compatible con versiones anteriores |
-| **Breaking change** | Cambio que rompe el codigo existente |
-| **Pre-release** | Version previa al lanzamiento estable |
-| **Release candidate (RC)** | Candidato a version final |
-| **Stable release** | Version estable |
+| **Breaking change** | Cambio que rompe el código existente |
+| **Pre-release** | Versión previa al lanzamiento estable |
+| **Release candidate (RC)** | Candidato a versión final |
+| **Stable release** | Versión estable |
 | **Long-term support (LTS)** | Soporte a largo plazo |
 | **End of life (EOL)** | Fin del soporte |
-| **Latest** | La version mas reciente |
-| **Nightly build** | Compilacion automatica diaria (inestable) |
-| **Alpha / Beta** | Versiones de prueba tempranas / avanzadas |
+| **Latest** | La versión mas reciente |
+| **Nightly build** | compilación automatica diaria (inestable) |
+| **Alpha / Beta** | versiones de prueba tempranas / avanzadas |
 
-### Sufijos de version
+### Sufijos de versión
 
 ```
 2.0.0-alpha.1    → Version alpha (muy temprana, inestable)
@@ -93,15 +93,15 @@ El formato mas popular. Organiza cambios por tipo:
 - Updated dependencies to address CVE-2025-1234
 ```
 
-### Significado de cada seccion
+### Significado de cada sección
 
-| Seccion | Significado | Accion necesaria |
+| Sección | Significado | Accion necesaria |
 |---------|-------------|-----------------|
-| **Added** | Funcionalidades nuevas | No requiere cambios en tu codigo |
+| **Added** | Funcionalidades nuevas | No requiere cambios en tu código |
 | **Changed** | Cambios en funcionalidades existentes | Revisa si te afecta |
-| **Deprecated** | Marcado para futura eliminacion | Planifica migracion |
+| **Deprecated** | Marcado para futura eliminacion | Planifica migración |
 | **Fixed** | Correccion de bugs | Actualiza para obtener la correccion |
-| **Removed** | Funcionalidades eliminadas | Debes actualizar tu codigo |
+| **Removed** | Funcionalidades eliminadas | Debes actualizar tu código |
 | **Security** | Correcciones de seguridad | Actualiza inmediatamente |
 
 ---
@@ -141,7 +141,7 @@ Thanks to @developer1, @developer2, and @developer3 for their
 contributions to this release!
 ```
 
-### Emojis comunes en releases
+### Emojis comúnes en releases
 
 | Emoji | Significado |
 |-------|-------------|
@@ -149,7 +149,7 @@ contributions to this release!
 | ✨ | Nueva funcionalidad |
 | 🐛 | Correccion de bug |
 | 🔒 | Correccion de seguridad |
-| 📝 | Documentacion |
+| 📝 | Documentación |
 | 🚀 | Mejora de rendimiento |
 | ♻️ | Refactorizacion |
 | 🗑️ | Funcionalidad eliminada |
@@ -159,7 +159,7 @@ contributions to this release!
 
 ## Como evaluar el impacto de una actualizacion
 
-### Paso 1: Identifica el tipo de version
+### Paso 1: Identifica el tipo de versión
 
 ```bash
 # Version actual en tu proyecto
@@ -179,26 +179,26 @@ Palabras clave que indican breaking changes:
 |-------|-------------|
 | **"Breaking:"** | Cambio que rompe compatibilidad |
 | **"BREAKING CHANGE:"** | Lo mismo, formato de Conventional Commits |
-| **"This is a breaking change"** | Explicacion directa |
+| **"This is a breaking change"** | Explicación directa |
 | **"No longer supports..."** | Ya no soporta algo |
 | **"Has been removed"** | Fue eliminado |
 | **"Now requires..."** | Ahora requiere algo nuevo |
 | **"Default changed from X to Y"** | El valor por defecto cambio |
 | **"Renamed from X to Y"** | Fue renombrado |
 | **"Replaced X with Y"** | X fue reemplazado por Y |
-| **"Minimum version is now..."** | La version minima cambio |
+| **"Minimum versión is now..."** | La versión minima cambio |
 
 ### Paso 3: Evalua el riesgo
 
 | Pregunta | Si la respuesta es SI |
 |----------|----------------------|
-| Hay breaking changes? | Lee la guia de migracion |
-| Usas funcionalidades deprecated? | Planifica la migracion |
+| Hay breaking changes? | Lee la guía de migración |
+| Usas funcionalidades deprecated? | Planifica la migración |
 | Hay security fixes? | Actualiza lo antes posible |
 | Solo hay bug fixes? | Actualiza con confianza |
-| Es una version pre-release? | No uses en produccion |
+| Es una versión pre-release? | No uses en produccion |
 
-### Paso 4: Lee la guia de migracion
+### Paso 4: Lee la guía de migración
 
 ```markdown
 ## Migration from v2 to v3
@@ -228,7 +228,7 @@ npx mypackage-codemod@latest
 
 ## Conventional Commits
 
-Muchos proyectos usan Conventional Commits para sus mensajes de commit, lo que facilita generar changelogs automaticamente.
+Muchos proyectos usan Conventional Commits para sus mensajes de commit, lo que facilita generar changelogs automáticamente.
 
 ```
 feat: add dark mode support
@@ -244,12 +244,12 @@ build: upgrade webpack to v5
 BREAKING CHANGE: the `authenticate()` method now requires a token
 ```
 
-| Prefijo | Significado | Efecto en version |
+| Prefijo | Significado | Efecto en versión |
 |---------|-------------|-------------------|
 | **feat** | Nueva funcionalidad | MINOR bump |
 | **fix** | Correccion de bug | PATCH bump |
-| **docs** | Solo documentacion | No bump |
-| **style** | Formato, no afecta logica | No bump |
+| **docs** | Solo documentación | No bump |
+| **style** | Formato, no afecta lógica | No bump |
 | **refactor** | Refactorizacion | No bump |
 | **perf** | Mejora de rendimiento | PATCH bump |
 | **test** | Tests | No bump |
@@ -258,19 +258,19 @@ BREAKING CHANGE: the `authenticate()` method now requires a token
 
 ---
 
-## Frases comunes en changelogs
+## Frases comúnes en changelogs
 
 | Frase en ingles | Significado |
 |-----------------|-------------|
-| **"Closes #123"** | Resuelve el issue numero 123 |
+| **"Closes #123"** | Resuelve el issue número 123 |
 | **"This supersedes..."** | Esto reemplaza/supera a... |
-| **"Backported from..."** | Portado desde una version mas nueva |
+| **"Backported from..."** | Portado desde una versión mas nueva |
 | **"Cherry-picked from..."** | Seleccionado de otra rama |
 | **"Reverted due to..."** | Revertido debido a... |
 | **"Hot fix for..."** | Correccion urgente para... |
-| **"Pinned dependency..."** | Fijada la version de la dependencia |
-| **"Bumped X to Y"** | Actualizado X a la version Y |
-| **"Shipped in..."** | Incluido en la version... |
+| **"Pinned dependency..."** | Fijada la versión de la dependencia |
+| **"Bumped X to Y"** | Actualizado X a la versión Y |
+| **"Shipped in..."** | Incluido en la versión... |
 | **"Rolled back..."** | Revertido... |
 
 ---
@@ -279,7 +279,7 @@ BREAKING CHANGE: the `authenticate()` method now requires a token
 
 - El versionado semantico (MAJOR.MINOR.PATCH) te dice el tipo de cambio de un vistazo
 - Los changelogs organizan los cambios en: Added, Changed, Deprecated, Fixed, Removed, Security
-- Siempre busca "Breaking Changes" antes de actualizar una version MAJOR
+- Siempre busca "Breaking Changes" antes de actualizar una versión MAJOR
 - Las correcciones de seguridad (Security) deben aplicarse lo antes posible
 - Conventional Commits facilitan entender el historial de cambios de un proyecto
 - Evalua el riesgo de cada actualizacion antes de aplicarla en produccion

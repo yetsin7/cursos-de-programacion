@@ -11,7 +11,7 @@ local y el mundo exterior.
 1. **Respaldo**: tu código no solo vive en tu computadora
 2. **Colaboración**: otros pueden ver, descargar y contribuir a tu proyecto
 3. **Despliegue**: muchos servicios despliegan directamente desde el repositorio
-4. **Portabilidad**: puedes trabajar desde cualquier computadora
+4. **portabilidad**: puedes trabajar desde cualquier computadora
 
 ### Conceptos clave
 

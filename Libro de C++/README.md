@@ -1,7 +1,7 @@
 # Libro de C++ — De cero a PRO
 
-Guia completa de C++ desde los fundamentos hasta programacion moderna, con
-enfoque en rendimiento, control de recursos y pensamiento tecnico profundo.
+Guía completa de C++ desde los fundamentos hasta programación moderna, con
+enfoque en rendimiento, control de recursos y pensamiento técnico profundo.
 
 ---
 
@@ -20,21 +20,21 @@ Este libro te ayudara a entender:
 
 - como C++ extiende a C con abstracciones mas potentes;
 - como trabajar con objetos, memoria y recursos;
-- como escribir software rapido sin perder claridad;
-- como pensar el costo real de cada decision tecnica.
+- como escribir software rápido sin perder claridad;
+- como pensar el costo real de cada decision técnica.
 
 ---
 
-## Relacion con software y hardware
+## Relación con software y hardware
 
 C++ se usa mucho cuando importa el rendimiento porque te permite trabajar muy
 cerca de la maquina, pero con herramientas mas ricas que C. Eso significa que
 muchos ejemplos te ayudaran a conectar:
 
-- instrucciones del codigo;
+- instrucciones del código;
 - uso de CPU y memoria;
 - costo de copias y referencias;
-- vida util de objetos y recursos.
+- vida útil de objetos y recursos.
 
 ## Cómo compilar los ejemplos
 
@@ -63,13 +63,13 @@ g++ -std=c++17 -o explorar 01_explorar_bd.cpp -lsqlite3
 
 | # | Capítulo | Temas principales |
 |---|----------|-------------------|
-| 01 | [Introducción](01-introduccion/README.md) | Hola mundo, cin/cout, namespaces, diferencias con C |
+| 01 | [Introducción](01-introducción/README.md) | Hola mundo, cin/cout, namespaces, diferencias con C |
 | 02 | [Variables y tipos](02-variables-y-tipos/README.md) | Tipos primitivos, auto, string, bool, nullptr, const, constexpr |
 | 03 | [Operadores y expresiones](03-operadores-y-expresiones/README.md) | Aritméticos, lógicos, comparación, ternario, new/delete |
 | 04 | [Control de flujo](04-control-de-flujo/README.md) | if/else, switch, while, for, range-for, break/continue |
-| 05 | [Funciones](05-funciones/README.md) | Sobrecarga, referencias, parámetros por defecto, inline, lambdas |
+| 05 | [funciones](05-funciones/README.md) | Sobrecarga, referencias, parámetros por defecto, inline, lambdas |
 | 06 | [POO — Clases](06-poo-clases/README.md) | Clases, objetos, constructores, destructores, encapsulación |
-| 07 | [Herencia y polimorfismo](07-herencia-y-polimorfismo/README.md) | Herencia, virtual, override, final, clases abstractas |
+| 07 | [herencia y polimorfismo](07-herencia-y-polimorfismo/README.md) | herencia, virtual, override, final, clases abstractas |
 | 08 | [Plantillas (Templates)](08-plantillas-templates/README.md) | Function templates, class templates, especialización |
 | 09 | [STL — Contenedores](09-stl-contenedores/README.md) | vector, map, set, iteradores, algoritmos de `<algorithm>` |
 | 10 | [Manejo de errores](10-manejo-de-errores/README.md) | try/catch/throw, std::exception, excepciones personalizadas |

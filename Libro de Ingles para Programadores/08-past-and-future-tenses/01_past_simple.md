@@ -19,7 +19,7 @@ La mayoría de los verbos forman el pasado agregando **-ed** al final.
 | Consonante + y: cambiar y por -ied | copy | copied | I copied the file to staging. |
 | CVC corto: doblar consonante | stop | stopped | The process stopped unexpectedly. |
 
-### Verbos regulares comunes en tech
+### Verbos regulares comúnes en tech
 
 | Base | Pasado | Ejemplo |
 |------|--------|---------|
@@ -41,7 +41,7 @@ La mayoría de los verbos forman el pasado agregando **-ed** al final.
 
 ---
 
-## 2. Verbos irregulares comunes en tech
+## 2. Verbos irregulares comúnes en tech
 
 Los verbos irregulares no siguen la regla de -ed. Hay que memorizarlos.
 
@@ -141,7 +141,7 @@ Did they update the documentation?
 
 ---
 
-## 4. Expresiones de tiempo con pasado simple
+## 4. expresiones de tiempo con pasado simple
 
 | Expresión | Significado | Ejemplo |
 |-----------|-------------|---------|

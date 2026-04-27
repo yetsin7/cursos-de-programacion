@@ -1,8 +1,8 @@
 # Exercises: Reading Documentation, RFCs, and Changelogs
 
-## Ejercicio 1: Navegando documentacion oficial
+## Ejercicio 1: Navegando documentación oficial
 
-Lee el siguiente fragmento de documentacion y responde las preguntas:
+Lee el siguiente fragmento de documentación y responde las preguntas:
 
 ```
 ### fetch(url, options?)
@@ -45,13 +45,13 @@ See also: Request, Response, Headers
 2. Cual es el timeout por defecto?
 3. Que significa la advertencia sobre `retry`?
 4. Que esta marcado como deprecated?
-5. Que errores puede lanzar esta funcion?
+5. Que errores puede lanzar esta función?
 
 ---
 
 ## Ejercicio 2: Palabras clave de RFC 2119
 
-Clasifica las siguientes oraciones segun su nivel de obligacion:
+Clasifica las siguientes oraciones según su nivel de obligacion:
 
 1. "The server MUST return a 200 status code on success."
 2. "Clients SHOULD include a User-Agent header."
@@ -113,10 +113,10 @@ Lee el siguiente changelog y responde:
 **Preguntas:**
 
 1. Es seguro actualizar directamente desde v2.x? Por que?
-2. Que debes cambiar en tu codigo si usas `createClient()`?
+2. Que debes cambiar en tu código si usas `createClient()`?
 3. Hay alguna actualizacion de seguridad urgente?
 4. Que funcionalidad deberias dejar de usar ahora?
-5. Cual es la version minima de Node.js requerida?
+5. Cual es la versión minima de Node.js requerida?
 
 ---
 
@@ -128,20 +128,20 @@ Determina que tipo de bump (MAJOR, MINOR o PATCH) corresponde a cada cambio:
 |--------|-------------|
 | Corregir un typo en un mensaje de error | ___ |
 | Agregar un nuevo endpoint a la API | ___ |
-| Cambiar el tipo de retorno de una funcion publica | ___ |
+| Cambiar el tipo de retorno de una función publica | ___ |
 | Mejorar el rendimiento de una consulta SQL | ___ |
-| Eliminar un parametro de una funcion | ___ |
+| Eliminar un parametro de una función | ___ |
 | Agregar soporte para un nuevo formato de archivo | ___ |
-| Cambiar el nombre de un metodo publico | ___ |
-| Corregir un calculo incorrecto | ___ |
-| Subir la version minima de Node.js | ___ |
-| Agregar un parametro opcional a una funcion | ___ |
+| Cambiar el nombre de un método publico | ___ |
+| Corregir un cálculo incorrecto | ___ |
+| Subir la versión minima de Node.js | ___ |
+| Agregar un parametro opcional a una función | ___ |
 
 ---
 
-## Ejercicio 5: Traduccion de secciones de documentacion
+## Ejercicio 5: Traduccion de secciones de documentación
 
-Traduce las siguientes secciones al espanol manteniendo el significado tecnico:
+Traduce las siguientes secciones al espanol manteniendo el significado técnico:
 
 1. "This method is idempotent and can be called multiple times without side effects."
 
@@ -155,20 +155,20 @@ Traduce las siguientes secciones al espanol manteniendo el significado tecnico:
 
 ---
 
-## Ejercicio 6: Lectura rapida de documentacion
+## Ejercicio 6: Lectura rápida de documentación
 
-Tienes los siguientes problemas. Que seccion de la documentacion consultarias primero?
+Tienes los siguientes problemas. Que sección de la documentación consultarias primero?
 
-| Problema | Seccion a consultar |
+| Problema | Sección a consultar |
 |----------|-------------------|
 | Quieres usar la libreria por primera vez | ___ |
-| Tu codigo dejo de funcionar despues de actualizar | ___ |
-| Necesitas saber los parametros de un metodo | ___ |
-| Quieres saber si hay una funcion para algo especifico | ___ |
+| Tu código dejo de funcionar después de actualizar | ___ |
+| Necesitas saber los parametros de un método | ___ |
+| Quieres saber si hay una función para algo especifico | ___ |
 | Tienes un error que no entiendes | ___ |
 | Quieres ver un ejemplo completo de un feature | ___ |
 | Necesitas actualizar de v2 a v3 | ___ |
-| Quieres saber que cambio en la ultima version | ___ |
+| Quieres saber que cambio en la ultima versión | ___ |
 
 ---
 
@@ -176,7 +176,7 @@ Tienes los siguientes problemas. Que seccion de la documentacion consultarias pr
 
 Escribe entradas de changelog en ingles para estos cambios:
 
-1. Agregaste autenticacion con Google OAuth
+1. Agregaste autenticación con Google OAuth
 2. Corregiste un bug donde los usuarios no podian cambiar su email
 3. Eliminaste el soporte para Internet Explorer
 4. Mejoraste la velocidad de carga de imagenes en un 50%
@@ -235,7 +235,7 @@ origins that are not explicitly allowed.
 1. Solo `url` (Required: Yes)
 2. 30000 ms (30 segundos)
 3. Es experimental y podria ser eliminado en versiones futuras
-4. Usar un numero como primer argumento (debe ser string URL)
+4. Usar un número como primer argumento (debe ser string URL)
 5. TimeoutError y NetworkError
 
 **Ejercicio 2:**
@@ -249,8 +249,8 @@ origins that are not explicitly allowed.
 8. Fuertemente desaconsejado (SHOULD NOT)
 
 **Ejercicio 3:**
-1. No es seguro directamente. Hay breaking changes (Node.js 16 dropped, createClient API changed, v1 endpoints removed). Debes seguir la guia de migracion.
-2. Cambiar de argumentos posicionales a un objeto de configuracion.
+1. No es seguro directamente. Hay breaking changes (Node.js 16 dropped, createClient API changed, v1 endpoints removed). Debes seguir la guía de migración.
+2. Cambiar de argumentos posicionales a un objeto de configuración.
 3. Si, CVE-2025-5678 en el parser XML.
 4. `legacyMode` option (sera removido en v4.0).
 5. Node.js 18 (16 fue eliminado).
@@ -265,6 +265,6 @@ origins that are not explicitly allowed.
 1. Si, MUST = obligatorio
 2. No, MAY = opcional
 3. MUST close the connection (obligatorio cerrar)
-4. Tecnicamente si, pero SHOULD NOT = fuertemente desaconsejado
+4. técnicamente si, pero SHOULD NOT = fuertemente desaconsejado
 
 </details>

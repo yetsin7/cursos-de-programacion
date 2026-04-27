@@ -31,6 +31,6 @@ const DB_PATH = path.join(__dirname, '..', '..', 'datos', 'biblia_rv60.sqlite3')
 
 Para evitar tener copias duplicadas del mismo archivo en cada libro.
 Todos los libros (Python, JavaScript, SQL, Flutter) apuntan ahora
-a un único archivo centralizado en `cursos-de-programacion/datos/`.
+a un único archivo centralizado en `cursos-de-programación/datos/`.
 
 → Consulta `../../datos/README.md` para la documentación completa de la base de datos.

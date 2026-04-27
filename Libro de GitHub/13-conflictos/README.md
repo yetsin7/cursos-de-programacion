@@ -6,7 +6,7 @@ Cuando dos personas (o dos ramas) modifican **las mismas líneas** del mismo arc
 Git no puede decidir automáticamente cuál versión conservar. En ese momento Git se
 detiene y te pide que resuelvas el conflicto manualmente.
 
-### Situaciones comunes que generan conflictos
+### Situaciones comúnes que generan conflictos
 
 ```
 Rama main:        línea 10 = "color: azul"

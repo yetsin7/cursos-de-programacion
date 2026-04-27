@@ -1,8 +1,8 @@
-# Interview Introduction - Presentacion en entrevistas
+# Interview Introduction - Presentación en entrevistas
 
-## Introduccion
+## Introducción
 
-La primera pregunta en casi toda entrevista tecnica es **"Tell me about yourself"**. Aunque parece simple, es tu oportunidad de causar una excelente primera impresion. En esta leccion aprenderas a estructurar una presentacion profesional en ingles que destaque tu experiencia y entusiasmo.
+La primera pregunta en casi toda entrevista técnica es **"Tell me about yourself"**. Aunque parece simple, es tu oportunidad de causar una excelente primera impresion. En esta leccion aprenderas a estructurar una presentación profesional en ingles que destaque tu experiencia y entusiasmo.
 
 ---
 
@@ -128,16 +128,16 @@ be a strong fit."
 
 ---
 
-## Errores comunes a evitar
+## Errores comúnes a evitar
 
 | Error | Por que es malo | Mejor alternativa |
 |-------|----------------|-------------------|
-| Hablar mas de 2 minutos | Pierdes la atencion | Maximo 90 segundos |
+| Hablar mas de 2 minutos | Pierdes la atencion | Máximo 90 segundos |
 | Empezar con "Well, I was born in..." | No es relevante | Empieza con tu rol actual |
-| Listar todas tus tecnologias | Suena como un CV leido | Menciona 2-3 relevantes al puesto |
+| Listar todas tus tecnologías | Suena como un CV leido | Menciona 2-3 relevantes al puesto |
 | "I'm just a junior" | Te minimizas | "I'm an eager developer with fresh skills in..." |
 | No mencionar la empresa | Parece respuesta generica | Investiga y menciona algo especifico |
-| Hablar solo de tecnologias | Eres mas que una lista de skills | Incluye logros y motivaciones |
+| Hablar solo de tecnologías | Eres mas que una lista de skills | Incluye logros y motivaciones |
 
 ---
 
@@ -145,9 +145,9 @@ be a strong fit."
 
 | Pregunta | Que buscan | Como responder |
 |----------|-----------|----------------|
-| **"Walk me through your resume"** | Version cronologica de tu carrera | Orden cronologico, enfocate en lo relevante |
+| **"Walk me through your resume"** | Versión cronologica de tu carrera | Orden cronologico, enfocate en lo relevante |
 | **"Why are you looking for a new role?"** | Tu motivacion | Enfocate en lo positivo: crecimiento, nuevos retos |
-| **"What do you know about us?"** | Si investigaste la empresa | Menciona producto, mision, tecnologias |
+| **"What do you know about us?"** | Si investigaste la empresa | Menciona producto, mision, tecnologías |
 | **"Why this company?"** | Tu interes genuino | Conecta tu experiencia con su mision |
 
 ```
@@ -171,7 +171,7 @@ MALO: "Uh... you're a tech company, right?"
 
 ## Practica: construye tu elevator pitch
 
-Completa esta plantilla con tu informacion real:
+Completa esta plantilla con tu información real:
 
 ```
 "I'm a _____________ with _____ years of experience in 
@@ -190,4 +190,4 @@ a strong fit for your team."
 
 ## Consejo final
 
-> Practica tu presentacion en voz alta hasta que suene natural, no memorizada. Grabate y escuchate. Ajusta segun el puesto: si aplicas para un rol de frontend, enfatiza tu experiencia en frontend; si es backend, enfatiza backend. La misma persona puede tener 5 versiones diferentes de su "tell me about yourself."
+> Practica tu presentación en voz alta hasta que suene natural, no memorizada. Grabate y escuchate. Ajusta según el puesto: si aplicas para un rol de frontend, enfatiza tu experiencia en frontend; si es backend, enfatiza backend. La misma persona puede tener 5 versiones diferentes de su "tell me about yourself."

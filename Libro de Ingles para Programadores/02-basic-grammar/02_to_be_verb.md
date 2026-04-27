@@ -45,7 +45,7 @@ El verbo **"to be"** es el más importante y usado del inglés. Significa tanto 
 | This **is** a REST API | Esto **es** una API REST |
 | Python **is** a programming language | Python **es** un lenguaje de programación |
 
-### 3. Describir características
+### 3. Describir carácterísticas
 
 | Inglés | Español |
 |--------|---------|
@@ -96,7 +96,7 @@ Se forma invirtiendo el sujeto y el verbo: **"Is/Are + Subject...?"**
 | You are available | **Are** you available? |
 | They are ready | **Are** they ready to merge? |
 
-### Preguntas comunes en programación
+### Preguntas comúnes en programación
 
 | Pregunta | Traducción |
 |----------|------------|
@@ -112,7 +112,7 @@ Se forma invirtiendo el sujeto y el verbo: **"Is/Are + Subject...?"**
 
 ## Respuestas cortas con "to be"
 
-En inglés, las respuestas cortas son muy comunes y se consideran más naturales.
+En inglés, las respuestas cortas son muy comúnes y se consideran más naturales.
 
 | Pregunta | Respuesta afirmativa | Respuesta negativa |
 |----------|---------------------|--------------------|
@@ -125,7 +125,7 @@ En inglés, las respuestas cortas son muy comunes y se consideran más naturales
 
 ---
 
-## Errores comunes de hispanohablantes
+## Errores comúnes de hispanohablantes
 
 | Error | Correcto | Explicación |
 |-------|----------|-------------|

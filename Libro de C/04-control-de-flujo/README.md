@@ -103,7 +103,7 @@ Estas instrucciones son útiles, pero si se usan demasiado pueden volver el fluj
 - Buscar un valor dentro de un arreglo
 - Reintentar una operación hasta que salga bien o se cancele
 
-## Errores comunes
+## Errores comúnes
 
 - Crear un bucle infinito por olvidar actualizar la variable de control
 - Poner `;` después de un `if` o `while`

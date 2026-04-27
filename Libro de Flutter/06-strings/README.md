@@ -2,7 +2,7 @@
 
 ## ¿Qué es un String?
 
-Un **String** en Dart es una secuencia de unidades de código **UTF-16**. Esto significa que puede representar cualquier carácter Unicode, incluyendo emojis, caracteres acentuados, ideogramas chinos, etc.
+Un **String** en Dart es una secuencia de unidades de código **UTF-16**. Esto significa que puede representar cualquier carácter Unicode, incluyendo emojis, carácteres acentuados, ideogramas chinos, etc.
 
 ## Inmutabilidad
 
@@ -10,7 +10,7 @@ Los Strings en Dart son **inmutables**: una vez creados, no pueden modificarse. 
 
 ## UTF-16 internamente
 
-Dart almacena strings como secuencias de unidades de código de 16 bits (UTF-16). La mayoría de los caracteres comunes ocupan una unidad de código, pero algunos caracteres Unicode especiales (como ciertos emojis o ideogramas raros) ocupan **dos** unidades de código (pares sustitutos). Por eso `string.length` puede no coincidir con el número de caracteres "visibles".
+Dart almacena strings como secuencias de unidades de código de 16 bits (UTF-16). La mayoría de los carácteres comúnes ocupan una unidad de código, pero algunos carácteres Unicode especiales (como ciertos emojis o ideogramas raros) ocupan **dos** unidades de código (pares sustitutos). Por eso `string.length` puede no coincidir con el número de carácteres "visibles".
 
 ## Tipos de literales String
 
@@ -24,7 +24,7 @@ Dart almacena strings como secuencias de unidades de código de 16 bits (UTF-16)
 
 ## Raw Strings
 
-Un raw string (prefijo `r`) trata las barras invertidas como caracteres literales. Es muy útil para expresiones regulares y rutas de archivos en Windows:
+Un raw string (prefijo `r`) trata las barras invertidas como carácteres literales. Es muy útil para expresiones regulares y rutas de archivos en Windows:
 
 ```dart
 String regex = r'\d+\.\d+';   // Sin raw: '\\d+\\.\\d+'

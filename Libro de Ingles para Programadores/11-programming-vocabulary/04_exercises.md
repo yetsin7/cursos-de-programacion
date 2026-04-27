@@ -1,14 +1,14 @@
 # Chapter 11: Exercises
 
-## Ejercicios de Vocabulario de Programacion
+## Ejercicios de Vocabulario de Programación
 
 ---
 
 ## Ejercicio 1: Relaciona el Tipo de Dato
 
-Conecta cada tipo de dato con su descripcion en ingles.
+Conecta cada tipo de dato con su descripción en ingles.
 
-| Tipo | Descripcion |
+| Tipo | Descripción |
 |------|-------------|
 | 1. String | a. A collection with no duplicate values |
 | 2. Boolean | b. A fixed-size ordered collection |
@@ -26,7 +26,7 @@ Conecta cada tipo de dato con su descripcion en ingles.
 
 ## Ejercicio 2: Completa la Oracion
 
-Llena el espacio con el termino correcto en ingles.
+Llena el espacio con el término correcto en ingles.
 
 1. "The `User` _______ has three properties: name, email, and age."
 2. "Use _______ to prevent other classes from extending this one."
@@ -50,12 +50,12 @@ Llena el espacio con el termino correcto en ingles.
 
 ## Ejercicio 3: Traduce al Ingles
 
-Traduce las siguientes frases al ingles tecnico.
+Traduce las siguientes frases al ingles técnico.
 
 1. "Crea una nueva ruta para el endpoint de productos."
 2. "El componente recibe tres propiedades."
-3. "Despliega la aplicacion en produccion."
-4. "El middleware verifica el token de autenticacion."
+3. "Despliega la aplicación en produccion."
+4. "El middleware verifica el token de autenticación."
 5. "Usa un CDN para servir las imagenes."
 
 <details>
@@ -72,7 +72,7 @@ Traduce las siguientes frases al ingles tecnico.
 
 ## Ejercicio 4: Pronunciacion
 
-Escribe como pronunciarias estos terminos (fonetica simplificada).
+Escribe como pronunciarias estos términos (fonetica simplificada).
 
 1. Integer → ___
 2. Boolean → ___
@@ -94,9 +94,9 @@ Escribe como pronunciarias estos terminos (fonetica simplificada).
 
 ---
 
-## Ejercicio 5: Clasifica los Terminos
+## Ejercicio 5: Clasifica los Términos
 
-Coloca cada termino en la categoria correcta: **OOP**, **Web/Mobile**, o **Data Types**.
+Coloca cada término en la categoría correcta: **OOP**, **Web/Mobile**, o **Data Types**.
 
 Terminos: `widget`, `inheritance`, `float`, `endpoint`, `mixin`, `tuple`, `middleware`,
 `constructor`, `viewport`, `enum`, `singleton`, `CDN`, `abstract class`, `array`, `props`
@@ -138,7 +138,7 @@ Cada oracion tiene un error de vocabulario. Identificalo y corrigelo.
 ## Ejercicio 7: Escribe un Parrafo
 
 Escribe un parrafo corto en ingles (4-6 oraciones) describiendo la arquitectura de
-una aplicacion. Usa al menos 8 terminos de este capitulo. Ejemplo de inicio:
+una aplicación. Usa al menos 8 términos de este capítulo. Ejemplo de inicio:
 
 > "Our application uses a clean architecture with a Flutter **frontend** and a
 > REST **API** as the **backend**..."

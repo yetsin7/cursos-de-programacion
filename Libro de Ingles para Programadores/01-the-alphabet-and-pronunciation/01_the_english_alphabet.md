@@ -209,11 +209,11 @@ nombres de variables. Aquí hay ejemplos prácticos:
 ---
 
 <!-- ============================================================ -->
-## Combinaciones comunes de letras en programación
+## combinaciones comúnes de letras en programación
 <!-- ============================================================ -->
 
 <!-- El inglés tiene combinaciones de letras que producen un solo sonido. -->
-<!-- Estas son extremadamente comunes en palabras de programación. -->
+<!-- Estas son extremadamente comúnes en palabras de programación. -->
 
 | Combinación | Sonido | Ejemplos en programación |
 |-------------|--------|------------------------|

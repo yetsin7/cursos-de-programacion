@@ -13,7 +13,7 @@ const response = await fetch('https://api.ejemplo.com/datos');
 const datos = await response.json();
 ```
 
-## Errores comunes con fetch
+## Errores comúnes con fetch
 
 **Importante**: `fetch` solo rechaza la Promise en errores de red (sin conexión, DNS fallido). Para errores HTTP (404, 500), la Promise **resuelve** pero `response.ok` es `false`.
 

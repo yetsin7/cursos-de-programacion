@@ -1,6 +1,6 @@
 # Pronunciation Guide for Programming Terms
 
-## Guia rapida de pronunciacion de los 200 terminos mas comunes en programacion
+## Guía rápida de pronunciacion de los 200 términos mas comúnes en programación
 
 La pronunciacion se escribe de forma aproximada para hispanohablantes. Las MAYUSCULAS indican la silaba acentuada.
 
@@ -8,7 +8,7 @@ La pronunciacion se escribe de forma aproximada para hispanohablantes. Las MAYUS
 
 ## Lenguajes y Frameworks
 
-| Termino | Pronunciacion | Nota |
+| Término | Pronunciacion | Nota |
 |---------|---------------|------|
 | JavaScript | YA-va-script | No "java-script" con J espanola |
 | TypeScript | TAIP-script | |
@@ -61,9 +61,9 @@ La pronunciacion se escribe de forma aproximada para hispanohablantes. Las MAYUS
 | GitHub | GIT-jab | |
 | GitLab | GIT-lab | |
 
-## Conceptos Generales de Programacion
+## Conceptos Generales de Programación
 
-| Termino | Pronunciacion | Nota |
+| Término | Pronunciacion | Nota |
 |---------|---------------|------|
 | algorithm | AL-go-ri-zem | |
 | array | a-REI | |
@@ -171,7 +171,7 @@ La pronunciacion se escribe de forma aproximada para hispanohablantes. Las MAYUS
 | query | KUIE-ri | |
 | queue | KIU | |
 | README | RID-mi | |
-| recursion | ri-KER-shon | |
+| recursión | ri-KER-shon | |
 | refactor | ri-FAK-tor | |
 | regex | RE-yeks | |
 | render | REN-der | |
@@ -217,7 +217,7 @@ La pronunciacion se escribe de forma aproximada para hispanohablantes. Las MAYUS
 | URL | iu-ar-EL | Deletreado |
 | variable | VE-ria-bol | |
 | verbose | ver-BOUS | |
-| version | VER-shon | |
+| versión | VER-shon | |
 | virtual | VER-chu-al | |
 | void | VOID | |
 | webhook | WEB-juk | |
@@ -231,4 +231,4 @@ La pronunciacion se escribe de forma aproximada para hispanohablantes. Las MAYUS
 - Estas pronunciaciones son **aproximaciones** para hispanohablantes
 - En ingles americano y britanico hay diferencias menores
 - La mejor forma de aprender es escuchar la pronunciacion real en videos y podcasts tech
-- Cuando tengas duda, busca el termino en Google y usa el boton de audio
+- Cuando tengas duda, busca el término en Google y usa el boton de audio

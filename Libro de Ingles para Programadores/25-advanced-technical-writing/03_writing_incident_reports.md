@@ -1,14 +1,14 @@
 # Writing Incident Reports - Escribir informes de incidentes
 
-## Introduccion
+## Introducción
 
-Cuando algo falla en produccion, despues de resolver el problema, el equipo escribe un **postmortem** (informe post-incidente). Este documento analiza que paso, por que, y como evitar que vuelva a ocurrir. Escribir postmortems claros y sin culpar a individuos es una habilidad esencial en ingenieria de software.
+Cuando algo falla en produccion, después de resolver el problema, el equipo escribe un **postmortem** (informe post-incidente). Este documento analiza que paso, por que, y como evitar que vuelva a ocurrir. Escribir postmortems claros y sin culpar a individuos es una habilidad esencial en ingenieria de software.
 
 ---
 
 ## Principios de un buen postmortem
 
-| Principio | Descripcion |
+| Principio | Descripción |
 |-----------|-------------|
 | **Blameless** | No culpar a personas — enfocarse en sistemas y procesos |
 | **Honest** | Describir lo que realmente paso, sin minimizar |
@@ -19,9 +19,9 @@ Cuando algo falla en produccion, despues de resolver el problema, el equipo escr
 
 ## Estructura de un postmortem
 
-| Seccion | Contenido |
+| Sección | Contenido |
 |---------|-----------|
-| **Title** | Descripcion breve del incidente |
+| **Title** | Descripción breve del incidente |
 | **Summary** | Que paso en 3-5 oraciones |
 | **Impact** | Quien fue afectado, por cuanto tiempo, con que severidad |
 | **Timeline** | Secuencia cronologica de eventos |
@@ -156,7 +156,7 @@ The permanent fix includes:
 
 ---
 
-## Frases clave para cada seccion
+## Frases clave para cada sección
 
 ### Summary
 
@@ -171,7 +171,7 @@ The permanent fix includes:
 
 | Frase | Uso |
 |-------|-----|
-| *"At [time], we detected..."* | Deteccion |
+| *"At [time], we detected..."* | Detección |
 | *"At [time], the on-call engineer..."* | Respuesta |
 | *"At [time], we identified..."* | Diagnostico |
 | *"At [time], the issue was mitigated by..."* | Resolucion |
@@ -190,21 +190,21 @@ The permanent fix includes:
 
 | Frase | Uso |
 |-------|-----|
-| *"The issue was mitigated by..."* | Solucion temporal |
-| *"The permanent fix includes..."* | Solucion definitiva |
+| *"The issue was mitigated by..."* | Solución temporal |
+| *"The permanent fix includes..."* | Solución definitiva |
 | *"To prevent recurrence, we will..."* | Prevencion |
 | *"The service was fully restored at [time]."* | Confirmacion |
 
 ---
 
-## Vocabulario de gestion de incidentes
+## Vocabulario de gestión de incidentes
 
-| Termino | Significado | Ejemplo |
+| Término | Significado | Ejemplo |
 |---------|-------------|---------|
 | **Outage** | Caida del servicio | *"A 2-hour outage affected payments."* |
 | **Severity / Priority** | Nivel de criticidad (P0-P4) | *"This was classified as P1."* |
 | **On-call** | Ingeniero de guardia | *"The on-call engineer responded."* |
-| **Runbook** | Guia de procedimientos | *"Follow the runbook for DB failover."* |
+| **Runbook** | Guía de procedimientos | *"Follow the runbook for DB failover."* |
 | **Mitigation** | Accion para reducir el impacto | *"Mitigation: roll back the deploy."* |
 | **Root cause** | Causa fundamental | *"Root cause: missing index."* |
 | **Blast radius** | Alcance del impacto | *"The blast radius was limited to EU region."* |
@@ -214,16 +214,16 @@ The permanent fix includes:
 
 ---
 
-## Errores comunes en postmortems
+## Errores comúnes en postmortems
 
-| Error | Mejor practica |
+| Error | Mejor práctica |
 |-------|---------------|
 | Culpar a una persona | Enfocarse en el sistema: *"The deploy lacked..."* no *"John forgot..."* |
 | Causa raiz superficial | Preguntar "por que" 5 veces (5 Whys) |
 | Action items vagos | Ser especifico: dueno, fecha, prioridad |
 | No incluir timeline | Siempre documentar la secuencia de eventos |
-| No documentar que funciono bien | Refuerza buenas practicas |
-| Escribirlo semanas despues | Dentro de 48-72 horas, cuando la memoria es fresca |
+| No documentar que funciono bien | Refuerza buenas prácticas |
+| Escribirlo semanas después | Dentro de 48-72 horas, cuando la memoria es fresca |
 
 ---
 

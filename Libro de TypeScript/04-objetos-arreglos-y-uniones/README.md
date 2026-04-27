@@ -16,4 +16,4 @@ eso TypeScript ofrece unions y herramientas de refinamiento.
 
 | Archivo | Descripción |
 |---|---|
-| `01_objects_arrays_unions.ts` | Datos compuestos, unions y validacion segura |
+| `01_objects_arrays_unions.ts` | Datos compuestos, unions y validación segura |

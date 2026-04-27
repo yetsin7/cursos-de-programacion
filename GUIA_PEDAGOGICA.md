@@ -1,49 +1,49 @@
-# Guia Pedagogica del Repositorio
+# Guía Pedagogica del Repositorio
 
-Esta guia define el nuevo estandar de calidad para reforzar todos los libros y
+Esta guía define el nuevo estandar de calidad para reforzar todos los libros y
 cursos de este repositorio.
 
 ## Objetivo principal
 
 Cada leccion debe poder ser entendida por una persona muy principiante, sin
-rebajar la precision tecnica. La idea no es simplificar demasiado, sino explicar
+rebajar la precision técnica. La idea no es simplificar demasiado, sino explicar
 mejor.
 
 ## Principios del material reforzado
 
-1. Explicar primero con palabras humanas, luego con terminos tecnicos.
+1. Explicar primero con palabras humanas, luego con términos técnicos.
 2. Relacionar cada concepto con una accion concreta del software.
 3. Mencionar que parte del hardware participa cuando sea relevante.
 4. Evitar saltos bruscos de dificultad.
 5. Usar ejemplos pequenos antes de mostrar ejemplos completos.
-6. Explicar errores comunes como parte normal del aprendizaje.
-7. Convertir cada ejercicio en una practica guiada, no solo en una consigna.
+6. Explicar errores comúnes como parte normal del aprendizaje.
+7. Convertir cada ejercicio en una práctica guiada, no solo en una consigna.
 
-## Estructura recomendada para cada README de capitulo
+## Estructura recomendada para cada README de capítulo
 
-Todo capitulo deberia incluir, cuando aplique:
+Todo capítulo debería incluir, cuando aplique:
 
 1. Que aprenderas.
 2. Por que este tema importa.
 3. Que problema resuelve en software real.
 4. Que ocurre dentro de la computadora.
-5. Archivos del capitulo.
+5. Archivos del capítulo.
 6. Como ejecutar los ejemplos.
-7. Errores comunes.
+7. Errores comúnes.
 8. Ejercicios sugeridos.
 9. Que deberias poder explicar al terminar.
 
-## Estructura recomendada para cada archivo de codigo
+## Estructura recomendada para cada archivo de código
 
-Cada archivo didactico deberia incluir:
+Cada archivo didactico debería incluir:
 
-- Encabezado con tema, objetivo y forma de ejecucion.
+- Encabezado con tema, objetivo y forma de ejecución.
 - Comentarios que expliquen intencion, no solo sintaxis.
 - Bloques organizados de menor a mayor dificultad.
-- Una relacion entre la instruccion y su efecto real.
-- Una pequena seccion final de experimentacion.
+- Una relación entre la instrucción y su efecto real.
+- Una pequena sección final de experimentacion.
 
-## Nivel de explicacion esperado en comentarios
+## Nivel de explicación esperado en comentarios
 
 Los comentarios deben responder preguntas como estas:
 
@@ -54,18 +54,18 @@ Los comentarios deben responder preguntas como estas:
 - Que devuelve o produce.
 - Que cambia en memoria, consola, archivo, red o interfaz.
 
-Un buen comentario no repite el codigo. Lo vuelve mas comprensible.
+Un buen comentario no repite el código. Lo vuelve mas comprensible.
 
 ## Enfoque software y hardware
 
 Siempre que el tema lo permita, hay que explicar:
 
-- que interpreta o ejecuta el codigo;
-- donde viven los datos durante la ejecucion;
+- que interpreta o ejecuta el código;
+- donde viven los datos durante la ejecución;
 - que diferencia hay entre memoria temporal y almacenamiento persistente;
-- como entra la informacion al programa;
-- como sale la informacion del programa;
-- cuando hay compilacion, interpretacion, renderizado o consulta a disco.
+- como entra la información al programa;
+- como sale la información del programa;
+- cuando hay compilación, interpretacion, renderizado o consulta a disco.
 
 ## Calidad minima de los ejercicios
 
@@ -78,12 +78,12 @@ Todo ejercicio reforzado debe tener:
 - invitacion a probar variantes;
 - ausencia de ambiguedades o errores.
 
-## Senales de que una leccion todavia esta debil
+## Senales de que una leccion todavia esta débil
 
 Una leccion necesita mejora si:
 
 - depende demasiado de memorizar;
-- introduce terminos sin contexto;
+- introduce términos sin contexto;
 - no explica que ocurre internamente;
 - tiene comentarios superficiales;
 - el ejercicio no dice como empezar;
@@ -100,5 +100,5 @@ La meta no es solo que el estudiante copie y ejecute. La meta es que pueda:
 - depurar;
 - crear algo propio.
 
-Cuando una persona logra eso, ya no esta repitiendo codigo: esta aprendiendo a
+Cuando una persona logra eso, ya no esta repitiendo código: esta aprendiendo a
 programar de verdad.

@@ -1,6 +1,6 @@
 # Capítulo 02 — Variables y Tipos de Datos
 
-Este capitulo es clave porque en C los tipos no son un detalle menor. Aqui
+Este capítulo es clave porque en C los tipos no son un detalle menor. Aqui
 aprenderas a relacionar datos, memoria y representacion binaria de una forma mas
 directa que en muchos otros lenguajes.
 
@@ -24,7 +24,7 @@ la forma en que la maquina los interpreta.
 
 ## ¿Que aprenderas?
 
-Al terminar este capitulo deberias entender:
+Al terminar este capítulo deberias entender:
 
 - que es una variable en memoria;
 - que diferencia hay entre tipos enteros, flotantes y booleanos;
@@ -40,20 +40,20 @@ Al terminar este capitulo deberias entender:
 
 | Tipo | Tamaño tipico | Uso general |
 |---|---|---|
-| `char` | 1 byte | Caracter o entero pequeño |
+| `char` | 1 byte | Carácter o entero pequeño |
 | `short` | 2 bytes | Entero pequeño |
-| `int` | 4 bytes | Entero mas comun |
+| `int` | 4 bytes | Entero mas común |
 | `long` | 4 u 8 bytes | Depende de plataforma |
 | `long long` | 8 bytes | Enteros grandes |
 
-Tambien pueden ser `unsigned` para usar solo valores positivos.
+También pueden ser `unsigned` para usar solo valores positivos.
 
 ### Punto flotante
 
 | Tipo | Tamaño | Precision aproximada |
 |---|---|---|
-| `float` | 4 bytes | 6 a 7 digitos |
-| `double` | 8 bytes | 15 a 16 digitos |
+| `float` | 4 bytes | 6 a 7 dígitos |
+| `double` | 8 bytes | 15 a 16 dígitos |
 | `long double` | 12 a 16 bytes | Mas precision |
 
 ### Booleano
@@ -96,7 +96,7 @@ Esto te ayuda a dejar de pensar en tipos de forma abstracta.
 
 ## Especificadores de formato
 
-| Tipo | Formato comun |
+| Tipo | Formato común |
 |---|---|
 | `int` | `%d` o `%i` |
 | `unsigned` | `%u` |
@@ -131,7 +131,7 @@ Sin ese cast, la division ocurre como entera y perderias la parte decimal.
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - creer que todos los enteros ocupan siempre lo mismo;
 - usar el especificador incorrecto en `printf`;
@@ -146,7 +146,7 @@ Sin ese cast, la division ocurre como entera y perderias la parte decimal.
 1. Ejecuta el archivo y observa tamaños reales.
 2. Cambia valores por otros mas grandes.
 3. Prueba un cast y luego quitale el cast.
-4. Explica por que `char` puede imprimirse como letra y como numero.
+4. Explica por que `char` puede imprimirse como letra y como número.
 
 ---
 

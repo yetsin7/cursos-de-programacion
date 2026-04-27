@@ -21,7 +21,7 @@ Para **he / she / it** (tercera persona singular): el verbo lleva **-s** o **-es
 | I | verbo base | I write tests every day |
 | You | verbo base | You deploy on Fridays |
 | He/She/It | verbo + **s/es** | The server **runs** on port 3000 |
-| We | verbo base | We use Git for version control |
+| We | verbo base | We use Git for versión control |
 | They | verbo base | They review code daily |
 
 ### Reglas para agregar -s / -es / -ies
@@ -136,7 +136,7 @@ Sujeto + to be + adverbio
 | Cómo funciona el código | The function **returns** a string | Comportamiento permanente |
 | Rutinas de trabajo | I **commit** code every day | Hábito repetido |
 | Documentación | The API **accepts** JSON payloads | Descripción de funcionalidad |
-| Instrucciones | First, you **install** the dependencies | Pasos generales |
+| instrucciones | First, you **install** the dependencies | Pasos generales |
 
 ---
 

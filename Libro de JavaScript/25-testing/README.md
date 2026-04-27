@@ -30,7 +30,7 @@ El código sin tests es código que *esperas* que funcione. Los tests son la red
 
 ## Jest vs Vitest
 
-| Característica     | Jest                        | Vitest                        |
+| Carácterística     | Jest                        | Vitest                        |
 |--------------------|-----------------------------|-------------------------------|
 | Creado por         | Meta                        | Comunidad Vite                |
 | Configuración      | Más verbosa                 | Mínima (usa vite.config)      |

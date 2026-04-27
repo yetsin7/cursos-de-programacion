@@ -1,6 +1,6 @@
 # Lesson 02: Writing a Great GitHub Profile
 
-## Introduccion
+## Introducción
 
 Tu perfil de GitHub es tu portafolio como desarrollador. Los reclutadores y otros programadores lo revisan para evaluar tus habilidades reales. Un perfil bien presentado con buenos READMEs y proyectos organizados marca la diferencia.
 
@@ -35,12 +35,12 @@ clean architecture and open source.
 ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=yourusername)
 ```
 
-### Secciones opcionales utiles
+### secciones opcionales útiles
 
-| Seccion | Que incluir |
+| Sección | Que incluir |
 |---------|-------------|
-| **About Me** | Breve descripcion profesional |
-| **Tech Stack** | Badges de tecnologias que usas |
+| **About Me** | Breve descripción profesional |
+| **Tech Stack** | Badges de tecnologías que usas |
 | **Current Projects** | En que estas trabajando ahora |
 | **GitHub Stats** | Estadisticas de tu actividad |
 | **Recent Blog Posts** | Si tienes un blog tech |
@@ -57,17 +57,17 @@ GitHub te permite fijar hasta 6 repositorios en tu perfil. Estos son los que los
 | Prioridad | Tipo de proyecto |
 |-----------|-----------------|
 | **1** | Tu mejor proyecto personal con buen README |
-| **2** | Contribucion a un proyecto open source conocido |
-| **3** | Proyecto que demuestre una tecnologia especifica |
+| **2** | Contribución a un proyecto open source conocido |
+| **3** | Proyecto que demuestre una tecnología especifica |
 | **4** | Herramienta o libreria que creaste |
-| **5** | Proyecto de practica con buena documentacion |
+| **5** | Proyecto de práctica con buena documentación |
 | **6** | Algo creativo o experimental |
 
-### Descripciones de repositorios
+### descripciones de repositorios
 
 Las descripciones deben ser concisas y explicar que hace el proyecto:
 
-| Mala descripcion | Buena descripcion |
+| Mala descripción | Buena descripción |
 |-----------------|-------------------|
 | "My project" | "A cross-platform task manager built with Flutter and Supabase" |
 | "Testing stuff" | "Collection of data structure implementations in Dart" |
@@ -147,7 +147,7 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 This project is licensed under the MIT License - see [LICENSE](LICENSE).
 ```
 
-### Badges utiles
+### Badges útiles
 
 ```markdown
 ![Build Status](https://img.shields.io/github/actions/workflow/status/user/repo/ci.yml)
@@ -161,7 +161,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE).
 |-------|-----------|
 | **Build Status** | Muestra que el CI pasa |
 | **License** | Tipo de licencia |
-| **Version** | Version del framework o lenguaje |
+| **Versión** | Versión del framework o lenguaje |
 | **Stars** | Popularidad del proyecto |
 | **Issues** | Issues abiertos |
 | **Coverage** | Porcentaje de test coverage |
@@ -194,7 +194,7 @@ El grafico de contribuciones muestra tu actividad diaria. Los reclutadores si lo
 
 ## Vocabulario de GitHub
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
 | **Repository (repo)** | Proyecto/repositorio |
 | **Star** | Marcar como favorito |
@@ -204,11 +204,11 @@ El grafico de contribuciones muestra tu actividad diaria. Los reclutadores si lo
 | **Commit** | Guardar cambios en el historial |
 | **Pull Request (PR)** | Solicitud para fusionar cambios |
 | **Issue** | Reporte de problema o solicitud |
-| **Release** | Version publicada |
-| **Tag** | Etiqueta para marcar una version |
+| **Release** | Versión publicada |
+| **Tag** | Etiqueta para marcar una versión |
 | **Actions** | CI/CD de GitHub |
-| **Gist** | Fragmento de codigo compartido |
-| **Wiki** | Documentacion del proyecto |
+| **Gist** | Fragmento de código compartido |
+| **Wiki** | Documentación del proyecto |
 | **Pages** | Sitio web estatico gratuito |
 | **Sponsor** | Apoyar economicamente un proyecto |
 
@@ -216,7 +216,7 @@ El grafico de contribuciones muestra tu actividad diaria. Los reclutadores si lo
 
 ## Frases para descripciones de repos
 
-| Tipo de proyecto | Frases utiles |
+| Tipo de proyecto | Frases útiles |
 |-----------------|---------------|
 | **App** | "A [adjective] [type] app built with [tech]" |
 | **Libreria** | "A lightweight library for [purpose]" |
@@ -243,7 +243,7 @@ El grafico de contribuciones muestra tu actividad diaria. Los reclutadores si lo
 
 | Nivel | Accion |
 |-------|--------|
-| **Principiante** | Corregir typos en documentacion de proyectos grandes |
+| **Principiante** | Corregir typos en documentación de proyectos grandes |
 | **Intermedio** | Resolver issues etiquetados como "good first issue" |
 | **Avanzado** | Contribuir features completas a proyectos populares |
 | **Experto** | Crear y mantener tus propias librerias open source |
@@ -259,9 +259,9 @@ El grafico de contribuciones muestra tu actividad diaria. Los reclutadores si lo
 
 ## Resumen
 
-- Tu GitHub profile README es tu carta de presentacion tecnica
+- Tu GitHub profile README es tu carta de presentación técnica
 - Fija los 6 mejores repositorios con descripciones claras
-- Cada proyecto necesita un README profesional con: descripcion, tech stack, instalacion, screenshots
+- Cada proyecto necesita un README profesional con: descripción, tech stack, instalacion, screenshots
 - La consistencia en el contribution graph importa mas que la cantidad
-- Usa badges para mostrar build status, licencia y tecnologias
+- Usa badges para mostrar build status, licencia y tecnologías
 - Construye un portafolio open source progresivamente

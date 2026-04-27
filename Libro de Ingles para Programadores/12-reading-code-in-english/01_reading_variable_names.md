@@ -8,9 +8,9 @@ con otros programadores.
 
 ---
 
-## Convenciones de Nomenclatura
+## convenciones de Nomenclatura
 
-| Convencion | Formato | Uso tipico |
+| Convención | Formato | Uso tipico |
 |-----------|---------|------------|
 | **camelCase** | `getUserById` | Variables y funciones (Java, JS, Dart) |
 | **snake_case** | `get_user_by_id` | Variables y funciones (Python, Ruby) |
@@ -37,7 +37,7 @@ En camelCase, cada palabra nueva empieza con mayuscula. Lee cada palabra por sep
 | `shouldRetryRequest` | "should retry request" |
 | `handleFormSubmit` | "handle form submit" |
 
-### Prefijos Comunes en camelCase
+### Prefijos Comúnes en camelCase
 
 | Prefijo | Significado | Ejemplo | Lectura |
 |---------|-------------|---------|---------|
@@ -74,7 +74,7 @@ ignorando los guiones bajos.
 
 ## Como Leer PascalCase
 
-PascalCase es igual que camelCase pero la primera letra tambien es mayuscula.
+PascalCase es igual que camelCase pero la primera letra también es mayuscula.
 Se usa para nombres de clases y tipos.
 
 | Clase | Como se lee |
@@ -116,7 +116,7 @@ Se usa en archivos, URLs y clases CSS. Lee cada palabra, ignorando los guiones.
 
 ---
 
-## Abreviaciones Comunes en Nombres
+## Abreviaciones Comúnes en Nombres
 
 | Abreviacion | Significado | Lectura |
 |-------------|-------------|---------|
@@ -143,9 +143,9 @@ Se usa en archivos, URLs y clases CSS. Lee cada palabra, ignorando los guiones.
 
 ---
 
-## Patrones de Nombres Comunes
+## Patrones de Nombres Comúnes
 
-### Funciones de conversion
+### funciones de conversion
 - `toString` → "to string" (convertir a cadena)
 - `toJson` → "to JSON" (convertir a JSON)
 - `fromMap` → "from map" (crear desde un mapa)
@@ -165,10 +165,10 @@ Se usa en archivos, URLs y clases CSS. Lee cada palabra, ignorando los guiones.
 
 ---
 
-## Consejos Practicos
+## Consejos Prácticos
 
 1. **Separa las palabras mentalmente** antes de leer en voz alta
 2. **Las abreviaciones** se pueden leer como la palabra completa o como siglas
 3. **No leas los guiones** ni guiones bajos, solo las palabras
-4. **Practica** leyendo el codigo de proyectos open source en voz alta
+4. **Practica** leyendo el código de proyectos open source en voz alta
 5. **Los acronimos** como HTTP, API, URL se leen como siglas (letra por letra o como palabra)

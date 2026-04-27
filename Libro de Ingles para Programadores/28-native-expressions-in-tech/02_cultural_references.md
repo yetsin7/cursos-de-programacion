@@ -1,8 +1,8 @@
 # Lesson 02: Cultural References in Tech
 
-## Introduccion
+## Introducción
 
-La cultura tech tiene sus propios chistes, memes, debates eternos y referencias que todo programador deberia conocer. Entender estas referencias te ayuda a conectar con la comunidad, entender humor en conferencias, y no quedarte fuera de la conversacion.
+La cultura tech tiene sus propios chistes, memes, debates eternos y referencias que todo programador debería conocer. Entender estas referencias te ayuda a conectar con la comunidad, entender humor en conferencias, y no quedarte fuera de la conversacion.
 
 ---
 
@@ -10,12 +10,12 @@ La cultura tech tiene sus propios chistes, memes, debates eternos y referencias 
 
 | Frase | Origen | Significado |
 |-------|--------|-------------|
-| "It's not a bug, it's a feature" | Chiste clasico de la industria | Cuando un comportamiento inesperado se justifica como intencional |
-| "Works on my machine" | Excusa universal de desarrolladores | El codigo funciona localmente pero falla en otro entorno |
-| "Have you tried turning it off and on again?" | IT Crowd (serie de TV) | La solucion mas basica que sorprendentemente funciona |
-| "There are only two hard things in computer science: cache invalidation and naming things" | Phil Karlton | Las tareas aparentemente simples son las mas dificiles |
-| "It works, don't touch it" | Miedo universal | Codigo fragil que nadie quiere modificar |
-| "I'll fix it later" (nunca se arregla) | Todo programador | Deuda tecnica que se acumula |
+| "It's not a bug, it's a feature" | Chiste clásico de la industria | Cuando un comportamiento inesperado se justifica como intencional |
+| "Works on my machine" | Excusa universal de desarrolladores | El código funciona localmente pero falla en otro entorno |
+| "Have you tried turning it off and on again?" | IT Crowd (serie de TV) | La solución mas básica que sorprendentemente funciona |
+| "There are only two hard things in computer science: cache invalidation and naming things" | Phil Karlton | Las tareas aparentemente simples son las mas difíciles |
+| "It works, don't touch it" | Miedo universal | Código fragil que nadie quiere modificar |
+| "I'll fix it later" (nunca se arregla) | Todo programador | Deuda técnica que se acumula |
 | "It's a feature, not a bug" | Variante de la primera | Justificar comportamiento no deseado |
 | "Talk is cheap. Show me the code." | Linus Torvalds | Las acciones valen mas que las palabras |
 | "There is no cloud, it's just someone else's computer" | Sticker famoso | Desmitificar el "cloud computing" |
@@ -40,7 +40,7 @@ Estos son debates que nunca terminan en la comunidad tech. Conocerlos es parte d
 "Just use whatever your team's linter enforces."
 ```
 
-Este debate se hizo famoso por la serie Silicon Valley (HBO), donde un personaje termina una relacion porque su pareja usa spaces.
+Este debate se hizo famoso por la serie Silicon Valley (HBO), donde un personaje termina una relación porque su pareja usa spaces.
 
 ### Vim vs Emacs
 
@@ -68,11 +68,11 @@ El chiste mas famoso: **"How do I exit Vim?"** tiene mas de 2 millones de visita
 
 ## Arquetipos y estereotipos
 
-| Termino | Significado | Contexto |
+| Término | Significado | Contexto |
 |---------|-------------|----------|
 | **10x developer** | Desarrollador supuestamente 10 veces mas productivo | A veces usado en serio, a menudo ironicamente |
 | **Full-stack unicorn** | Desarrollador que domina frontend, backend, DevOps, diseno... | Expectativa irreal de los reclutadores |
-| **Rockstar developer** | Programador estrella | Termino de reclutadores, los devs lo odian |
+| **Rockstar developer** | Programador estrella | Término de reclutadores, los devs lo odian |
 | **Ninja/Guru** | Experto en algo | Usado en ofertas de trabajo, considerado cringe |
 | **Senior junior** | Alguien con titulo de senior pero habilidades de junior | Comentario sarcastico |
 | **Junior senior** | Junior que actua como senior (con experiencia real) | Elogio sarcastico positivo |
@@ -95,7 +95,7 @@ trabajo de tres por el salario de uno."
 
 ## Memes y humor tech
 
-### Memes clasicos que debes conocer
+### Memes clásicos que debes conocer
 
 | Meme | Significado |
 |------|-------------|
@@ -105,7 +105,7 @@ trabajo de tres por el salario de uno."
 | **"Programmers: I'll automate this 5-minute task. Time spent automating: 3 days"** | Automatizar no siempre ahorra tiempo |
 | **"My code doesn't work, I don't know why. My code works, I don't know why."** | La vida del programador |
 | **"git push --force and pray"** | Cuando haces algo peligroso con git |
-| **"Deleting node_modules solves everything"** | Solucion comun en proyectos Node.js |
+| **"Deleting node_modules solves everything"** | Solución común en proyectos Node.js |
 | **"Monday: select * from motivation where developer_id = me"** | Returns 0 rows |
 
 ### xkcd comics famosos
@@ -121,7 +121,7 @@ trabajo de tres por el salario de uno."
 
 ## Entendiendo sarcasmo e ironia en tech
 
-El sarcasmo es muy comun en la cultura tech anglofona. Aqui tienes claves para detectarlo:
+El sarcasmo es muy común en la cultura tech anglofona. Aqui tienes claves para detectarlo:
 
 ### Indicadores de sarcasmo
 
@@ -133,7 +133,7 @@ El sarcasmo es muy comun en la cultura tech anglofona. Aqui tienes claves para d
 | **Understatement** (subestimacion) | "The migration was... non-trivial." (fue un desastre) |
 | **/s al final** | "Rewriting in Rust will fix everything /s" |
 
-### Frases sarcasticas comunes
+### Frases sarcasticas comúnes
 
 | Frase | Significado real |
 |-------|-----------------|
@@ -150,7 +150,7 @@ El sarcasmo es muy comun en la cultura tech anglofona. Aqui tienes claves para d
 
 ## Conferencias y charlas tech
 
-### Frases comunes en charlas
+### Frases comúnes en charlas
 
 | Frase | Cuando se usa |
 |-------|---------------|
@@ -167,12 +167,12 @@ El sarcasmo es muy comun en la cultura tech anglofona. Aqui tienes claves para d
 
 ## Vocabulario de la cultura startup
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
-| **Pivot** | Cambiar la direccion del producto |
+| **Pivot** | Cambiar la dirección del producto |
 | **Disrupt** | Revolucionar una industria |
 | **Scale** | Crecer el negocio/producto |
-| **MVP** | Minimum Viable Product (producto minimo viable) |
+| **MVP** | Minimum Viable Product (producto mínimo viable) |
 | **Product-market fit** | Cuando el producto encaja con el mercado |
 | **Burn rate** | Velocidad a la que se gasta el dinero |
 | **Runway** | Tiempo que queda antes de quedarse sin dinero |
@@ -184,8 +184,8 @@ El sarcasmo es muy comun en la cultura tech anglofona. Aqui tienes claves para d
 
 ## Resumen
 
-- La cultura tech tiene un humor y vocabulario propio que trasciende el codigo
+- La cultura tech tiene un humor y vocabulario propio que trasciende el código
 - Los debates eternos (tabs vs spaces, vim vs emacs) son parte de la identidad comunitaria
-- El sarcasmo es muy comun: aprende a detectarlo con indicadores como comillas, exageracion y tono opuesto
-- Los memes reflejan verdades universales de la programacion
+- El sarcasmo es muy común: aprende a detectarlo con indicadores como comillas, exageracion y tono opuesto
+- Los memes reflejan verdades universales de la programación
 - Conocer estas referencias te ayuda a conectar con la comunidad global de desarrolladores

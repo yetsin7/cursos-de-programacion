@@ -19,7 +19,7 @@ ignora, se cierra o recibe downvotes.
 | **Expected vs Actual** | Qué esperabas y qué sucedió | "I expected one API call, but the console shows two" |
 | **Code** | Ejemplo mínimo reproducible | Bloque de código relevante |
 | **Error message** | Mensaje de error exacto | Stack trace completo |
-| **Environment** | Versiones y sistema operativo | "Node 18.17, React 18.2, macOS 14" |
+| **Environment** | versiones y sistema operativo | "Node 18.17, React 18.2, macOS 14" |
 
 ---
 
@@ -106,7 +106,7 @@ Frases útiles:
 | I've looked at... but... | Mencionar recursos consultados |
 | I followed the docs but... | Indicar que seguiste documentación |
 | I found a similar question on SO, but... | Referencia a pregunta similar |
-| The solution in [link] didn't work because... | Explicar por qué no funcionó |
+| The solution in [link] didn't work because... | Explicar por qué no funciónó |
 
 ### Paso 4: Resultado esperado vs actual
 
@@ -234,7 +234,7 @@ User should be redirected to the dashboard after login.
 ### Environment
 - Browser: Safari 17.1
 - OS: macOS 14.1 (Sonoma)
-- App version: 2.3.1
+- App versión: 2.3.1
 ```
 
 ### Feature request

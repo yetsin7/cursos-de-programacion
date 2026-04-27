@@ -1,21 +1,21 @@
 # Chapter 26: Reading Documentation and RFCs
 
-## Descripcion
+## Descripción
 
-En este capitulo aprenderemos a leer y navegar documentacion tecnica oficial, RFCs (Request for Comments) y changelogs en ingles. Estas son habilidades fundamentales para cualquier programador que quiera mantenerse actualizado y comprender las tecnologias que utiliza a un nivel profundo.
+En este capítulo aprenderemos a leer y navegar documentación técnica oficial, RFCs (Request for Comments) y changelogs en ingles. Estas son habilidades fundamentales para cualquier programador que quiera mantenerse actualizado y comprender las tecnologías que utiliza a un nivel profundo.
 
 ## Contenido
 
-| Leccion | Tema | Descripcion |
+| Leccion | Tema | Descripción |
 |---------|------|-------------|
-| 01 | Reading Official Docs | Como navegar documentacion oficial de frameworks y librerias |
-| 02 | Reading RFCs and Specs | Como leer y entender RFCs y especificaciones tecnicas |
+| 01 | Reading Official Docs | Como navegar documentación oficial de frameworks y librerias |
+| 02 | Reading RFCs and Specs | Como leer y entender RFCs y especificaciones técnicas |
 | 03 | Reading Changelogs | Como interpretar changelogs y versionado semantico |
-| 04 | Exercises | Ejercicios practicos de lectura de documentacion |
+| 04 | Exercises | Ejercicios prácticos de lectura de documentación |
 
 ## Objetivos de aprendizaje
 
-- Navegar documentacion oficial con confianza
+- Navegar documentación oficial con confianza
 - Entender la estructura y terminologia de los RFCs
 - Interpretar changelogs para evaluar el impacto de actualizaciones
-- Leer documentacion tecnica a velocidad profesional
+- Leer documentación técnica a velocidad profesional

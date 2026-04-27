@@ -1,6 +1,6 @@
 # Capítulo 08 — Structs, Union y Enum
 
-Hasta ahora trabajaste con datos sueltos: números, caracteres, arreglos y punteros. Pero muchos
+Hasta ahora trabajaste con datos sueltos: números, carácteres, arreglos y punteros. Pero muchos
 problemas reales necesitan representar entidades completas, como una persona, un libro, una venta
 o una fecha. Para eso C ofrece `struct`, `union` y `enum`.
 
@@ -93,7 +93,7 @@ Sirve para reemplazar números "mágicos" por nombres más claros.
 - Hacer el código más legible
 - Reducir errores causados por usar variables sueltas desconectadas
 
-## Errores comunes
+## Errores comúnes
 
 - No inicializar campos antes de usarlos
 - Copiar texto en campos `char[]` sin revisar el tamaño

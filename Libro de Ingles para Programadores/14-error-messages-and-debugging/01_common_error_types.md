@@ -1,9 +1,9 @@
 # Common Error Types
 
-## Tipos de Errores Comunes en Programacion
+## Tipos de Errores Comúnes en Programación
 
-Cada lenguaje de programacion tiene su propio conjunto de errores, pero muchos
-comparten nombres y conceptos. Aprenderemos los tipos mas comunes, que significan
+Cada lenguaje de programación tiene su propio conjunto de errores, pero muchos
+comparten nombres y conceptos. Aprenderemos los tipos mas comúnes, que significan
 y como describirlos en ingles.
 
 ---
@@ -14,7 +14,7 @@ y como describirlos en ingles.
 
 **Pronunciacion**: /ˈsɪntæks ˈɛrər/ "SIN-taks E-ror"
 
-**Que significa**: El codigo tiene un error gramatical que impide su ejecucion.
+**Que significa**: El código tiene un error gramatical que impide su ejecución.
 
 ```javascript
 // JavaScript
@@ -36,7 +36,7 @@ if (x > 5 {  // SyntaxError: Unexpected token '{'
 
 **Pronunciacion**: /taɪp ˈɛrər/ "taip E-ror"
 
-**Que significa**: Intentaste hacer una operacion con un tipo de dato incorrecto.
+**Que significa**: Intentaste hacer una operación con un tipo de dato incorrecto.
 
 ```javascript
 // JavaScript
@@ -107,7 +107,7 @@ int length = name.length(); // NullPointerException
 
 **Pronunciacion**: /aɪ-oʊ ɪkˈsɛpʃən/ "ai-ou ek-SEP-shon"
 
-**Que significa**: Fallo una operacion de entrada/salida (leer/escribir archivos, red).
+**Que significa**: Fallo una operación de entrada/salida (leer/escribir archivos, red).
 
 **Como describirlo**:
 - "An **IO exception** occurred while reading the file."
@@ -138,7 +138,7 @@ File file = new File("config.txt"); // FileNotFoundException
 
 **Pronunciacion**: /pərˈmɪʃən dɪˈnaɪd/ "per-MI-shon di-NAID"
 
-**Que significa**: No tienes permiso para realizar la operacion.
+**Que significa**: No tienes permiso para realizar la operación.
 
 **Como describirlo**:
 - "**Permission denied** — the user doesn't have access to this resource."
@@ -150,7 +150,7 @@ File file = new File("config.txt"); // FileNotFoundException
 
 **Pronunciacion**: /ˈtaɪmaʊt ˈɛrər/ "TAIM-aut E-ror"
 
-**Que significa**: La operacion tardo demasiado y se cancelo.
+**Que significa**: La operación tardo demasiado y se cancelo.
 
 **Como describirlo**:
 - "The request **timed out** after 30 seconds."
@@ -162,7 +162,7 @@ File file = new File("config.txt"); // FileNotFoundException
 
 **Pronunciacion**: /kəˈnɛkʃən rɪˈfjuːzd/ "co-NEK-shon ri-FIUSD"
 
-**Que significa**: No se puede establecer conexion con el servidor.
+**Que significa**: No se puede establecer conexión con el servidor.
 
 **Como describirlo**:
 - "**Connection refused** — the server might be down."
@@ -188,21 +188,21 @@ File file = new File("config.txt"); // FileNotFoundException
 
 | Error | Causa | Frase para describirlo |
 |-------|-------|----------------------|
-| **SyntaxError** | Codigo mal escrito | "There's a syntax error on line X." |
-| **TypeError** | Operacion con tipo incorrecto | "Type mismatch — expected string, got number." |
+| **SyntaxError** | Código mal escrito | "There's a syntax error on line X." |
+| **TypeError** | Operación con tipo incorrecto | "Type mismatch — expected string, got number." |
 | **ReferenceError** | Variable no definida | "The variable is not defined in this scope." |
 | **RangeError** | Valor fuera de rango | "The value is out of range." |
 | **NullPointerException** | Usar un objeto null | "Null pointer — the object is null." |
 | **IOException** | Fallo de lectura/escritura | "IO error while reading the file." |
 | **FileNotFoundException** | Archivo no existe | "File not found at the given path." |
 | **PermissionDenied** | Sin permisos | "Permission denied for this operation." |
-| **TimeoutError** | Operacion tardo mucho | "The request timed out." |
+| **TimeoutError** | Operación tardo mucho | "The request timed out." |
 | **ConnectionRefused** | Servidor no disponible | "Connection refused — server may be down." |
 | **OutOfMemoryError** | Memoria agotada | "The app ran out of memory." |
 
 ---
 
-## Verbos Comunes para Hablar de Errores
+## Verbos Comúnes para Hablar de Errores
 
 | Verbo | Significado | Ejemplo |
 |-------|-------------|---------|
@@ -221,7 +221,7 @@ File file = new File("config.txt"); // FileNotFoundException
 
 Los errores se clasifican en:
 
-- **Sintaxis**: SyntaxError (codigo mal escrito)
+- **Sintaxis**: SyntaxError (código mal escrito)
 - **Tipo**: TypeError, ReferenceError, RangeError
 - **Null**: NullPointerException
 - **I/O**: IOException, FileNotFoundException
@@ -229,4 +229,4 @@ Los errores se clasifican en:
 - **Memoria**: OutOfMemoryError
 
 Conocer estos nombres y como describirlos te permitira comunicar problemas
-tecnicos de forma clara y profesional.
+técnicos de forma clara y profesional.

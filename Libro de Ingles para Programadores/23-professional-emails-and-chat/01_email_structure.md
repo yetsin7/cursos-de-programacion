@@ -1,8 +1,8 @@
 # Email Structure - Estructura de emails profesionales
 
-## Introduccion
+## Introducción
 
-El email sigue siendo el medio de comunicacion formal mas importante en el mundo profesional. Saber escribir emails claros, profesionales y con el tono adecuado en ingles es una habilidad esencial para cualquier desarrollador que trabaje con equipos internacionales.
+El email sigue siendo el medio de comunicación formal mas importante en el mundo profesional. Saber escribir emails claros, profesionales y con el tono adecuado en ingles es una habilidad esencial para cualquier desarrollador que trabaje con equipos internacionales.
 
 ---
 
@@ -32,7 +32,7 @@ El asunto debe ser especifico y permitir al lector entender el email sin abrirlo
 | "Meeting" | "Meeting: API redesign — Thursday 2 PM" | Incluye fecha y tema |
 | "Bug" | "Bug report: Login fails on Safari 17" | Detalla el problema |
 
-### Prefijos utiles para subject lines
+### Prefijos útiles para subject lines
 
 | Prefijo | Uso | Ejemplo |
 |---------|-----|---------|
@@ -40,7 +40,7 @@ El asunto debe ser especifico y permitir al lector entender el email sin abrirlo
 | **FYI:** | Informativo, no requiere accion | *"FYI: New CI pipeline deployed"* |
 | **Action required:** | El lector debe hacer algo | *"Action required: Update your SSH keys by Friday"* |
 | **Follow-up:** | Continuacion de una conversacion | *"Follow-up: Database migration plan"* |
-| **Urgent:** | Situacion critica (usar con moderacion) | *"Urgent: Production API returning 500 errors"* |
+| **Urgent:** | Situacion crítica (usar con moderacion) | *"Urgent: Production API returning 500 errors"* |
 
 ---
 
@@ -148,7 +148,7 @@ Juan
 | *"I look forward to hearing from you."* | Esperas respuesta |
 | *"Let me know if you need anything else."* | Ofreciendo ayuda adicional |
 | *"I'd appreciate your feedback by [date]."* | Pidiendo respuesta con deadline |
-| *"Thank you for your time and consideration."* | Formal, despues de una propuesta |
+| *"Thank you for your time and consideration."* | Formal, después de una propuesta |
 | *"Happy to discuss further if needed."* | Ofreciendo disponibilidad |
 | *"No rush — whenever you get a chance."* | Informal, sin urgencia |
 
@@ -166,7 +166,7 @@ Juan
 
 ## Estructura del body: la regla del "piramide invertida"
 
-Pon la informacion mas importante primero:
+Pon la información mas importante primero:
 
 ```
 1. PROPOSITO: Por que escribes (1 oracion)
@@ -190,9 +190,9 @@ approved the request — ticket SEC-456 for reference. [DETALLES]"
 
 ---
 
-## Errores comunes de hispanohablantes
+## Errores comúnes de hispanohablantes
 
-| Error | Correcto | Explicacion |
+| Error | Correcto | Explicación |
 |-------|----------|-------------|
 | *"I write to you for..."* | *"I'm writing to..."* | Usar presente continuo |
 | *"Dear Sirs"* | *"Dear team,"* / *"Hello,"* | "Dear Sirs" es anticuado y excluyente |
@@ -200,7 +200,7 @@ approved the request — ticket SEC-456 for reference. [DETALLES]"
 | *"Thanks for your attention"* | *"Thank you for your time"* | Mas natural en ingles |
 | *"I wait your answer"* | *"I look forward to hearing from you"* | Frase estandar en ingles |
 | *"Greetings"* (como despedida) | *"Best regards,"* | "Greetings" es solo para saludar |
-| Parrafos de 10+ lineas | 3-4 lineas maximo por parrafo | Los emails se escanean, no se leen |
+| Parrafos de 10+ lineas | 3-4 lineas máximo por parrafo | Los emails se escanean, no se leen |
 
 ---
 

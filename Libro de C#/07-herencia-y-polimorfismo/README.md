@@ -1,4 +1,4 @@
-# Capítulo 07 — Herencia y polimorfismo
+# Capítulo 07 — herencia y polimorfismo
 
 ## ¿Qué es la herencia?
 
@@ -84,11 +84,11 @@ class Circulo : Figura
 
 **Diferencias entre clase abstracta e interfaz:**
 
-| Característica              | Clase abstracta       | Interfaz                    |
+| Carácterística              | Clase abstracta       | Interfaz                    |
 |-----------------------------|-----------------------|-----------------------------|
 | Puede tener estado          | Sí (campos)           | No (solo desde C# 8 default) |
 | Constructor                 | Sí                    | No                          |
-| Herencia múltiple           | No (solo una base)    | Sí (múltiples interfaces)   |
+| herencia múltiple           | No (solo una base)    | Sí (múltiples interfaces)   |
 | Modificadores de acceso     | Sí                    | Público por defecto         |
 | Uso ideal                   | Compartir código base | Definir contratos           |
 

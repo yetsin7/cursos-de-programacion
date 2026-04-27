@@ -1,4 +1,4 @@
-# Plantillas y Descripciones de Pull Requests
+# Plantillas y descripciones de Pull Requests
 
 ## Introducción
 
@@ -160,7 +160,7 @@ Related to #200 — Improve account security (epic)
 | Breaking change: | Cambio que rompe compatibilidad |
 | Migration needed: | Requiere ejecutar migraciones |
 | Environment variable needed: | Requiere nueva variable de entorno |
-| Deploy note: | Instrucciones especiales para deploy |
+| Deploy note: | instrucciones especiales para deploy |
 | This is behind a feature flag. | Controlado por feature flag |
 | This is a draft / WIP. | No está listo para merge |
 | Please review X carefully. | Pide atención especial en algo |

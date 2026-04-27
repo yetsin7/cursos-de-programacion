@@ -5,7 +5,7 @@
 Este capítulo cubre las preposiciones y conectores que necesitas para expresar relaciones de tiempo, lugar, movimiento y lógica en inglés técnico.
 
 1. **Prepositions of Place and Time** — in, on, at para tiempo y lugar
-2. **Prepositions with Tech Terms** — Combinaciones comunes con términos técnicos
+2. **Prepositions with Tech Terms** — combinaciones comúnes con términos técnicos
 3. **Connectors and Linking Words** — Palabras para conectar ideas y argumentos
 
 ---
@@ -26,6 +26,6 @@ Este capítulo cubre las preposiciones y conectores que necesitas para expresar 
 Al terminar este capítulo podrás:
 
 - Usar in, on, at correctamente para tiempo y lugar
-- Emplear las combinaciones preposicionales más comunes en tech
+- Emplear las combinaciones preposicionales más comúnes en tech
 - Conectar ideas de forma lógica en conversaciones, documentación y correos
 - Escribir oraciones complejas con conectores apropiados

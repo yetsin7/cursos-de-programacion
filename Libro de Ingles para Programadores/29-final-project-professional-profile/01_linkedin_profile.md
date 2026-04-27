@@ -1,20 +1,20 @@
 # Lesson 01: Writing a Professional LinkedIn Profile
 
-## Introduccion
+## Introducción
 
-LinkedIn es la plataforma mas importante para conseguir trabajo en tecnologia a nivel internacional. Un perfil bien escrito en ingles puede abrirte puertas a oportunidades remotas y en el extranjero. Cada seccion tiene su propio formato y vocabulario que debes dominar.
+LinkedIn es la plataforma mas importante para conseguir trabajo en tecnología a nivel internacional. Un perfil bien escrito en ingles puede abrirte puertas a oportunidades remotas y en el extranjero. Cada sección tiene su propio formato y vocabulario que debes dominar.
 
 ---
 
 ## La formula del Headline
 
-Tu headline es lo primero que ven los reclutadores. Tiene un maximo de 220 caracteres.
+Tu headline es lo primero que ven los reclutadores. Tiene un máximo de 220 carácteres.
 
 ### Formulas efectivas
 
 | Formula | Ejemplo |
 |---------|---------|
-| **Rol + Tecnologia** | "Senior Flutter Developer \| Mobile Apps" |
+| **Rol + Tecnología** | "Senior Flutter Developer \| Mobile Apps" |
 | **Rol + Empresa** | "Full-Stack Developer at Google" |
 | **Rol + Especialidad** | "Backend Engineer \| Distributed Systems" |
 | **Rol + Valor** | "Mobile Developer \| Building apps used by 1M+ users" |
@@ -40,13 +40,13 @@ serve millions of requests per day"
 | "Looking for opportunities" | Suena desesperado | Describe lo que haces |
 | "Unemployed developer" | Negativo | "Software Engineer \| Open to new challenges" |
 | "Code ninja rockstar" | No profesional | "Senior Developer \| React & TypeScript" |
-| Solo el titulo del puesto | Muy generico | Agrega tecnologias o valor |
+| Solo el titulo del puesto | Muy generico | Agrega tecnologías o valor |
 
 ---
 
 ## About / Summary Section
 
-Esta seccion es tu pitch personal. Debe tener entre 3-5 parrafos cortos.
+Esta sección es tu pitch personal. Debe tener entre 3-5 parrafos cortos.
 
 ### Estructura recomendada
 
@@ -83,7 +83,7 @@ to impactful mobile products.
 
 | Frase | Uso |
 |-------|-----|
-| "I'm a [role] with X+ years of experience in..." | Presentacion |
+| "I'm a [role] with X+ years of experience in..." | Presentación |
 | "I specialize in..." | Tu especialidad |
 | "My expertise spans..." | Rango de habilidades |
 | "I'm passionate about..." | Lo que te motiva |
@@ -96,7 +96,7 @@ to impactful mobile products.
 
 ## Experience Section
 
-La seccion de experiencia es la mas importante. Usa **action verbs** y **metricas** para describir tus logros.
+La sección de experiencia es la mas importante. Usa **action verbs** y **metricas** para describir tus logros.
 
 ### Formula: Action Verb + What + Result/Impact
 
@@ -114,9 +114,9 @@ Architected a microservices system that handles 10M+
 requests per day with 99.9% uptime.
 ```
 
-### Action verbs por categoria
+### Action verbs por categoría
 
-| Categoria | Verbos |
+| Categoría | Verbos |
 |-----------|--------|
 | **Construir** | Developed, Built, Created, Designed, Implemented, Engineered |
 | **Liderar** | Led, Managed, Mentored, Coordinated, Directed, Supervised |
@@ -164,8 +164,8 @@ TechCorp | Jan 2022 - Present | Remote
 
 | Prioridad | Tipo de skills |
 |-----------|---------------|
-| **Alta** | Tus tecnologias principales (Flutter, React, Python) |
-| **Media** | Tecnologias secundarias (Docker, AWS, PostgreSQL) |
+| **Alta** | Tus tecnologías principales (Flutter, React, Python) |
+| **Media** | Tecnologías secundarias (Docker, AWS, PostgreSQL) |
 | **Baja** | Soft skills (no las pongas si puedes llenar con tech) |
 
 ### Skills que los reclutadores buscan
@@ -182,7 +182,7 @@ Practices: Clean Architecture, TDD, Agile/Scrum, Code Review
 
 ## Recommendations
 
-### Como pedir una recomendacion
+### Como pedir una recomendación
 
 ```
 "Hi [Name], I really enjoyed working with you at [Company]. 
@@ -191,7 +191,7 @@ about our collaboration on [Project]? I'd be happy to write
 one for you as well."
 ```
 
-### Como escribir una recomendacion
+### Como escribir una recomendación
 
 ```
 "I had the pleasure of working with [Name] for two years 
@@ -206,13 +206,13 @@ I highly recommend [Name] for any mobile development role."
 
 ## Vocabulario esencial de LinkedIn
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
 | **Headline** | Titulo debajo de tu nombre |
 | **Open to work** | Disponible para trabajar |
 | **Hiring** | Contratando |
-| **Endorsement** | Validacion de una skill |
-| **Recommendation** | Recomendacion escrita |
+| **Endorsement** | Validación de una skill |
+| **Recommendation** | Recomendación escrita |
 | **Connection** | Contacto en LinkedIn |
 | **InMail** | Mensaje directo de LinkedIn |
 | **Recruiter** | Reclutador |
@@ -223,8 +223,8 @@ I highly recommend [Name] for any mobile development role."
 
 ## Resumen
 
-- Tu headline debe comunicar tu rol, tecnologias y valor en menos de 220 caracteres
+- Tu headline debe comunicar tu rol, tecnologías y valor en menos de 220 carácteres
 - El summary cuenta tu historia en 3-5 parrafos: quien eres, que haces, que buscas
 - En experience, usa action verbs + metricas para describir logros, no responsabilidades
-- Las skills deben priorizar tecnologias sobre soft skills
+- Las skills deben priorizar tecnologías sobre soft skills
 - Pide recomendaciones a companeros con los que trabajaste directamente

@@ -130,7 +130,7 @@ printf("%zu\n", sizeof(double));
 Esto ayuda a entender cuánta memoria consumen los datos y será fundamental cuando llegues a
 punteros, arreglos y memoria dinámica.
 
-## Errores comunes
+## Errores comúnes
 
 - Usar `=` cuando querías usar `==`
 - Pensar que `5 / 2` devuelve `2.5`

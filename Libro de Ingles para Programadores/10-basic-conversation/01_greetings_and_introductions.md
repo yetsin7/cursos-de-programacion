@@ -102,7 +102,7 @@ B: "That would be great, thanks!"
 
 El **small talk** es conversación ligera antes de entrar al tema principal. En tech, se habla de:
 
-### Temas comunes
+### Temas comúnes
 
 | Tema | Ejemplo |
 |------|---------|
@@ -211,7 +211,7 @@ Hope you had a good break.
 
 ---
 
-## 7. Errores comunes de hispanohablantes
+## 7. Errores comúnes de hispanohablantes
 
 | Incorrecto | Correcto | Explicación |
 |------------|----------|-------------|

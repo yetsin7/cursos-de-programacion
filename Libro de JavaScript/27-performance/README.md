@@ -34,13 +34,13 @@ Primero haz que el código funcione correctamente. Luego, **mide**. Optimiza sol
 
 ---
 
-## Áreas de optimización comunes
+## Áreas de optimización comúnes
 
 | Área                    | Técnica                                      |
 |-------------------------|----------------------------------------------|
 | Bucles costosos         | Cachear `.length`, evitar recálculos         |
 | Búsquedas frecuentes    | Usar `Map` o `Set` en lugar de arrays        |
-| Funciones costosas      | Memoization con `Map` como caché             |
+| funciones costosas      | Memoization con `Map` como caché             |
 | Llamadas frecuentes     | Debounce (esperar pausa) / Throttle (limitar) |
 | Llamadas paralelas      | `Promise.all()` en lugar de await secuencial |
 | Trabajo pesado de CPU   | Worker Threads en Node.js                   |

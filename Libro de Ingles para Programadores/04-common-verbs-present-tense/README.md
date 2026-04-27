@@ -1,7 +1,7 @@
-# Capítulo 04: Verbos Comunes y Tiempo Presente
+# Capítulo 04: Verbos Comúnes y Tiempo Presente
 
-Este capitulo te da una herramienta muy practica: describir acciones y procesos
-tecnicos en ingles usando verbos comunes y presente simple o continuo.
+Este capítulo te da una herramienta muy práctica: describir acciones y procesos
+técnicos en ingles usando verbos comúnes y presente simple o continuo.
 
 ---
 
@@ -23,7 +23,7 @@ Porque constantemente necesitas decir cosas como:
 - `I am debugging the issue.`
 - `This function returns a string.`
 
-Saber usar bien estos verbos mejora tu lectura, escritura y comunicacion tecnica.
+Saber usar bien estos verbos mejora tu lectura, escritura y comunicación técnica.
 
 ---
 
@@ -38,16 +38,16 @@ Saber usar bien estos verbos mejora tu lectura, escritura y comunicacion tecnica
 
 ---
 
-## Errores comunes del hispanohablante
+## Errores comúnes del hispanohablante
 
 - olvidar la `s` en tercera persona;
 - usar presente continuo para todo;
-- traducir verbos tecnicos de forma demasiado literal;
+- traducir verbos técnicos de forma demasiado literal;
 - no distinguir entre una accion habitual y una que ocurre ahora mismo.
 
 ---
 
 ## Objetivo
 
-Al finalizar podras usar verbos comunes del desarrollo de software para describir
-procesos tecnicos y comunicar lo que haces y lo que esta ocurriendo.
+Al finalizar podras usar verbos comúnes del desarrollo de software para describir
+procesos técnicos y comunicar lo que haces y lo que esta ocurriendo.

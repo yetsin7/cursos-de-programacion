@@ -80,7 +80,7 @@ Liberas dos veces el mismo bloque. Esto puede causar fallos graves o vulnerabili
 - Estructuras dinámicas como pilas, colas o listas enlazadas
 - Procesamiento de texto o datos de tamaño desconocido
 
-## Errores comunes
+## Errores comúnes
 
 - No comprobar si `malloc` o `realloc` devolvieron `NULL`
 - Olvidar llamar a `free`

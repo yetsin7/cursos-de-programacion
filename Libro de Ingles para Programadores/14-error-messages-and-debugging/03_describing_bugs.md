@@ -3,12 +3,12 @@
 ## Como Describir Bugs en Ingles
 
 Saber describir un bug de forma clara y profesional en ingles es una habilidad
-critica. Ya sea en un issue de GitHub, un mensaje de Slack o un reporte formal,
-una buena descripcion acelera la resolucion del problema.
+crítica. Ya sea en un issue de GitHub, un mensaje de Slack o un reporte formal,
+una buena descripción acelera la resolucion del problema.
 
 ---
 
-## La Formula Basica
+## La Formula Básica
 
 La forma mas simple de describir un bug es:
 
@@ -16,7 +16,7 @@ La forma mas simple de describir un bug es:
 
 ### Ejemplos
 
-| Descripcion del bug |
+| Descripción del bug |
 |---------------------|
 | "When I **click the submit button**, the page **reloads** instead of **showing a success message**." |
 | "When I **open the app offline**, it **crashes** instead of **showing cached data**." |
@@ -39,7 +39,7 @@ Breve y descriptivo. Incluye donde y que pasa.
 | "Doesn't work" | "Cart total shows negative values with discount > price" |
 | "Error" | "500 error when uploading images larger than 5MB" |
 
-### 2. Description (Descripcion)
+### 2. Description (Descripción)
 
 ```markdown
 ## Description
@@ -58,7 +58,7 @@ the cart total displays a negative value instead of showing zero.
 3. Observe the cart total.
 ```
 
-**Frases utiles**:
+**Frases útiles**:
 - "Navigate to..."
 - "Click on..."
 - "Enter [value] in the [field] field."
@@ -75,7 +75,7 @@ The cart total should display $0.00 when the discount exceeds
 the item price.
 ```
 
-**Frases utiles**:
+**Frases útiles**:
 - "The app **should** display..."
 - "The user **should be able to**..."
 - "The page **should redirect to**..."
@@ -91,7 +91,7 @@ The cart total displays -$10.00, and the checkout button remains
 enabled, allowing the user to proceed with a negative total.
 ```
 
-**Frases utiles**:
+**Frases útiles**:
 - "Instead, the app **displays**..."
 - "The page **crashes** with..."
 - "The API **returns** a 500 error."
@@ -173,7 +173,7 @@ If applicable, add screenshots.
 
 ### Ejemplos
 
-- "This is a **critical** bug — users can't log in." (Bug critico, los usuarios no pueden iniciar sesion.)
+- "This is a **critical** bug — users can't log in." (Bug crítico, los usuarios no pueden iniciar sesión.)
 - "It's a **minor** issue — the icon is slightly misaligned." (Es un problema menor, el icono esta ligeramente desalineado.)
 
 ---
@@ -186,23 +186,23 @@ If applicable, add screenshots.
 | Describir el impacto | "This affects all users on mobile." |
 | Pedir ayuda | "Can someone look into this issue?" |
 | Dar contexto | "This started happening after the last deployment." |
-| Ofrecer informacion | "I can reproduce it consistently with these steps." |
-| Proponer solucion | "I think the root cause is a missing null check." |
+| Ofrecer información | "I can reproduce it consistently with these steps." |
+| Proponer solución | "I think the root cause is a missing null check." |
 | Dar estado | "I'm investigating the issue now." |
 | Confirmar fix | "The fix has been deployed and verified." |
-| Cerrar un bug | "This has been resolved in version 2.1.1." |
+| Cerrar un bug | "This has been resolved in versión 2.1.1." |
 
 ---
 
 ## Vocabulario Adicional para Bugs
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
 | **Reproducible** | Se puede replicar siguiendo los pasos |
 | **Intermittent** | Ocurre a veces, no siempre |
 | **Blocker** | Impide continuar con el trabajo |
 | **Showstopper** | Bug tan grave que detiene el lanzamiento |
-| **Workaround available** | Existe una solucion temporal |
+| **Workaround available** | Existe una solución temporal |
 | **Cannot reproduce** | No se puede replicar el error |
 | **Works as intended** | Funciona como fue disenado (no es un bug) |
 | **Won't fix** | Se decide no corregir |
@@ -217,6 +217,6 @@ Para describir un bug profesionalmente:
 1. Usa la formula: "When I [X], [Y happens] instead of [Z]"
 2. Incluye **pasos para reproducir** claros y numerados
 3. Separa **comportamiento esperado** vs **real**
-4. Proporciona informacion del **entorno**
+4. Proporciona información del **entorno**
 5. Indica la **severidad** y **frecuencia**
 6. Adjunta **screenshots** o logs cuando sea posible

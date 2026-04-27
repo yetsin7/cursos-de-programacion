@@ -1,10 +1,10 @@
-# Exercises - Ejercicios del Capitulo 21
+# Exercises - Ejercicios del Capítulo 21
 
 ## Ejercicio 1: Identifica el modismo
 
 Lee cada situacion y selecciona el modismo correcto.
 
-**1.** Tu equipo paso 45 minutos discutiendo si el boton deberia ser azul o verde, mientras el servidor estaba caido.
+**1.** Tu equipo paso 45 minutos discutiendo si el boton debería ser azul o verde, mientras el servidor estaba caido.
 
 - a) Yak shaving
 - b) Bikeshedding
@@ -18,7 +18,7 @@ Lee cada situacion y selecciona el modismo correcto.
 - c) Yak shaving
 - d) Ship it
 
-**3.** Tu empresa usa su propia app de gestion de proyectos internamente para organizar el trabajo.
+**3.** Tu empresa usa su propia app de gestión de proyectos internamente para organizar el trabajo.
 
 - a) Spaghetti code
 - b) Boilerplate
@@ -66,23 +66,23 @@ Reescribe cada frase informal usando lenguaje profesional apropiado para un emai
 
 **1.** *"The codebase is total spaghetti code and super janky."*
 
-Tu version formal: _______________________________________________
+Tu versión formal: _______________________________________________
 
 **2.** *"We should just nuke it from orbit and start over."*
 
-Tu version formal: _______________________________________________
+Tu versión formal: _______________________________________________
 
 **3.** *"That API endpoint is a footgun — it'll bite us eventually."*
 
-Tu version formal: _______________________________________________
+Tu versión formal: _______________________________________________
 
 **4.** *"We did a quick and dirty fix, it's hacky but it works."*
 
-Tu version formal: _______________________________________________
+Tu versión formal: _______________________________________________
 
 **5.** *"The team's been crunching all week and everyone's fried."*
 
-Tu version formal: _______________________________________________
+Tu versión formal: _______________________________________________
 
 ---
 
@@ -118,9 +118,9 @@ _______________________________________________
 
 ## Ejercicio 5: Escribe el acronimo
 
-Escribe el acronimo correspondiente a cada definicion.
+Escribe el acronimo correspondiente a cada definición.
 
-| Definicion | Acronimo |
+| Definición | Acronimo |
 |-----------|----------|
 | Se ve bien, aprobado | ________ |
 | Demasiado largo, no lo lei (resumen) | ________ |
@@ -137,9 +137,9 @@ Escribe el acronimo correspondiente a cada definicion.
 
 ## Ejercicio 6: Contexto apropiado
 
-Indica si usarias la expresion en cada contexto (Si / No).
+Indica si usarias la expresión en cada contexto (Si / No).
 
-| Expresion | Slack con equipo | Code review | Email al CTO | Documentacion |
+| Expresión | Slack con equipo | Code review | Email al CTO | Documentación |
 |-----------|-----------------|-------------|--------------|---------------|
 | "LGTM, ship it!" | | | | |
 | "This is janky" | | | | |
@@ -153,13 +153,13 @@ Indica si usarias la expresion en cada contexto (Si / No).
 
 ## Ejercicio 7: Escribe un mensaje de Slack
 
-Escribe un mensaje de Slack para cada situacion usando al menos 2 modismos o phrasal verbs de este capitulo.
+Escribe un mensaje de Slack para cada situacion usando al menos 2 modismos o phrasal verbs de este capítulo.
 
-**Situacion 1:** Acabas de desplegar una nueva version y encontraste un bug critico.
+**Situacion 1:** Acabas de desplegar una nueva versión y encontraste un bug crítico.
 
 Tu mensaje: _______________________________________________
 
-**Situacion 2:** Quieres proponer reescribir un modulo legacy que nadie entiende.
+**Situacion 2:** Quieres proponer reescribir un módulo legacy que nadie entiende.
 
 Tu mensaje: _______________________________________________
 
@@ -187,7 +187,7 @@ LGTM, TL;DR, RTFM, WIP, YAGNI, DRY, KISS, PEBKAC, AFK, ELI5
 
 ### Ejercicio 6 (respuestas sugeridas)
 
-| Expresion | Slack | Review | Email CTO | Docs |
+| Expresión | Slack | Review | Email CTO | Docs |
 |-----------|-------|--------|-----------|------|
 | "LGTM, ship it!" | Si | Si | No | No |
 | "This is janky" | Si | Si | No | No |

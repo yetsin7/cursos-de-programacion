@@ -220,7 +220,7 @@ anything else to update.
 
 ---
 
-## Abreviaciones comunes en code reviews
+## Abreviaciones comúnes en code reviews
 
 | Abreviación | Significado | Traducción |
 |-------------|-------------|------------|

@@ -204,7 +204,7 @@ Tu comentario: ___
 
 **A)** "That fixed it! Thanks so much. I had no idea the parent container's overflow was causing the issue. Marking as accepted."
 
-**B)** "Can you provide more context? What does 'slow' mean exactly — slow initial load, slow navigation, slow API responses? Also, what framework and version are you using? A screenshot of the browser's Network tab would help narrow it down."
+**B)** "Can you provide more context? What does 'slow' mean exactly — slow initial load, slow navigation, slow API responses? Also, what framework and versión are you using? A screenshot of the browser's Network tab would help narrow it down."
 
 **C)** "Possible duplicate of [How to center a div](link). The accepted answer there covers all modern approaches including Flexbox and Grid."
 

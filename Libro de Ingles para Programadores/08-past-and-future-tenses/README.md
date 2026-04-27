@@ -1,7 +1,7 @@
 # Capítulo 08: Past & Future Tenses
 
-Este capitulo te permite hablar con mas naturalidad sobre tareas hechas,
-progreso reciente y planes futuros, algo esencial en trabajo tecnico diario.
+Este capítulo te permite hablar con mas naturalidad sobre tareas hechas,
+progreso reciente y planes futuros, algo esencial en trabajo técnico diario.
 
 ---
 
@@ -37,7 +37,7 @@ Estos tiempos verbales aparecen en standups, retrospectivas, planning y chats.
 
 ---
 
-## Errores comunes del hispanohablante
+## Errores comúnes del hispanohablante
 
 - mezclar pasado simple con presente perfecto;
 - usar `will` para todo tipo de futuro;
@@ -48,5 +48,5 @@ Estos tiempos verbales aparecen en standups, retrospectivas, planning y chats.
 
 ## Objetivo del capítulo
 
-Al terminar este capitulo podras hablar mejor sobre tareas completadas, avances
+Al terminar este capítulo podras hablar mejor sobre tareas completadas, avances
 recientes y planes futuros en contexto de desarrollo de software.

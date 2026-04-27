@@ -94,7 +94,7 @@ Estos ejercicios combinan todos los temas del capítulo: pronombres personales (
 2. The API and ___ rate limits are documented.
 3. ___ returning a 404 error.
 4. Every framework has ___ strengths and weaknesses.
-5. ___ important to version ___ dependencies.
+5. ___ important to versión ___ dependencies.
 
 ---
 

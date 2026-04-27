@@ -1,6 +1,6 @@
 # 21 — React Hooks
 
-Los hooks son funciones que permiten usar estado y otras características de React dentro de componentes funcionales. Fueron introducidos en React 16.8 y son la forma moderna de escribir React.
+Los hooks son funciones que permiten usar estado y otras carácterísticas de React dentro de componentes funcionales. Fueron introducidos en React 16.8 y son la forma moderna de escribir React.
 
 ## Reglas de los hooks
 

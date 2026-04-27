@@ -2,7 +2,7 @@
 
 ## ¿Qué son las ramas?
 
-Las ramas son una de las características más poderosas de Git. Una rama es
+Las ramas son una de las carácterísticas más poderosas de Git. Una rama es
 simplemente un **puntero ligero a un commit**. Cuando creas una rama, Git
 no copia archivos: solo crea un puntero nuevo que puedes mover independientemente.
 

@@ -41,7 +41,7 @@ Prepara todos estos archivos ANTES de crear la ficha en Play Console:
 
 1. **Crear app:** Play Console → "Crear app" → Nombre, idioma, tipo (app/juego), gratuita/de pago
 2. **Configuración de la app:** completar las políticas, declaraciones y clasificación
-3. **Ficha de Play Store:** descripción corta (máx. 80 caracteres), descripción larga (máx. 4000), subir assets
+3. **Ficha de Play Store:** descripción corta (máx. 80 carácteres), descripción larga (máx. 4000), subir assets
 4. **Clasificación de contenido:** completar el cuestionario de contenido → recibir clasificación por edades
 5. **Público objetivo:** confirmar el rango de edad y si la app está dirigida a niños
 6. **Política de privacidad:** URL obligatoria (aunque la app no recopile datos, debes declararlo)
@@ -88,7 +88,7 @@ Prepara todos estos archivos ANTES de crear la ficha en Play Console:
 - Primera publicación: 3-7 días hábiles (revisión manual de Google)
 - Actualizaciones: generalmente 2-24 horas (revisión automática + manual si hay cambios de política)
 
-**Posibles rechazos comunes y cómo evitarlos:**
+**Posibles rechazos comúnes y cómo evitarlos:**
 - Sin política de privacidad: agrega una URL válida aunque sea una página simple
 - Ícono con bordes transparentes: debe ser sólido y sin transparencia
 - Capturas de pantalla con información de otros (datos personales visibles)

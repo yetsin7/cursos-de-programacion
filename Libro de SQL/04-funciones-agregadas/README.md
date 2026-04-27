@@ -1,4 +1,4 @@
-# Capítulo 04 — Funciones Agregadas y GROUP BY
+# Capítulo 04 — funciones Agregadas y GROUP BY
 
 ## ¿Qué son las funciones agregadas?
 

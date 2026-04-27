@@ -1,19 +1,19 @@
-# Exercises - Ejercicios del Capitulo 24
+# Exercises - Ejercicios del Capítulo 24
 
 ## Ejercicio 1: Vocabulario de reuniones
 
-Relaciona cada termino con su definicion.
+Relaciona cada término con su definición.
 
-| Termino | Definicion |
+| Término | Definición |
 |---------|-----------|
 | 1. Standup | a. Reunion para reflexionar sobre el sprint |
-| 2. Retro | b. Tareas asignadas despues de una reunion |
+| 2. Retro | b. Tareas asignadas después de una reunion |
 | 3. Action items | c. Reunion breve diaria de estado |
 | 4. Timebox | d. Reunion de toda la empresa |
 | 5. All-hands | e. Limitar el tiempo de discusion |
 | 6. Kickoff | f. Reunion inicial de un proyecto |
-| 7. Parking lot | g. Temas pospuestos para discutir despues |
-| 8. Grooming | h. Sesion para detallar y estimar tareas |
+| 7. Parking lot | g. Temas pospuestos para discutir después |
+| 8. Grooming | h. Sesión para detallar y estimar tareas |
 
 ---
 
@@ -50,7 +50,7 @@ Selecciona la frase correcta para cada situacion.
 - c) "Can we stay on track?"
 - d) "Who wants to go first?"
 
-**2.** Quieres posponer un tema para discutirlo despues.
+**2.** Quieres posponer un tema para discutirlo después.
 
 - a) "Let's wrap up."
 - b) "Let's table this for now."
@@ -80,20 +80,20 @@ Selecciona la frase correcta para cada situacion.
 
 ---
 
-## Ejercicio 4: Presentacion tecnica
+## Ejercicio 4: Presentación técnica
 
-Escribe las frases que usarias en cada seccion de una presentacion sobre "Migrar de REST a GraphQL."
+Escribe las frases que usarias en cada sección de una presentación sobre "Migrar de REST a GraphQL."
 
-**Introduccion:**
+**Introducción:**
 _______________________________________________
 
 **Problema:**
 _______________________________________________
 
-**Solucion:**
+**Solución:**
 _______________________________________________
 
-**Transicion a demo:**
+**Transición a demo:**
 _______________________________________________
 
 **Cierre:**
@@ -107,23 +107,23 @@ Reescribe cada frase agresiva o inapropiada de forma profesional y respetuosa.
 
 **1.** *"That's a terrible idea."*
 
-Tu version: _______________________________________________
+Tu versión: _______________________________________________
 
 **2.** *"You're wrong about the database choice."*
 
-Tu version: _______________________________________________
+Tu versión: _______________________________________________
 
 **3.** *"Obviously we should use Kubernetes."*
 
-Tu version: _______________________________________________
+Tu versión: _______________________________________________
 
 **4.** *"That won't work. Period."*
 
-Tu version: _______________________________________________
+Tu versión: _______________________________________________
 
 **5.** *"As I already told you..."*
 
-Tu version: _______________________________________________
+Tu versión: _______________________________________________
 
 ---
 
@@ -154,7 +154,7 @@ _______________________________________________
 
 Escribe participaciones para una retrospectiva en ingles.
 
-**Sprint context:** El sprint tuvo una emergencia en produccion que consumio 3 dias del equipo. Se entrego solo el 60% de lo planificado, pero la respuesta al incidente fue rapida y coordinada.
+**Sprint context:** El sprint tuvo una emergencia en produccion que consumio 3 dias del equipo. Se entrego solo el 60% de lo planificado, pero la respuesta al incidente fue rápida y coordinada.
 
 **What went well:**
 _______________________________________________
@@ -180,7 +180,7 @@ _______________________________________________
 3. "Discutamos eso fuera de la reunion."
 _______________________________________________
 
-4. "Volvamos a ese tema despues."
+4. "Volvamos a ese tema después."
 _______________________________________________
 
 5. "Creo que estamos de acuerdo en lo fundamental."

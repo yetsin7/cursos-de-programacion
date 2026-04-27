@@ -15,7 +15,7 @@ npm install express
 |---|---|
 | `01_servidor_basico.js` | Crear un servidor y responder peticiones |
 | `02_rutas_y_params.js` | Parámetros de ruta, query strings, body |
-| `03_middleware.js` | Funciones intermedias y manejo de errores |
+| `03_middleware.js` | funciones intermedias y manejo de errores |
 | `04_api_rest.js` | API CRUD completa en memoria |
 
 ## Cómo ejecutar

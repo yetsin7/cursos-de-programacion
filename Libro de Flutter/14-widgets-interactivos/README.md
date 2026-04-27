@@ -14,7 +14,7 @@ Los widgets interactivos son aquellos que detectan la interacción del usuario y
 
 ## La importancia del estado
 
-Todos los widgets interactivos comparten una característica: **necesitan estado** para funcionar. Cuando el usuario selecciona un checkbox, el widget debe recordar si está marcado o no. Cuando el usuario escribe en un TextField, el widget debe recordar el texto.
+Todos los widgets interactivos comparten una carácterística: **necesitan estado** para funcionar. Cuando el usuario selecciona un checkbox, el widget debe recordar si está marcado o no. Cuando el usuario escribe en un TextField, el widget debe recordar el texto.
 
 En este módulo, todos los ejemplos usan `StatefulWidget` con `setState()` para manejar los cambios de estado. El Módulo 15 profundiza en el estado.
 

@@ -1,32 +1,32 @@
-# Exercises - Ejercicios del Capitulo 25
+# Exercises - Ejercicios del Capítulo 25
 
-## Ejercicio 1: Identifica la seccion
+## Ejercicio 1: Identifica la sección
 
-Indica a que seccion de un RFC, tech spec o postmortem pertenece cada fragmento.
+Indica a que sección de un RFC, tech spec o postmortem pertenece cada fragmento.
 
 **1.** *"We considered using MongoDB but rejected it because we need ACID transactions for payment processing."*
 
-Seccion: _______________________________________________
+Sección: _______________________________________________
 
 **2.** *"At 14:30 UTC, monitoring alerts fired. At 14:35, the on-call engineer began investigation."*
 
-Seccion: _______________________________________________
+Sección: _______________________________________________
 
 **3.** *"SMS notifications are out of scope for this design and will be addressed in Phase 2."*
 
-Seccion: _______________________________________________
+Sección: _______________________________________________
 
 **4.** *"The root cause was a missing database index that caused full table scans under production load."*
 
-Seccion: _______________________________________________
+Sección: _______________________________________________
 
 **5.** *"This endpoint accepts a JSON body with user_id (required) and channel (optional)."*
 
-Seccion: _______________________________________________
+Sección: _______________________________________________
 
 **6.** *"Should we support social login from day one, or add it in a future iteration?"*
 
-Seccion: _______________________________________________
+Sección: _______________________________________________
 
 ---
 
@@ -90,7 +90,7 @@ Selecciona la frase correcta para cada contexto.
 - c) "The issue was mitigated by rolling back the deployment."
 - d) "Success criteria include..."
 
-**4.** Para proponer una solucion en un RFC:
+**4.** Para proponer una solución en un RFC:
 
 - a) "At 15:00, we identified..."
 - b) "We propose migrating to OAuth 2.0."
@@ -108,11 +108,11 @@ Selecciona la frase correcta para cada contexto.
 
 ## Ejercicio 4: Escribe un timeline de incidente
 
-Un servicio de autenticacion se cayo. Escribe un timeline profesional en ingles usando estos hechos (en desorden):
+Un servicio de autenticación se cayo. Escribe un timeline profesional en ingles usando estos hechos (en desorden):
 
 - El ingeniero de guardia respondio a las 10:07
 - Se detecto la caida a las 10:05 por las alertas de monitoreo
-- A las 10:45 se confirmo la recuperacion total
+- A las 10:45 se confirmo la recuperación total
 - A las 10:20 se identifico que el certificado SSL habia expirado
 - A las 10:30 se renovo el certificado y se reinicio el servicio
 - A las 10:35 el servicio empezo a responder normalmente
@@ -138,19 +138,19 @@ Reescribe cada frase para que sea "blameless" (sin culpar a individuos).
 
 **1.** *"Carlos forgot to add the database index."*
 
-Tu version: _______________________________________________
+Tu versión: _______________________________________________
 
 **2.** *"The QA team didn't test this properly."*
 
-Tu version: _______________________________________________
+Tu versión: _______________________________________________
 
 **3.** *"Maria deployed without checking the tests."*
 
-Tu version: _______________________________________________
+Tu versión: _______________________________________________
 
 **4.** *"Nobody noticed the certificate was expiring."*
 
-Tu version: _______________________________________________
+Tu versión: _______________________________________________
 
 ---
 
@@ -180,7 +180,7 @@ Para cada problema, escribe un action item concreto con dueno, prioridad y fecha
 
 ## Ejercicio 7: Traduce al ingles profesional
 
-Traduce estas frases al ingles tecnico profesional.
+Traduce estas frases al ingles técnico profesional.
 
 **1.** "El sistema actual tiene estas limitaciones."
 _______________________________________________

@@ -1,21 +1,21 @@
 # OOP Vocabulary
 
-## Vocabulario de Programacion Orientada a Objetos
+## Vocabulario de Programación Orientada a Objetos
 
-La Programacion Orientada a Objetos (Object-Oriented Programming / OOP) es uno de
+La Programación Orientada a Objetos (Object-Oriented Programming / OOP) es uno de
 los paradigmas mas usados. Dominar su vocabulario en ingles es esencial para leer
-documentacion, participar en code reviews y comunicarte con equipos internacionales.
+documentación, participar en code reviews y comunicarte con equipos internacionales.
 
 ---
 
 ## Conceptos Fundamentales
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
 | **Class** | /klæs/ "clas" | Plantilla o molde para crear objetos |
 | **Object** | /ˈɒbdʒɪkt/ "OB-yekt" | Instancia concreta de una clase |
 | **Instance** | /ˈɪnstəns/ "INS-tans" | Un objeto creado a partir de una clase |
-| **Method** | /ˈmɛθəd/ "ME-zod" | Funcion que pertenece a una clase |
+| **Method** | /ˈmɛθəd/ "ME-zod" | Función que pertenece a una clase |
 | **Property** | /ˈprɒpərti/ "PRO-per-ti" | Dato que pertenece a un objeto |
 | **Attribute** | /ˈætrɪbjuːt/ "A-tri-biut" | Sinonimo de property en algunos lenguajes |
 
@@ -47,10 +47,10 @@ var user = User('Alice', 25);  // object / instance
 
 ## Constructores y Destructores
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
-| **Constructor** | /kənˈstrʌktər/ "con-STRAK-tor" | Metodo que inicializa un objeto al crearlo |
-| **Destructor** | /dɪˈstrʌktər/ "di-STRAK-tor" | Metodo que limpia recursos al destruir un objeto |
+| **Constructor** | /kənˈstrʌktər/ "con-STRAK-tor" | Método que inicializa un objeto al crearlo |
+| **Destructor** | /dɪˈstrʌktər/ "di-STRAK-tor" | Método que limpia recursos al destruir un objeto |
 
 - "The **constructor** sets the initial values." (El constructor establece los valores iniciales.)
 - "The **destructor** frees allocated memory." (El destructor libera la memoria asignada.)
@@ -59,29 +59,29 @@ var user = User('Alice', 25);  // object / instance
 
 ## Los 4 Pilares de OOP
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
 | **Inheritance** | /ɪnˈhɛrɪtəns/ "in-JE-ri-tans" | Una clase hereda de otra |
-| **Polymorphism** | /ˌpɒliˈmɔːrfɪzəm/ "po-li-MOR-fi-sem" | Un mismo metodo se comporta diferente segun la clase |
+| **Polymorphism** | /ˌpɒliˈmɔːrfɪzəm/ "po-li-MOR-fi-sem" | Un mismo método se comporta diferente según la clase |
 | **Encapsulation** | /ɪnˌkæpsjuˈleɪʃən/ "in-cap-siu-LEI-shon" | Ocultar los datos internos de una clase |
 | **Abstraction** | /æbˈstrækʃən/ "ab-STRAK-shon" | Mostrar solo lo esencial, ocultar la complejidad |
 
 ### Ejemplos en Oraciones
 
 - "The `Admin` class uses **inheritance** to extend `User`." (La clase `Admin` usa herencia para extender `User`.)
-- "**Polymorphism** allows different classes to respond to the same method." (El polimorfismo permite que diferentes clases respondan al mismo metodo.)
-- "**Encapsulation** protects the internal state of the object." (La encapsulacion protege el estado interno del objeto.)
-- "**Abstraction** hides the implementation details." (La abstraccion oculta los detalles de implementacion.)
+- "**Polymorphism** allows different classes to respond to the same method." (El polimorfismo permite que diferentes clases respondan al mismo método.)
+- "**Encapsulation** protects the internal state of the object." (La encapsulación protege el estado interno del objeto.)
+- "**Abstraction** hides the implementation details." (La abstracción oculta los detalles de implementación.)
 
 ---
 
 ## Interfaces y Clases Abstractas
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
-| **Interface** | /ˈɪntərfeɪs/ "IN-ter-feis" | Contrato que define metodos sin implementacion |
+| **Interface** | /ˈɪntərfeɪs/ "IN-ter-feis" | Contrato que define métodos sin implementación |
 | **Abstract class** | /ˈæbstrækt klæs/ "AB-strakt clas" | Clase que no se puede instanciar directamente |
-| **Mixin** | /ˈmɪksɪn/ "MIK-sin" | Bloque de codigo reutilizable entre clases |
+| **Mixin** | /ˈmɪksɪn/ "MIK-sin" | Bloque de código reutilizable entre clases |
 
 - "Implement the `Serializable` **interface**." (Implementa la interfaz `Serializable`.)
 - "The **abstract class** defines the contract for all shapes." (La clase abstracta define el contrato para todas las formas.)
@@ -91,27 +91,27 @@ var user = User('Alice', 25);  // object / instance
 
 ## Modificadores y Palabras Clave
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
-| **Override** | /ˌoʊvərˈraɪd/ "over-RAID" | Reescribir un metodo heredado |
+| **Override** | /ˌoʊvərˈraɪd/ "over-RAID" | Reescribir un método heredado |
 | **Super** | /ˈsuːpər/ "SUU-per" | Referencia a la clase padre |
 | **Static** | /ˈstætɪk/ "STA-tik" | Pertenece a la clase, no a la instancia |
 | **Final** | /ˈfaɪnəl/ "FAI-nal" | No se puede modificar ni heredar |
-| **Const** | /kɒnst/ "const" | Valor constante en tiempo de compilacion |
+| **Const** | /kɒnst/ "const" | Valor constante en tiempo de compilación |
 
 - "**Override** the `toString` method." (Sobreescribe el metodo `toString`.)
 - "Call **super** to invoke the parent constructor." (Llama a super para invocar el constructor padre.)
-- "A **static** method can be called without an instance." (Un metodo estatico se puede llamar sin una instancia.)
+- "A **static** method can be called without an instance." (Un método estatico se puede llamar sin una instancia.)
 - "Mark the class as **final** to prevent inheritance." (Marca la clase como final para prevenir herencia.)
 
 ---
 
 ## Getters, Setters y Singleton
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
-| **Getter** | /ˈɡɛtər/ "GUE-ter" | Metodo para obtener el valor de una propiedad |
-| **Setter** | /ˈsɛtər/ "SE-ter" | Metodo para asignar el valor de una propiedad |
+| **Getter** | /ˈɡɛtər/ "GUE-ter" | Método para obtener el valor de una propiedad |
+| **Setter** | /ˈsɛtər/ "SE-ter" | Método para asignar el valor de una propiedad |
 | **Singleton** | /ˈsɪŋɡəltən/ "SING-gol-ton" | Patron que garantiza una sola instancia |
 
 ```dart
@@ -133,20 +133,20 @@ class AppConfig {
 
 - "Use a **getter** to expose the value." (Usa un getter para exponer el valor.)
 - "The **setter** validates the input before assigning." (El setter valida la entrada antes de asignar.)
-- "Implement a **singleton** for the database connection." (Implementa un singleton para la conexion a base de datos.)
+- "Implement a **singleton** for the database connection." (Implementa un singleton para la conexión a base de datos.)
 
 ---
 
-## Frases Comunes en Conversaciones sobre OOP
+## Frases Comúnes en Conversaciones sobre OOP
 
 | Ingles | Espaniol |
 |--------|----------|
 | "This class inherits from BaseWidget." | "Esta clase hereda de BaseWidget." |
-| "You should override that method." | "Deberias sobreescribir ese metodo." |
+| "You should override that method." | "Deberias sobreescribir ese método." |
 | "Make the constructor private for the singleton." | "Haz el constructor privado para el singleton." |
-| "The interface defines three methods." | "La interfaz define tres metodos." |
-| "Encapsulate the logic inside the service." | "Encapsula la logica dentro del servicio." |
-| "Is this method static or instance-level?" | "Este metodo es estatico o a nivel de instancia?" |
+| "The interface defines three methods." | "La interfaz define tres métodos." |
+| "Encapsulate the logic inside the service." | "Encapsula la lógica dentro del servicio." |
+| "Is this method static or instance-level?" | "Este método es estatico o a nivel de instancia?" |
 
 ---
 
@@ -154,11 +154,11 @@ class AppConfig {
 
 El vocabulario de OOP se divide en:
 
-- **Basico**: class, object, instance, method, property, attribute
-- **Inicializacion**: constructor, destructor
+- **Básico**: class, object, instance, method, property, attribute
+- **Inicialización**: constructor, destructor
 - **Pilares**: inheritance, polymorphism, encapsulation, abstraction
 - **Contratos**: interface, abstract class, mixin
 - **Modificadores**: override, super, static, final, const
 - **Patrones**: getter, setter, singleton
 
-Dominar estos terminos te permitira participar en discusiones tecnicas con confianza.
+Dominar estos términos te permitira participar en discusiones técnicas con confianza.

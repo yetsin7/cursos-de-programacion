@@ -26,10 +26,10 @@ navegador no ejecutan "TypeScript puro": ejecutan JavaScript generado.
 TypeScript mejora el momento de desarrollo.
 JavaScript sigue siendo el lenguaje que corre realmente.
 
-## Errores comunes
+## Errores comúnes
 
-- pensar que TypeScript valida automaticamente datos que vienen de internet;
-- creer que los tipos existen en tiempo de ejecucion;
+- pensar que TypeScript valida automáticamente datos que vienen de internet;
+- creer que los tipos existen en tiempo de ejecución;
 - usar `any` demasiado pronto;
 - no leer los mensajes del compilador.
 
@@ -37,4 +37,4 @@ JavaScript sigue siendo el lenguaje que corre realmente.
 
 | Archivo | Descripción |
 |---|---|
-| `01_hello_typescript.ts` | Primer ejemplo y comparacion entre desarrollo y ejecucion |
+| `01_hello_typescript.ts` | Primer ejemplo y comparación entre desarrollo y ejecución |

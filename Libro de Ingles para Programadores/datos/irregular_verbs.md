@@ -1,12 +1,12 @@
 # Irregular Verbs in Tech
 
-## Tabla completa de verbos irregulares usados en programacion
+## Tabla completa de verbos irregulares usados en programación
 
-Estos son los verbos irregulares que encontraras con mayor frecuencia en documentacion, commits, code reviews, changelogs y comunicacion tecnica.
+Estos son los verbos irregulares que encontraras con mayor frecuencia en documentación, commits, code reviews, changelogs y comunicación técnica.
 
 ---
 
-## Verbos de construccion y creacion
+## Verbos de construccion y creación
 
 | Base Form | Past Simple | Past Participle | Espanol | Ejemplo en tech |
 |-----------|-------------|-----------------|---------|-----------------|
@@ -18,7 +18,7 @@ Estos son los verbos irregulares que encontraras con mayor frecuencia en documen
 | grow | grew | grown | crecer | "The codebase has grown significantly." |
 | arise | arose | arisen | surgir | "A new issue arose during testing." |
 
-## Verbos de ejecucion y proceso
+## Verbos de ejecución y proceso
 
 | Base Form | Past Simple | Past Participle | Espanol | Ejemplo en tech |
 |-----------|-------------|-----------------|---------|-----------------|
@@ -32,7 +32,7 @@ Estos son los verbos irregulares que encontraras con mayor frecuencia en documen
 | drive | drove | driven | impulsar | "This was driven by performance needs." |
 | let | let | let | permitir | "Let the process finish before restarting." |
 
-## Verbos de comunicacion y documentacion
+## Verbos de comunicación y documentación
 
 | Base Form | Past Simple | Past Participle | Espanol | Ejemplo en tech |
 |-----------|-------------|-----------------|---------|-----------------|
@@ -66,7 +66,7 @@ Estos son los verbos irregulares que encontraras con mayor frecuencia en documen
 | catch | caught | caught | atrapar | "The try-catch block caught the error." |
 | throw | threw | thrown | lanzar | "The function throws an exception on invalid input." |
 | fall | fell | fallen | caer | "The server fell over during peak traffic." |
-| come | came | come | venir | "The fix came in version 2.1." |
+| come | came | come | venir | "The fix came in versión 2.1." |
 | go | went | gone | ir | "The feature went live yesterday." |
 | hang | hung | hung | colgar | "The process hung for 10 minutes." |
 | hit | hit | hit | golpear/alcanzar | "We hit the rate limit." |

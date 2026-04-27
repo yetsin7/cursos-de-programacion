@@ -82,7 +82,7 @@ std::string aTexto<bool>(bool val) {
 
 ## Ventajas sobre `void*` (estilo C)
 
-| Característica | `void*` (C) | Templates (C++) |
+| Carácterística | `void*` (C) | Templates (C++) |
 |----------------|-------------|-----------------|
 | Seguridad de tipos | No (casteo manual) | Sí (verificación en compilación) |
 | Rendimiento | Overhead por casteo | Cero overhead (código inlined) |

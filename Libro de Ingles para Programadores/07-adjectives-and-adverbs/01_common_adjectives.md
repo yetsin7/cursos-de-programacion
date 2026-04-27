@@ -1,8 +1,8 @@
 # Common Adjectives in Programming
 
-## Adjetivos comunes para describir código y sistemas
+## Adjetivos comúnes para describir código y sistemas
 
-Los adjetivos son palabras que describen sustantivos. En programación, los usamos constantemente para hablar sobre la calidad del código, el estado de los sistemas y las características del software.
+Los adjetivos son palabras que describen sustantivos. En programación, los usamos constantemente para hablar sobre la calidad del código, el estado de los sistemas y las carácterísticas del software.
 
 ---
 
@@ -77,7 +77,7 @@ En inglés, los adjetivos cambian de forma para comparar.
 | Largos (2+ sílabas) | **more** + adj | **most** + adj | scalable -> more scalable |
 | Irregulares | forma especial | forma especial | good -> better -> best |
 
-### Tabla de comparativos comunes en tech
+### Tabla de comparativos comúnes en tech
 
 | Adjetivo | Comparativo | Superlativo |
 |----------|------------|-------------|
@@ -139,7 +139,7 @@ That was the least readable code I've ever reviewed.
 Algunos adjetivos tienen dos formas. La diferencia es importante:
 
 - **-ed**: describe cómo se siente alguien (el que experimenta)
-- **-ing**: describe la característica de algo (lo que causa el sentimiento)
+- **-ing**: describe la carácterística de algo (lo que causa el sentimiento)
 
 | -ed (persona) | -ing (cosa) | Ejemplo |
 |---------------|-------------|---------|

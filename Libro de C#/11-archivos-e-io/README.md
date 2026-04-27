@@ -54,7 +54,7 @@ escritor.WriteLine("Línea 2");
 
 ---
 
-## Operaciones con rutas — `Path`
+## operaciones con rutas — `Path`
 
 ```csharp
 string ruta = @"C:\proyectos\app\datos.json";

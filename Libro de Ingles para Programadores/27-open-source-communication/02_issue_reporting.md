@@ -1,6 +1,6 @@
 # Lesson 02: Issue Reporting
 
-## Introduccion
+## Introducción
 
 Reportar issues (problemas) en GitHub es una habilidad que todo programador necesita. Un buen reporte de bug ahorra tiempo a todos: al maintainer, a otros desarrolladores y a ti mismo. En esta leccion aprenderas el vocabulario, la estructura y el tono profesional para escribir issues efectivos en ingles.
 
@@ -8,9 +8,9 @@ Reportar issues (problemas) en GitHub es una habilidad que todo programador nece
 
 ## Tipos de issues
 
-| Tipo | Label en GitHub | Descripcion |
+| Tipo | Label en GitHub | Descripción |
 |------|----------------|-------------|
-| **Bug report** | `bug` | Algo no funciona como deberia |
+| **Bug report** | `bug` | Algo no funciona como debería |
 | **Feature request** | `enhancement` | Solicitud de nueva funcionalidad |
 | **Question** | `question` | Duda sobre el uso del proyecto |
 | **Documentation** | `documentation` | Mejora o correccion de docs |
@@ -19,7 +19,7 @@ Reportar issues (problemas) en GitHub es una habilidad que todo programador nece
 
 ---
 
-## Labels comunes en GitHub
+## Labels comúnes en GitHub
 
 | Label | Significado | Cuando se usa |
 |-------|-------------|---------------|
@@ -80,15 +80,15 @@ Passwords without special characters work fine.
 
 ### Vocabulario clave del bug report
 
-| Seccion | Significado | Consejo |
+| Sección | Significado | Consejo |
 |---------|-------------|---------|
 | **Steps to Reproduce** | Pasos para reproducir | Se lo mas especifico posible |
-| **Expected Behavior** | Comportamiento esperado | Que deberia pasar |
+| **Expected Behavior** | Comportamiento esperado | Que debería pasar |
 | **Actual Behavior** | Comportamiento actual | Que esta pasando en realidad |
 | **Environment** | Entorno | OS, navegador, versiones |
 | **Screenshots** | Capturas de pantalla | Evidencia visual |
-| **Additional Context** | Contexto adicional | Cualquier informacion extra util |
-| **Minimal Reproduction** | Reproduccion minima | El caso mas simple que muestra el bug |
+| **Additional Context** | Contexto adicional | Cualquier información extra útil |
+| **Minimal Reproduction** | Reproducción minima | El caso mas simple que muestra el bug |
 | **Logs** | Registros | Mensajes de la consola o del servidor |
 
 ---
@@ -115,7 +115,7 @@ Vite and Next.js both support this feature. It would bring us
 in line with other modern dev tools.
 ```
 
-### Frases utiles para feature requests
+### Frases útiles para feature requests
 
 | Frase | Cuando usarla |
 |-------|---------------|
@@ -174,7 +174,7 @@ Fix this ASAP. This is unacceptable for a project with
 
 ---
 
-## Frases comunes al interactuar en issues
+## Frases comúnes al interactuar en issues
 
 ### Reportando
 
@@ -183,7 +183,7 @@ Fix this ASAP. This is unacceptable for a project with
 | "I'm experiencing an issue with..." | Describir el problema |
 | "I can consistently reproduce this by..." | Indicar que es reproducible |
 | "This started happening after updating to v..." | Indicar cuando empezo |
-| "Here's a minimal reproduction:" | Compartir un caso minimo |
+| "Here's a minimal reproduction:" | Compartir un caso mínimo |
 | "I've searched existing issues and didn't find a duplicate." | Mostrar que buscaste |
 | "Please let me know if you need more information." | Ofrecer mas detalles |
 
@@ -191,8 +191,8 @@ Fix this ASAP. This is unacceptable for a project with
 
 | Frase | Uso |
 |-------|-----|
-| "Here are the logs you requested:" | Proveer informacion pedida |
-| "I've tested with the latest version and the issue persists." | Confirmar en version actual |
+| "Here are the logs you requested:" | Proveer información pedida |
+| "I've tested with the latest versión and the issue persists." | Confirmar en versión actual |
 | "I can confirm this also happens on..." | Confirmar en otro entorno |
 | "The workaround suggested in #123 works for me." | Confirmar un workaround |
 | "I'm still experiencing this issue." | Indicar que sigue sin resolverse |
@@ -254,25 +254,25 @@ https://codesandbox.io/s/bug-repro-abc123
 
 ## Vocabulario esencial
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
-| **Regression** | Bug que aparece despues de un cambio que antes funcionaba |
-| **Edge case** | Caso limite, situacion poco comun |
-| **Workaround** | Solucion temporal |
+| **Regression** | Bug que aparece después de un cambio que antes funcionaba |
+| **Edge case** | Caso límite, situacion poco común |
+| **Workaround** | Solución temporal |
 | **Root cause** | Causa raiz del problema |
 | **Flaky** | Que a veces funciona y a veces no (intermitente) |
 | **Blocker** | Problema que impide continuar |
 | **Severity** | Gravedad del problema |
 | **Triage** | Proceso de clasificar y priorizar issues |
 | **Repro** | Abreviatura de "reproduction" |
-| **Stack trace** | Traza de la pila de ejecucion |
+| **Stack trace** | Traza de la pila de ejecución |
 
 ---
 
 ## Resumen
 
-- Los bug reports deben incluir: descripcion, pasos para reproducir, comportamiento esperado vs actual, y entorno
-- Los feature requests deben explicar el problema, la solucion propuesta y alternativas consideradas
+- Los bug reports deben incluir: descripción, pasos para reproducir, comportamiento esperado vs actual, y entorno
+- Los feature requests deben explicar el problema, la solución propuesta y alternativas consideradas
 - Usa un tono profesional, constructivo y respetuoso
 - Incluye una minimal reproduction siempre que sea posible
 - Busca issues duplicados antes de crear uno nuevo

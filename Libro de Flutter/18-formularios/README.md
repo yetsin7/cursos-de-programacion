@@ -12,7 +12,7 @@ Introducción al widget `Form` con validación básica.
 - `SnackBar` al enviar exitosamente
 
 ### 02_validacion.dart
-Validaciones avanzadas y UX de formularios.
+validaciones avanzadas y UX de formularios.
 - Validadores: requerido, email, longitud mínima, confirmar contraseña
 - Mostrar/ocultar contraseña
 - `AutovalidateMode`

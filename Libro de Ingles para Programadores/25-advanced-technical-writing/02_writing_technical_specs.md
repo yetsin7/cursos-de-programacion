@@ -1,32 +1,32 @@
-# Writing Technical Specs - Escribir especificaciones tecnicas
+# Writing Technical Specs - Escribir especificaciones técnicas
 
-## Introduccion
+## Introducción
 
-Una especificacion tecnica (tech spec) es un documento que describe **como** se va a construir algo. A diferencia de un RFC (que propone un cambio), un tech spec detalla el diseno, la API, el modelo de datos y el plan de implementacion. Es el plano del proyecto antes de escribir codigo.
+Una especificacion técnica (tech spec) es un documento que describe **como** se va a construir algo. A diferencia de un RFC (que propone un cambio), un tech spec detalla el diseno, la API, el modelo de datos y el plan de implementación. Es el plano del proyecto antes de escribir código.
 
 ---
 
 ## Estructura de un tech spec
 
-| Seccion | Proposito |
+| Sección | Proposito |
 |---------|-----------|
 | **Title and metadata** | Nombre, autor, fecha, estado, revisores |
 | **Overview** | Resumen ejecutivo en 3-5 oraciones |
 | **Goals** | Que se quiere lograr |
 | **Non-goals** | Que NO esta en el alcance |
-| **Design** | Diseno tecnico detallado |
-| **API surface** | Endpoints, metodos, request/response |
+| **Design** | Diseno técnico detallado |
+| **API surface** | Endpoints, métodos, request/response |
 | **Data model** | Esquema de base de datos, entidades |
 | **Testing strategy** | Como se va a probar |
 | **Rollout plan** | Como se va a desplegar |
 
 ---
 
-## Seccion por seccion con frases clave
+## Sección por sección con frases clave
 
 ### Overview
 
-La primera seccion que todos leen. Debe ser concisa y completa.
+La primera sección que todos leen. Debe ser concisa y completa.
 
 | Frase | Uso |
 |-------|-----|
@@ -70,7 +70,7 @@ covered in a separate spec.
 
 ### Non-goals
 
-Esta seccion es tan importante como los goals. Define los limites del proyecto.
+Esta sección es tan importante como los goals. Define los límites del proyecto.
 
 | Frase | Uso |
 |-------|-----|
@@ -258,4 +258,4 @@ be migrated via a one-time script before Phase 2.
 
 ## Consejo final
 
-> Un buen tech spec ahorra semanas de confusion y retrabajo. Dedica tiempo a escribirlo bien, pide feedback de tu equipo antes de empezar a codear, y actualizalo si el diseno cambia durante la implementacion. Es un documento vivo, no un artefacto estatico.
+> Un buen tech spec ahorra semanas de confusion y retrabajo. Dedica tiempo a escribirlo bien, pide feedback de tu equipo antes de empezar a codear, y actualizalo si el diseno cambia durante la implementación. Es un documento vivo, no un artefacto estatico.

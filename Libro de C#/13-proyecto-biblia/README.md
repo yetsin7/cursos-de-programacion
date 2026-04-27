@@ -85,7 +85,7 @@ dotnet run
 
 ## Notas técnicas
 
-- Se usa `using var conexion = ...` para garantizar el cierre de la conexión
+- Se usa `using var conexión = ...` para garantizar el cierre de la conexión
 - Los parámetros de consulta usan `@param` para prevenir SQL injection
 - La ruta de la BD es relativa: funciona si ejecutas desde el directorio del proyecto
 - Si la BD no existe, el programa muestra un mensaje de error claro

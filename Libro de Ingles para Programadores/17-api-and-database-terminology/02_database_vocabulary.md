@@ -47,7 +47,7 @@ Table: users
 | **Composite key** | Clave primaria formada por dos o más columnas |
 | **Index** | Estructura que acelera las búsquedas en una columna |
 
-### Relaciones (Relationships)
+### relaciones (Relationships)
 
 | Tipo | Significado | Ejemplo |
 |------|-------------|---------|
@@ -109,7 +109,7 @@ LEFT JOIN posts ON users.id = posts.user_id;
 
 ---
 
-## Operaciones de datos
+## operaciones de datos
 
 | Término | Significado |
 |---------|-------------|
@@ -121,7 +121,7 @@ LEFT JOIN posts ON users.id = posts.user_id;
 | **Filter** (WHERE) | Filtrar resultados según condiciones |
 | **Sort** (ORDER BY) | Ordenar resultados |
 | **Group** (GROUP BY) | Agrupar resultados |
-| **Aggregate** | Funciones como COUNT, SUM, AVG, MAX, MIN |
+| **Aggregate** | funciones como COUNT, SUM, AVG, MAX, MIN |
 
 ```
 "Run a query to fetch all active users."
@@ -132,7 +132,7 @@ LEFT JOIN posts ON users.id = posts.user_id;
 
 ---
 
-## Migraciones y seeds
+## migraciones y seeds
 
 | Término | Significado |
 |---------|-------------|
@@ -151,7 +151,7 @@ LEFT JOIN posts ON users.id = posts.user_id;
 
 ---
 
-## Transacciones y propiedades ACID
+## transacciones y propiedades ACID
 
 | Término | Significado |
 |---------|-------------|
@@ -209,7 +209,7 @@ LEFT JOIN posts ON users.id = posts.user_id;
 
 ---
 
-## Frases comunes sobre bases de datos
+## Frases comúnes sobre bases de datos
 
 ```
 "Query the database"        → Consultar la base de datos

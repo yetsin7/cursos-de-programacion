@@ -174,7 +174,7 @@ Text(AppLocalizations.of(context)!.elementos(3))
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 **Error: `AppLocalizations` no encontrado**  
 → Verifica que `generate: true` esté en `pubspec.yaml` bajo `flutter:`.
@@ -182,7 +182,7 @@ Text(AppLocalizations.of(context)!.elementos(3))
 **Error: clave faltante en un idioma**  
 → Ambos ARB deben tener exactamente las mismas claves.
 
-**Texto en español con caracteres corruptos (sesiÃ³n)**  
+**Texto en español con carácteres corruptos (sesiÃ³n)**  
 → Guarda los archivos ARB con codificación **UTF-8 sin BOM**.
 
 **La app no cambia de idioma**  

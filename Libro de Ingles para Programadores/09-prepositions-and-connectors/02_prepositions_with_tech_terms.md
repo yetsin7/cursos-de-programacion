@@ -50,7 +50,7 @@ The documentation refers to the old API version.
 
 ---
 
-## 2. Acciones técnicas comunes
+## 2. Acciones técnicas comúnes
 
 ### Listen on (port) — Escuchar en (puerto)
 
@@ -149,8 +149,8 @@ This approach is backward-compatible with v2.
 | focus on | enfocarse en | Let's focus on performance. |
 | switch to | cambiar a | Switch to the develop branch. |
 | migrate to/from | migrar a/desde | We migrated from MySQL to PostgreSQL. |
-| upgrade to | actualizar a | Upgrade to version 5.0. |
-| downgrade to | degradar a | Downgrade to the previous version. |
+| upgrade to | actualizar a | Upgrade to versión 5.0. |
+| downgrade to | degradar a | Downgrade to the previous versión. |
 | contribute to | contribuir a | She contributes to open-source projects. |
 | subscribe to | suscribirse a | Subscribe to the event stream. |
 | respond to | responder a | The server responds to GET requests. |
@@ -165,7 +165,7 @@ This approach is backward-compatible with v2.
 
 ## 5. Preposiciones en mensajes de error y documentación
 
-### Comunes en error messages
+### Comúnes en error messages
 
 ```text
 Failed to connect to the database.
@@ -176,7 +176,7 @@ Cannot read property of undefined.
 Timeout waiting for response from server.
 ```
 
-### Comunes en documentación
+### Comúnes en documentación
 
 ```text
 For more information, refer to the docs.
@@ -189,7 +189,7 @@ Set the value to true in the config file.
 
 ---
 
-## 6. Phrasal verbs técnicos comunes
+## 6. Phrasal verbs técnicos comúnes
 
 Los phrasal verbs son verbos + preposición/adverbio que crean un significado nuevo.
 
@@ -198,7 +198,7 @@ Los phrasal verbs son verbos + preposición/adverbio que crean un significado nu
 | set up | configurar | Set up the development environment. |
 | break down | descomponer / fallar | Break down the task into subtasks. |
 | roll out | desplegar gradualmente | We're rolling out the update. |
-| roll back | revertir | Roll back to the previous version. |
+| roll back | revertir | Roll back to the previous versión. |
 | spin up | iniciar (servidor/instancia) | Spin up a new container. |
 | shut down | apagar | Shut down the server. |
 | back up | hacer respaldo | Back up the database before migrating. |
@@ -212,7 +212,7 @@ Los phrasal verbs son verbos + preposición/adverbio que crean un significado nu
 
 ---
 
-## 7. Errores comunes de hispanohablantes
+## 7. Errores comúnes de hispanohablantes
 
 | Incorrecto | Correcto | Explicación |
 |------------|----------|-------------|

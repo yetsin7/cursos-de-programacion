@@ -114,7 +114,7 @@ The function wraps IT.       → Objeto
 
 ---
 
-## Errores comunes de hispanohablantes
+## Errores comúnes de hispanohablantes
 
 | Error | Correcto | Explicación |
 |-------|----------|-------------|
@@ -147,7 +147,7 @@ En inglés, "it" se usa como sujeto obligatorio en ciertos casos donde el españ
 ### Ejercicio 1: Elige el pronombre de sujeto correcto
 
 1. ___ is a full-stack developer. (He / Him)
-2. ___ deployed the new version. (They / Them)
+2. ___ deployed the new versión. (They / Them)
 3. ___ returns an empty array. (It / Its)
 4. ___ need to fix this before Friday. (We / Us)
 5. ___ wrote the documentation. (She / Her)

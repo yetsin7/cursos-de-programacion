@@ -2,7 +2,7 @@
 
 ## Mensajes de Slack/Teams y abreviaciones tech
 
-En el trabajo remoto, la comunicación por chat es tan importante como hablar en reuniones. Aquí aprenderás a escribir mensajes claros en Slack, Teams o Discord, y a entender las abreviaciones más comunes en el mundo tech.
+En el trabajo remoto, la comunicación por chat es tan importante como hablar en reuniones. Aquí aprenderás a escribir mensajes claros en Slack, Teams o Discord, y a entender las abreviaciones más comúnes en el mundo tech.
 
 ---
 
@@ -83,7 +83,7 @@ Is there a ticket for this?
 
 ---
 
-## 3. Abreviaciones y acrónimos comunes
+## 3. Abreviaciones y acrónimos comúnes
 
 ### Abreviaciones de uso diario
 
@@ -149,7 +149,7 @@ En Slack, los emojis se usan como respuestas rápidas sin necesidad de escribir.
 
 ---
 
-## 5. Plantillas de mensajes comunes
+## 5. Plantillas de mensajes comúnes
 
 ### Pedir code review
 

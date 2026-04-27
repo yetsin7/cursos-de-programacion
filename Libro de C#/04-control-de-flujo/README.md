@@ -47,7 +47,7 @@ de colecciones.
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - escribir condiciones difíciles de leer;
 - usar `while` cuando `foreach` sería más claro;

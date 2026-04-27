@@ -54,7 +54,7 @@ En otras palabras:
 - SQLite entiende la base
 - Tu programa en C pide datos y procesa respuestas
 
-## Recomendaciones para practicar
+## recomendaciones para practicar
 
 - Primero abre la base y verifica que la conexión funcione
 - Consulta pocos registros antes de hacer búsquedas más complejas
@@ -66,7 +66,7 @@ En otras palabras:
 Este recurso conecta especialmente con:
 
 - `09-manejo-de-archivos`
-- `10-memoria-dinamica`
+- `10-memoria-dinámica`
 - `12-proyecto-biblia`
 
 Si todavía no te sientes cómodo con punteros, strings o validación de errores, conviene reforzar

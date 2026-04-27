@@ -1,19 +1,19 @@
 # Capítulo 07 — Utility Types
 
 Los utility types son herramientas ya construidas por TypeScript para transformar
-y reutilizar tipos existentes. Son muy utiles cuando un mismo dato necesita
+y reutilizar tipos existentes. Son muy útiles cuando un mismo dato necesita
 varias versiones: completa, parcial, resumida o indexada por claves.
 
 ## Que aprenderas
 
 - que hacen `Partial`, `Required`, `Pick`, `Omit` y `Record`;
-- como adaptar tipos sin duplicar codigo;
+- como adaptar tipos sin duplicar código;
 - por que esto mejora formularios, APIs y configuraciones;
 - como pensar versiones distintas del mismo modelo.
 
 ## Que pasa dentro del software
 
-Estos tipos no crean estructuras nuevas en tiempo de ejecucion. Siguen siendo
+Estos tipos no crean estructuras nuevas en tiempo de ejecución. Siguen siendo
 reglas para el compilador. Su poder esta en ayudarte a modelar cambios de forma
 sin repetir definiciones manuales.
 
@@ -29,4 +29,4 @@ sin repetir definiciones manuales.
 
 | Archivo | Descripción |
 |---|---|
-| `01_utility_types.ts` | Uso practico de utility types para remodelar datos |
+| `01_utility_types.ts` | Uso práctico de utility types para remodelar datos |

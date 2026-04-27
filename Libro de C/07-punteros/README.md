@@ -83,7 +83,7 @@ el salto según el tipo.
 - Librerías del sistema
 - Acceso a buffers, archivos y estructuras complejas
 
-## Errores comunes
+## Errores comúnes
 
 - Desreferenciar `NULL`
 - Usar punteros sin inicializar

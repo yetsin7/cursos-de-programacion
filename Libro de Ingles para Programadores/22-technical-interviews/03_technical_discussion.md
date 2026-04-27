@@ -1,14 +1,14 @@
-# Technical Discussion - Discusion tecnica en entrevistas
+# Technical Discussion - Discusion técnica en entrevistas
 
-## Introduccion
+## Introducción
 
-En la parte tecnica de una entrevista, no solo importa que sepas resolver el problema — importa como comunicas tu razonamiento. Los entrevistadores evaluan tu capacidad de **pensar en voz alta** (think out loud), considerar alternativas y manejar la ambiguedad. Esta leccion te da el vocabulario y las estructuras para hacerlo en ingles.
+En la parte técnica de una entrevista, no solo importa que sepas resolver el problema — importa como comunicas tu razonamiento. Los entrevistadores evaluan tu capacidad de **pensar en voz alta** (think out loud), considerar alternativas y manejar la ambiguedad. Esta leccion te da el vocabulario y las estructuras para hacerlo en ingles.
 
 ---
 
 ## Pensar en voz alta (Thinking out loud)
 
-Esta es la habilidad mas importante en entrevistas tecnicas. El entrevistador quiere ver tu proceso mental.
+Esta es la habilidad mas importante en entrevistas técnicas. El entrevistador quiere ver tu proceso mental.
 
 ### Frases para iniciar tu razonamiento
 
@@ -20,7 +20,7 @@ Esta es la habilidad mas importante en entrevistas tecnicas. El entrevistador qu
 | *"Let me break this down..."* | Al descomponer un problema complejo |
 | *"So if I understand correctly..."* | Para confirmar que entiendes el problema |
 
-### Frases para desarrollar tu solucion
+### Frases para desarrollar tu solución
 
 | Frase | Cuando usarla |
 |-------|---------------|
@@ -64,12 +64,12 @@ sort the array first for O(n log n) time with O(1) extra space."
 
 | Frase | Contexto |
 |-------|----------|
-| *"I would use a hash map because..."* | Busqueda rapida O(1) |
+| *"I would use a hash map because..."* | Busqueda rápida O(1) |
 | *"A queue would work well here because..."* | Procesamiento FIFO |
 | *"I'd use a stack for this because..."* | Procesamiento LIFO |
 | *"A binary search tree gives us..."* | Busqueda ordenada O(log n) |
-| *"An array is sufficient here because..."* | Acceso por indice, tamano fijo |
-| *"I'd use a graph to model..."* | Relaciones entre entidades |
+| *"An array is sufficient here because..."* | Acceso por índice, tamano fijo |
+| *"I'd use a graph to model..."* | relaciones entre entidades |
 
 ```
 // Ejemplo de justificacion:
@@ -92,9 +92,9 @@ This gives us O(log n) insertion and O(1) access to the max."
 
 | Frase | Cuando usarla |
 |-------|---------------|
-| *"Could you clarify the constraints?"* | Cuando los limites no estan claros |
+| *"Could you clarify the constraints?"* | Cuando los límites no estan claros |
 | *"What's the expected input size?"* | Para decidir la complejidad necesaria |
-| *"Can I assume the input is sorted?"* | Para simplificar la solucion |
+| *"Can I assume the input is sorted?"* | Para simplificar la solución |
 | *"Should I handle edge cases like null or empty input?"* | Para definir alcance |
 | *"Is there a preferred language, or can I choose?"* | Si no te especificaron |
 | *"Am I optimizing for time or space?"* | Cuando hay trade-offs |
@@ -122,7 +122,7 @@ Tu: "Perfect. In that case, I'll use a hash map approach..."
 
 ---
 
-## Manejando momentos dificiles
+## Manejando momentos difíciles
 
 ### Cuando te bloqueas
 
@@ -202,12 +202,12 @@ extra space to get O(n) time instead of O(n squared)."
 
 ---
 
-## Vocabulario tecnico esencial para entrevistas
+## Vocabulario técnico esencial para entrevistas
 
 | Ingles | Espanol | Ejemplo |
 |--------|---------|---------|
 | **Brute force** | Fuerza bruta | *"The brute force approach is O(n^2)."* |
-| **Edge case** | Caso limite | *"Let me consider the edge cases."* |
+| **Edge case** | Caso límite | *"Let me consider the edge cases."* |
 | **Trade-off** | Compromiso/intercambio | *"The trade-off is speed vs memory."* |
 | **Bottleneck** | Cuello de botella | *"The bottleneck is the database query."* |
 | **Constraint** | Restriccion | *"What are the constraints?"* |
@@ -219,4 +219,4 @@ extra space to get O(n) time instead of O(n squared)."
 
 ## Consejo final
 
-> El 50% de una entrevista tecnica es comunicacion. Un candidato que explica un enfoque O(n log n) con claridad impresiona mas que uno que escribe O(n) en silencio. Practica pensar en voz alta en ingles mientras resuelves problemas de LeetCode o HackerRank.
+> El 50% de una entrevista técnica es comunicación. Un candidato que explica un enfoque O(n log n) con claridad impresiona mas que uno que escribe O(n) en silencio. Practica pensar en voz alta en ingles mientras resuelves problemas de LeetCode o HackerRank.

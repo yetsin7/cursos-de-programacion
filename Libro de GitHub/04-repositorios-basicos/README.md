@@ -56,4 +56,4 @@ con el repositorio remoto.
 
 ---
 
-> ✅ Cuando termines todos los archivos de esta carpeta, pasa a `05-flujo-basico-git/`
+> ✅ Cuando termines todos los archivos de esta carpeta, pasa a `05-flujo-básico-git/`

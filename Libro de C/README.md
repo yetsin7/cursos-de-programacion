@@ -2,7 +2,7 @@
 
 ## ¿Qué es este libro?
 
-Una guia practica y progresiva para aprender C desde cero hasta un nivel
+Una guía práctica y progresiva para aprender C desde cero hasta un nivel
 profesional. Este libro no solo ensena sintaxis: ensena como el software usa la
 memoria, como se comunica con el sistema operativo y por que C esta tan cerca
 del hardware.
@@ -33,14 +33,14 @@ En C veras con mas claridad que en muchos otros lenguajes:
 - como viven los datos en memoria;
 - que diferencia hay entre stack y heap;
 - que significa compilar un programa;
-- como una instruccion termina ejecutandose en la maquina;
+- como una instrucción termina ejecutandose en la maquina;
 - por que un error de memoria puede romper un programa.
 
 ---
 
 ## Como estudiar este libro
 
-1. Lee el `README.md` de cada capitulo.
+1. Lee el `README.md` de cada capítulo.
 2. Compila y ejecuta cada archivo por separado.
 3. Cambia valores y observa el resultado.
 4. Intenta explicar cada ejemplo sin leer el comentario.
@@ -91,7 +91,7 @@ gcc -o programa archivo.c -lsqlite3
 | 02  | Variables y tipos        | int, float, char, bool, sizeof, rangos                     |
 | 03  | Operadores               | Aritméticos, lógicos, bitwise, ternario                    |
 | 04  | Control de flujo         | if/else, switch, for, while, do-while                      |
-| 05  | Funciones                | Declaración, prototipos, recursividad, paso por referencia |
+| 05  | funciones                | Declaración, prototipos, recursividad, paso por referencia |
 | 06  | Arreglos y Strings       | Arrays 1D/2D, char[], string.h                             |
 | 07  | Punteros                 | &, *, aritmética de punteros, punteros a funciones         |
 | 08  | Structs                  | struct, typedef, union, enum, CRUD básico                  |
@@ -121,7 +121,7 @@ Desde los archivos dentro de cada capítulo la ruta relativa es:
 
 ---
 
-## Convenciones del libro
+## convenciones del libro
 
 - Todo el código es **compilable directamente** con gcc sin dependencias externas (salvo cap. 12)
 - Los comentarios en el código están en **español**

@@ -3,17 +3,17 @@
 ## Vocabulario de Desarrollo Web y Movil
 
 El desarrollo web y movil tiene su propio vocabulario especializado. En esta leccion
-aprenderemos los terminos mas importantes que encontraras en documentacion, tutoriales
+aprenderemos los términos mas importantes que encontraras en documentación, tutoriales
 y conversaciones con otros desarrolladores.
 
 ---
 
 ## Arquitectura General
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
-| **Frontend** | /ˈfrʌntɛnd/ "FRONT-end" | Parte visible de la aplicacion (lo que ve el usuario) |
-| **Backend** | /ˈbækɛnd/ "BAK-end" | Parte del servidor (logica, base de datos) |
+| **Frontend** | /ˈfrʌntɛnd/ "FRONT-end" | Parte visible de la aplicación (lo que ve el usuario) |
+| **Backend** | /ˈbækɛnd/ "BAK-end" | Parte del servidor (lógica, base de datos) |
 | **Fullstack** | /ˈfʊlstæk/ "FUL-stak" | Desarrollo tanto frontend como backend |
 | **API** | /ˌeɪpiːˈaɪ/ "ei-pi-ai" | Application Programming Interface - interfaz para comunicar sistemas |
 | **REST** | /rɛst/ "rest" | Estilo arquitectonico para APIs basado en HTTP |
@@ -22,7 +22,7 @@ y conversaciones con otros desarrolladores.
 ### Ejemplos en Oraciones
 
 - "I work as a **frontend** developer." (Trabajo como desarrollador frontend.)
-- "The **backend** handles user authentication." (El backend maneja la autenticacion de usuarios.)
+- "The **backend** handles user authentication." (El backend maneja la autenticación de usuarios.)
 - "She's a **fullstack** engineer." (Ella es ingeniera fullstack.)
 - "We consume the **API** to get product data." (Consumimos la API para obtener datos de productos.)
 - "Our **REST** API uses JSON responses." (Nuestra API REST usa respuestas JSON.)
@@ -31,30 +31,30 @@ y conversaciones con otros desarrolladores.
 
 ## Arquitectura del Servidor
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
 | **Endpoint** | /ˈɛndpɔɪnt/ "END-point" | URL especifica de una API |
-| **Route** | /ruːt/ "ruut" | Ruta que mapea una URL a una funcion |
-| **Middleware** | /ˈmɪdəlwɛr/ "MI-dol-wer" | Codigo que se ejecuta entre la peticion y la respuesta |
+| **Route** | /ruːt/ "ruut" | Ruta que mapea una URL a una función |
+| **Middleware** | /ˈmɪdəlwɛr/ "MI-dol-wer" | Código que se ejecuta entre la peticion y la respuesta |
 | **Controller** | /kənˈtroʊlər/ "con-TROU-ler" | Componente que maneja las peticiones |
-| **Service** | /ˈsɜːrvɪs/ "SER-vis" | Capa que contiene la logica de negocio |
+| **Service** | /ˈsɜːrvɪs/ "SER-vis" | Capa que contiene la lógica de negocio |
 | **Repository** | /rɪˈpɒzɪtɔːri/ "ri-PO-si-to-ri" | Capa que accede a los datos |
 
 - "Add a new **endpoint** for user registration." (Agrega un nuevo endpoint para registro de usuarios.)
-- "The **middleware** checks the authentication token." (El middleware verifica el token de autenticacion.)
-- "Move the business logic to the **service** layer." (Mueve la logica de negocio a la capa de servicio.)
+- "The **middleware** checks the authentication token." (El middleware verifica el token de autenticación.)
+- "Move the business logic to the **service** layer." (Mueve la lógica de negocio a la capa de servicio.)
 
 ---
 
 ## Desarrollo de UI (Web y Movil)
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
 | **Widget** | /ˈwɪdʒɪt/ "WI-yet" | Componente visual en Flutter |
 | **Component** | /kəmˈpoʊnənt/ "com-POU-nent" | Pieza reutilizable de UI (React, Vue) |
 | **State** | /steɪt/ "steit" | Datos que cambian y afectan la UI |
 | **Props** | /prɒps/ "props" | Propiedades pasadas a un componente |
-| **Hook** | /hʊk/ "juk" | Funcion para manejar estado y ciclo de vida (React) |
+| **Hook** | /hʊk/ "juk" | Función para manejar estado y ciclo de vida (React) |
 | **Lifecycle** | /ˈlaɪfsaɪkəl/ "LAIF-sai-kel" | Ciclo de vida de un componente |
 
 ### Ejemplos en Oraciones
@@ -68,7 +68,7 @@ y conversaciones con otros desarrolladores.
 
 ## Renderizado y Ciclo de Vida
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
 | **Render** | /ˈrɛndər/ "REN-der" | Dibujar o mostrar la UI en pantalla |
 | **Mount** | /maʊnt/ "maunt" | Insertar un componente en el arbol de UI |
@@ -82,12 +82,12 @@ y conversaciones con otros desarrolladores.
 
 ## Diseno Responsivo
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
 | **Responsive** | /rɪˈspɒnsɪv/ "ri-SPON-siv" | Que se adapta a diferentes tamanios de pantalla |
 | **Viewport** | /ˈvjuːpɔːrt/ "VIU-port" | Area visible de la pantalla |
-| **Breakpoint** | /ˈbreɪkpɔɪnt/ "BREIK-point" | Punto donde el diseno cambia segun el tamanio |
-| **Layout** | /ˈleɪaʊt/ "LEI-aut" | Disposicion y estructura visual de la pagina |
+| **Breakpoint** | /ˈbreɪkpɔɪnt/ "BREIK-point" | Punto donde el diseno cambia según el tamanio |
+| **Layout** | /ˈleɪaʊt/ "LEI-aut" | Disposicion y estructura visual de la página |
 | **Navigation** | /ˌnævɪˈɡeɪʃən/ "na-vi-GUEI-shon" | Sistema para moverse entre pantallas |
 
 - "Make the design **responsive** for mobile." (Haz el diseno responsivo para movil.)
@@ -98,21 +98,21 @@ y conversaciones con otros desarrolladores.
 
 ## Despliegue e Infraestructura
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|--------------|-------------|
-| **Deployment** | /dɪˈplɔɪmənt/ "di-PLOI-ment" | Proceso de publicar la aplicacion |
-| **Hosting** | /ˈhoʊstɪŋ/ "JOUS-ting" | Servicio que aloja la aplicacion |
+| **Deployment** | /dɪˈplɔɪmənt/ "di-PLOI-ment" | Proceso de publicar la aplicación |
+| **Hosting** | /ˈhoʊstɪŋ/ "JOUS-ting" | Servicio que aloja la aplicación |
 | **Domain** | /doʊˈmeɪn/ "do-MEIN" | Nombre del sitio web (ejemplo.com) |
 | **SSL** | /ɛs-ɛs-ɛl/ "es-es-el" | Certificado de seguridad (HTTPS) |
 | **CDN** | /siː-diː-ɛn/ "si-di-en" | Content Delivery Network - red de distribucion |
 
 - "**Deploy** the app to production." (Despliega la app a produccion.)
 - "Set up **SSL** for the custom **domain**." (Configura SSL para el dominio personalizado.)
-- "Use a **CDN** to serve static assets faster." (Usa un CDN para servir recursos estaticos mas rapido.)
+- "Use a **CDN** to serve static assets faster." (Usa un CDN para servir recursos estaticos mas rápido.)
 
 ---
 
-## Frases Comunes en Desarrollo Web y Movil
+## Frases Comúnes en Desarrollo Web y Movil
 
 | Ingles | Espaniol |
 |--------|----------|

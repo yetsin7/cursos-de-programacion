@@ -1,8 +1,8 @@
 # Writing RFCs and ADRs - Escribir RFCs y ADRs
 
-## Introduccion
+## Introducción
 
-Los **RFCs** (Request for Comments) y **ADRs** (Architecture Decision Records) son documentos fundamentales en equipos de ingenieria maduros. Un RFC propone un cambio tecnico significativo para recibir feedback del equipo. Un ADR registra una decision arquitectonica importante y su razonamiento. Dominar la escritura de estos documentos en ingles demuestra liderazgo tecnico.
+Los **RFCs** (Request for Comments) y **ADRs** (Architecture Decision Records) son documentos fundamentales en equipos de ingenieria maduros. Un RFC propone un cambio técnico significativo para recibir feedback del equipo. Un ADR registra una decision arquitectonica importante y su razonamiento. Dominar la escritura de estos documentos en ingles demuestra liderazgo técnico.
 
 ---
 
@@ -10,19 +10,19 @@ Los **RFCs** (Request for Comments) y **ADRs** (Architecture Decision Records) s
 
 ### Que es un RFC?
 
-Un RFC es un documento que propone un cambio tecnico significativo. Se comparte con el equipo para recibir comentarios antes de implementar. Es un proceso democratico de toma de decisiones tecnicas.
+Un RFC es un documento que propone un cambio técnico significativo. Se comparte con el equipo para recibir comentarios antes de implementar. Es un proceso democratico de toma de decisiones técnicas.
 
 ### Estructura de un RFC
 
-| Seccion | Contenido |
+| Sección | Contenido |
 |---------|-----------|
 | **Title** | Nombre descriptivo de la propuesta |
 | **Status** | Draft / In Review / Accepted / Rejected / Superseded |
 | **Author(s)** | Quien lo escribe |
-| **Date** | Fecha de creacion |
+| **Date** | Fecha de creación |
 | **Summary** | Resumen en 2-3 oraciones |
 | **Problem statement** | Que problema resuelve |
-| **Proposal** | La solucion propuesta en detalle |
+| **Proposal** | La solución propuesta en detalle |
 | **Alternatives considered** | Otras opciones evaluadas |
 | **Drawbacks** | Desventajas de la propuesta |
 | **Open questions** | Dudas pendientes |
@@ -117,12 +117,12 @@ The migration path would be:
 | *"We've observed that..."* | Presentar evidencia |
 | *"This is causing [X] issues per [period]."* | Cuantificar el impacto |
 
-### Proponer la solucion
+### Proponer la solución
 
 | Frase | Uso |
 |-------|-----|
 | *"We propose..."* | Introducir la propuesta |
-| *"The proposed solution would..."* | Describir la solucion |
+| *"The proposed solution would..."* | Describir la solución |
 | *"This approach has the advantage of..."* | Destacar beneficios |
 | *"The migration path would involve..."* | Describir el plan |
 
@@ -145,9 +145,9 @@ Un ADR es un registro corto de una decision arquitectonica importante. A diferen
 
 ### Estructura de un ADR
 
-| Seccion | Contenido |
+| Sección | Contenido |
 |---------|-----------|
-| **Title** | ADR-[numero]: Descripcion breve |
+| **Title** | ADR-[número]: Descripción breve |
 | **Status** | Accepted / Deprecated / Superseded by ADR-[X] |
 | **Context** | Situacion y fuerzas que motivan la decision |
 | **Decision** | La decision tomada |
@@ -234,7 +234,7 @@ following reasons:
 |-------|-----|
 | *"As a result, we expect..."* | Resultados esperados |
 | *"The trade-off we accept is..."* | Compromisos aceptados |
-| *"We will revisit this decision if..."* | Condiciones de reevaluacion |
+| *"We will revisit this decision if..."* | condiciones de reevaluacion |
 
 ---
 
@@ -242,7 +242,7 @@ following reasons:
 
 | Aspecto | RFC | ADR |
 |---------|-----|-----|
-| **Cuando** | Antes de decidir | Despues de decidir |
+| **Cuando** | Antes de decidir | Después de decidir |
 | **Proposito** | Buscar feedback y consenso | Documentar decision y razonamiento |
 | **Longitud** | Largo y detallado | Corto y conciso |
 | **Audiencia** | Todo el equipo / organizacion | Referencia futura |
@@ -252,4 +252,4 @@ following reasons:
 
 ## Consejo final
 
-> Escribir RFCs y ADRs no es solo documentacion — es pensamiento estructurado. El acto de escribir un RFC te obliga a considerar alternativas, trade-offs y riesgos que no habrias pensado de otra forma. Es una habilidad que distingue a los desarrolladores senior.
+> Escribir RFCs y ADRs no es solo documentación — es pensamiento estructurado. El acto de escribir un RFC te obliga a considerar alternativas, trade-offs y riesgos que no habrias pensado de otra forma. Es una habilidad que distingue a los desarrolladores senior.

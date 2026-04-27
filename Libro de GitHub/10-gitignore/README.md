@@ -28,7 +28,7 @@ Subir estos archivos causa problemas:
 
 ---
 
-## Patrones comunes de .gitignore
+## Patrones comúnes de .gitignore
 
 | Patrón | Qué ignora |
 |--------|-----------|

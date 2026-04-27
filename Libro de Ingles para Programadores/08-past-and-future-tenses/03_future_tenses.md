@@ -176,7 +176,7 @@ By the end of the year, the team will have shipped 50 features.
 
 ---
 
-## 6. Expresiones de tiempo para el futuro
+## 6. expresiones de tiempo para el futuro
 
 | Expresión | Significado | Ejemplo |
 |-----------|-------------|---------|
@@ -192,7 +192,7 @@ By the end of the year, the team will have shipped 50 features.
 
 ---
 
-## 7. Frases comunes del futuro en el trabajo diario
+## 7. Frases comúnes del futuro en el trabajo diario
 
 ### En standups
 
@@ -223,7 +223,7 @@ The deadline is going to be tight.
 
 ---
 
-## 8. Errores comunes de hispanohablantes
+## 8. Errores comúnes de hispanohablantes
 
 | Incorrecto | Correcto | Explicación |
 |------------|----------|-------------|

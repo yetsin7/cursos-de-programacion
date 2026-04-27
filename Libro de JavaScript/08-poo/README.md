@@ -1,6 +1,6 @@
 # Módulo 08 — Programación Orientada a Objetos (POO)
 
-POO en JavaScript moderno con `class`. Herencia, encapsulación, propiedades
+POO en JavaScript moderno con `class`. herencia, encapsulación, propiedades
 privadas, getters/setters, mixins y composición.
 
 ## Archivos
@@ -26,6 +26,6 @@ node 05_ejercicios.js
 ## Conceptos clave
 
 - Las **clases en JS son azúcar sintáctico** sobre el sistema de prototipos
-- Las **propiedades privadas** (`#campo`) son una característica nativa de ES2022
+- Las **propiedades privadas** (`#campo`) son una carácterística nativa de ES2022
 - Preferir **composición sobre herencia** cuando sea posible
 - `static` pertenece a la clase, no a las instancias

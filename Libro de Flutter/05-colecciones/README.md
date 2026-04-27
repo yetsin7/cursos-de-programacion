@@ -43,7 +43,7 @@ Elegir bien entre `List`, `Map` y `Set` mejora claridad y rendimiento.
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - usar `List` cuando realmente necesitas claves;
 - olvidar que los índices empiezan en 0;

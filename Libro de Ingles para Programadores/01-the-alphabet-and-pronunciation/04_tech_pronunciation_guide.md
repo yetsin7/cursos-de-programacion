@@ -128,7 +128,7 @@ y términos más usados en programación. Guárdala y consúltala cuando tengas 
 ---
 
 <!-- ============================================================ -->
-## Términos técnicos comunes
+## Términos técnicos comúnes
 <!-- ============================================================ -->
 
 ### Acrónimos y siglas
@@ -181,7 +181,7 @@ y términos más usados en programación. Guárdala y consúltala cuando tengas 
 | **await** | "a-uéit" /əˈweɪt/ | esperar |
 | **cache** | "cash" /kæʃ/ | caché |
 | **regex** | "ré-yeks" /ˈrɛdʒɛks/ | expresión regular |
-| **recursion** | "ri-kér-shon" /rɪˈkɜːrʒən/ | recursión |
+| **recursión** | "ri-kér-shon" /rɪˈkɜːrʒən/ | recursión |
 | **algorithm** | "ál-go-rí-dem" /ˈælgərɪðəm/ | algoritmo |
 | **repository** | "ri-pó-si-tori" /rɪˈpɒzɪtɔːri/ | repositorio |
 | **deployment** | "di-plói-ment" /dɪˈplɔɪmənt/ | despliegue |

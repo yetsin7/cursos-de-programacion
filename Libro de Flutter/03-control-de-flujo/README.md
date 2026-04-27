@@ -59,7 +59,7 @@ String resultado = switch (dia) {
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - escribir condiciones demasiado largas;
 - abusar del ternario;

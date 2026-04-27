@@ -16,7 +16,7 @@ GitHub usa una variante llamada **GitHub Flavored Markdown (GFM)** que extiende 
 - Autoenlaces a Issues, PRs y commits
 - Alertas y secciones colapsables
 - Diagramas Mermaid
-- Expresiones matemáticas LaTeX
+- expresiones matemáticas LaTeX
 
 ---
 
@@ -40,7 +40,7 @@ Cuando subes un archivo `.md` a GitHub, automáticamente lo convierte en HTML fo
 
 GitHub también renderiza Markdown en:
 - Comentarios de Issues y Pull Requests
-- Descripciones de releases
+- descripciones de releases
 - Archivos `.md` en cualquier carpeta del repositorio
 - Wikis del proyecto
 
@@ -64,7 +64,7 @@ bash 01_sintaxis_basica.sh
 | `01_sintaxis_basica.sh` | Encabezados, negrita, cursiva, enlaces, imágenes |
 | `02_listas_y_tablas.sh` | Listas ordenadas, no ordenadas, de tareas y tablas |
 | `03_codigo_y_bloques.sh` | Código en línea, bloques de código con sintaxis resaltada |
-| `04_elementos_avanzados.sh` | Secciones colapsables, alertas, notas al pie, matemáticas, diagramas |
+| `04_elementos_avanzados.sh` | secciones colapsables, alertas, notas al pie, matemáticas, diagramas |
 | `05_escribir_buen_readme.sh` | Mejores prácticas para README, secciones esenciales, badges |
 | `06_perfil_readme.sh` | Crear un README de perfil (repo especial username/username) |
 | `07_ejercicios.sh` | Ejercicios prácticos para dominar Markdown |

@@ -203,7 +203,7 @@ cross-platform, real-time, battle-tested, backward-compatible
 1. b  2. b  3. a  4. c
 
 ### Ejercicio 9
-1. The API is faster than the previous version.
+1. The API is faster than the previous versión.
 2. This is the cleanest code in the project.
 3. The function executes efficiently.
 4. The server is temporarily down.

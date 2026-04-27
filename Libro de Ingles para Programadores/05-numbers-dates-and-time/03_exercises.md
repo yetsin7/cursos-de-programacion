@@ -38,7 +38,7 @@ Estos ejercicios cubren números cardinales y ordinales, operaciones matemática
 
 ---
 
-## Sección B: Operaciones matemáticas
+## Sección B: operaciones matemáticas
 
 ### Ejercicio B1: Lee las operaciones en inglés
 
@@ -67,7 +67,7 @@ Estos ejercicios cubren números cardinales y ordinales, operaciones matemática
 
 ---
 
-## Sección C: Versiones y sistemas numéricos
+## Sección C: versiones y sistemas numéricos
 
 ### Ejercicio C1: Lee las versiones en inglés
 
@@ -186,7 +186,7 @@ Estos ejercicios cubren números cardinales y ordinales, operaciones matemática
 2. One hundred minus one equals ninety-nine.
 3. Twelve times twelve equals one hundred forty-four.
 4. Two hundred fifty-six divided by sixteen equals sixteen.
-5. Fifteen modulo four equals three.
+5. Fifteen módulo four equals three.
 6. Two to the power of sixteen equals sixty-five thousand five hundred thirty-six.
 
 **B2:**
@@ -201,16 +201,16 @@ Estos ejercicios cubren números cardinales y ordinales, operaciones matemática
 2. Index plus plus. / Increment index.
 3. Count minus equals one. / Decrement count by one.
 4. Average equals sum divided by items dot length.
-5. isEven equals number modulo two equals zero.
+5. isEven equals number módulo two equals zero.
 
 ### Sección C
 
 **C1:**
-1. Version one point oh point oh.
-2. Version two point three point one.
-3. Version sixteen point oh four.
-4. Version three point fourteen point one fifty-nine.
-5. Node.js version twenty point eleven point oh.
+1. Versión one point oh point oh.
+2. Versión two point three point one.
+3. Versión sixteen point oh four.
+4. Versión three point fourteen point one fifty-nine.
+5. Node.js versión twenty point eleven point oh.
 
 **C2:**
 1. Hash F-F-zero-zero-zero-zero. / Hex red.
@@ -258,7 +258,7 @@ Estos ejercicios cubren números cardinales y ordinales, operaciones matemática
 
 1. The first element of the array is zero.
 2. Fifteen plus seven equals twenty-two.
-3. Version two point three fixes the security bug.
+3. Versión two point three fixes the security bug.
 4. We deploy on Fridays at 3 PM UTC.
 5. The build took longer than expected: fifteen minutes.
 6. The deadline is December thirty-first, twenty twenty-five.

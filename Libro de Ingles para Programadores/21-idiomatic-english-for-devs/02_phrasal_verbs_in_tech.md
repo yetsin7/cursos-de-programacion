@@ -1,17 +1,17 @@
-# Phrasal Verbs in Tech - Verbos frasales en tecnologia
+# Phrasal Verbs in Tech - Verbos frasales en tecnología
 
-## Introduccion
+## Introducción
 
-Los phrasal verbs (verbos frasales) son combinaciones de un verbo + una particula (preposicion o adverbio) que crean un significado diferente al del verbo original. En el mundo tech, son absolutamente esenciales. Sin dominarlos, no podras seguir conversaciones tecnicas ni leer documentacion con fluidez.
+Los phrasal verbs (verbos frasales) son combinaciones de un verbo + una particula (preposicion o adverbio) que crean un significado diferente al del verbo original. En el mundo tech, son absolutamente esenciales. Sin dominarlos, no podras seguir conversaciones técnicas ni leer documentación con fluidez.
 
 ---
 
-## Autenticacion y acceso
+## Autenticación y acceso
 
 | Phrasal Verb | Significado | Ejemplo |
 |-------------|-------------|---------|
-| **log in** | Iniciar sesion | *"Log in with your GitHub account."* |
-| **log out** | Cerrar sesion | *"Remember to log out when using shared computers."* |
+| **log in** | Iniciar sesión | *"Log in with your GitHub account."* |
+| **log out** | Cerrar sesión | *"Remember to log out when using shared computers."* |
 | **sign up** | Registrarse | *"Sign up for a free tier account."* |
 | **opt in** | Aceptar participar voluntariamente | *"Users must opt in to receive notifications."* |
 | **opt out** | Rechazar/salir voluntariamente | *"You can opt out of data collection in settings."* |
@@ -36,7 +36,7 @@ async function handleAuth(action) {
 | Phrasal Verb | Significado | Ejemplo |
 |-------------|-------------|---------|
 | **set up** | Configurar, instalar | *"Let me set up the development environment."* |
-| **spin up** | Iniciar/crear una instancia rapidamente | *"Spin up a new container for testing."* |
+| **spin up** | Iniciar/crear una instancia rápidamente | *"Spin up a new container for testing."* |
 | **tear down** | Destruir/eliminar infraestructura | *"Tear down the staging environment after tests."* |
 | **stand up** | Levantar/crear (un servidor o servicio) | *"We need to stand up a new Redis instance."* |
 | **boot up** | Arrancar/encender | *"The server takes 30 seconds to boot up."* |
@@ -65,9 +65,9 @@ async function handleAuth(action) {
 | Phrasal Verb | Significado | Ejemplo |
 |-------------|-------------|---------|
 | **roll out** | Desplegar gradualmente | *"We'll roll out the feature to 10% of users first."* |
-| **roll back** | Revertir a una version anterior | *"The deploy caused errors — roll back immediately."* |
-| **check in** | Subir codigo al repositorio | *"Check in your changes before the end of day."* |
-| **check out** | Obtener una copia del codigo / cambiar de rama | *"Check out the feature branch to test it."* |
+| **roll back** | Revertir a una versión anterior | *"The deploy caused errors — roll back immediately."* |
+| **check in** | Subir código al repositorio | *"Check in your changes before the end of day."* |
+| **check out** | Obtener una copia del código / cambiar de rama | *"Check out the feature branch to test it."* |
 | **phase out** | Retirar gradualmente | *"We're phasing out the legacy API over six months."* |
 | **plug in** | Conectar/integrar un componente | *"Plug in the authentication middleware."* |
 
@@ -119,7 +119,7 @@ def process_order(order):
 
 ## Phrasal verbs con doble significado
 
-Algunos phrasal verbs tienen significados diferentes segun el contexto:
+Algunos phrasal verbs tienen significados diferentes según el contexto:
 
 | Phrasal Verb | Significado 1 | Significado 2 |
 |-------------|---------------|---------------|

@@ -8,7 +8,7 @@ La **Programación Orientada a Objetos** organiza el código en torno a **objeto
 
 Si vienes de Python, Dart te resultará familiar pero con diferencias clave:
 
-| Característica | Python | Dart |
+| Carácterística | Python | Dart |
 |---|---|---|
 | Clase | `class Perro:` | `class Perro {` |
 | Constructor | `def __init__(self, nombre):` | `Perro(this.nombre);` |
@@ -23,7 +23,7 @@ Si vienes de Python, Dart te resultará familiar pero con diferencias clave:
 ### Clases y objetos
 Una **clase** es el molde; un **objeto** es la instancia concreta. `Perro` es la clase, `miPerro` es el objeto.
 
-### Herencia (`extends`)
+### herencia (`extends`)
 Permite que una clase herede propiedades y métodos de otra. Usa `super` para acceder al padre.
 
 ### Mixins (`with`)

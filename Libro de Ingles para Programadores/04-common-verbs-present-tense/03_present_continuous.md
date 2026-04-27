@@ -32,7 +32,7 @@ Sujeto + am/is/are + Verbo-ing + Complemento
 | Termina en -ie: cambiar -ie por -y, agregar -ing | die → dy**ing** | tying |
 | Termina en -ee: solo agregar -ing | see → see**ing** | agreeing |
 
-### Gerundios comunes en programación
+### Gerundios comúnes en programación
 
 | Verbo base | Gerundio | Ejemplo |
 |-----------|----------|---------|
@@ -145,7 +145,7 @@ El presente continuo es el tiempo verbal de los **standups** (reuniones diarias)
 
 ---
 
-## Errores comunes de hispanohablantes
+## Errores comúnes de hispanohablantes
 
 | Error | Correcto | Explicación |
 |-------|----------|-------------|

@@ -1,8 +1,8 @@
 # Capítulo 03: Pronombres y Artículos
 
-Este capitulo te ayuda a construir frases mas naturales en ingles tecnico.
-Parece basico, pero estos elementos aparecen todo el tiempo en documentacion,
-mensajes de error y explicaciones de codigo.
+Este capítulo te ayuda a construir frases mas naturales en ingles técnico.
+Parece básico, pero estos elementos aparecen todo el tiempo en documentación,
+mensajes de error y explicaciones de código.
 
 ---
 
@@ -24,7 +24,7 @@ Porque frases como estas dependen de estos elementos:
 - `Their code handles the error.`
 
 Si fallas en pronombres y articulos, tu ingles suena forzado aunque el
-vocabulario tecnico sea bueno.
+vocabulario técnico sea bueno.
 
 ---
 
@@ -39,7 +39,7 @@ vocabulario tecnico sea bueno.
 
 ---
 
-## Errores comunes del hispanohablante
+## Errores comúnes del hispanohablante
 
 - omitir articulos donde en ingles si hacen falta;
 - usar `he` o `she` para objetos donde conviene `it`;
@@ -51,4 +51,4 @@ vocabulario tecnico sea bueno.
 ## Objetivo
 
 Al finalizar podras usar correctamente pronombres, articulos y determinantes en
-contextos de programacion con mucha mas naturalidad.
+contextos de programación con mucha mas naturalidad.

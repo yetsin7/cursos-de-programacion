@@ -1,8 +1,8 @@
-# Discussion and Debate - Discusion y debate tecnico
+# Discussion and Debate - Discusion y debate técnico
 
-## Introduccion
+## Introducción
 
-Saber expresar acuerdo, desacuerdo y proponer ideas de forma respetuosa es fundamental en equipos de desarrollo. En la cultura tech anglosajona, el desacuerdo directo pero respetuoso es valorado — se espera que defiendas tus ideas con argumentos, pero tambien que escuches las de los demas. Esta leccion te da las herramientas linguisticas para hacerlo con confianza.
+Saber expresar acuerdo, desacuerdo y proponer ideas de forma respetuosa es fundamental en equipos de desarrollo. En la cultura tech anglosajona, el desacuerdo directo pero respetuoso es valorado — se espera que defiendas tus ideas con argumentos, pero también que escuches las de los demas. Esta leccion te da las herramientas linguisticas para hacerlo con confianza.
 
 ---
 
@@ -12,7 +12,7 @@ Saber expresar acuerdo, desacuerdo y proponer ideas de forma respetuosa es funda
 |-------|-------|----------|
 | Fuerte | *"I completely agree with [Name]'s point about..."* | Apoyo total |
 | Fuerte | *"Absolutely. That's exactly what I was thinking."* | Coincidencia total |
-| Moderado | *"I agree. And I'd add that..."* | Acuerdo + contribucion |
+| Moderado | *"I agree. And I'd add that..."* | Acuerdo + contribución |
 | Moderado | *"That makes a lot of sense."* | Validar la idea |
 | Suave | *"I think [Name] is on the right track."* | Apoyo parcial |
 | Suave | *"I see your point."* | Reconocer la perspectiva |
@@ -35,8 +35,8 @@ gracefully."
 | Frase | Uso |
 |-------|-----|
 | *"Building on what [Name] said..."* | Expandir la idea de alguien |
-| *"To add to [Name]'s point..."* | Contribuir informacion adicional |
-| *"Along those lines..."* | Continuar en la misma direccion |
+| *"To add to [Name]'s point..."* | Contribuir información adicional |
+| *"Along those lines..."* | Continuar en la misma dirección |
 | *"That reminds me of..."* | Conectar con otro tema relevante |
 | *"Taking that a step further..."* | Llevar la idea mas lejos |
 
@@ -57,7 +57,7 @@ thresholds. That way we catch issues before users do."
 
 | Nivel | Frase | Tono |
 |-------|-------|------|
-| Muy suave | *"I see it a bit differently..."* | Minimo conflicto |
+| Muy suave | *"I see it a bit differently..."* | Mínimo conflicto |
 | Suave | *"I'm not sure I agree with that approach."* | Diplomatico |
 | Moderado | *"I have some concerns about..."* | Profesional |
 | Directo | *"I'd push back on that a little."* | Confiado pero respetuoso |
@@ -86,7 +86,7 @@ the current approach handles only 60% of the expected traffic."
 
 ---
 
-## Frases para debate tecnico
+## Frases para debate técnico
 
 ### Jugar al abogado del diablo
 

@@ -54,7 +54,7 @@ precios, contadores, navegación y muchas otras partes de la app.
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - confundir `/` con `~/`;
 - no prever el caso `null` cuando aparecen `??` o `??=`;

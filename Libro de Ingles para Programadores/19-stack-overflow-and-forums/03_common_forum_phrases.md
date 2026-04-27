@@ -1,4 +1,4 @@
-# Frases y Abreviaciones Comunes en Foros Técnicos
+# Frases y Abreviaciones Comúnes en Foros Técnicos
 
 ## Introducción
 
@@ -40,7 +40,7 @@ reproducible example."
 | Frase | Significado |
 |-------|-------------|
 | Can you provide more context? | ¿Puedes dar más contexto? |
-| What version are you using? | ¿Qué versión estás usando? |
+| What versión are you using? | ¿Qué versión estás usando? |
 | Have you checked the docs? | ¿Has revisado la documentación? |
 | Can you share a minimal reproducible example? | ¿Puedes compartir un ejemplo mínimo reproducible? |
 | What OS/browser are you on? | ¿Qué sistema operativo/navegador usas? |
@@ -54,11 +54,11 @@ reproducible example."
 
 | Frase | Significado |
 |-------|-------------|
-| This worked for me: | Esto funcionó para mí: |
+| This worked for me: | Esto funciónó para mí: |
 | This solved my issue. | Esto resolvió mi problema. |
 | Confirmed working on... | Confirmado que funciona en... |
 | I can confirm this fix works. | Puedo confirmar que esta corrección funciona. |
-| This did the trick! | ¡Esto hizo el truco! (Esto funcionó) |
+| This did the trick! | ¡Esto hizo el truco! (Esto funciónó) |
 | That fixed it. Thanks! | Eso lo arregló. ¡Gracias! |
 | Marking as accepted answer. | Marcando como respuesta aceptada. |
 
@@ -89,7 +89,7 @@ fixed it.
 
 ---
 
-## Abreviaciones comunes
+## Abreviaciones comúnes
 
 ### Generales
 
@@ -145,7 +145,7 @@ We can optimize later (YAGNI)."
 
 ## Frases de la comunidad
 
-### Expresiones positivas
+### expresiones positivas
 
 | Frase | Significado |
 |-------|-------------|
@@ -157,7 +157,7 @@ We can optimize later (YAGNI)."
 | "This deserves more upvotes." | Esto merece más upvotes. |
 | "Brilliant solution!" | ¡Solución brillante! |
 
-### Expresiones de desacuerdo o corrección
+### expresiones de desacuerdo o corrección
 
 | Frase | Significado |
 |-------|-------------|

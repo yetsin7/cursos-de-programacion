@@ -39,10 +39,10 @@ Range-for mejora mucho la lectura cuando recorres colecciones.
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - olvidar `break` en `switch`;
-- crear ciclos sin actualizar la condicion;
+- crear ciclos sin actualizar la condición;
 - usar `for` tradicional cuando range-for seria mas claro;
 - escribir condiciones complejas sin parentesis.
 
@@ -50,4 +50,4 @@ Range-for mejora mucho la lectura cuando recorres colecciones.
 
 ## Archivo de ejemplo
 
-Ver: [01_control_flujo.cpp](C:/Users/Yetsin/Documents/Programacion/cursos-de-programacion/Libro%20de%20C%2B%2B/04-control-de-flujo/01_control_flujo.cpp)
+Ver: [01_control_flujo.cpp](C:/Users/Yetsin/Documents/Programación/cursos-de-programación/Libro%20de%20C%2B%2B/04-control-de-flujo/01_control_flujo.cpp)

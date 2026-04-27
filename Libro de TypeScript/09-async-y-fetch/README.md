@@ -2,7 +2,7 @@
 
 En aplicaciones reales casi nunca trabajas solo con datos locales. Tarde o
 temprano debes leer archivos, llamar APIs, esperar respuestas o manejar errores
-de red. Aqui entra la programacion asincrona.
+de red. Aqui entra la programación asincrona.
 
 ## Que aprenderas
 
@@ -13,7 +13,7 @@ de red. Aqui entra la programacion asincrona.
 
 ## Que esta pasando dentro del software
 
-Cuando haces una operacion asincrona, el programa inicia una tarea y continua con
+Cuando haces una operación asincrona, el programa inicia una tarea y continua con
 otras partes mientras espera el resultado. Cuando la respuesta llega, se resuelve
 la promesa y el flujo retoma el siguiente paso.
 

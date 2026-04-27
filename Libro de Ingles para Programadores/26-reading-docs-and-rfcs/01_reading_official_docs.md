@@ -1,35 +1,35 @@
 # Lesson 01: Reading Official Documentation
 
-## Introduccion
+## Introducción
 
-La documentacion oficial es tu mejor amiga como programador. Aprender a navegar y leer documentacion en ingles te ahorra horas de busqueda en Stack Overflow y te da informacion precisa y actualizada directamente de los creadores de la tecnologia.
+La documentación oficial es tu mejor amiga como programador. Aprender a navegar y leer documentación en ingles te ahorra horas de busqueda en Stack Overflow y te da información precisa y actualizada directamente de los creadores de la tecnología.
 
 ---
 
-## Secciones comunes en la documentacion oficial
+## secciones comúnes en la documentación oficial
 
-Casi toda documentacion tecnica sigue una estructura similar. Conocerla te permite encontrar lo que necesitas rapidamente.
+Casi toda documentación técnica sigue una estructura similar. Conocerla te permite encontrar lo que necesitas rápidamente.
 
-| Seccion en ingles | Significado | Que encontraras |
+| Sección en ingles | Significado | Que encontraras |
 |-------------------|-------------|-----------------|
-| **Getting Started** | Primeros pasos | Instalacion, configuracion basica, primer ejemplo |
-| **Quick Start** | Inicio rapido | Version condensada de Getting Started |
-| **API Reference** | Referencia de API | Lista completa de funciones, clases, metodos |
-| **Guides** | Guias | Tutoriales tematicos para tareas especificas |
+| **Getting Started** | Primeros pasos | Instalacion, configuración básica, primer ejemplo |
+| **Quick Start** | Inicio rápido | Versión condensada de Getting Started |
+| **API Reference** | Referencia de API | Lista completa de funciones, clases, métodos |
+| **Guides** | Guías | Tutoriales tematicos para tareas especificas |
 | **Tutorials** | Tutoriales | Proyectos paso a paso para aprender |
-| **Migration Guide** | Guia de migracion | Como actualizar de una version a otra |
+| **Migration Guide** | Guía de migración | Como actualizar de una versión a otra |
 | **Changelog** | Registro de cambios | Lista de cambios entre versiones |
-| **FAQ** | Preguntas frecuentes | Respuestas a dudas comunes |
-| **Troubleshooting** | Solucion de problemas | Errores comunes y como resolverlos |
-| **Examples** | Ejemplos | Codigo de ejemplo funcional |
-| **Cookbook** | Recetario | Soluciones a problemas especificos |
-| **Concepts** | Conceptos | Explicaciones teoricas de la arquitectura |
+| **FAQ** | Preguntas frecuentes | Respuestas a dudas comúnes |
+| **Troubleshooting** | Solución de problemas | Errores comúnes y como resolverlos |
+| **Examples** | Ejemplos | Código de ejemplo funcional |
+| **Cookbook** | Recetario | soluciones a problemas especificos |
+| **Concepts** | Conceptos | explicaciones teoricas de la arquitectura |
 
 ---
 
 ## Navegando la API Reference
 
-La referencia de API es donde pasaras mas tiempo. Aprende a leer sus patrones comunes.
+La referencia de API es donde pasaras mas tiempo. Aprende a leer sus patrones comúnes.
 
 ### Tabla de parametros (Parameters Table)
 
@@ -46,15 +46,15 @@ Parameters:
 
 **Vocabulario clave en tablas de parametros:**
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
 | **Required** | Obligatorio |
 | **Optional** | Opcional |
 | **Default** | Valor por defecto |
 | **Type** | Tipo de dato |
-| **Description** | Descripcion |
-| **Deprecated** | Obsoleto, no usar en codigo nuevo |
-| **Since** | Desde que version esta disponible |
+| **Description** | Descripción |
+| **Deprecated** | Obsoleto, no usar en código nuevo |
+| **Since** | Desde que versión esta disponible |
 | **Returns** | Que devuelve |
 | **Throws** | Que errores puede lanzar |
 
@@ -75,7 +75,7 @@ Throws:
 
 ---
 
-## Patrones comunes en la documentacion
+## Patrones comúnes en la documentación
 
 ### 1. Nota de advertencia (Warning/Caution)
 
@@ -92,14 +92,14 @@ Throws:
 | Etiqueta | Significado | Nivel de importancia |
 |----------|-------------|---------------------|
 | **Note** | Nota informativa | Bajo |
-| **Tip** | Consejo util | Bajo |
-| **Important** | Informacion importante | Medio |
+| **Tip** | Consejo útil | Bajo |
+| **Important** | Información importante | Medio |
 | **Warning** | Advertencia | Alto |
-| **Caution** | Precaucion | Alto |
+| **Caution** | Precaución | Alto |
 | **Danger** | Peligro | Muy alto |
 | **Deprecated** | Obsoleto | Alto |
 
-### 2. "See also" (Ver tambien)
+### 2. "See also" (Ver también)
 
 ```
 See also:
@@ -108,9 +108,9 @@ See also:
 - Working with Arrays guide
 ```
 
-Esta seccion te dirige a contenido relacionado. Es muy util para descubrir metodos o funciones que no conocias.
+Esta sección te dirige a contenido relacionado. Es muy útil para descubrir métodos o funciones que no conocias.
 
-### 3. Bloques de codigo con contexto
+### 3. Bloques de código con contexto
 
 ```
 // Basic usage
@@ -128,15 +128,15 @@ Los comentarios `// Basic usage` y `// With options` son patrones comunes que in
 
 ---
 
-## Tecnicas de lectura rapida para documentacion
+## Técnicas de lectura rápida para documentación
 
 ### Estrategia 1: Escaneo por estructura (Scanning)
 
-No leas toda la documentacion de principio a fin. En su lugar:
+No leas toda la documentación de principio a fin. En su lugar:
 
 1. **Lee los titulos** (headings) para entender la estructura
-2. **Busca la seccion relevante** a tu problema
-3. **Lee los ejemplos de codigo** primero, luego el texto explicativo
+2. **Busca la sección relevante** a tu problema
+3. **Lee los ejemplos de código** primero, luego el texto explicativo
 4. **Revisa la tabla de parametros** para entender las opciones
 
 ### Estrategia 2: Busqueda por palabras clave (Keyword Search)
@@ -146,16 +146,16 @@ Usa `Ctrl+F` (o `Cmd+F`) con estas palabras clave:
 | Si necesitas... | Busca... |
 |-----------------|----------|
 | Como instalar | `install`, `setup`, `getting started` |
-| Un metodo especifico | El nombre del metodo |
+| Un método especifico | El nombre del método |
 | Configuracion | `config`, `configuration`, `options` |
 | Errores | `error`, `troubleshooting`, `common issues` |
 | Ejemplos | `example`, `usage`, `sample` |
 | Migracion | `migration`, `upgrade`, `breaking` |
 | Rendimiento | `performance`, `optimization`, `best practices` |
 
-### Estrategia 3: Leer el codigo de ejemplo primero
+### Estrategia 3: Leer el código de ejemplo primero
 
-Los programadores experimentados leen los ejemplos de codigo **antes** del texto explicativo. El codigo es a menudo mas claro que la explicacion en prosa.
+Los programadores experimentados leen los ejemplos de código **antes** del texto explicativo. El código es a menudo mas claro que la explicación en prosa.
 
 ```python
 # Ejemplo de la documentacion de requests
@@ -169,28 +169,28 @@ response = requests.get('https://api.example.com/users',
 print(response.json())
 ```
 
-### Estrategia 4: Version comparison (Comparar versiones)
+### Estrategia 4: Versión comparison (Comparar versiones)
 
 Cuando actualizas una libreria, busca estas secciones:
 
-- **"What's New"** - Lo nuevo en esta version
+- **"What's New"** - Lo nuevo en esta versión
 - **"Breaking Changes"** - Cambios que rompen compatibilidad
-- **"Migration Guide"** - Guia paso a paso para actualizar
+- **"Migration Guide"** - Guía paso a paso para actualizar
 - **"Deprecated"** - Funcionalidades que seran eliminadas
 
 ---
 
-## Frases comunes en documentacion
+## Frases comúnes en documentación
 
-| Frase en ingles | Significado practico |
+| Frase en ingles | Significado práctico |
 |-----------------|---------------------|
 | "This method is **idempotent**" | Puedes llamarlo multiples veces sin efectos secundarios |
 | "**Under the hood**" | Internamente, lo que pasa detras de escena |
 | "This is a **convenience method**" | Es un atajo para algo mas complejo |
-| "**Out of the box**" | Funciona sin configuracion adicional |
+| "**Out of the box**" | Funciona sin configuración adicional |
 | "This is **opinionated**" | Tiene decisiones de diseno fuertes |
 | "**Side effects** may include..." | Efectos secundarios que debes considerar |
-| "This will be **removed** in the next major version" | Deja de usar esto pronto |
+| "This will be **removed** in the next major versión" | Deja de usar esto pronto |
 | "**Opt-in** feature" | Debes activarlo manualmente |
 | "**Opt-out**" | Viene activado, puedes desactivarlo |
 | "**Batteries included**" | Viene con todo lo necesario |
@@ -199,15 +199,15 @@ Cuando actualizas una libreria, busca estas secciones:
 
 ---
 
-## Tipos de documentacion por framework
+## Tipos de documentación por framework
 
 | Framework/Libreria | Estilo de docs | Donde empezar |
 |---------------------|---------------|---------------|
 | React | Tutoriales interactivos | "Learn React" section |
-| Vue | Guias progresivas | "Guide" -> "Essentials" |
-| Django | Documentacion muy completa | "First steps" tutorial |
+| Vue | Guías progresivas | "Guide" -> "Essentials" |
+| Django | Documentación muy completa | "First steps" tutorial |
 | Flutter | Cookbooks + API reference | "Get started" -> "Codelabs" |
-| Node.js | API reference tecnica | Directamente en la API ref |
+| Node.js | API reference técnica | Directamente en la API ref |
 | Python | PEPs + stdlib docs | "Tutorial" section |
 
 ---
@@ -216,14 +216,14 @@ Cuando actualizas una libreria, busca estas secciones:
 
 | Palabra | Pronunciacion aproximada | Significado |
 |---------|--------------------------|-------------|
-| **Documentation** | doc-yu-men-TEI-shon | Documentacion |
+| **Documentation** | doc-yu-men-TEI-shon | Documentación |
 | **Reference** | RE-fer-ens | Referencia |
 | **Specification** | spe-si-fi-KEI-shon | Especificacion |
-| **Implementation** | im-ple-men-TEI-shon | Implementacion |
+| **Implementation** | im-ple-men-TEI-shon | Implementación |
 | **Deprecated** | DE-pre-kei-ted | Obsoleto |
 | **Comprehensive** | com-pri-JEN-siv | Completo, exhaustivo |
 | **Straightforward** | streit-FOR-ward | Directo, sencillo |
-| **Boilerplate** | BOI-ler-pleit | Codigo repetitivo necesario |
+| **Boilerplate** | BOI-ler-pleit | Código repetitivo necesario |
 | **Scaffold** | SKA-fold | Estructura base de un proyecto |
 | **Verbose** | ver-BOUS | Detallado, con mucho texto |
 
@@ -231,8 +231,8 @@ Cuando actualizas una libreria, busca estas secciones:
 
 ## Resumen
 
-- La documentacion oficial sigue patrones predecibles que puedes aprender a reconocer
-- Lee los ejemplos de codigo primero, luego el texto explicativo
-- Usa busqueda por palabras clave para encontrar lo que necesitas rapidamente
+- La documentación oficial sigue patrones predecibles que puedes aprender a reconocer
+- Lee los ejemplos de código primero, luego el texto explicativo
+- Usa busqueda por palabras clave para encontrar lo que necesitas rápidamente
 - Conoce las secciones clave: Getting Started, API Reference, Guides, Migration Guide
 - Presta atencion a las notas de Warning, Deprecated y Breaking Changes

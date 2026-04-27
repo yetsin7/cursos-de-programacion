@@ -1,8 +1,8 @@
 # System Design Language - Lenguaje de diseno de sistemas
 
-## Introduccion
+## Introducción
 
-Las entrevistas de system design evaluan tu capacidad de disenar sistemas a gran escala. A diferencia de las entrevistas de codigo, aqui no hay una unica respuesta correcta — lo que importa es tu proceso de pensamiento, las preguntas que haces y como comunicas las decisiones de diseno. Esta leccion te da el vocabulario y las frases esenciales.
+Las entrevistas de system design evaluan tu capacidad de disenar sistemas a gran escala. A diferencia de las entrevistas de código, aqui no hay una unica respuesta correcta — lo que importa es tu proceso de pensamiento, las preguntas que haces y como comunicas las decisiones de diseno. Esta leccion te da el vocabulario y las frases esenciales.
 
 ---
 
@@ -41,11 +41,11 @@ on average, with peaks of maybe 5x that."
 |-------|----------|
 | *"Let me start with a high-level architecture."* | Presentar el diseno general |
 | *"I'd use a load balancer in front of..."* | Distribucion de trafico |
-| *"The application servers would handle..."* | Logica de negocio |
+| *"The application servers would handle..."* | Lógica de negocio |
 | *"For the database, I'd choose... because..."* | Seleccion de base de datos |
 | *"I'd add a caching layer using..."* | Mejora de rendimiento |
 | *"We can cache this at the CDN level."* | Cache de contenido estatico |
-| *"I'd use a message queue for..."* | Procesamiento asincrono |
+| *"I'd use a message queue for..."* | Procesamiento asíncrono |
 
 ### Ejemplo de diseno de alto nivel
 
@@ -80,7 +80,7 @@ CloudFront as a CDN to serve content close to users."
 | Frase | Contexto |
 |-------|----------|
 | *"This scales horizontally by..."* | Explicar escalabilidad |
-| *"The bottleneck would be..."* | Identificar puntos debiles |
+| *"The bottleneck would be..."* | Identificar puntos débiles |
 | *"To handle this, we could..."* | Proponer soluciones |
 | *"The trade-off is..."* | Comparar opciones |
 | *"If we need to optimize further..."* | Mejoras adicionales |
@@ -108,27 +108,27 @@ an acceptable trade-off."
 
 ### Infraestructura
 
-| Termino | Significado | Ejemplo |
+| Término | Significado | Ejemplo |
 |---------|-------------|---------|
 | **Load balancer** | Balanceador de carga | *"A load balancer distributes requests."* |
-| **Auto-scaling** | Escalamiento automatico | *"Auto-scaling adds servers during peaks."* |
+| **Auto-scaling** | Escalamiento automático | *"Auto-scaling adds servers during peaks."* |
 | **CDN** | Red de distribucion de contenido | *"Serve static assets from a CDN."* |
 | **Reverse proxy** | Proxy inverso | *"Nginx as a reverse proxy."* |
 | **Service mesh** | Malla de servicios | *"A service mesh handles inter-service communication."* |
 
 ### Base de datos
 
-| Termino | Significado | Ejemplo |
+| Término | Significado | Ejemplo |
 |---------|-------------|---------|
 | **Sharding** | Particionamiento horizontal | *"Shard by user ID."* |
 | **Replication** | Replicacion | *"Use read replicas for scalability."* |
 | **ACID** | Atomicidad, Consistencia, Aislamiento, Durabilidad | *"We need ACID compliance for payments."* |
 | **Eventual consistency** | Consistencia eventual | *"Eventual consistency is fine for likes."* |
-| **Schema migration** | Migracion de esquema | *"Plan the schema migration carefully."* |
+| **Schema migration** | Migración de esquema | *"Plan the schema migration carefully."* |
 
 ### Rendimiento
 
-| Termino | Significado | Ejemplo |
+| Término | Significado | Ejemplo |
 |---------|-------------|---------|
 | **Throughput** | Rendimiento/capacidad | *"Handle 10K requests per second."* |
 | **Latency** | Latencia | *"Keep latency under 100ms."* |
@@ -205,4 +205,4 @@ for even lower latency."
 
 ## Consejo final
 
-> En system design, no hay respuesta perfecta. Lo que importa es: (1) hacer buenas preguntas, (2) estimar numeros razonables, (3) proponer una arquitectura clara, (4) identificar trade-offs, y (5) comunicar todo esto con fluidez en ingles. Practica disenando sistemas populares: Twitter feed, chat system, file storage, notification service.
+> En system design, no hay respuesta perfecta. Lo que importa es: (1) hacer buenas preguntas, (2) estimar números razonables, (3) proponer una arquitectura clara, (4) identificar trade-offs, y (5) comunicar todo esto con fluidez en ingles. Practica disenando sistemas populares: Twitter feed, chat system, file storage, notification service.

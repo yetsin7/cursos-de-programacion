@@ -75,7 +75,7 @@ Cerrar libera recursos y asegura que los datos pendientes se vacíen correctamen
 - Persistir registros sencillos
 - Procesar archivos de texto o binarios
 
-## Errores comunes
+## Errores comúnes
 
 - No comprobar si `fopen` devolvió `NULL`
 - Olvidar cerrar el archivo

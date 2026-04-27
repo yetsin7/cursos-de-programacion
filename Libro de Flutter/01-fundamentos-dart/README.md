@@ -9,11 +9,11 @@ empieza a verse como software organizado.
 ## ¿Que es Dart?
 
 Dart es el lenguaje en el que se escribe Flutter. Fue creado por Google y está
-pensado para ser rapido, seguro, moderno y agradable de leer.
+pensado para ser rápido, seguro, moderno y agradable de leer.
 
 Con Dart puedes:
 
-- escribir logica de negocio;
+- escribir lógica de negocio;
 - modelar datos;
 - usar funciones, colecciones y clases;
 - compilar para desarrollo y para produccion.
@@ -22,12 +22,12 @@ Con Dart puedes:
 
 ## ¿Por que aprender Dart antes de Flutter?
 
-Flutter dibuja interfaces, pero la logica que decide que mostrar, como reaccionar
+Flutter dibuja interfaces, pero la lógica que decide que mostrar, como reaccionar
 al usuario y como organizar datos vive en Dart.
 
-Si aprendes Flutter sin bases de Dart, es facil caer en esto:
+Si aprendes Flutter sin bases de Dart, es fácil caer en esto:
 
-- copiar codigo sin comprender;
+- copiar código sin comprender;
 - no saber leer errores;
 - no entender estados, variables o funciones;
 - atascarte cuando cambie un ejemplo.
@@ -51,7 +51,7 @@ widgets, eventos de usuario y reconstrucciones de interfaz.
 
 ## Cómo ejecutar los archivos de este módulo
 
-Los archivos `.dart` de este modulo son Dart puro. No necesitas crear un
+Los archivos `.dart` de este módulo son Dart puro. No necesitas crear un
 proyecto Flutter para estudiarlos.
 
 ```bash
@@ -67,25 +67,25 @@ dart run 01_hola_mundo.dart
 | `01_hola_mundo.dart` | Primer programa, salida en consola e interpolacion |
 | `02_variables.dart` | `var`, tipos explicitos y `dynamic` |
 | `03_tipos_de_datos.dart` | `int`, `double`, `String`, `bool`, `List`, `Map`, `null` |
-| `04_comentarios.dart` | Comentarios de linea, bloque y documentacion |
+| `04_comentarios.dart` | Comentarios de linea, bloque y documentación |
 | `05_constantes.dart` | `const` vs `final` |
 | `06_ejercicios.dart` | Practica guiada |
 
 ---
 
-## Errores comunes del principiante
+## Errores comúnes del principiante
 
 - querer aprender widgets sin dominar variables y funciones;
 - pensar que Dart y Flutter son exactamente lo mismo;
 - ignorar el papel de `main()`;
 - no experimentar con tipos y valores;
-- saltarse ejercicios por creer que son demasiado faciles.
+- saltarse ejercicios por creer que son demasiado fáciles.
 
 ---
 
 ## Dart vs Python — comparativa rápida
 
-| Característica | Python | Dart |
+| Carácterística | Python | Dart |
 |----------------|--------|------|
 | Tipado | Dinámico (opcional estático) | Estático con inferencia |
 | Null safety | No nativo | Sí, nativo |

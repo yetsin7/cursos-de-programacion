@@ -32,7 +32,7 @@ There's too much duplicated code in this module.
 
 ## 2. Adjetivos compuestos (Compound Adjectives)
 
-Los adjetivos compuestos se forman uniendo dos palabras con un guión. Son muy comunes en inglés técnico.
+Los adjetivos compuestos se forman uniendo dos palabras con un guión. Son muy comúnes en inglés técnico.
 
 ### Estructura: well/poorly + participio pasado
 

@@ -29,7 +29,7 @@ En español usamos una sola palabra para expresar existencia: **"hay"**. En ingl
 | Inglés | Español |
 |--------|---------|
 | There is a bug in the code | Hay un bug en el código |
-| There is a new version available | Hay una nueva versión disponible |
+| There is a new versión available | Hay una nueva versión disponible |
 | There is a README in the repository | Hay un README en el repositorio |
 | There is an error in line 42 | Hay un error en la línea 42 |
 | There is a conflict in the merge | Hay un conflicto en el merge |
@@ -126,7 +126,7 @@ Are there + sustantivo plural?
 
 ---
 
-## Contextos comunes en programación
+## Contextos comúnes en programación
 
 ### En mensajes de error y logs
 
@@ -157,7 +157,7 @@ There are some performance issues we need to address.
 
 ---
 
-## Errores comunes de hispanohablantes
+## Errores comúnes de hispanohablantes
 
 | Error | Correcto | Explicación |
 |-------|----------|-------------|

@@ -1,7 +1,7 @@
 # Capítulo 05 — Generics y Narrowing
 
-Los generics permiten escribir codigo reutilizable sin perder seguridad de
-tipos. El narrowing ayuda a pasar de un tipo amplio a uno mas concreto despues
+Los generics permiten escribir código reutilizable sin perder seguridad de
+tipos. El narrowing ayuda a pasar de un tipo amplio a uno mas concreto después
 de una comprobacion valida.
 
 ## Que aprenderas

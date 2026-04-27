@@ -1,8 +1,8 @@
 # Capítulo 01 — Introducción a C#
 
-Este capitulo te presenta C# y .NET desde una idea importante: no solo vas a
-escribir codigo, tambien vas a entender que plataforma lo ejecuta y como se
-comporta una aplicacion de consola.
+Este capítulo te presenta C# y .NET desde una idea importante: no solo vas a
+escribir código, también vas a entender que plataforma lo ejecuta y como se
+comporta una aplicación de consola.
 
 ---
 
@@ -27,9 +27,9 @@ Es muy usado para:
 
 Incluye:
 
-- el runtime que ejecuta el codigo;
+- el runtime que ejecuta el código;
 - bibliotecas listas para usar;
-- herramientas de compilacion y ejecucion como `dotnet`.
+- herramientas de compilación y ejecución como `dotnet`.
 
 ---
 
@@ -37,7 +37,7 @@ Incluye:
 
 Cuando corres un programa:
 
-1. el SDK compila el codigo;
+1. el SDK compila el código;
 2. .NET carga el runtime;
 3. se crean objetos y variables en memoria;
 4. el programa ejecuta instrucciones;
@@ -50,7 +50,7 @@ lenguajes tipados y plataformas robustas.
 
 ## Estructura básica de un programa C#
 
-Un programa puede escribirse con la forma clasica usando `Main`, o de forma mas
+Un programa puede escribirse con la forma clásica usando `Main`, o de forma mas
 breve con top-level statements.
 
 La idea esencial no cambia:
@@ -71,11 +71,11 @@ La idea esencial no cambia:
 
 ---
 
-## Errores comunes del principiante
+## Errores comúnes del principiante
 
 - pensar que C# y .NET son exactamente lo mismo;
 - ver la consola como algo "muy básico" y no como una herramienta de aprendizaje;
-- ignorar el flujo de compilacion y ejecucion;
+- ignorar el flujo de compilación y ejecución;
 - copiar ejemplos sin leer sus partes.
 
 ---

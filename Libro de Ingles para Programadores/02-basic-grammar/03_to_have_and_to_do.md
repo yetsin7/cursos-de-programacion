@@ -29,7 +29,7 @@ Los verbos **"to have"** (tener) y **"to do"** (hacer) tienen un rol doble en in
 | The object has a property called "name" | El objeto tiene una propiedad llamada "name" |
 | The function has three parameters | La función tiene tres parámetros |
 | The project has no dependencies | El proyecto no tiene dependencias |
-| The string has 20 characters | El string tiene 20 caracteres |
+| The string has 20 characters | El string tiene 20 carácteres |
 | The response has a status code | La respuesta tiene un código de estado |
 | The user has admin privileges | El usuario tiene privilegios de admin |
 
@@ -86,7 +86,7 @@ Do/Does + Sujeto + Verbo (forma base) + Complemento?
 | **Does** the API support pagination? | ¿La API soporta paginación? |
 | **Do** the tests cover edge cases? | ¿Los tests cubren casos límite? |
 | **Does** the server handle CORS? | ¿El servidor maneja CORS? |
-| **Do** you use version control? | ¿Usas control de versiones? |
+| **Do** you use versión control? | ¿Usas control de versiones? |
 | **Does** this library support TypeScript? | ¿Esta librería soporta TypeScript? |
 
 > **Regla clave:** Cuando usas "does" (tercera persona), el verbo principal pierde la -s. "Does the function return..." NO "Does the function returns..."
@@ -138,7 +138,7 @@ Sujeto + do/does + not + Verbo (forma base) + Complemento
 
 ---
 
-## Errores comunes de hispanohablantes
+## Errores comúnes de hispanohablantes
 
 | Error | Correcto | Explicación |
 |-------|----------|-------------|

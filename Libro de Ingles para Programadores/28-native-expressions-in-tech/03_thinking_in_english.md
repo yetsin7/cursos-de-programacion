@@ -1,8 +1,8 @@
 # Lesson 03: Thinking in English
 
-## Introduccion
+## Introducción
 
-Hay un momento clave en el aprendizaje de un idioma: cuando dejas de traducir mentalmente del espanol y empiezas a pensar directamente en ingles. Para los programadores, este salto es mas facil de lograr porque ya piensas en codigo, que es un lenguaje universal. Esta leccion te da estrategias practicas para hacer esa transicion.
+Hay un momento clave en el aprendizaje de un idioma: cuando dejas de traducir mentalmente del espanol y empiezas a pensar directamente en ingles. Para los programadores, este salto es mas fácil de lograr porque ya piensas en código, que es un lenguaje universal. Esta leccion te da estrategias prácticas para hacer esa transición.
 
 ---
 
@@ -14,13 +14,13 @@ Hay un momento clave en el aprendizaje de un idioma: cuando dejas de traducir me
 | **2. Mezcla** | A veces piensas en espanol, a veces en ingles | "I need to crear a function that retorna..." |
 | **3. Pensamiento directo** | Piensas directamente en ingles | "I need a function that returns the filtered list" |
 
-El objetivo es llegar a la etapa 3. No sucede de la noche a la manana, pero con practica constante, es alcanzable.
+El objetivo es llegar a la etapa 3. No sucede de la noche a la manana, pero con práctica constante, es alcanzable.
 
 ---
 
 ## Estrategia 1: Monologo interno al programar
 
-Cuando programas, narrate a ti mismo en ingles lo que estas haciendo. Esto entrena tu cerebro para asociar acciones de programacion con palabras en ingles.
+Cuando programas, narrate a ti mismo en ingles lo que estas haciendo. Esto entrena tu cerebro para asociar acciones de programación con palabras en ingles.
 
 ### Como hacerlo
 
@@ -34,17 +34,17 @@ Pensamiento en ingles (practicar):
 returns the elements that match the condition."
 ```
 
-### Frases para narrar tu codigo
+### Frases para narrar tu código
 
 | Accion | Frase en ingles |
 |--------|----------------|
 | Crear una variable | "Let me declare a variable to store the result." |
-| Escribir una funcion | "I need a function that takes X and returns Y." |
+| Escribir una función | "I need a function that takes X and returns Y." |
 | Depurar | "The bug is somewhere in this loop. Let me add a log." |
 | Leer un error | "It's throwing a TypeError because the value is null." |
 | Refactorizar | "I should extract this into a separate function." |
-| Buscar una solucion | "Let me check if there's a built-in method for this." |
-| Revisar codigo | "This looks clean, but the naming could be better." |
+| Buscar una solución | "Let me check if there's a built-in method for this." |
+| Revisar código | "This looks clean, but the naming could be better." |
 | Planificar | "First I'll set up the database, then the API endpoints." |
 | Probar | "Let me write a test for the edge case where input is empty." |
 | Commitear | "This commit adds validation to the login form." |
@@ -62,9 +62,9 @@ throw a custom error with a descriptive message."
 
 ---
 
-## Estrategia 2: Describir tu codigo mientras lo escribes
+## Estrategia 2: Describir tu código mientras lo escribes
 
-En lugar de escribir codigo en silencio, describe cada linea como si le explicaras a un companero:
+En lugar de escribir código en silencio, describe cada linea como si le explicaras a un companero:
 
 ```javascript
 // "First, I'll import the necessary modules"
@@ -118,10 +118,10 @@ with an empty string as default."
 | "Voy a poner un breakpoint" | "Let me set a breakpoint here" |
 | "El error esta aqui" | "The bug is right here" |
 | "Vamos a ver que valor tiene" | "Let me check what value this holds" |
-| "Algo esta mal con esta logica" | "Something's off with this logic" |
+| "Algo esta mal con esta lógica" | "Something's off with this logic" |
 | "Ya encontre el problema" | "Found it!" / "Got it!" |
 | "No tiene sentido" | "This doesn't make sense" |
-| "Deberia funcionar..." | "This should work..." |
+| "Debería funcionar..." | "This should work..." |
 | "Que esta pasando aqui?" | "What's going on here?" |
 | "Intentare otra cosa" | "Let me try a different approach" |
 | "Esto funciono!" | "That did it!" / "That fixed it!" |
@@ -148,7 +148,7 @@ with an empty string as default."
 Intenta que **80% del contenido tech** que consumes sea en ingles. Esto incluye:
 
 - Buscar errores en Google en ingles (no en espanol)
-- Leer documentacion en ingles (no traducciones)
+- Leer documentación en ingles (no traducciones)
 - Ver tutoriales en ingles (con subtitulos si necesitas)
 - Escribir commits y comentarios en ingles
 
@@ -161,9 +161,9 @@ Intenta que **80% del contenido tech** que consumes sea en ingles. Esto incluye:
 | **IDE en ingles** | Los menus y mensajes seran en ingles |
 | **Sistema operativo en ingles** | Inmersion constante |
 | **Navegador en ingles** | Resultados de busqueda en ingles |
-| **Teclado en ingles (US)** | Los caracteres de programacion estan mejor ubicados |
+| **Teclado en ingles (US)** | Los carácteres de programación estan mejor ubicados |
 | **Telefono en ingles** | Practica pasiva constante |
-| **Busquedas en Google en ingles** | Mejores resultados para programacion |
+| **Busquedas en Google en ingles** | Mejores resultados para programación |
 
 ---
 
@@ -171,11 +171,11 @@ Intenta que **80% del contenido tech** que consumes sea en ingles. Esto incluye:
 
 ### Palabras que deberias dejar de traducir
 
-Algunas palabras son mas naturales en ingles en el contexto de programacion. Usarlas directamente:
+Algunas palabras son mas naturales en ingles en el contexto de programación. Usarlas directamente:
 
 | En lugar de pensar... | Piensa directamente... |
 |----------------------|----------------------|
-| "Funcion que devuelve" | "Function that returns" |
+| "Función que devuelve" | "Function that returns" |
 | "Bucle para cada" | "For each loop" |
 | "Manejar errores" | "Handle errors" |
 | "Instancia de la clase" | "Instance of the class" |
@@ -186,7 +186,7 @@ Algunas palabras son mas naturales en ingles en el contexto de programacion. Usa
 | "Servidor de desarrollo" | "Dev server" |
 | "Pruebas unitarias" | "Unit tests" |
 
-### Ejercicio de transicion
+### Ejercicio de transición
 
 Cuando te descubras pensando en espanol, **no te juzgues**. Simplemente repite el pensamiento en ingles:
 
@@ -226,12 +226,12 @@ for this in our utils folder..."
 
 Sabes que estas pensando en ingles cuando:
 
-| Senal | Descripcion |
+| Senal | Descripción |
 |-------|-------------|
 | Suenas en ingles | Tu subconsciente procesa en ingles |
-| Lees codigo sin traducir | Entiendes directamente |
+| Lees código sin traducir | Entiendes directamente |
 | Hablas sin pausas de traduccion | Las palabras fluyen |
-| Piensas "function" no "funcion" | Terminos tech en ingles |
+| Piensas "function" no "función" | Términos tech en ingles |
 | Escribes commits en ingles naturalmente | Sin esfuerzo consciente |
 | Entiendes chistes en ingles sin pensar | Humor directo |
 | Googlear en ingles es tu default | Busquedas naturales |
@@ -252,9 +252,9 @@ Sabes que estas pensando en ingles cuando:
 
 ## Resumen
 
-- Pensar en ingles es una habilidad que se entrena con practica constante
-- Narra tu programacion en ingles: declaraciones, debugging, decisiones
+- Pensar en ingles es una habilidad que se entrena con práctica constante
+- Narra tu programación en ingles: declaraciones, debugging, decisiones
 - Consume contenido tech en ingles (80% de tu consumo)
 - Cambia tu entorno digital a ingles para inmersion pasiva
-- No traduzcas: usa los terminos en ingles directamente
-- Se paciente: la transicion toma semanas, no dias
+- No traduzcas: usa los términos en ingles directamente
+- Se paciente: la transición toma semanas, no dias

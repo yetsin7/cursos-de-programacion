@@ -184,13 +184,13 @@ Cannot find the file "config.yaml".
 
 | Situación | Usar |
 |-----------|------|
-| Instrucciones y guías | Activa |
-| Descripciones de funciones | Activa |
+| instrucciones y guías | Activa |
+| descripciones de funciones | Activa |
 | Mensajes de error | Activa |
 | README y tutoriales | Activa |
 | Procesos automáticos (agente irrelevante) | Pasiva |
 | Foco en el objeto | Pasiva |
-| Descripciones históricas impersonales | Pasiva |
+| descripciones históricas impersonales | Pasiva |
 
 > **Regla general:** Si puedes escribirlo en voz activa sin perder claridad, hazlo.
 > Usa voz pasiva solo cuando agrega valor al mensaje.

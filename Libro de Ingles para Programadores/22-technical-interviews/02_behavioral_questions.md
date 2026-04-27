@@ -1,12 +1,12 @@
 # Behavioral Questions - Preguntas de comportamiento
 
-## Introduccion
+## Introducción
 
-Las preguntas de comportamiento (behavioral questions) evaluan como actuas en situaciones reales de trabajo. Las empresas creen que tu comportamiento pasado predice tu comportamiento futuro. El metodo **STAR** es la estructura estandar para responder estas preguntas de forma clara y convincente.
+Las preguntas de comportamiento (behavioral questions) evaluan como actuas en situaciones reales de trabajo. Las empresas creen que tu comportamiento pasado predice tu comportamiento futuro. El método **STAR** es la estructura estandar para responder estas preguntas de forma clara y convincente.
 
 ---
 
-## El metodo STAR
+## El método STAR
 
 | Letra | Significado | Que decir | Tiempo |
 |-------|-------------|-----------|--------|
@@ -182,7 +182,7 @@ MALO:
 
 ---
 
-## Mas preguntas comunes con frases utiles
+## Mas preguntas comúnes con frases útiles
 
 | Pregunta | Frases para responder |
 |----------|----------------------|
@@ -211,11 +211,11 @@ MALO:
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 | Error | Mejor alternativa |
 |-------|-------------------|
-| Respuestas vagas sin detalles | Usa numeros y resultados concretos |
+| Respuestas vagas sin detalles | Usa números y resultados concretos |
 | Decir "nosotros" todo el tiempo | Usa "yo" para tus acciones especificas |
 | No tener un resultado claro | Siempre termina con el resultado y lo aprendido |
 | Respuestas de mas de 3 minutos | Practica para mantenerla en 2 minutos |
@@ -225,4 +225,4 @@ MALO:
 
 ## Consejo final
 
-> Prepara 5-6 historias STAR de tu experiencia real que cubran: un reto tecnico, un conflicto de equipo, un proyecto exitoso, un fracaso con leccion, y trabajo bajo presion. Las mismas historias pueden adaptarse a diferentes preguntas cambiando el enfasis.
+> Prepara 5-6 historias STAR de tu experiencia real que cubran: un reto técnico, un conflicto de equipo, un proyecto exitoso, un fracaso con leccion, y trabajo bajo presion. Las mismas historias pueden adaptarse a diferentes preguntas cambiando el enfasis.

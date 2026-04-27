@@ -1,8 +1,8 @@
 # Lesson 02: Reading RFCs and Specifications
 
-## Introduccion
+## Introducción
 
-Los RFCs (Request for Comments) son documentos que definen los estandares de Internet. Si alguna vez te has preguntado como funciona HTTP, WebSocket, JWT o el email, la respuesta esta en un RFC. Aprender a leerlos te da un entendimiento profundo de las tecnologias que usas todos los dias.
+Los RFCs (Request for Comments) son documentos que definen los estandares de Internet. Si alguna vez te has preguntado como funciona HTTP, WebSocket, JWT o el email, la respuesta esta en un RFC. Aprender a leerlos te da un entendimiento profundo de las tecnologías que usas todos los dias.
 
 ---
 
@@ -19,14 +19,14 @@ RFC significa **Request for Comments** (Solicitud de Comentarios). A pesar del n
 | **Idioma** | Siempre en ingles |
 | **Acceso** | Gratuito en tools.ietf.org y rfc-editor.org |
 
-### RFCs famosos que todo programador deberia conocer
+### RFCs famosos que todo programador debería conocer
 
 | RFC | Nombre | Que define |
 |-----|--------|-----------|
 | RFC 2616 / 7230-7235 | HTTP/1.1 | El protocolo HTTP |
 | RFC 6455 | WebSocket | El protocolo WebSocket |
 | RFC 7519 | JWT | JSON Web Tokens |
-| RFC 7231 | HTTP Semantics | Metodos HTTP y codigos de estado |
+| RFC 7231 | HTTP Semantics | Métodos HTTP y códigos de estado |
 | RFC 8259 | JSON | El formato JSON |
 | RFC 5321 | SMTP | El protocolo de email |
 | RFC 2119 | Key Words | Palabras clave para RFCs (MUST, SHALL...) |
@@ -38,21 +38,21 @@ RFC significa **Request for Comments** (Solicitud de Comentarios). A pesar del n
 
 ## Estructura de un RFC
 
-Todo RFC sigue una estructura similar. Conocerla te permite navegar cualquier RFC rapidamente.
+Todo RFC sigue una estructura similar. Conocerla te permite navegar cualquier RFC rápidamente.
 
-### Secciones principales
+### secciones principales
 
-| Seccion | Que contiene | Importancia |
+| Sección | Que contiene | Importancia |
 |---------|-------------|-------------|
 | **Abstract** | Resumen de 1-2 parrafos | Lee siempre primero |
 | **Status of This Memo** | Estado del documento (Draft, Proposed, Standard) | Indica madurez |
-| **Table of Contents** | Indice de secciones | Usa para navegar |
+| **Table of Contents** | Índice de secciones | Usa para navegar |
 | **1. Introduction** | Contexto y motivacion | Lee para entender el "por que" |
-| **2. Terminology** | Definiciones de terminos | Consulta cuando no entiendas algo |
-| **3-N. Specification** | El contenido tecnico principal | La parte mas importante |
-| **Security Considerations** | Implicaciones de seguridad | Critico para implementar bien |
+| **2. Terminology** | definiciones de términos | Consulta cuando no entiendas algo |
+| **3-N. Specification** | El contenido técnico principal | La parte mas importante |
+| **Security Considerations** | Implicaciones de seguridad | Crítico para implementar bien |
 | **IANA Considerations** | Registros con IANA | Solo si necesitas registrar algo |
-| **References** | Documentos relacionados | Util para profundizar |
+| **References** | Documentos relacionados | Útil para profundizar |
 | **Authors' Addresses** | Contacto de los autores | Informativo |
 
 ---
@@ -65,7 +65,7 @@ El RFC 2119 es probablemente el mas importante para leer otros RFCs. Define el s
 
 | Palabra clave | Significado | Nivel de obligacion |
 |--------------|-------------|---------------------|
-| **MUST** | Es obligatorio, no hay excepcion | 100% requerido |
+| **MUST** | Es obligatorio, no hay excepción | 100% requerido |
 | **MUST NOT** | Esta absolutamente prohibido | 100% prohibido |
 | **REQUIRED** | Igual que MUST | 100% requerido |
 | **SHALL** | Igual que MUST (mas formal) | 100% requerido |
@@ -78,7 +78,7 @@ El RFC 2119 es probablemente el mas importante para leer otros RFCs. Define el s
 
 ### Como identificarlas
 
-Cuando estas palabras aparecen **EN MAYUSCULAS** en un RFC, tienen su significado tecnico preciso:
+Cuando estas palabras aparecen **EN MAYUSCULAS** en un RFC, tienen su significado técnico preciso:
 
 ```
 The server MUST respond with a 200 status code.
@@ -96,7 +96,7 @@ The server MUST NOT send a body in response to a HEAD request.
 
 ---
 
-## Ejemplo practico: Leyendo RFC 7519 (JWT)
+## Ejemplo práctico: Leyendo RFC 7519 (JWT)
 
 Veamos como leer secciones reales de un RFC.
 
@@ -114,7 +114,7 @@ signed or integrity protected with a Message Authentication Code
 
 **Desglose del vocabulario:**
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
 | **compact** | Compacto, de tamano reducido |
 | **URL-safe** | Seguro para usar en URLs |
@@ -122,7 +122,7 @@ signed or integrity protected with a Message Authentication Code
 | **claims** | Afirmaciones/declaraciones (datos que el token contiene) |
 | **transferred between two parties** | Transferidas entre dos partes |
 | **encoded** | Codificado |
-| **payload** | Carga util (los datos que transporta) |
+| **payload** | Carga útil (los datos que transporta) |
 | **digitally signed** | Firmado digitalmente |
 | **integrity protected** | Protegido en su integridad |
 | **encrypted** | Cifrado |
@@ -136,7 +136,7 @@ NumericDate
    ignoring leap seconds.
 ```
 
-Las definiciones en la seccion de terminologia son **muy precisas**. Cada palabra importa.
+Las definiciones en la sección de terminologia son **muy precisas**. Cada palabra importa.
 
 ### La Especificacion
 
@@ -174,11 +174,11 @@ The client's opening handshake consists of the following:
 5. A |Sec-WebSocket-Key| header field with a base64-encoded value
 ```
 
-**Vocabulario tecnico del RFC:**
+**Vocabulario técnico del RFC:**
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
-| **handshake** | Protocolo de inicio de conexion |
+| **handshake** | Protocolo de inicio de conexión |
 | **intermediaries** | Intermediarios (proxies, load balancers) |
 | **single port** | Un solo puerto |
 | **consists of** | Consiste en, esta compuesto de |
@@ -189,13 +189,13 @@ The client's opening handshake consists of the following:
 
 ## Como leer un RFC eficientemente
 
-### Paso 1: Lee el Abstract y la Introduccion
+### Paso 1: Lee el Abstract y la Introducción
 
 Te dan el contexto general. Si no entiendes de que trata el RFC, no podras leer el resto.
 
 ### Paso 2: Revisa la Terminologia
 
-Antes de leer la especificacion, asegurate de entender los terminos definidos.
+Antes de leer la especificacion, asegurate de entender los términos definidos.
 
 ### Paso 3: Lee la especificacion con las palabras clave
 
@@ -203,7 +203,7 @@ Presta atencion especial a MUST, SHOULD y MAY. Te dicen que es obligatorio, reco
 
 ### Paso 4: Revisa Security Considerations
 
-Esta seccion es critica si vas a implementar el protocolo. Te dice que puede salir mal.
+Esta sección es crítica si vas a implementar el protocolo. Te dice que puede salir mal.
 
 ### Paso 5: Consulta las referencias
 
@@ -213,7 +213,7 @@ Los RFCs referencian otros RFCs. Si no entiendes algo, la referencia te lleva al
 
 ## Vocabulario esencial de RFCs
 
-| Termino | Pronunciacion | Significado |
+| Término | Pronunciacion | Significado |
 |---------|---------------|-------------|
 | **specification** | spe-si-fi-KEI-shon | Especificacion |
 | **compliance** | com-PLAI-ans | Cumplimiento |
@@ -230,7 +230,7 @@ Los RFCs referencian otros RFCs. Si no entiendes algo, la referencia te lleva al
 
 ## Tipos de documentos de especificacion
 
-Ademas de RFCs, existen otros tipos de especificaciones:
+Además de RFCs, existen otros tipos de especificaciones:
 
 | Tipo | Organizacion | Ejemplos |
 |------|-------------|----------|
@@ -249,5 +249,5 @@ Ademas de RFCs, existen otros tipos de especificaciones:
 - Los RFCs definen los estandares de Internet y estan siempre en ingles
 - Aprende las palabras clave del RFC 2119 (MUST, SHOULD, MAY) para entender obligaciones
 - Lee siempre en orden: Abstract -> Terminology -> Specification -> Security
-- No necesitas leer un RFC completo: busca la seccion relevante a tu problema
+- No necesitas leer un RFC completo: busca la sección relevante a tu problema
 - Conocer los RFCs te da ventaja para entender protocolos a nivel profundo

@@ -1,7 +1,7 @@
-# Capítulo 03 — Operadores y Expresiones
+# Capítulo 03 — Operadores y expresiones
 
 Los operadores permiten transformar datos y construir expresiones con sentido.
-En C++ esto incluye no solo matematicas y comparaciones, sino tambien acceso a
+En C++ esto incluye no solo matematicas y comparaciones, sino también acceso a
 memoria, punteros y detalles muy cercanos al funcionamiento real del programa.
 
 ---
@@ -9,24 +9,24 @@ memoria, punteros y detalles muy cercanos al funcionamiento real del programa.
 ## ¿Qué aprenderás?
 
 - operadores aritmeticos;
-- comparacion y logica;
-- asignacion compuesta;
+- comparación y lógica;
+- asignación compuesta;
 - ternario;
 - `new`, `delete`, `::` y `->`;
-- precedencia basica.
+- precedencia básica.
 
 ---
 
 ## ¿Qué pasa en la maquina?
 
-Cuando evalua una expresion, C++:
+Cuando evalua una expresión, C++:
 
 - toma valores y tipos;
 - aplica reglas de precedencia;
 - genera un resultado;
 - en algunos casos accede a memoria o manipula punteros.
 
-Por eso entender operadores en C++ no es solo sintaxis: tambien es entender
+Por eso entender operadores en C++ no es solo sintaxis: también es entender
 comportamiento y costo.
 
 ---
@@ -59,7 +59,7 @@ Estos operadores te acercan mas al funcionamiento interno del programa.
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - olvidar liberar memoria reservada con `new`;
 - confundir `.` con `->`;
@@ -70,4 +70,4 @@ Estos operadores te acercan mas al funcionamiento interno del programa.
 
 ## Archivo de ejemplo
 
-Ver: [01_operadores.cpp](C:/Users/Yetsin/Documents/Programacion/cursos-de-programacion/Libro%20de%20C%2B%2B/03-operadores-y-expresiones/01_operadores.cpp)
+Ver: [01_operadores.cpp](C:/Users/Yetsin/Documents/Programación/cursos-de-programación/Libro%20de%20C%2B%2B/03-operadores-y-expresiones/01_operadores.cpp)

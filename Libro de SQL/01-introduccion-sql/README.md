@@ -1,15 +1,15 @@
 # Capítulo 01 — Introducción a SQL
 
-Este capitulo te enseña a mirar una base de datos como un sistema organizado, no
+Este capítulo te enseña a mirar una base de datos como un sistema organizado, no
 como una caja negra. La meta no es memorizar `SELECT`, sino entender que estas
-pidiendole informacion a un motor especializado.
+pidiendole información a un motor especializado.
 
 ---
 
 ## ¿Que es SQL?
 
 SQL es el lenguaje estandar para trabajar con bases de datos relacionales.
-Sirve para consultar, insertar, modificar, eliminar y estructurar informacion.
+Sirve para consultar, insertar, modificar, eliminar y estructurar información.
 
 La idea importante es esta:
 
@@ -20,13 +20,13 @@ La idea importante es esta:
 
 ## ¿Que es una base de datos relacional?
 
-Una base relacional organiza informacion en tablas:
+Una base relacional organiza información en tablas:
 
 - las **columnas** describen tipos de dato;
 - las **filas** representan registros concretos;
 - las relaciones conectan datos de distintas tablas.
 
-Eso permite modelar informacion real de forma consistente y consultable.
+Eso permite modelar información real de forma consistente y consultable.
 
 ---
 
@@ -34,8 +34,8 @@ Eso permite modelar informacion real de forma consistente y consultable.
 
 Cuando ejecutas una consulta:
 
-1. el motor analiza la instruccion;
-2. revisa tablas, columnas e indices;
+1. el motor analiza la instrucción;
+2. revisa tablas, columnas e índices;
 3. busca datos en disco o memoria;
 4. construye un resultado;
 5. te devuelve una tabla temporal o modifica datos persistentes.
@@ -51,9 +51,9 @@ SQLite guarda toda la base de datos en un solo archivo.
 Eso la hace ideal para estudiar porque:
 
 - no necesitas un servidor aparte;
-- puedes abrir el archivo facilmente;
-- ves resultados rapido;
-- practicas SQL real que luego se parece mucho a PostgreSQL o MySQL.
+- puedes abrir el archivo fácilmente;
+- ves resultados rápido;
+- prácticas SQL real que luego se parece mucho a PostgreSQL o MySQL.
 
 ---
 
@@ -76,7 +76,7 @@ Estas tres consultas ya muestran ideas clave:
 ## Reglas básicas de sintaxis
 
 1. `SELECT` y `select` funcionan igual, pero se suele escribir en mayusculas.
-2. El `;` marca el final de la instruccion.
+2. El `;` marca el final de la instrucción.
 3. `--` crea comentarios de una linea.
 4. Los textos se escriben entre comillas simples.
 5. Las tablas y columnas normalmente no se escriben entre comillas.
@@ -91,7 +91,7 @@ Estas tres consultas ya muestran ideas clave:
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - creer que `SELECT *` siempre es la mejor opcion;
 - no distinguir entre columna y fila;
@@ -116,6 +116,6 @@ Estas tres consultas ya muestran ideas clave:
 | Herramienta | Uso | Enlace |
 |-------------|-----|--------|
 | DB Browser for SQLite | GUI visual, ideal para aprender | https://sqlitebrowser.org/ |
-| SQLite CLI | Terminal, rapida para pruebas | `sqlite3 archivo.db` |
+| SQLite CLI | Terminal, rápida para pruebas | `sqlite3 archivo.db` |
 | VS Code + SQLite Viewer | Extension para VS Code | Buscar en Extensions |
 | TablePlus | GUI profesional | https://tableplus.com/ |

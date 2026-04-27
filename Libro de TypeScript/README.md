@@ -1,6 +1,6 @@
 # Libro de TypeScript — De cero a PRO
 
-Curso practico, progresivo y muy explicativo para aprender TypeScript de forma
+Curso práctico, progresivo y muy explicativo para aprender TypeScript de forma
 seria. La meta de este libro no es solo que sepas escribir anotaciones de tipo,
 sino que entiendas como TypeScript mejora el desarrollo de software, como se
 transforma a JavaScript y por que eso reduce errores reales.
@@ -12,25 +12,25 @@ transforma a JavaScript y por que eso reduce errores reales.
 - Personas que ya conocen algo de JavaScript y quieren trabajar mejor
 - Personas principiantes que quieren aprender con mas estructura desde el inicio
 - Desarrolladores que quieren escribir software mas mantenible y seguro
-- Equipos que necesitan modelar datos, funciones y modulos con claridad
+- Equipos que necesitan modelar datos, funciones y módulos con claridad
 
 ## Objetivo real del libro
 
 Al terminar este curso deberias poder:
 
 - entender que problema resuelve TypeScript;
-- diferenciar desarrollo, compilacion y ejecucion;
+- diferenciar desarrollo, compilación y ejecución;
 - modelar datos con tipos, interfaces, unions y generics;
 - leer y corregir errores del compilador con criterio;
-- organizar proyectos pequenos y medianos con buena base tecnica.
+- organizar proyectos pequenos y medianos con buena base técnica.
 
 ## Que vas a aprender sobre software
 
 Este libro insiste en varias ideas importantes:
 
 - TypeScript ayuda en desarrollo, pero quien se ejecuta es JavaScript.
-- El compilador revisa relaciones logicas entre datos, no magia.
-- Los tipos no reemplazan la validacion de datos externos.
+- El compilador revisa relaciones lógicas entre datos, no magia.
+- Los tipos no reemplazan la validación de datos externos.
 - Un buen modelado de tipos mejora legibilidad, mantenimiento y colaboracion.
 
 ## Requisitos
@@ -50,12 +50,12 @@ npm install
 ## Como estudiar este libro
 
 1. Lee el `README.md` general del libro.
-2. Abre el `README.md` del capitulo.
+2. Abre el `README.md` del capítulo.
 3. Recorre los archivos `.ts` en orden.
-4. Ejecuta revision de tipos con `npx tsc --noEmit`.
+4. Ejecuta revisión de tipos con `npx tsc --noEmit`.
 5. Compila con `npx tsc` cuando quieras ver JavaScript generado.
 6. Observa como el mismo concepto se ve en TypeScript y en JavaScript.
-7. Cambia codigo a proposito para provocar errores y entenderlos.
+7. Cambia código a proposito para provocar errores y entenderlos.
 
 ## Que ocurre cuando trabajas con TypeScript
 
@@ -71,18 +71,18 @@ mas claro en el proceso de construccion del software.
 
 ## Ruta del libro
 
-| Nivel | Modulo | Tema |
+| Nivel | Módulo | Tema |
 |---|---|---|
-| 🟢 Basico | `01-introduccion/` | Que es TypeScript y como se compila |
-| 🟢 Basico | `02-tipos-y-variables/` | Tipos primitivos, inferencia y anotaciones |
-| 🟢 Basico | `03-funciones-e-interfaces/` | Parametros, retorno, objetos e interfaces |
+| 🟢 Básico | `01-introducción/` | Que es TypeScript y como se compila |
+| 🟢 Básico | `02-tipos-y-variables/` | Tipos primitivos, inferencia y anotaciones |
+| 🟢 Básico | `03-funciones-e-interfaces/` | Parametros, retorno, objetos e interfaces |
 | 🟡 Medio | `04-objetos-arreglos-y-uniones/` | Arrays, unions, aliases y narrowing |
 | 🟡 Medio | `05-generics-y-narrowing/` | Generics, guards y reutilizacion segura |
-| 🟡 Medio | `06-clases-y-modulos/` | Clases, modificadores y export/import |
+| 🟡 Medio | `06-clases-y-módulos/` | Clases, modificadores y export/import |
 | 🔴 Avanzado | `07-utility-types/` | `Partial`, `Pick`, `Record`, `Omit` y modelado practico |
-| 🔴 Avanzado | `08-tsconfig-y-tooling/` | Configuracion, strict mode y flujo de trabajo |
+| 🔴 Avanzado | `08-tsconfig-y-tooling/` | Configuración, strict mode y flujo de trabajo |
 | 🔴 Avanzado | `09-async-y-fetch/` | Promesas, fetch y datos externos tipados |
-| 🔴 Avanzado | `10-proyecto-final/` | Mini proyecto final guiado con varios modulos |
+| 🔴 Avanzado | `10-proyecto-final/` | Mini proyecto final guiado con varios módulos |
 
 ## Como se conecta con JavaScript
 
@@ -90,34 +90,34 @@ Si vienes de JavaScript, este libro te ayudara a ver que:
 
 - `interface` y `type` describen formas de datos;
 - `unknown` suele ser mas seguro que `any`;
-- los generics permiten reutilizar logica sin perder informacion;
+- los generics permiten reutilizar lógica sin perder información;
 - los errores del compilador pueden prevenir muchos errores de integracion.
 
-## Errores comunes que este libro quiere corregir
+## Errores comúnes que este libro quiere corregir
 
-- pensar que TypeScript cambia el comportamiento en tiempo de ejecucion;
-- usar `any` como salida rapida demasiado pronto;
+- pensar que TypeScript cambia el comportamiento en tiempo de ejecución;
+- usar `any` como salida rápida demasiado pronto;
 - creer que tener tipos elimina la necesidad de validar APIs o archivos;
-- aprender solo sintaxis sin entender el flujo compilacion -> JavaScript;
+- aprender solo sintaxis sin entender el flujo compilación -> JavaScript;
 - evitar los mensajes del compilador en vez de aprender a leerlos.
 
 ## Archivos base del libro
 
-| Archivo | Descripcion |
+| Archivo | Descripción |
 |---|---|
 | `package.json` | Dependencias y scripts del libro |
-| `tsconfig.json` | Configuracion principal del compilador |
+| `tsconfig.json` | Configuración principal del compilador |
 | `.gitignore` | Archivos generados que no conviene versionar |
-| `GUIA_DE_ESTUDIO.md` | Metodo recomendado para aprovechar el curso |
+| `GUIA_DE_ESTUDIO.md` | Método recomendado para aprovechar el curso |
 
 ## Resultado esperado al terminar
 
-Si completas este libro con practica real, deberias estar listo para:
+Si completas este libro con práctica real, deberias estar listo para:
 
 - usar TypeScript en proyectos Node.js;
 - entender mejor bases de frameworks como React, Next.js o Angular;
 - modelar contratos de datos mas claros;
-- trabajar con codigo moderno de frontend o backend con menos errores.
+- trabajar con código moderno de frontend o backend con menos errores.
 
 ---
 

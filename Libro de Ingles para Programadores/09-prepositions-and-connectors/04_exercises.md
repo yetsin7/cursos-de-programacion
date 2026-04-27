@@ -58,7 +58,7 @@ Completa con el phrasal verb correcto: **set up, roll back, spin up, shut down, 
 3. __________ a new Docker container for testing.
 4. __________ the task into smaller subtasks.
 5. Let me __________ the development environment first.
-6. We need to __________ to the previous version.
+6. We need to __________ to the previous versión.
 7. __________ the feature branch to start working.
 8. __________ the old server after the migration.
 

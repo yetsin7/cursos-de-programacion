@@ -1,6 +1,6 @@
 # Capítulo 02: Gramática Básica
 
-Este capitulo te da una base importante: aprender a construir oraciones simples
+Este capítulo te da una base importante: aprender a construir oraciones simples
 en ingles sin depender de traducciones palabra por palabra desde el español.
 
 ---
@@ -9,23 +9,23 @@ en ingles sin depender de traducciones palabra por palabra desde el español.
 
 Al terminar deberias poder:
 
-- entender el orden basico de una oracion en ingles;
+- entender el orden básico de una oracion en ingles;
 - usar `to be`, `to have` y `to do` en frases simples;
 - describir estados y propiedades de variables o sistemas;
-- leer ejemplos tecnicos con mejor comprension.
+- leer ejemplos técnicos con mejor comprension.
 
 ---
 
 ## ¿Por qué importa para programadores?
 
-La gramatica basica aparece en todas partes:
+La gramatica básica aparece en todas partes:
 
 - mensajes de error;
-- documentacion;
+- documentación;
 - comentarios;
 - preguntas en foros;
 - code reviews;
-- conversaciones tecnicas.
+- conversaciones técnicas.
 
 Si controlas estas estructuras, dejas de leer ingles como palabras sueltas y
 empiezas a entender ideas completas.
@@ -44,7 +44,7 @@ empiezas a entender ideas completas.
 
 ---
 
-## Errores comunes del hispanohablante
+## Errores comúnes del hispanohablante
 
 - traducir palabra por palabra;
 - olvidar el sujeto en ingles;
@@ -53,10 +53,10 @@ empiezas a entender ideas completas.
 
 ---
 
-## Como estudiar este capitulo
+## Como estudiar este capítulo
 
 1. Lee cada ejemplo completo.
-2. Reescribe frases con vocabulario de programacion.
+2. Reescribe frases con vocabulario de programación.
 3. Lee en voz alta para acostumbrarte al orden del ingles.
 4. Crea ejemplos propios con variables, funciones o errores.
 
@@ -64,5 +64,5 @@ empiezas a entender ideas completas.
 
 ## Objetivo
 
-Al finalizar este capitulo deberias poder formar oraciones simples, describir
-estados de variables y leer frases tecnicas con mas seguridad.
+Al finalizar este capítulo deberias poder formar oraciones simples, describir
+estados de variables y leer frases técnicas con mas seguridad.

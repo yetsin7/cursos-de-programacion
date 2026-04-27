@@ -185,7 +185,7 @@ Los status codes se agrupan por categoría. Es esencial conocerlos en inglés.
 
 ---
 
-## Resumen de frases comunes con APIs
+## Resumen de frases comúnes con APIs
 
 ```
 "Hit the endpoint"       → Hacer una request a un endpoint

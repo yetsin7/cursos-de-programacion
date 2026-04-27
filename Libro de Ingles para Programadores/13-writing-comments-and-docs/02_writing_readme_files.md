@@ -28,7 +28,7 @@ Brief description of what the project does.
 
 ---
 
-## 1. Titulo y Descripcion
+## 1. Titulo y Descripción
 
 ```markdown
 # TaskFlow
@@ -37,7 +37,7 @@ A lightweight task management API built with Node.js and Express.
 Supports real-time updates via WebSockets and role-based access control.
 ```
 
-**Frases utiles**:
+**Frases útiles**:
 - "A lightweight / powerful / fast / simple..."
 - "Built with [technology]."
 - "Designed for [audience/purpose]."
@@ -58,7 +58,7 @@ Supports real-time updates via WebSockets and role-based access control.
 - Comprehensive test coverage
 ```
 
-**Frases utiles**:
+**Frases útiles**:
 - "Supports..." / "Includes..."
 - "Built-in support for..."
 - "Out-of-the-box [feature]"
@@ -82,7 +82,7 @@ Before you begin, make sure you have the following installed:
 - [PostgreSQL](https://www.postgresql.org/) (v15 or higher)
 ```
 
-**Frases utiles**:
+**Frases útiles**:
 - "Before you begin, make sure you have..."
 - "You will need..."
 - "This project requires..."
@@ -119,7 +119,7 @@ Before you begin, make sure you have the following installed:
    ```
 ```
 
-**Frases utiles**:
+**Frases útiles**:
 - "Clone the repository."
 - "Navigate to the project directory."
 - "Install the dependencies."
@@ -151,7 +151,7 @@ curl -X POST http://localhost:3000/api/tasks \
 ```
 ```
 
-**Frases utiles**:
+**Frases útiles**:
 - "Start the development server."
 - "Open your browser and navigate to..."
 - "Run the following command to..."
@@ -205,7 +205,7 @@ Contributions are welcome! Please follow these steps:
 Please make sure to update tests as appropriate.
 ```
 
-**Frases utiles**:
+**Frases útiles**:
 - "Contributions are welcome!"
 - "Please follow these steps..."
 - "Make sure to update tests."
@@ -225,11 +225,11 @@ This project is licensed under the MIT License. See the
 
 ---
 
-## Secciones Opcionales Utiles
+## secciones Opcionales Útiles
 
-| Seccion | Frase en ingles | Descripcion |
+| Sección | Frase en ingles | Descripción |
 |---------|----------------|-------------|
-| **Tech Stack** | "Built with" | Tecnologias usadas |
+| **Tech Stack** | "Built with" | Tecnologías usadas |
 | **Screenshots** | "Screenshots" | Capturas de pantalla |
 | **Roadmap** | "Roadmap" | Plan de desarrollo futuro |
 | **FAQ** | "Frequently Asked Questions" | Preguntas frecuentes |
@@ -241,7 +241,7 @@ This project is licensed under the MIT License. See the
 
 ## Badges (Insignias)
 
-Los badges comunican informacion rapida sobre el proyecto:
+Los badges comunican información rápida sobre el proyecto:
 
 ```markdown
 ![Build Status](https://img.shields.io/github/actions/workflow/status/user/repo/ci.yml)
@@ -251,15 +251,15 @@ Los badges comunican informacion rapida sobre el proyecto:
 
 ---
 
-## Errores Comunes en READMEs
+## Errores Comúnes en READMEs
 
 | Error | Correccion |
 |-------|-----------|
-| No explicar que hace el proyecto | Agrega una descripcion clara en la primera linea |
+| No explicar que hace el proyecto | Agrega una descripción clara en la primera linea |
 | No incluir pasos de instalacion | Siempre incluye instrucciones paso a paso |
-| Instrucciones desactualizadas | Manten el README sincronizado con el codigo |
+| instrucciones desactualizadas | Manten el README sincronizado con el código |
 | Demasiado largo sin estructura | Usa headers y tablas para organizar |
-| Sin ejemplos de uso | Incluye al menos un ejemplo basico |
+| Sin ejemplos de uso | Incluye al menos un ejemplo básico |
 
 ---
 
@@ -267,9 +267,9 @@ Los badges comunican informacion rapida sobre el proyecto:
 
 Un buen README tiene:
 
-1. **Titulo y descripcion** clara y concisa
-2. **Instrucciones de instalacion** paso a paso
-3. **Ejemplos de uso** practicos
+1. **Titulo y descripción** clara y concisa
+2. **instrucciones de instalacion** paso a paso
+3. **Ejemplos de uso** prácticos
 4. **Referencia de API** si aplica
-5. **Guia de contribucion** para colaboradores
+5. **Guía de contribución** para colaboradores
 6. **Licencia** del proyecto

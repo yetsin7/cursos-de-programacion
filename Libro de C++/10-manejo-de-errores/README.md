@@ -1,6 +1,6 @@
-# Capítulo 10 — Manejo de Errores y Excepciones
+# Capítulo 10 — Manejo de Errores y excepciones
 
-## Excepciones en C++
+## excepciones en C++
 
 C++ usa un mecanismo de **excepciones** para manejar errores en tiempo de ejecución:
 - `throw`: lanza una excepción
@@ -43,7 +43,7 @@ la descripción del error.
 
 ---
 
-## Excepciones personalizadas
+## excepciones personalizadas
 
 ```cpp
 // Hereda de std::exception o de alguna subclase

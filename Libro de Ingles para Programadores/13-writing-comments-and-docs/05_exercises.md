@@ -1,12 +1,12 @@
 # Chapter 13: Exercises
 
-## Ejercicios de Escritura de Comentarios y Documentacion
+## Ejercicios de Escritura de Comentarios y Documentación
 
 ---
 
 ## Ejercicio 1: Mejora los Comentarios
 
-Reescribe estos malos comentarios para que sean utiles.
+Reescribe estos malos comentarios para que sean útiles.
 
 **1. Comentario redundante:**
 ```javascript
@@ -31,7 +31,7 @@ function getUserName(id) {
 <details>
 <summary>Respuestas Sugeridas</summary>
 
-1. Eliminar el comentario (el codigo es autoexplicativo) o agregar contexto:
+1. Eliminar el comentario (el código es autoexplicativo) o agregar contexto:
    `// Default name used when the user hasn't set a display name`
 
 2. `# Process raw items into normalized format for the analytics pipeline`
@@ -45,10 +45,10 @@ function getUserName(id) {
 
 Escribe un mensaje de commit en formato Conventional Commits para cada situacion.
 
-1. Agregaste un boton de modo oscuro en la pagina de configuracion.
+1. Agregaste un boton de modo oscuro en la página de configuración.
 2. Corregiste un bug donde el carrito mostraba precios negativos.
 3. Actualizaste el README con instrucciones de instalacion.
-4. Reorganizaste el codigo del servicio de autenticacion sin cambiar funcionalidad.
+4. Reorganizaste el código del servicio de autenticación sin cambiar funcionalidad.
 5. Agregaste tests para el flujo de registro de usuarios.
 
 <details>
@@ -65,7 +65,7 @@ Escribe un mensaje de commit en formato Conventional Commits para cada situacion
 
 ## Ejercicio 3: Escribe JSDoc
 
-Escribe la documentacion JSDoc completa para esta funcion.
+Escribe la documentación JSDoc completa para esta función.
 
 ```javascript
 function filterActiveUsers(users, minAge) {
@@ -92,9 +92,9 @@ function filterActiveUsers(users, minAge) {
 
 ---
 
-## Ejercicio 4: Escribe una Seccion de README
+## Ejercicio 4: Escribe una Sección de README
 
-Escribe la seccion "Getting Started" para un proyecto ficticio llamado
+Escribe la sección "Getting Started" para un proyecto ficticio llamado
 **QuickNotes** (una app de notas que usa Flutter y Supabase).
 
 Incluye: Prerequisites, Installation (al menos 4 pasos), y un ejemplo de uso.
@@ -135,7 +135,7 @@ Open the app and tap the "+" button to create your first note.
 
 ---
 
-## Ejercicio 5: Identifica el Tipo de Documentacion
+## Ejercicio 5: Identifica el Tipo de Documentación
 
 Indica si cada ejemplo es un **Tutorial**, **How-to Guide**, **Reference**, o **Explanation**.
 
@@ -186,10 +186,10 @@ Reescribe estos mensajes de commit incorrectos.
 
 Escribe el comentario apropiado usando TODO, FIXME, HACK, o NOTE para cada situacion.
 
-1. Una funcion que todavia no valida el email del usuario.
-2. Un setTimeout que se usa como solucion temporal para un problema de timing.
-3. Un endpoint que requiere autenticacion y es facil olvidarlo.
-4. Un calculo que da resultados incorrectos con numeros negativos.
+1. Una función que todavia no valida el email del usuario.
+2. Un setTimeout que se usa como solución temporal para un problema de timing.
+3. Un endpoint que requiere autenticación y es fácil olvidarlo.
+4. Un cálculo que da resultados incorrectos con números negativos.
 
 <details>
 <summary>Respuestas Sugeridas</summary>
@@ -202,9 +202,9 @@ Escribe el comentario apropiado usando TODO, FIXME, HACK, o NOTE para cada situa
 
 ---
 
-## Ejercicio 8: Redaccion Tecnica
+## Ejercicio 8: Redaccion Técnica
 
-Reescribe estas oraciones siguiendo las reglas de buena documentacion tecnica
+Reescribe estas oraciones siguiendo las reglas de buena documentación técnica
 (voz activa, segunda persona, presente simple).
 
 1. "The configuration file will be created by the system." →

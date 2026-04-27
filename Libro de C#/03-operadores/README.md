@@ -8,24 +8,24 @@ actualizar variables y tomar decisiones. Sin ellos, los datos no se transforman.
 ## ¿Qué aprenderás?
 
 - operadores aritmeticos;
-- comparacion y logica booleana;
-- asignacion compuesta;
+- comparación y lógica booleana;
+- asignación compuesta;
 - ternario;
 - operadores modernos de null en C#;
-- una introduccion a operaciones bit a bit.
+- una introducción a operaciones bit a bit.
 
 ---
 
 ## ¿Qué pasa dentro del programa?
 
-Cuando C# evalua una expresion:
+Cuando C# evalua una expresión:
 
 - toma uno o mas valores;
 - aplica una regla del lenguaje;
 - genera un nuevo resultado;
-- lo guarda, lo imprime o lo usa en una condicion.
+- lo guarda, lo imprime o lo usa en una condición.
 
-Esto conecta directamente con validaciones, formularios, calculos y flujo del
+Esto conecta directamente con validaciones, formularios, cálculos y flujo del
 software real.
 
 ---
@@ -51,7 +51,7 @@ trabajo innecesario.
 
 ## Null operators
 
-C# moderno tiene operadores muy utiles para trabajar con datos opcionales:
+C# moderno tiene operadores muy útiles para trabajar con datos opcionales:
 
 - `??`
 - `??=`
@@ -61,7 +61,7 @@ Son fundamentales cuando una API, formulario o consulta puede devolver `null`.
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - olvidar que `7 / 2` entre enteros da `3`;
 - abusar del ternario cuando un `if` seria mas claro;

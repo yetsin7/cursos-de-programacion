@@ -128,7 +128,7 @@ Does the function handle errors?
 
 ---
 
-## Oraciones comunes en el día a día del programador
+## Oraciones comúnes en el día a día del programador
 
 | Situación | Oración en inglés | Traducción |
 |-----------|-------------------|------------|

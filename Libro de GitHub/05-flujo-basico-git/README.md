@@ -47,7 +47,7 @@ git log --oneline
 
 Un buen mensaje de commit:
 - Empieza con un verbo en imperativo: "Agrega", "Corrige", "Elimina", "Refactoriza"
-- Es conciso pero descriptivo (máximo 50 caracteres en la primera línea)
+- Es conciso pero descriptivo (máximo 50 carácteres en la primera línea)
 - Explica el **por qué**, no solo el **qué**
 
 | Malo ❌ | Bueno ✅ |

@@ -96,14 +96,14 @@ En español no distinguimos entre V y B. En inglés son **sonidos diferentes**:
 | **berry** /ˈbɛri/ | **very** /ˈvɛri/ | baya vs. muy |
 | **bet** /bɛt/ | **vet** /vɛt/ | apuesta vs. veterinario |
 
-### Palabras de programación con V (practica el sonido /v/)
+### Palabras de programación con V (práctica el sonido /v/)
 
 | Palabra | Pronunciación | Significado |
 |---------|---------------|-------------|
 | **variable** | /ˈvɛriəbəl/ "véria-bol" | variable |
 | **value** | /ˈvæljuː/ "váliu" | valor |
 | **validate** | /ˈvælɪdeɪt/ "váli-déit" | validar |
-| **version** | /ˈvɜːrʒən/ "vér-shon" | versión |
+| **versión** | /ˈvɜːrʒən/ "vér-shon" | versión |
 | **view** | /vjuː/ "viú" | vista |
 | **void** | /vɔɪd/ "vóid" | vacío |
 | **virtual** | /ˈvɜːrtʃuəl/ "vér-chual" | virtual |
@@ -346,7 +346,7 @@ Pronuncia cada par. ¿Sientes la diferencia?
 
 Presta atención a todos los sonidos difíciles:
 
-1. "The **virtual** **server** **validates** the **version** number."
+1. "The **virtual** **server** **validates** the **versión** number."
 2. "**Write** a **wrapper** for the **webhook** **widget**."
 3. "The **JavaScript** **project** has **three** **JSON** **files**."
 4. "**Check** the **cache** and **push** the **changes** to the **branch**."

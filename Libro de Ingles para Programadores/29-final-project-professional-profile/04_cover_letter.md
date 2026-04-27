@@ -1,14 +1,14 @@
 # Lesson 04: Writing a Tech Cover Letter
 
-## Introduccion
+## Introducción
 
-La cover letter (carta de presentacion) es tu oportunidad de mostrar personalidad y motivacion mas alla del resume. No todas las empresas la piden, pero cuando la piden, una buena cover letter puede diferenciarte de cientos de candidatos con skills similares.
+La cover letter (carta de presentación) es tu oportunidad de mostrar personalidad y motivacion mas alla del resume. No todas las empresas la piden, pero cuando la piden, una buena cover letter puede diferenciarte de cientos de candidatos con skills similares.
 
 ---
 
 ## Estructura de la Cover Letter
 
-| Seccion | Longitud | Contenido |
+| Sección | Longitud | Contenido |
 |---------|----------|-----------|
 | **Opening** | 2-3 oraciones | Hook + por que aplicas |
 | **Body 1** | 3-4 oraciones | Experiencia relevante |
@@ -26,7 +26,7 @@ La cover letter (carta de presentacion) es tu oportunidad de mostrar personalida
 | Formula | Ejemplo |
 |---------|---------|
 | **Interes directo** | "I'm writing to express my interest in the Senior Flutter Developer position at [Company]." |
-| **Conexion personal** | "As a long-time user of [Product], I was excited to see the opening for a Mobile Developer." |
+| **Conexión personal** | "As a long-time user of [Product], I was excited to see the opening for a Mobile Developer." |
 | **Referencia** | "My colleague [Name] suggested I apply for the Backend Engineer role on your team." |
 | **Logro relevante** | "Having shipped 3 mobile apps with 100K+ combined downloads, I'm excited to apply for..." |
 
@@ -81,7 +81,7 @@ prepared me to tackle the challenges outlined in your job
 description.
 ```
 
-### Frases utiles para esta seccion
+### Frases útiles para esta sección
 
 | Frase | Uso |
 |-------|-----|
@@ -96,7 +96,7 @@ description.
 
 ## Body Paragraph 2: Por que esta empresa
 
-Los reclutadores quieren saber que investigaste la empresa. Esta seccion es donde demuestras que no envias la misma carta a todas las empresas.
+Los reclutadores quieren saber que investigaste la empresa. Esta sección es donde demuestras que no envias la misma carta a todas las empresas.
 
 ### Ejemplo
 
@@ -110,12 +110,12 @@ culture of code reviews and knowledge sharing, which aligns
 with how I believe the best software is built.
 ```
 
-### Frases utiles
+### Frases útiles
 
 | Frase | Uso |
 |-------|-----|
 | "I'm particularly excited about [Company] because..." | Motivacion |
-| "Your mission to [mission] resonates with me because..." | Conexion con la mision |
+| "Your mission to [mission] resonates with me because..." | Conexión con la mision |
 | "I admire your team's approach to..." | Elogiar algo especifico |
 | "I've been following your work on..." | Mostrar conocimiento |
 | "What draws me to [Company] is..." | Afinidad |
@@ -192,12 +192,12 @@ Best regards,
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 | Error | Correccion |
 |-------|-----------|
 | Copiar el resume en la cover letter | La cover letter cuenta una historia, no repite datos |
-| Escribir mas de una pagina | Mantener 250-400 palabras |
+| Escribir mas de una página | Mantener 250-400 palabras |
 | Hablar solo de ti | Conecta tus skills con las necesidades de la empresa |
 | No investigar la empresa | Menciona algo especifico de la empresa |
 | Usar la misma carta para todas las aplicaciones | Personaliza cada una |
@@ -207,13 +207,13 @@ Best regards,
 
 ## Vocabulario esencial
 
-| Termino | Significado |
+| Término | Significado |
 |---------|-------------|
-| **Cover letter** | Carta de presentacion |
+| **Cover letter** | Carta de presentación |
 | **Hiring team** | Equipo de contratacion |
-| **Position** | Puesto / Posicion |
+| **Position** | Puesto / Posición |
 | **Opportunity** | Oportunidad |
-| **Application** | Solicitud / Aplicacion |
+| **Application** | Solicitud / Aplicación |
 | **Compensation** | Compensacion (salario + beneficios) |
 | **Relocation** | Reubicacion |
 | **Notice period** | Periodo de preaviso |

@@ -55,7 +55,7 @@ Sujeto + don't/doesn't + verbo base + complemento
 | The tests aren't passing. | Los tests no están pasando. |
 | We aren't ready to deploy. | No estamos listos para hacer deploy. |
 | I'm not sure about this approach. | No estoy seguro de este enfoque. |
-| It isn't compatible with the latest version. | No es compatible con la última versión. |
+| It isn't compatible with the latest versión. | No es compatible con la última versión. |
 | The endpoints aren't documented. | Los endpoints no están documentados. |
 
 ---
@@ -164,7 +164,7 @@ Correos formales:
 
 ---
 
-## 8. Frases negativas comunes en el trabajo diario
+## 8. Frases negativas comúnes en el trabajo diario
 
 ```text
 That's not going to work.          - Eso no va a funcionar.
@@ -179,7 +179,7 @@ I'm not blocked, but I need clarification. - No estoy bloqueado, pero necesito c
 
 ---
 
-## 9. Errores comunes de hispanohablantes
+## 9. Errores comúnes de hispanohablantes
 
 | Incorrecto | Correcto | Explicación |
 |------------|----------|-------------|

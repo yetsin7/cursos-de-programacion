@@ -1,7 +1,7 @@
 # Libro de C# — De cero a PRO
 
-Guia practica y progresiva para aprender C# moderno (.NET 8+) entendiendo como
-se comporta una aplicacion de consola o de backend dentro del ecosistema .NET.
+Guía práctica y progresiva para aprender C# moderno (.NET 8+) entendiendo como
+se comporta una aplicación de consola o de backend dentro del ecosistema .NET.
 
 ---
 
@@ -17,7 +17,7 @@ se comporta una aplicacion de consola o de backend dentro del ecosistema .NET.
 Este libro explica C# como lenguaje y como plataforma:
 
 - sintaxis clara y tipada;
-- como .NET compila y ejecuta el codigo;
+- como .NET compila y ejecuta el código;
 - como se organizan clases, objetos y colecciones;
 - como se maneja memoria de forma administrada;
 - como construir programas confiables y mantenibles.
@@ -46,10 +46,10 @@ dotnet --version
 
 Cuando corres un programa en C#:
 
-- el codigo se compila a un lenguaje intermedio;
+- el código se compila a un lenguaje intermedio;
 - el runtime de .NET lo carga;
 - el recolector de basura administra gran parte de la memoria;
-- el programa usa CPU, RAM, disco o red segun la logica que escribiste.
+- el programa usa CPU, RAM, disco o red según la lógica que escribiste.
 
 Esto hace que C# sea amigable para aprender y muy potente para software real.
 
@@ -88,9 +88,9 @@ dotnet run
 | 02 | Variables y tipos               | Tipos primitivos, var, nullable, const, interpolación      |
 | 03 | Operadores                      | Aritméticos, lógicos, ternario, null-coalescing            |
 | 04 | Control de flujo                | if/else, switch expression, foreach, while, pattern match  |
-| 05 | Funciones y métodos             | Parámetros, lambdas, Func, Action, métodos de extensión    |
+| 05 | funciones y métodos             | Parámetros, lambdas, Func, Action, métodos de extensión    |
 | 06 | POO — Clases                    | Clases, propiedades, constructores, records                |
-| 07 | Herencia y polimorfismo         | virtual/override, clases abstractas, sealed                |
+| 07 | herencia y polimorfismo         | virtual/override, clases abstractas, sealed                |
 | 08 | Interfaces y abstracciones      | Interfaces, default methods, comparación con abstractas    |
 | 09 | Colecciones y LINQ              | List, Dictionary, HashSet, LINQ completo                   |
 | 10 | Manejo de errores               | try/catch/finally, excepciones personalizadas, using       |
@@ -118,7 +118,7 @@ dotnet add package Microsoft.Data.Sqlite
 
 ---
 
-## Convenciones del libro
+## convenciones del libro
 
 - Todos los comentarios en el código están en **español**
 - El código es compatible con **.NET 8+**

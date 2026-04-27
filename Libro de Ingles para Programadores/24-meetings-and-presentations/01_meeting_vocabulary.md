@@ -1,14 +1,14 @@
 # Meeting Vocabulary - Vocabulario de reuniones
 
-## Introduccion
+## Introducción
 
-Las reuniones son una parte inevitable del trabajo en desarrollo de software. Desde los standups diarios hasta los sprint plannings, necesitas dominar el vocabulario especifico para participar activamente y entender lo que sucede. Esta leccion cubre los terminos y frases esenciales.
+Las reuniones son una parte inevitable del trabajo en desarrollo de software. Desde los standups diarios hasta los sprint plannings, necesitas dominar el vocabulario especifico para participar activamente y entender lo que sucede. Esta leccion cubre los términos y frases esenciales.
 
 ---
 
 ## Tipos de reuniones en desarrollo
 
-| Tipo | Descripcion | Frecuencia |
+| Tipo | Descripción | Frecuencia |
 |------|-------------|------------|
 | **Standup / Daily standup** | Reunion breve de estado (15 min) | Diaria |
 | **Sprint planning** | Planificar el trabajo del sprint | Cada sprint |
@@ -16,17 +16,17 @@ Las reuniones son una parte inevitable del trabajo en desarrollo de software. De
 | **Retro / Retrospective** | Reflexionar sobre lo que funciono y que no | Cada sprint |
 | **One-on-one (1:1)** | Reunion privada con tu manager | Semanal/quincenal |
 | **All-hands** | Reunion de toda la empresa | Mensual/trimestral |
-| **Town hall** | Similar a all-hands, con sesion de preguntas | Trimestral |
+| **Town hall** | Similar a all-hands, con sesión de preguntas | Trimestral |
 | **Kickoff** | Reunion inicial de un proyecto | Una vez |
 | **Wrap-up** | Reunion de cierre de un proyecto | Una vez |
-| **Sync** | Reunion de sincronizacion entre equipos | Segun necesidad |
+| **Sync** | Reunion de sincronizacion entre equipos | Según necesidad |
 | **Breakout room** | Subgrupo que se separa para discutir un tema | Durante reuniones grandes |
 
 ---
 
 ## Vocabulario esencial de reuniones
 
-| Termino | Significado | Ejemplo |
+| Término | Significado | Ejemplo |
 |---------|-------------|---------|
 | **Agenda** | Lista de temas a tratar | *"Let's review the agenda."* |
 | **Minutes** | Notas/acta de la reunion | *"I'll send the meeting minutes after."* |
@@ -35,11 +35,11 @@ Las reuniones son una parte inevitable del trabajo en desarrollo de software. De
 | **Timebox** | Limitar el tiempo de discusion | *"Let's timebox this to 10 minutes."* |
 | **Blocker** | Algo que impide avanzar | *"My blocker is waiting for API access."* |
 | **Takeaway** | Conclusion principal | *"The key takeaway is we need more testing."* |
-| **Parking lot** | Temas pospuestos para despues | *"Let's put that in the parking lot."* |
+| **Parking lot** | Temas pospuestos para después | *"Let's put that in the parking lot."* |
 
 ---
 
-## Frases comunes en reuniones
+## Frases comúnes en reuniones
 
 ### Iniciar la reunion
 
@@ -59,7 +59,7 @@ Las reuniones son una parte inevitable del trabajo en desarrollo de software. De
 | *"Can you elaborate on that?"* | Pedir mas detalles |
 | *"Let's table this for now."* | Posponer un tema |
 | *"Let's take this offline."* | Discutirlo fuera de la reunion |
-| *"Let's circle back to this."* | Volver a un tema despues |
+| *"Let's circle back to this."* | Volver a un tema después |
 | *"Let's not go down that rabbit hole."* | Evitar desviarse del tema |
 | *"Can we stay on track?"* | Redirigir la discusion |
 | *"Does that make sense?"* | Verificar comprension |
@@ -117,9 +117,9 @@ help me with that?"
 
 ## La retrospectiva: estructura y frases
 
-Las retrospectivas usan diferentes formatos. El mas comun:
+Las retrospectivas usan diferentes formatos. El mas común:
 
-| Columna | Pregunta | Frases utiles |
+| Columna | Pregunta | Frases útiles |
 |---------|----------|---------------|
 | **What went well** | Que salio bien? | *"I think the deploy process went really smoothly."* |
 | **What didn't go well** | Que no salio bien? | *"We had too many last-minute changes."* |
@@ -149,14 +149,14 @@ integrations."
 |-------|-----------------|
 | *"Let's table this"* | Posponerlo (NO discutirlo, como en espanol) |
 | *"Let's take this offline"* | Hablarlo fuera de la reunion, entre los interesados |
-| *"Let's circle back"* | Volver a este tema despues |
+| *"Let's circle back"* | Volver a este tema después |
 | *"Let's park this"* | Ponerlo en espera (parking lot) |
 | *"Let's not boil the ocean"* | No intentar hacer todo a la vez |
 | *"Let's align on this"* | Ponernos de acuerdo |
 | *"Are we on the same page?"* | Estamos de acuerdo / entendemos lo mismo? |
 | *"Let's get everyone on the same page"* | Asegurar que todos entiendan |
 
-> **Cuidado:** "Let's table this" en ingles americano significa **posponer**. En ingles britanico puede significar **poner sobre la mesa para discutir**. En equipos internacionales, el significado americano (posponer) es el mas comun en tech.
+> **Cuidado:** "Let's table this" en ingles americano significa **posponer**. En ingles britanico puede significar **poner sobre la mesa para discutir**. En equipos internacionales, el significado americano (posponer) es el mas común en tech.
 
 ---
 

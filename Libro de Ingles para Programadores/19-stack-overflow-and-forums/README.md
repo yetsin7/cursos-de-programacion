@@ -4,7 +4,7 @@
 
 Este capítulo te enseña cómo participar efectivamente en Stack Overflow,
 GitHub Issues y otros foros técnicos en inglés. Aprenderás a hacer buenas
-preguntas, dar respuestas útiles y usar las frases comunes del ecosistema.
+preguntas, dar respuestas útiles y usar las frases comúnes del ecosistema.
 
 ## Contenido
 
@@ -21,7 +21,7 @@ Al completar este capítulo serás capaz de:
 
 - Formular preguntas claras y bien estructuradas en inglés
 - Escribir respuestas que sean útiles y obtengan upvotes
-- Entender y usar las frases y abreviaciones comunes de foros
+- Entender y usar las frases y abreviaciones comúnes de foros
 - Participar con confianza en comunidades técnicas en inglés
 
 ## Prerequisitos

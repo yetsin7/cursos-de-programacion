@@ -3,7 +3,7 @@
 ## Como Escribir Mensajes de Commit en Ingles
 
 Los mensajes de commit son el historial de tu proyecto. Un buen mensaje de commit
-comunica que se cambio y por que, facilitando la revision de codigo, el debugging
+comunica que se cambio y por que, facilitando la revisión de código, el debugging
 y la colaboracion.
 
 ---
@@ -39,13 +39,13 @@ Los "Conventional Commits" son el estandar mas usado en la industria.
 |------|-------------|---------------|
 | **feat** | Feature (caracteristica) | Agregas funcionalidad nueva |
 | **fix** | Fix (correccion) | Corriges un bug |
-| **docs** | Documentation | Cambias documentacion |
+| **docs** | Documentation | Cambias documentación |
 | **style** | Style (estilo) | Formateo, punto y coma, espacios (no CSS) |
-| **refactor** | Refactoring | Cambias codigo sin alterar funcionalidad |
+| **refactor** | Refactoring | Cambias código sin alterar funcionalidad |
 | **test** | Test (pruebas) | Agregas o corriges tests |
 | **chore** | Chore (tarea) | Mantenimiento, dependencias, config |
 | **perf** | Performance | Mejoras de rendimiento |
-| **ci** | CI/CD | Cambios en configuracion de CI/CD |
+| **ci** | CI/CD | Cambios en configuración de CI/CD |
 | **build** | Build | Cambios en el sistema de build |
 | **revert** | Revert | Reviertes un commit anterior |
 
@@ -71,7 +71,7 @@ fix(ui): prevent layout overflow on small screens
 fix(api): handle empty response from user endpoint
 ```
 
-### docs (documentacion)
+### docs (documentación)
 
 ```
 docs: update API reference with new endpoints
@@ -121,7 +121,7 @@ Imagina que completas la frase: "If applied, this commit will..."
 
 ---
 
-## Verbos Comunes para Commits
+## Verbos Comúnes para Commits
 
 | Verbo | Significado | Ejemplo |
 |-------|-------------|---------|
@@ -130,7 +130,7 @@ Imagina que completas la frase: "If applied, this commit will..."
 | **update** | Actualizar algo existente | "update user model" |
 | **remove** | Eliminar algo | "remove deprecated API" |
 | **rename** | Renombrar | "rename config file" |
-| **move** | Mover archivo/codigo | "move utils to shared folder" |
+| **move** | Mover archivo/código | "move utils to shared folder" |
 | **refactor** | Reestructurar | "refactor database layer" |
 | **implement** | Implementar | "implement search feature" |
 | **improve** | Mejorar | "improve error handling" |
@@ -139,7 +139,7 @@ Imagina que completas la frase: "If applied, this commit will..."
 | **extract** | Extraer | "extract helper function" |
 | **merge** | Fusionar | "merge feature branch" |
 | **revert** | Revertir | "revert login changes" |
-| **bump** | Actualizar version | "bump version to 2.1.0" |
+| **bump** | Actualizar versión | "bump versión to 2.1.0" |
 
 ---
 
@@ -155,7 +155,7 @@ test(user): add tests for profile update
 chore(deps): update Flutter to 3.22
 ```
 
-**Scopes comunes**: auth, api, ui, db, config, deps, i18n, nav, cart, user, payment
+**Scopes comúnes**: auth, api, ui, db, config, deps, i18n, nav, cart, user, payment
 
 ---
 
@@ -192,15 +192,15 @@ BREAKING CHANGE: payment API now requires a currency parameter
 
 | Footer | Significado |
 |--------|-------------|
-| `Closes #123` | Cierra el issue numero 123 |
-| `Fixes #456` | Corrige el issue numero 456 |
+| `Closes #123` | Cierra el issue número 123 |
+| `Fixes #456` | Corrige el issue número 456 |
 | `Refs #789` | Referencia el issue 789 |
 | `BREAKING CHANGE:` | Cambio que rompe compatibilidad |
 | `Co-authored-by:` | Co-autor del commit |
 
 ---
 
-## Errores Comunes
+## Errores Comúnes
 
 | Mal | Bien |
 |-----|------|
@@ -208,7 +208,7 @@ BREAKING CHANGE: payment API now requires a currency parameter
 | "update" | "refactor(api): simplify error response format" |
 | "WIP" | No hagas commit de trabajo incompleto |
 | "asdfgh" | Nunca hagas commits sin mensaje real |
-| "fix fix fix" | Un commit por cada cambio logico |
+| "fix fix fix" | Un commit por cada cambio lógico |
 
 ---
 
@@ -216,7 +216,7 @@ BREAKING CHANGE: payment API now requires a currency parameter
 
 1. Usa **Conventional Commits**: `type(scope): description`
 2. Escribe en **modo imperativo**: "add", no "added"
-3. Se **especifico** pero conciso en la descripcion
+3. Se **especifico** pero conciso en la descripción
 4. Agrega un **body** para cambios complejos
 5. Usa **footers** para referencias a issues
-6. Un commit = un cambio logico
+6. Un commit = un cambio lógico

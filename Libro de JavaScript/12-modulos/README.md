@@ -6,7 +6,7 @@ Los módulos permiten dividir el código en archivos pequeños, reutilizables y 
 
 ## CommonJS vs ES Modules
 
-| Característica | CommonJS (CJS) | ES Modules (ESM) |
+| Carácterística | CommonJS (CJS) | ES Modules (ESM) |
 |---|---|---|
 | Sintaxis import | `require()` | `import` |
 | Sintaxis export | `module.exports` | `export` / `export default` |
@@ -31,5 +31,5 @@ Los módulos permiten dividir el código en archivos pequeños, reutilizables y 
 
 - `01_commonjs.js` — CommonJS: require, module.exports, módulos del core
 - `02_esmodules.js` — ES Modules: import, export, importaciones dinámicas
-- `03_modulos_builtin.js` — Módulos built-in de Node.js: path, os, process, util, url
+- `03_modulos_builtin.js` — Módulos built-in de Node.js: path, os, process, útil, url
 - `04_ejercicios.js` — Ejercicios prácticos

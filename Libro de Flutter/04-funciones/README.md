@@ -1,6 +1,6 @@
-# Módulo 04 — Funciones en Dart
+# Módulo 04 — funciones en Dart
 
-Las funciones permiten agrupar pasos bajo un nombre, reutilizar logica y dividir
+Las funciones permiten agrupar pasos bajo un nombre, reutilizar lógica y dividir
 problemas grandes en partes pequeñas. Son una de las bases mas importantes para
 programar bien en Dart y Flutter.
 
@@ -25,17 +25,17 @@ Porque casi todo en Flutter se apoya en funciones:
 
 - callbacks de botones;
 - validaciones;
-- transformacion de datos;
-- metodos de clases;
+- transformación de datos;
+- métodos de clases;
 - constructores y helpers.
 
-Aprender funciones bien hace mucho mas facil entender widgets y arquitectura.
+Aprender funciones bien hace mucho mas fácil entender widgets y arquitectura.
 
 ---
 
 ## Parámetros nombrados
 
-Una de las ventajas mas utiles de Dart es la claridad de los parametros nombrados:
+Una de las ventajas mas útiles de Dart es la claridad de los parametros nombrados:
 
 ```dart
 crearUsuario(nombre: 'Ana', edad: 28, esAdmin: true, estaActivo: false);
@@ -48,24 +48,24 @@ muchos argumentos.
 
 ## ¿Qué pasa dentro del programa?
 
-Cuando llamas una funcion:
+Cuando llamas una función:
 
-- el programa salta a ese bloque de codigo;
+- el programa salta a ese bloque de código;
 - recibe valores de entrada;
 - ejecuta instrucciones;
 - puede devolver un resultado;
 - vuelve al punto desde donde fue llamada.
 
-Esto organiza mejor el flujo y evita repetir codigo.
+Esto organiza mejor el flujo y evita repetir código.
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - crear funciones demasiado grandes;
 - no distinguir entre imprimir y retornar;
 - usar nombres poco claros;
-- meter demasiada logica repetida en `main()`.
+- meter demasiada lógica repetida en `main()`.
 
 ---
 

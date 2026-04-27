@@ -1,6 +1,6 @@
 # Capítulo 02 — Variables y Tipos de Datos
 
-Este capitulo profundiza en una idea central de C++: los tipos afectan memoria,
+Este capítulo profundiza en una idea central de C++: los tipos afectan memoria,
 seguridad, claridad y rendimiento.
 
 ---
@@ -12,7 +12,7 @@ seguridad, claridad y rendimiento.
 - deduccion con `auto`;
 - diferencia entre `const` y `constexpr`;
 - por que `nullptr` es mejor que `NULL`;
-- inicializacion uniforme.
+- inicialización uniforme.
 
 ---
 
@@ -32,7 +32,7 @@ Cuando declaras variables:
 - el compilador decide como representar el tipo;
 - el programa reserva memoria al ejecutarse;
 - ciertas conversiones pueden ser seguras o peligrosas;
-- algunos errores se detectan ya en compilacion.
+- algunos errores se detectan ya en compilación.
 
 Por eso C++ valora tanto los tipos claros y las inicializaciones seguras.
 
@@ -47,28 +47,28 @@ mas comoda y segura que `char[]` en muchos casos.
 
 ## `auto`
 
-`auto` deja que el compilador deduzca el tipo en tiempo de compilacion.
-Eso no vuelve dinamico al lenguaje.
+`auto` deja que el compilador deduzca el tipo en tiempo de compilación.
+Eso no vuelve dinámico al lenguaje.
 
 ---
 
 ## `const`, `constexpr` y `nullptr`
 
 - `const` protege valores que no deben cambiar;
-- `constexpr` fija valores calculables en compilacion;
+- `constexpr` fija valores calculables en compilación;
 - `nullptr` evita ambiguedades con punteros nulos.
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
-- creer que `auto` vuelve dinamico al lenguaje;
+- creer que `auto` vuelve dinámico al lenguaje;
 - usar `NULL` por costumbre;
-- ignorar conversiones con perdida de informacion;
-- no aprovechar inicializacion con llaves.
+- ignorar conversiones con perdida de información;
+- no aprovechar inicialización con llaves.
 
 ---
 
 ## Archivo de ejemplo
 
-Ver: [01_tipos.cpp](C:/Users/Yetsin/Documents/Programacion/cursos-de-programacion/Libro%20de%20C%2B%2B/02-variables-y-tipos/01_tipos.cpp)
+Ver: [01_tipos.cpp](C:/Users/Yetsin/Documents/Programación/cursos-de-programación/Libro%20de%20C%2B%2B/02-variables-y-tipos/01_tipos.cpp)

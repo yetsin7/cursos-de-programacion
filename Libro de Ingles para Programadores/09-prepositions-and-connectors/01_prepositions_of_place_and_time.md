@@ -155,7 +155,7 @@ Data is exchanged between the frontend and the API.
 
 ---
 
-## 4. Preposiciones de lugar comunes en tech
+## 4. Preposiciones de lugar comúnes en tech
 
 | Frase | Significado | Ejemplo |
 |-------|-------------|---------|
@@ -172,7 +172,7 @@ Data is exchanged between the frontend and the API.
 
 ---
 
-## 5. Errores comunes de hispanohablantes
+## 5. Errores comúnes de hispanohablantes
 
 | Incorrecto | Correcto | Explicación |
 |------------|----------|-------------|

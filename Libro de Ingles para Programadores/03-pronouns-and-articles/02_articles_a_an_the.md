@@ -57,7 +57,7 @@ Se usa cuando hablamos de algo **específico** o ya mencionado.
 
 | Situación | Ejemplo | Español |
 |-----------|---------|---------|
-| Ya se mencionó antes | I found a bug. **The** bug is in the login module. | Encontré un bug. **El** bug está en el módulo de login. |
+| Ya se menciónó antes | I found a bug. **The** bug is in the login module. | Encontré un bug. **El** bug está en el módulo de login. |
 | Es único o específico | **The** database is down | **La** base de datos está caída |
 | Ambos saben de qué hablan | Can you review **the** PR? | ¿Puedes revisar **el** PR? |
 | Hay solo uno | **The** CEO approved the project | **El** CEO aprobó el proyecto |
@@ -113,7 +113,7 @@ En inglés hay muchos casos donde **no se usa artículo**, aunque en español s�
 
 ---
 
-## Errores comunes de hispanohablantes
+## Errores comúnes de hispanohablantes
 
 | Error | Correcto | Explicación |
 |-------|----------|-------------|

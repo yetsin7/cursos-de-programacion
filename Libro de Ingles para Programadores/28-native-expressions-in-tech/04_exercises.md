@@ -2,7 +2,7 @@
 
 ## Ejercicio 1: Vocabulario avanzado
 
-Completa las oraciones con la expresion correcta:
+Completa las oraciones con la expresión correcta:
 
 **Opciones:** low-hanging fruit, bandwidth, blast radius, guardrails, edge case, workaround, blocker, greenfield, deep dive, scope creep
 
@@ -59,7 +59,7 @@ Describe en ingles (como si pensaras en voz alta) lo que harias en cada situacio
 
    "First, I'll..."
 
-2. **Tu aplicacion muestra un error 500 en produccion:**
+2. **Tu aplicación muestra un error 500 en produccion:**
 
    "OK, let me..."
 
@@ -120,7 +120,7 @@ TypeError: Cannot read properties of undefined (reading 'map')
     at renderWithHooks (react-dom.js:1234)
 ```
 
-Escribe al menos 5 oraciones describiendo tu proceso de investigacion y solucion.
+Escribe al menos 5 oraciones describiendo tu proceso de investigacion y solución.
 
 ---
 
@@ -134,7 +134,7 @@ Reescribe estas oraciones usando vocabulario nativo tech:
 2. "No tengo tiempo para eso este sprint."
    → "I don't have ___ for that this sprint."
 
-3. "Hagamos las tareas faciles primero."
+3. "Hagamos las tareas fáciles primero."
    → "Let's tackle the ___ first."
 
 4. "El alcance del proyecto sigue creciendo sin control."
@@ -151,7 +151,7 @@ Responde verdadero (V) o falso (F):
 
 1. ___ "10x developer" es siempre un cumplido sincero.
 2. ___ "Works on my machine" indica que el problema no existe.
-3. ___ "Rockstar developer" es un termino que los developers aprecian.
+3. ___ "Rockstar developer" es un término que los developers aprecian.
 4. ___ "How do I exit Vim?" es un meme famoso.
 5. ___ "Tabs vs spaces" es un debate que ya se resolvio.
 6. ___ "/s" al final de un mensaje indica sarcasmo.

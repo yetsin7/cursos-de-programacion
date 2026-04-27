@@ -1,8 +1,8 @@
-# Common Email Templates - Plantillas comunes de email
+# Common Email Templates - Plantillas comúnes de email
 
-## Introduccion
+## Introducción
 
-Tener plantillas de email listas te ahorra tiempo y te asegura mantener un tono profesional consistente. Aqui encontraras plantillas para las situaciones mas comunes que enfrentaras como desarrollador en un equipo internacional.
+Tener plantillas de email listas te ahorra tiempo y te asegura mantener un tono profesional consistente. Aqui encontraras plantillas para las situaciones mas comúnes que enfrentaras como desarrollador en un equipo internacional.
 
 ---
 
@@ -62,7 +62,7 @@ Thanks,
 
 ---
 
-## 3. Proponer un cambio tecnico (Proposing a technical change)
+## 3. Proponer un cambio técnico (Proposing a technical change)
 
 ```
 Subject: Proposal: [Brief description of the change]
@@ -255,7 +255,7 @@ Sincerely,
 
 ---
 
-## Frases utiles para cualquier email
+## Frases útiles para cualquier email
 
 ### Para ser diplomatico
 
@@ -280,4 +280,4 @@ Sincerely,
 
 ## Consejo final
 
-> Guarda estas plantillas y personaliza los detalles para cada situacion. Con el tiempo, tendras tu propia coleccion de templates que puedes adaptar en minutos. Un email bien escrito no solo comunica informacion — demuestra profesionalismo.
+> Guarda estas plantillas y personaliza los detalles para cada situacion. Con el tiempo, tendras tu propia coleccion de templates que puedes adaptar en minutos. Un email bien escrito no solo comunica información — demuestra profesionalismo.

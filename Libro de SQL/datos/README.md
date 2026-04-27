@@ -26,6 +26,6 @@ sqlite3 ../../datos/biblia_rv60.sqlite3
 ## ¿Por qué está allá y no aquí?
 
 Para evitar duplicación: Python, JavaScript, Flutter y SQL comparten el mismo archivo.
-Solo hay una copia, en `cursos-de-programacion/datos/`.
+Solo hay una copia, en `cursos-de-programación/datos/`.
 
 → Consulta `../../datos/README.md` para la documentación completa de las tablas.

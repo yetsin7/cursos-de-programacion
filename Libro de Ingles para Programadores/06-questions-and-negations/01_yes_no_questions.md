@@ -23,7 +23,7 @@ Do/Does + sujeto + verbo base + complemento?
 |--------------------|------------|
 | Do you have write access? | ¿Tienes acceso de escritura? |
 | Do we need to update the dependencies? | ¿Necesitamos actualizar las dependencias? |
-| Do they use Git for version control? | ¿Ellos usan Git para control de versiones? |
+| Do they use Git for versión control? | ¿Ellos usan Git para control de versiones? |
 | Does the API return JSON? | ¿La API devuelve JSON? |
 | Does this function handle errors? | ¿Esta función maneja errores? |
 | Does the server support HTTPS? | ¿El servidor soporta HTTPS? |
@@ -91,7 +91,7 @@ En inglés, no se responde solo con "Yes" o "No". Se agrega el auxiliar para son
 
 ## 4. Preguntas con Can / Will / Have
 
-Otros auxiliares comunes en preguntas técnicas:
+Otros auxiliares comúnes en preguntas técnicas:
 
 | Pregunta | Traducción |
 |----------|------------|
@@ -112,7 +112,7 @@ Otros auxiliares comunes en preguntas técnicas:
 
 ---
 
-## 5. Preguntas comunes en el día a día del desarrollador
+## 5. Preguntas comúnes en el día a día del desarrollador
 
 ```text
 Do you have a minute?              - ¿Tienes un minuto?
@@ -127,7 +127,7 @@ Is there a workaround?             - ¿Hay algún workaround?
 
 ---
 
-## 6. Errores comunes de hispanohablantes
+## 6. Errores comúnes de hispanohablantes
 
 | Incorrecto | Correcto | Explicación |
 |------------|----------|-------------|

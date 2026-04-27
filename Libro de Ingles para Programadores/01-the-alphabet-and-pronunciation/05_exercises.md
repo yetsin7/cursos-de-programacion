@@ -110,7 +110,7 @@ Escribe la versión con "e muda" y cómo cambia la pronunciación:
 
 1. The ___ (variable / bariable) is undefined.
 2. I need to ___ (validate / balidate) the input.
-3. The ___ (version / bersion) number is wrong.
+3. The ___ (versión / bersion) number is wrong.
 4. The ___ (bug / vug) is in the callback.
 5. The ___ (server / serber) is down.
 
@@ -281,7 +281,7 @@ Ejemplo:
 <summary>Ver respuestas de la Sección C</summary>
 
 **C2:**
-1. variable  2. validate  3. version  4. bug  5. server
+1. variable  2. validate  3. versión  4. bug  5. server
 
 **C3:**
 1. knowledge → K  2. write → W  3. assign → G  4. wrapper → W

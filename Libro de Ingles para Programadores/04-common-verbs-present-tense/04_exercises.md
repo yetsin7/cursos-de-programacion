@@ -1,4 +1,4 @@
-# Ejercicios Integrales - Capítulo 04: Verbos Comunes y Tiempo Presente
+# Ejercicios Integrales - Capítulo 04: Verbos Comúnes y Tiempo Presente
 
 ## Introducción
 

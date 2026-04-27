@@ -1,17 +1,17 @@
 # Chapter 28: Native Expressions in Tech
 
-## Descripcion
+## Descripción
 
-Este capitulo cubre el vocabulario y las expresiones que usan los programadores nativos en ingles: jerga tecnica avanzada, referencias culturales, humor tecnologico, y estrategias para pensar directamente en ingles sin traducir del espanol.
+Este capítulo cubre el vocabulario y las expresiones que usan los programadores nativos en ingles: jerga técnica avanzada, referencias culturales, humor tecnologico, y estrategias para pensar directamente en ingles sin traducir del espanol.
 
 ## Contenido
 
-| Leccion | Tema | Descripcion |
+| Leccion | Tema | Descripción |
 |---------|------|-------------|
 | 01 | Native-Level Vocabulary | Vocabulario avanzado del mundo tech |
-| 02 | Cultural References | Referencias culturales y humor en tecnologia |
+| 02 | Cultural References | Referencias culturales y humor en tecnología |
 | 03 | Thinking in English | Estrategias para pensar en ingles |
-| 04 | Exercises | Ejercicios practicos |
+| 04 | Exercises | Ejercicios prácticos |
 
 ## Objetivos de aprendizaje
 

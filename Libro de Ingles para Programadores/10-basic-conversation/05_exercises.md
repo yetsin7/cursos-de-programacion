@@ -29,7 +29,7 @@ Escribe una respuesta natural para cada situación.
 3. "Did you do anything fun this weekend?"
    -> _______________________________________
 
-4. "Have you tried the new version of VS Code?"
+4. "Have you tried the new versión of VS Code?"
    -> _______________________________________
 
 ---
@@ -215,7 +215,7 @@ You: _______________________________________
 7. My PR is ready for review. It's still WIP.
 8. AFAIK, we use PostgreSQL, right?
 9. I'll be AFK for 30 minutes.
-10. BTW, have you seen the new version of the docs?
+10. BTW, have you seen the new versión of the docs?
 
 ### Ejercicio 9 (respuestas sugeridas)
 

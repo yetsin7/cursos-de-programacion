@@ -1,4 +1,4 @@
-# Frases Técnicas Comunes en Documentación
+# Frases Técnicas Comúnes en Documentación
 
 ## Introducción
 
@@ -77,7 +77,7 @@ export TIMEOUT=5000
 | For more information, see... | Para más información, consulta... |
 | Refer to... | Consulta... / Revisa... |
 | See also: | Ver también: |
-| As of version X... | A partir de la versión X... |
+| As of versión X... | A partir de la versión X... |
 | Starting from v2.0... | A partir de v2.0... |
 | Available since v1.5 | Disponible desde v1.5 |
 | Introduced in v3.0 | Introducido en v3.0 |

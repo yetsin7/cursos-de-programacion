@@ -11,7 +11,7 @@
 ### Mutaciones y efectos secundarios
 - [ ] Evitar mutar objetos y arrays recibidos como argumentos
 - [ ] Usar spread `[...arr]` o `arr.slice()` para copiar antes de modificar
-- [ ] Funciones puras cuando sea posible: misma entrada → misma salida
+- [ ] funciones puras cuando sea posible: misma entrada → misma salida
 - [ ] Separar lógica de negocio de efectos secundarios (I/O, fetch, DOM)
 
 ### Estructuras de datos correctas
@@ -29,7 +29,7 @@
 
 ---
 
-## Memory Leaks — causas más comunes
+## Memory Leaks — causas más comúnes
 
 Los memory leaks ocurren cuando el garbage collector no puede liberar memoria porque hay referencias activas a objetos que ya no se necesitan.
 
@@ -80,7 +80,7 @@ with (objeto) { console.log(propiedad); }
 console.log(objeto.propiedad);
 ```
 
-### Comparaciones sin tipo
+### comparaciones sin tipo
 ```js
 // MAL — == hace coerción de tipos: '5' == 5 → true
 if (valor == null) { }

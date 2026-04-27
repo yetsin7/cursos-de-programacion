@@ -1,30 +1,30 @@
-# Presenting Technical Topics - Presentar temas tecnicos
+# Presenting Technical Topics - Presentar temas técnicos
 
-## Introduccion
+## Introducción
 
-Presentar temas tecnicos en ingles — ya sea una demo, un tech talk, una propuesta de arquitectura o un informe de postmortem — es una habilidad que puede impulsar tu carrera. Esta leccion te ensena a estructurar presentaciones tecnicas y las frases clave para cada seccion.
+Presentar temas técnicos en ingles — ya sea una demo, un tech talk, una propuesta de arquitectura o un informe de postmortem — es una habilidad que puede impulsar tu carrera. Esta leccion te ensena a estructurar presentaciones técnicas y las frases clave para cada sección.
 
 ---
 
-## Estructura de una presentacion tecnica
+## Estructura de una presentación técnica
 
-| Seccion | Duracion aprox. | Proposito |
+| Sección | Duracion aprox. | Proposito |
 |---------|----------------|-----------|
 | **Introduction** | 10% | Captar atencion, presentar el tema |
 | **Problem/Context** | 20% | Explicar el problema o la necesidad |
-| **Solution/Approach** | 40% | Presentar tu solucion con detalles |
-| **Demo** (si aplica) | 20% | Mostrar la solucion en accion |
+| **Solution/Approach** | 40% | Presentar tu solución con detalles |
+| **Demo** (si aplica) | 20% | Mostrar la solución en accion |
 | **Q&A** | 10% | Responder preguntas |
 
 ---
 
-## Frases para cada seccion
+## Frases para cada sección
 
-### Introduccion
+### Introducción
 
 | Frase | Uso |
 |-------|-----|
-| *"Today I'd like to present..."* | Abrir la presentacion |
+| *"Today I'd like to present..."* | Abrir la presentación |
 | *"I'm here to talk about..."* | Alternativa directa |
 | *"By the end of this talk, you'll understand..."* | Establecer expectativas |
 | *"Let me give you some context first."* | Antes de entrar en detalles |
@@ -64,11 +64,11 @@ that result in about 200 support tickets per month.
 This has resulted in increased churn and a poor user experience."
 ```
 
-### Solucion / Enfoque
+### Solución / Enfoque
 
 | Frase | Uso |
 |-------|-----|
-| *"Our proposed solution is..."* | Presentar la solucion |
+| *"Our proposed solution is..."* | Presentar la solución |
 | *"Here's how it works..."* | Explicar el mecanismo |
 | *"As you can see in this diagram..."* | Referir a un visual |
 | *"The key advantage of this approach is..."* | Destacar beneficios |
@@ -96,7 +96,7 @@ is an industry standard with proven security patterns."
 | *"According to our benchmarks..."* | Presentar datos de rendimiento |
 | *"The data shows that..."* | Respaldar con evidencia |
 | *"We saw a [X]% improvement in..."* | Cuantificar mejoras |
-| *"Let me show you the numbers."* | Transicion a datos |
+| *"Let me show you the numbers."* | Transición a datos |
 | *"As this chart illustrates..."* | Referir a una grafica |
 
 ### Demo
@@ -107,7 +107,7 @@ is an industry standard with proven security patterns."
 | *"Here I'm going to..."* | Narrar lo que haces |
 | *"Notice how..."* | Dirigir la atencion |
 | *"As you can see..."* | Senalar resultados |
-| *"Let me switch to the terminal/browser."* | Transicion de pantalla |
+| *"Let me switch to the terminal/browser."* | Transición de pantalla |
 
 ```
 // Ejemplo de narracion de demo:
@@ -129,7 +129,7 @@ The whole flow takes under 2 seconds."
 | *"In conclusion..."* | Cerrar formalmente |
 | *"Next steps would be..."* | Indicar que sigue |
 | *"Are there any questions?"* | Abrir Q&A |
-| *"Thank you for your time."* | Cerrar la presentacion |
+| *"Thank you for your time."* | Cerrar la presentación |
 
 ```
 // Ejemplo de cierre:
@@ -159,26 +159,26 @@ Are there any questions?"
 
 ---
 
-## Transiciones suaves
+## transiciones suaves
 
-| De | A | Frase de transicion |
+| De | A | Frase de transición |
 |----|---|---------------------|
 | Intro | Problema | *"So, what's the problem we're trying to solve?"* |
-| Problema | Solucion | *"Now, let me show you what we came up with."* |
-| Solucion | Demo | *"Let me bring this to life with a demo."* |
+| Problema | Solución | *"Now, let me show you what we came up with."* |
+| Solución | Demo | *"Let me bring this to life with a demo."* |
 | Demo | Resumen | *"So, to bring it all together..."* |
 | Resumen | Q&A | *"That's the overview. I'd love to hear your thoughts."* |
 
 ---
 
-## Errores comunes al presentar
+## Errores comúnes al presentar
 
-| Error | Solucion |
+| Error | Solución |
 |-------|----------|
 | Leer las diapositivas palabra por palabra | Usa bullet points y habla naturalmente |
-| Demasiado texto en diapositivas | Maximo 6 lineas por slide |
+| Demasiado texto en diapositivas | Máximo 6 lineas por slide |
 | No hacer contacto visual (virtual: no mirar la camara) | Mira a la camara, no a tu pantalla |
-| Hablar demasiado rapido por nervios | Respira, haz pausas deliberadas |
+| Hablar demasiado rápido por nervios | Respira, haz pausas deliberadas |
 | Disculparse por tu ingles | No te disculpes — presenta con confianza |
 | No practicar la demo | Siempre prueba la demo antes |
 | Ignorar el tiempo | Practica con cronometro |
@@ -187,4 +187,4 @@ Are there any questions?"
 
 ## Consejo final
 
-> La mejor forma de mejorar presentando en ingles es presentar en ingles. Empieza con presentaciones cortas en tu equipo (5 min de una herramienta, un pattern que aprendiste, una mejora que hiciste). Grabate, escuchate, mejora. La confianza viene con la practica, no con la perfeccion.
+> La mejor forma de mejorar presentando en ingles es presentar en ingles. Empieza con presentaciones cortas en tu equipo (5 min de una herramienta, un pattern que aprendiste, una mejora que hiciste). Grabate, escuchate, mejora. La confianza viene con la práctica, no con la perfeccion.

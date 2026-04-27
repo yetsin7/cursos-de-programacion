@@ -1,7 +1,7 @@
 # Libro de JavaScript — De cero a PRO
 
-Curso practico para aprender JavaScript moderno desde cero, entendiendo como se
-ejecuta el codigo tanto en Node.js como en el navegador.
+Curso práctico para aprender JavaScript moderno desde cero, entendiendo como se
+ejecuta el código tanto en Node.js como en el navegador.
 
 ---
 
@@ -10,11 +10,11 @@ ejecuta el codigo tanto en Node.js como en el navegador.
 - Personas que nunca han programado en JavaScript
 - Desarrolladores de otros lenguajes que quieren aprender JS
 - Quienes quieren actualizar su conocimiento al estandar moderno
-- Personas que quieren entender que hace el navegador o Node cuando corre codigo
+- Personas que quieren entender que hace el navegador o Node cuando corre código
 
 ## Que vas a aprender
 
-Este libro no se enfoca solo en "que escribir". Tambien explica:
+Este libro no se enfoca solo en "que escribir". También explica:
 
 - como JavaScript interpreta instrucciones;
 - como se crean variables y objetos en memoria;
@@ -56,14 +56,14 @@ Ejemplo:
 node 01-fundamentos/01_hola_mundo.js
 ```
 
-Lee los comentarios en el codigo como si fueran parte de la clase.
+Lee los comentarios en el código como si fueran parte de la clase.
 
 ## Que ocurre cuando JavaScript se ejecuta
 
 Si ejecutas un archivo con Node.js:
 
 - Node carga el motor de JavaScript;
-- el motor analiza el codigo;
+- el motor analiza el código;
 - reserva memoria para variables, funciones y objetos;
 - ejecuta instrucciones;
 - escribe resultados en consola o interactua con archivos y red.
@@ -90,7 +90,7 @@ Si ejecutas JavaScript en el navegador:
 | 🟡 **Medio** | `06-arrays/` | Métodos de array, desestructuración | 01–05 |
 | 🟡 **Medio** | `07-objetos/` | Objetos, prototipos, clases ES6+ | 01–05 |
 | 🟡 **Medio** | `08-async/` | Callbacks, Promises, async/await | 01–05 |
-| 🟡 **Medio** | `09-modulos/` | import/export, CommonJS, ES Modules | 01–04 |
+| 🟡 **Medio** | `09-módulos/` | import/export, CommonJS, ES Modules | 01–04 |
 | 🟡 **Medio** | `10-dom/` | Manipulación del DOM, eventos | 01–05 |
 | 🟡 **Medio** | `11-apis/` | fetch, REST APIs, JSON | 01–04 |
 | 🔴 **Avanzado** | `12-node-fs/` | File system, streams, buffers | 01–04 |
@@ -108,7 +108,7 @@ Si ejecutas JavaScript en el navegador:
 1. Ve a [nodejs.org](https://nodejs.org)
 2. Descarga la versión **LTS** (recomendada para producción)
 3. Ejecuta el instalador y sigue los pasos
-4. Abre una terminal nueva y ejecuta `node --version`
+4. Abre una terminal nueva y ejecuta `node --versión`
 
 ### macOS (con Homebrew)
 ```bash
@@ -135,11 +135,11 @@ sudo apt-get install -y nodejs
 
 ---
 
-## Errores comunes
+## Errores comúnes
 
 - Creer que `var`, `let` y `const` son iguales.
 - Ejecutar sin observar la salida real.
-- Confundir codigo de Node con codigo del navegador.
+- Confundir código de Node con código del navegador.
 - Querer memorizar todo sin practicar.
 - Ignorar errores de consola en lugar de leerlos.
 

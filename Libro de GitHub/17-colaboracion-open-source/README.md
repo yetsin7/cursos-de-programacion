@@ -44,9 +44,9 @@ trabajan juntas para construir herramientas que benefician a todos.
 
 ---
 
-## Licencias más comunes
+## Licencias más comúnes
 
-| Licencia | Características |
+| Licencia | Carácterísticas |
 |---|---|
 | MIT | Muy permisiva, puedes hacer casi cualquier cosa |
 | Apache 2.0 | Similar a MIT pero con protección de patentes |
